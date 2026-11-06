@@ -3748,7 +3748,7 @@ function Nakit({
       boxShadow: '0 16px 36px rgba(0,0,0,.12)'
     }
   }, React.createElement(window.MJVid, {
-    vid: n === 'Ogrlice' ? A + 'p-ogrlica-suza.mp4' : null
+    vid: null
   }, React.createElement(CollectionCard, {
     image: A + (n === 'Ogrlice' ? 'p-ogrlica-suza.jpg' : f),
     script: React.createElement("span", {
@@ -5508,7 +5508,7 @@ function NakitM({
       boxShadow: '0 16px 36px rgba(0,0,0,.12)'
     }
   }, React.createElement(window.MJVid, {
-    vid: n === 'Ogrlice' ? A + 'p-ogrlica-suza.mp4' : null
+    vid: null
   }, React.createElement("img", {
     src: A + (n === 'Ogrlice' ? 'p-ogrlica-suza.jpg' : f),
     alt: n,
