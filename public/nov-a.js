@@ -223,7 +223,7 @@ Kad si zaglavljena. Kad previše razmišljaš. Kad ti treba neko ko neće saose�
 Ovnu je sada aktivna osma kuća: preobražaji, zajednički novac, intima. Dobro vreme da Ovan nauči ono što mu najteže ide: da ostane, da ode dublje i da ne beži od emocije.
 ## Svako ima Ovna u natalu
 Čak i ako ti Sunce nije u Ovnu, Ovan je negde u tvojoj karti. Svih 12 znakova postoji u svakom natalu, samo u različitim kućama. Tamo gde ti stoji Ovan, tu se pali tvoja iskra: tu si najhrabrija i tu ne čekaš dozvolu.
-![Silueta žene izlazi iz karte As](ovan-as-karta.jpg)
+![Silueta žene izlazi iz karte As](ovan-as-karta-v2.jpg)
 A prva kuća je prirodna kuća Ovna. Kod svakoga nosi energiju početka: kako ulaziš u prostoriju, u nov posao, u novu ljubav. Ali boju joj daje znak u kom ti je podznak.
 - **Podznak u Ribama:** početak je nežan i intuitivan.
 - **Podznak u Jarcu:** početak je promišljen i siguran.
