@@ -1,0 +1,20 @@
+:root{
+--font-sans:'Inter',Arial,sans-serif;
+--font-script:'Corinthia',cursive;
+/* Desktop sizes at 1440 (source scales them with --v = min(100vw,1440px)/1440) */
+--fs-h1:56px;          /* page titles: Inter 700 caps, .02em */
+--fs-h2:40px;          /* section titles: Inter 700 caps, .08em */
+--fs-h2-article:28px;  /* article subheads */
+--fs-body:14px;        /* lh 1.6 */
+--fs-lead:16px;
+--fs-kick:13px;        /* kicker: 500, .2em, caps */
+--fs-nav:12.5px;       /* nav: 600, .14em, caps */
+--fs-cta:44px;         /* Corinthia 700 underlined link */
+--fs-brand-nav:40px;   /* Corinthia wordmark in nav */
+--fs-script-xl:110px;  /* Corinthia display word (Kristali) */
+--fs-element:64px;     /* Corinthia element names (Vatra…) */
+--fs-marquee-script:60px;--fs-marquee-caps:27px;
+--lh-heading:1.12 /* @kind other */;--lh-body:1.6 /* @kind other */;
+--tracking-h1:.02em;--tracking-h2:.08em;--tracking-nav:.14em;--tracking-kick:.2em;--tracking-marquee:.08em;
+--weight-body:500;--weight-heading:700;
+}

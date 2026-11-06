@@ -1,0 +1,14 @@
+html,body{margin:0;background:var(--surface-page);color:var(--text-body);font-family:var(--font-sans);font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+a:hover{opacity:.65}
+a:focus-visible,button:focus-visible,input:focus-visible{outline:2px solid var(--zlato);outline-offset:3px}
+@keyframes mj-marquee{to{transform:translateX(-100%)}}
+@keyframes mj-reveal{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
+@keyframes mj-float{50%{transform:translateY(-10px) rotate(2deg)}}
+
+/* Leopard button texture — url resolves relative to this file, so use the class (not a var in inline styles) */
+.mj-leopard{background-image:url('../assets/site/leopard-dugme-2.png');background-repeat:repeat;background-position:center}
+/* skriva spojeve pločica: ista šara, ista veličina — gornji sloj se kraj ivica pločice pretapa u isti sloj pomeren za pola pločice */
+.mj-leopard[style*="260px"]{background-position:calc(50% + 130px) calc(50% + 89.375px)}
+.mj-leopard[style*="260px"]::after{content:'';position:absolute;inset:0;background-image:inherit;background-size:inherit;background-repeat:repeat;background-position:center;-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 22%,#000 78%,transparent 100%),linear-gradient(180deg,transparent 0,#000 22%,#000 78%,transparent 100%);mask-image:linear-gradient(90deg,transparent 0,#000 22%,#000 78%,transparent 100%),linear-gradient(180deg,transparent 0,#000 22%,#000 78%,transparent 100%);-webkit-mask-size:260px 178.75px;mask-size:260px 178.75px;-webkit-mask-position:center;mask-position:center;-webkit-mask-repeat:repeat;mask-repeat:repeat;-webkit-mask-composite:source-in;mask-composite:intersect}
+.mj-leopard-bg{background-image:url('../assets/site/leopard-tile.png');background-repeat:repeat;background-position:center}

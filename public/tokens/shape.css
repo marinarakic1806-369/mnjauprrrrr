@@ -1,0 +1,16 @@
+:root{
+/* Photos are square-cornered. Only circles (logo, social) and the blob PNG are round. */
+--radius-none:0;--radius-circle:50%;
+--blur-glass:blur(14px) saturate(1.25) /* @kind other */;
+--shadow-glass:0 8px 24px rgba(80,60,40,.10);
+--shadow-nav:0 6px 20px rgba(80,60,40,.08);
+--shadow-photo:0 16px 36px rgba(0,0,0,.12);
+--shadow-card:0 14px 34px rgba(60,40,20,.12);
+--shadow-mailbar:0 10px 18px rgba(80,60,40,.16);
+--shadow-social:0 6px 14px rgba(40,40,20,.25),inset 0 1px 0 #fff;
+--shadow-blob:drop-shadow(0 18px 30px rgba(90,60,40,.16));
+--ease-reveal:cubic-bezier(.2,.7,.2,1) /* @kind other */;
+--dur-hover:.3s /* @kind other */;
+--dur-reveal:.9s /* @kind other */;
+--dur-marquee:34s /* @kind other */;
+}

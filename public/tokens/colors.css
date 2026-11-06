@@ -1,0 +1,46 @@
+:root{
+/* Values copied from the live site stylesheet (sajt/style.css) */
+--sedef:#F4EDE2;         /* page background */
+--sedef-2:#EFE5D6;       /* section bands, article pages */
+--krem:#F3E9DA;          /* light text on dark photos */
+--ink:#1D1A17;
+--ink-heading:rgba(29,26,23,.82);
+--ink-70:rgba(29,26,23,.74);
+--black:#000000;          /* CTA links, article text */
+--ljub:#4F4957;          /* astro band (dusty plum-grey) */
+--ljub-em:#EADFEA;       /* italic quotes on astro band */
+--turm:#D4C3CD;          /* turmalin band (dusty lilac) */
+--zlato:#C5A059;         /* gold: nav underline, focus, social hover */
+--zlato-tamno:#8A6A28;   /* active nav link */
+--zlato-tekst:#6B4E1A;   /* form confirmation text */
+--leopard:#EBDCCB;       /* leopard section fallback */
+--komp:#EDE4D6;          /* hirurški čelik section fallback */
+--zalfija:#A9B79F;       /* footer sage fallback */
+--blog-card:#FBF4EA;
+--pravo:#1B1815;         /* copyright bar */
+--pravo-tekst:#CFC6B8;
+--hero-1:#F7F1E7;--hero-2:#F1E8DA;--hero-3:#EFE4D4;
+--mail-1:#E9E1D6;--mail-2:#DDD3C6;--mail-btn:#E3DACD;--mail-btn-hover:#F0E8DC;
+--social-1:#F8F2E8;--social-2:#E7DCCB;
+--glass:rgba(247,241,232,.74);
+--glass-border:rgba(255,255,255,.65);
+--hairline:rgba(60,45,30,.08);
+--hairline-strong:rgba(60,45,30,.28);
+--white:#FFFFFF;
+
+/* Semantic */
+--surface-page:var(--sedef);
+--surface-band:var(--sedef-2);
+--surface-astro:var(--ljub);
+--surface-turmalin:var(--turm);
+--surface-card:var(--blog-card);
+--surface-dark:var(--pravo);
+--text-heading:var(--ink-heading);
+--text-body:var(--ink);
+--text-muted:var(--ink-70);
+--text-link:var(--black);
+--text-on-dark:var(--white);
+--text-on-photo:var(--krem);
+--accent:var(--zlato);
+--nav-active:var(--zlato-tamno);
+}

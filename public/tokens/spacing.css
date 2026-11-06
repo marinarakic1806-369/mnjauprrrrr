@@ -1,0 +1,11 @@
+:root{
+--design-width:1440px;
+--nav-h:90px;--nav-h-mobile:56px;
+--pad-x:6%;            /* nav side padding */
+--pad-section:8%;      /* astro / turmalin side padding */
+--marquee-h:84px;
+--mailbar-w:681px;--mailbar-h:62px;
+--social-size:56px;
+--article-w:780px;
+--space-1:4px;--space-2:8px;--space-3:12px;--space-4:18px;--space-5:24px;--space-6:30px;--space-7:44px;--space-8:60px;--space-9:90px;--space-10:140px;
+}

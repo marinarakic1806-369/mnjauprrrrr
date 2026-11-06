@@ -1,0 +1,545 @@
+<!doctype html><html lang="sr-Latn"><head><script id="mjRedir">(function(){var N=["samhain","zasto-kristali-deluju","skorpija-tiha-moc","crni-ahat","osma-kuca","merkur-retrogradni","ametist","ovan-iskra","mlad-mesec-skorpija","prva-kuca","labradorit","bik","venera","merkur-venera-direktni","rozenkvarc","druga-kuca","blizanci","gorski-kristal","mesec-u-natalu","treca-kuca","rak","karneol","sunce-u-strelcu","strelac","pun-mesec-blizanci","cetvrta-kuca","lapis-lazuli","lav","jupiter","peta-kuca","zeleni-aventurin"];function t(h){h=decodeURIComponent((h||'').replace(/^#\/?/,''));if(h==='blog')return '/blog/';var m=h.match(/^post-x\/([^\/?]+)/);if(m){if(m[1]==='kamen-za-tvoj-natal')return '/kamen/';if(N.indexOf(m[1])>-1)return '/blog/'+m[1]+'/';}return null}function c(u){var i=String(u||'').indexOf('#');var d=i<0?null:t(String(u).slice(i));if(d){location.replace(d);return true}return false}if(c(location.hash))return;['pushState','replaceState'].forEach(function(k){var o=history[k];history[k]=function(s,ti,u){if(u!=null&&c(u))return;return o.apply(this,arguments)}});addEventListener('hashchange',function(){c(location.hash)});addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[href*="#"]');if(a&&c(a.getAttribute('href'))){e.preventDefault();e.stopPropagation()}},true)})();</script><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><!--seo--><base href="/"><script>try{history.replaceState(null,'','/#post-x/kuce')}catch(e){}</script><title>Kuće u natalu | Mnjauprrrrr</title><meta name="description" content="Svih 12 kuća u natalnoj karti: šta znači svaka kuća i šta otkrivaju planete u njoj."><link rel="canonical" href="https://mnjauprrrrr.com/blog/kuce-u-natalu/"><meta property="og:type" content="article"><meta property="og:site_name" content="Mnjauprrrrr"><meta property="og:locale" content="sr_RS"><meta property="og:title" content="Kuće u natalu | Mnjauprrrrr"><meta property="og:description" content="Svih 12 kuća u natalnoj karti: šta znači svaka kuća i šta otkrivaju planete u njoj."><meta property="og:url" content="https://mnjauprrrrr.com/blog/kuce-u-natalu/"><meta property="og:image" content="https://mnjauprrrrr.com/assets/site/komplet.jpg"><meta name="twitter:card" content="summary_large_image"><link rel="icon" href="/assets/site/logo.png"><!--/seo--><link rel="preconnect" href="https://unpkg.com" crossorigin><link rel="preload" href="fonts/inter-latin-1.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="fonts/corinthia-latin-ext-0.woff2" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="styles.css">
+<script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js"></script>
+<script src="https://unpkg.com/react@18.3.1/umd/react.production.min.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js" crossorigin="anonymous"></script>
+<script>(function(){var ce=React.createElement;React.createElement=function(t,p){if(t==='img'){p=Object.assign({loading:'lazy',decoding:'async'},p||{});arguments[1]=p;}return ce.apply(this,arguments);};})();</script><script src="_ds_bundle.js"></script><script src="data.js?v=1106b"></script><script src="content.js"></script>
+<script>function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+const MJ_KIND = React.createContext('plain');
+window.MJCta = function (props) {
+  const k = React.useContext(MJ_KIND);
+  const C = window.MnjauprrrrrDesignSystem_64b9d1.Cta;
+  return React.createElement(C, _extends({
+    kind: k,
+    size: 34
+  }, props));
+};
+window.MJ_KIND = MJ_KIND;
+window.MJType = function ({
+  text,
+  speed = 85
+}) {
+  const r = React.useRef(null);
+  const [n, setN] = React.useState(0);
+  const [on, setOn] = React.useState(false);
+  React.useEffect(() => {
+    const el = r.current;
+    if (!el) return;
+    const io = new IntersectionObserver(([e]) => {
+      if (e.isIntersecting) {
+        setOn(true);
+        io.disconnect();
+      }
+    }, {
+      threshold: .6
+    });
+    io.observe(el);
+    return () => io.disconnect();
+  }, []);
+  React.useEffect(() => {
+    if (!on || n >= text.length) return;
+    const t = setTimeout(() => setN(n + 1), speed);
+    return () => clearTimeout(t);
+  }, [on, n, text]);
+  return React.createElement("span", {
+    ref: r,
+    style: {
+      position: 'relative',
+      display: 'inline-block'
+    }
+  }, React.createElement("span", {
+    style: {
+      visibility: 'hidden'
+    }
+  }, text), React.createElement("span", {
+    style: {
+      position: 'absolute',
+      left: 0,
+      top: 0,
+      whiteSpace: 'pre'
+    }
+  }, text.slice(0, n), React.createElement("span", {
+    style: {
+      display: 'inline-block',
+      width: '.06em',
+      height: '.9em',
+      marginLeft: '.04em',
+      verticalAlign: '-.08em',
+      background: 'currentColor',
+      animation: 'mjCaret 1s steps(1) infinite',
+      opacity: n >= text.length ? 0 : 1,
+      transition: 'opacity .4s .8s'
+    }
+  })));
+};</script>
+<script src="kuce.js?v=1031a"></script><script src="app.js?v=1106c"></script><script src="nov-a.js?v=20261103i"></script><script src="nov-b.js?v=20261103i"></script><script src="nov-c.js?v=20261106a"></script><script src="blog-novembar.js?v=1031a"></script>
+<style>.mj-m-fluid article.stone{width:auto!important;margin:0 0 70px!important;row-gap:24px}.mj-m-fluid article.stone div[style*="width: 541px"]{width:100%!important;height:auto!important;padding:10px!important}.mj-m-fluid article.stone img{width:100%!important;height:auto!important;aspect-ratio:4/5;object-fit:cover}.mj-m-fluid header>img{width:100%!important;margin-left:0!important}.mj-m-fluid header>div:not(.mj-leopard)[style*="position: absolute"]{position:relative!important;left:auto!important;top:auto!important;width:auto!important;margin:-30px 16px 30px!important}.mj-m-fluid section[style*="max-width: 780px"],.mj-m-fluid div[style*="margin-left: 120px"]{margin-left:0!important}.mj-m-fluid .mj-art p,.mj-m-fluid .mj-art li,.mj-m-fluid article.stone p{font-size:17px!important;line-height:1.65!important}.mj-m-fluid section{padding-left:20px!important;padding-right:20px!important;padding-top:40px!important;padding-bottom:60px!important}.mj-m-fluid section[style*="rgb(88, 86, 90)"]{padding-top:270px!important}.mj-m-fluid [style*="margin: 28px 0px 110px"]{margin-bottom:10px!important}.mj-m-fluid img[src*="zvezdani-trag"]{left:auto!important;right:12px!important;top:200px!important;width:110px!important}.mj-m-fluid [style*="grid-template-columns"]{grid-template-columns:minmax(0,1fr)!important;column-gap:0!important}.mj-m-fluid [style*="grid-template-columns: repeat(4"],.mj-m-fluid [style*="grid-template-columns: repeat(2, minmax(0px, 1fr)); gap: 24px"]{grid-template-columns:repeat(2,minmax(0,1fr))!important}.mj-m-fluid [style*="border-left: 1px solid rgba(246, 198, 222"]>div{text-align:left;justify-items:start}.mj-m-fluid [style*="border-left: 1px solid rgba(246, 198, 222"]>div>div:first-child{justify-content:flex-start}.mj-m-fluid [style*="border-left: 1px solid rgba(246, 198, 222"]>div>div:first-child img{margin-left:6px!important}.mj-m-fluid [id^="kuca-"] [style*="font-script"]{font-size:30px!important;line-height:1.2!important}.mj-m-fluid [id^="kuca-"] a span{font-size:18px!important}.mj-m-fluid .mj-m-only{display:block!important}.mj-m-fluid .mj-cur{padding-top:411px!important;padding-bottom:411px!important}.mj-m-fluid .mj-cur-strip{left:-20px!important}.mj-pgrid>div>div{height:100%;grid-template-rows:auto 1fr}.mj-pgrid>div>div>div:last-child{grid-template-rows:auto auto 1fr}.mj-pgrid>div>div>div:last-child>span:nth-child(1){white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.mj-pgrid>div>div>div:last-child>span:nth-child(2){display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;min-height:2.5em}.mj-pgrid>div>div>div:last-child>span:nth-child(3){align-self:end}@media (max-width:759px){.mj-pgrid>div>div>div:last-child>span:nth-child(1){font-size:10px!important;letter-spacing:.14em!important}.mj-pgrid>div>div>div:last-child>span:nth-child(2){font-size:12px!important;letter-spacing:.04em!important}.mj-pgrid>div>div>div:last-child>span:nth-child(3){font-size:13px!important}}.mj-m-fluid h1{font-size:32px!important;line-height:1.12!important}.mj-m-fluid h2{font-size:24px!important}.mj-m-fluid [style*="max-width: 1100px"],.mj-m-fluid [style*="max-width: 840px"],.mj-m-fluid [style*="max-width: 780px"]{max-width:100%!important}.mj-m-fluid img[style*="mix-blend-mode"]{transform-origin:center}.mj-m-fluid [style*="gap: 70px"],.mj-m-fluid [style*="gap: 44px"]{gap:28px!important}.mj-m-fluid [style*="padding: 44px 52px"],.mj-m-fluid [style*="padding: 40px 44px"],.mj-m-fluid [style*="padding: 38px 42px"],.mj-m-fluid [style*="padding: 32px 36px"]{padding:24px 20px!important}.mj-mail-gold form{border-radius:12px;overflow:hidden}.mj-mail input{font-weight:700!important;color:#F3E9DA!important}.mj-mail input::placeholder{color:#F3E9DA;opacity:1}.mj-mail form{width:100%!important;box-sizing:border-box}@media (max-width:700px){.mj-mail button{width:96px!important}.mj-mail input{padding:0 14px!important;letter-spacing:.08em!important}}.mj-mail input:-webkit-autofill,.mj-mail input:-webkit-autofill:focus{-webkit-box-shadow:0 0 0 60px rgba(255,255,255,0) inset!important;-webkit-text-fill-color:#1D1A17!important;transition:background-color 99999s}.mj-mail button span{color:#1D1A17!important}.mj-mail.mj-mail-ink input{color:#1D1A17!important}.mj-mail.mj-mail-ink input::placeholder{color:#1D1A17}.mj-foot-astro footer>section{background:#58565A!important;height:430px!important}.mj-foot-astro footer>section>div:nth-of-type(1){top:120px!important}.mj-foot-astro footer>section>div:nth-of-type(2){top:108px!important}.mj-foot-astro footer>section>div:nth-of-type(2) *{color:#F2E6CC!important}.mj-foot-astro footer>section>img{top:60px!important}.mj-foot-astro footer>section>a{top:380px!important;color:#F2E6CC!important}.mj-foot-astro footer>section>div:nth-of-type(1) a{background:transparent!important;border:1px solid rgba(255,255,255,.7)}.mj-foot-astro footer>section>div:nth-of-type(1) a:hover{background:rgba(255,255,255,.12)!important}.mj-foot-astro footer>section>div:nth-of-type(1) svg{fill:#fff!important}</style><template id="__bundler_thumbnail"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect width="100" height="100" fill="#F4EDE2"/><text x="50" y="64" text-anchor="middle" font-family="Georgia,serif" font-style="italic" font-size="40" fill="#1D1A17">M</text></svg></template><style>#kontakt section[style*="footer-turmalin"]>div:nth-of-type(2){left:173px!important;top:650px!important}#kontakt section[style*="footer-turmalin"]>img{left:173px!important;top:572px!important;width:64px!important}</style><style>@media (min-width:861px){body p[style*="font-size: 14px"],body p[style*="font-size: 15px"],body p[style*="font-size: 15.5px"],body p[style*="font-size: 16px"],body p[style*="font-size: 16.5px"],body p[style*="font-size: 17px"],body li[style*="font-size: 14px"],body li[style*="font-size: 15px"],body li[style*="font-size: 16px"],body div[style*="font-size: 15px"]:not(:has(*)),.mj-art p,.mj-art li,article.stone p{font-size:20px!important}}</style>
+<style>img[src*="maca"],img[src*="macka"],img[src*="usta"],img[src*="stopice"]{height:auto;object-fit:contain;flex-shrink:0;align-self:center}</style><style>[style*="padding: 18px 24px 20px"][style*="blur(14px)"]{padding:8px 18px 9px!important}</style><style>@keyframes mjCaret{50%{background:transparent}}p,li,blockquote,figcaption,label{text-wrap:pretty}h1,h2,h3,h4{text-wrap:balance}</style>
+<style>@media (max-width:860px){.mj-m-fluid [style*="font-size: 20px"]{font-size:17px!important}[style*="font-script"][style*="font-size: 34px"],.mj-art .cta,[style*="34px/1.1 Corinthia"],[style*="40px/1.1 Corinthia"]{font-size:30px!important}.mj-m-fluid [style*="margin-top: 56px"]{margin-top:40px!important}.mj-m-fluid [style*="padding-top: 56px"]{padding-top:40px!important}.mj-m-fluid [style*="margin: 0px 0px 56px"]{margin-bottom:40px!important}.mj-m-fluid .mj-art .cta{margin-top:40px!important}.mj-m-fluid [style*="text-align: justify"],.mj-m-fluid .mj-art p,.mj-m-fluid .mj-art li{text-align:left!important;hyphens:manual!important;-webkit-hyphens:manual!important}.mj-m-fluid article.stone>div{min-width:0}.mj-m-fluid .mj-cur div[style*="border: 2px solid rgb(246, 198, 222)"]{text-align:left!important;padding:34px 24px 36px!important}.mj-m-fluid article.stone{margin:0 0 8px!important}.mj-m-fluid article.stone>div:last-child{order:1!important}.mj-m-fluid article.stone>div:first-child{order:2!important}.mj-m-fluid article.stone>div:has(img){order:0!important;margin-top:50px}.mj-m-fluid div[style*="width: 1200px"]{width:auto!important}.mj-m-fluid div[style*="width: 1200px"] div[style*="padding: 36px 40px"]{padding:26px 20px!important}.mj-m-fluid article.stone>div:first-child{padding-top:0!important}.mj-m-fluid article.stone>div>div[style*="padding-top: 56px"]{padding-top:32px!important;gap:24px!important}.mj-m-fluid section[style*="rgb(88, 86, 90)"] [style*="padding-top: 80px; max-width: 620px"]{padding-top:100px!important}.mj-m-fluid section[style*="rgb(88, 86, 90)"] [style*="margin-bottom: 70px"]{margin-bottom:40px!important}}</style><style>.mj-m-fluid .mj-blog-row2>div:last-child{order:-1;margin-bottom:24px}.mj-m-fluid .mj-blog-row2{margin-top:56px!important}</style><style>@media (max-width:860px){.mj-mail input,input,textarea,select{font-size:16px!important}}</style></head><body><div id="root"><div style="max-width:780px;margin:0 auto;padding:60px 20px;font:500 18px/1.6 Inter,sans-serif;color:#1D1A17;background:#F4EDE2"><nav style="display:flex;flex-wrap:wrap;gap:8px 22px;margin:0 0 40px;font:600 12px Inter,sans-serif;letter-spacing:.14em;text-transform:uppercase"><a href="/" style="color:#1D1A17">Početna</a><a href="/nakit/" style="color:#1D1A17">Nakit</a><a href="/kristali/" style="color:#1D1A17">Kristali</a><a href="/astro/" style="color:#1D1A17">Astro</a><a href="/blog/" style="color:#1D1A17">Blog</a><a href="/o-nama/" style="color:#1D1A17">O nama</a></nav><div style="font:500 13px Inter,sans-serif;letter-spacing:.2em;text-transform:uppercase">Astrologija</div><h1 style="font:700 40px/1.15 Inter,sans-serif;text-transform:uppercase;letter-spacing:.02em;margin:10px 0 24px">Kuće u natalu</h1><p>Svih 12 kuća u natalnoj karti: šta znači svaka kuća i šta otkrivaju planete u njoj.</p><h2 style="font:700 22px/1.2 Inter,sans-serif;text-transform:uppercase;letter-spacing:.08em;margin:30px 0 12px">Prva kuća – ogledalo u kom se prvi put vidiš</h2><p>Ugaona, vatrena, srodna kardinalnom Ovnu. Svaka planeta koja se nađe u njoj izražava se jače, glasnije, bez filtera. Ovo je kuća akcije – sve što se u njoj nađe vrišti: „Gledaj me!”</p><p>Signifikatori prve kuće su Mars i Sunce.</p><h3>Ko si kad uđeš u sobu</h3><p>Prva kuća te predstavlja vizuelno. Tvoj fizički izgled, tvoj hod, tvoj pogled, način na koji se smeješ i način na koji se ljutiš. To je prvi utisak koji ostavljaš pre nego što izgovoriš ijednu reč.</p><p>Ona je tvoj identitet, tvoj pristup životu, način na koji započinješ stvari. Da li uletiš glavom kroz zid ili prvo izvidiš teren – to piše ovde.</p><h3>Sunce u prvoj kući</h3><p>To je osoba koja je opasno bitna samoj sebi. Energična, temperamentna, čvrstog karaktera i nepokolebljive volje.</p><p>Na prepreke gleda kao na izazove. Opasno ambiciozna – pokreću je strast, uzburkane želje i glad za pobedom.</p><p>Ako je Sunce u prvoj kući u dobrom aspektu sa Jupiterom, to je ona kraljevska kombinacija: samo grandiozno i samo najbolje. Takve stvari ti i dolaze, jer ti ne znaš za osrednje – mediokritet ti je strana reč.</p><h3>Dubina i bol prve kuće</h3><p>Ovo je kuća pitanja: „Ko sam ja kad me niko ne gleda?” i „Da li smem da budem ovoliko svoja?”</p><p>Kad je prva kuća ranjena, ili se kriješ iza maske koju su ti drugi nalepili, ili se boriš sa celim svetom samo da bi dokazala da postojiš. Oba puta su iscrpljujuća.</p><h3>Svetla strana prve kuće</h3><p>Kada prestaneš da se izvinjavaš što zauzimaš prostor – prva kuća postaje tvoja zastava. Tada ne moraš da vičeš da bi te videli. Dovoljno je da uđeš.</p><p>q:„Ja sam početak.
+Ne čekam dozvolu da postojim.
+Ovo je moje lice – i ja ga nosim ponosno.”</p><h2 style="font:700 22px/1.2 Inter,sans-serif;text-transform:uppercase;letter-spacing:.08em;margin:30px 0 12px">Druga kuća – riznica tvojih vrednosti</h2><p>Signifikator druge kuće je Venera – način na koji uživaš, primaš i daješ ljubav. Ova kuća je srodna znaku Bika.</p><h3>Novac, nakit i sve što možeš da dodirneš</h3><p>Bika vezujemo za materijalne vrednosti: novac, nakit, zlato, srebro, pokućstvo, pokretnu i nepokretnu imovinu. Ovde vidimo i tvoju sposobnost da sama stičeš i zarađuješ.</p><p>Ali druga kuća nije samo novčanik. Ona je i ukus hrane koju voliš, miris koji te smiruje, tkanina koju voliš na koži. Šta voliš da jedeš i kako se hraniš – i to piše ovde.</p><h3>Koliko misliš da vrediš</h3><p>Druga kuća oslikava tvoje najviše vrednosti i odnos prema vrednostima uopšte. Tvoj osećaj sopstvene vrednosti, tvoj unutrašnji potencijal, tvoj budući život.</p><p>Drugu kuću vezujemo i za smrt partnera, jer je to osma kuća od sedme.</p><p>Delovi tela koji se vezuju za ovu kuću su vrat i grlo. Ako te boli vrat ili imaš problema sa grlom – preispitaj svoje vrednosti.</p><h3>Dubina i bol druge kuće</h3><p>Bol ovde je tihi glas koji kaže: „Nisi dovoljna. Nemaš dovoljno. Nikad neće biti dovoljno.”</p><p>Tada se gomila – stvari, novac, ljudi – samo da bi se popunila rupa koju nijedna kupovina ne može da zatvori. Ili obrnuto: ne dozvoljavaš sebi ništa lepo, jer negde duboko veruješ da to nisi zaslužila.</p><h3>Svetla strana druge kuće</h3><p>Kada shvatiš da tvoja vrednost nije cena, već suština – druga kuća postaje tvoj vrt. Tada novac dolazi lakše, jer ga ne juriš iz straha. Tada uživaš u malim stvarima bez griže savesti.</p><p>q:„Vredim i kad nemam.
+Zaslužujem lepo – i ne izvinjavam se zbog toga.”</p><h2 style="font:700 22px/1.2 Inter,sans-serif;text-transform:uppercase;letter-spacing:.08em;margin:30px 0 12px">Treća kuća – prva soba u kojoj naučiš da govoriš</h2><p>Treća kuća nije samo komunikacija u tehničkom smislu. To je prvi pokušaj da tvoje unutrašnje postane spoljašnje – da misao dobije glas, da srce pronađe reč.</p><p>To je kuća u kojoj učiš da praviš mostove:</p><p>l:između misli i sveta|između sebe i drugog čoveka|između tišine i govora</p><h3>Detinjstvo</h3><p>Tu se kriju prve rečenice koje si čula od porodice, način na koji si učila da pitaš, da objašnjavaš, da se braniš rečima ili ćutanjem.</p><p>Treća kuća je brat, sestra, komšija, učitelj – „drugi ljudi” van majčine utrobe koji ti pokažu da nisi sama.</p><p>Ako su ti tu doneli toplinu, naučila si da je svet prostor razmene. Ako su ti doneli bol, ćutanje i kritiku, naučila si da reč može biti i oružje.</p><h3>Karakter</h3><p>Ljudi sa jakom trećom kućom uvek traže jezik kojim će uhvatiti svoje unutrašnje. To su oni koji mnogo pišu, pričaju, zapitkuju, crtaju, pevaju – jer osećaju da nešto unutra stalno ključa i traži da bude izgovoreno.</p><p>Treća kuća je radoznalost koja ne prestaje i želja da se povežeš. Ali nije samo intelektualna – ona je i emotivna. Ona boji tvoj način govora: da li je blag, seckav, bridak, topao, stidljiv ili neumoran.</p><p>q:„Reč je most.
+Pređi ga – i neko će te čekati na drugoj strani.”</p><h2 style="font:700 22px/1.2 Inter,sans-serif;text-transform:uppercase;letter-spacing:.08em;margin:30px 0 12px">Četvrta kuća – koren duše</h2><p>Četvrta kuća je mesto gde se sve vraća. To je prva tišina u kojoj si disala, zidovi kuće u kojoj si naučila šta znači sigurnost ili nesigurnost.</p><p>To je koren iz kog ničeš, zemlja u kojoj tvoja duša pusti prve niti i u kojoj se skriva svaki put kad spoljašnji svet postane previše.</p><h3>Detinjstvo</h3><p>Ovde živi priča o majci i ocu, o toplini doma ili o njegovom nedostatku. To je miris hrane iz detinjstva, škripa vrata, senka hodnika, zvuk uspavanke. U četvrtoj kući čuvaš uspomene na ono što ti je hranilo ili ranilo srce.</p><p>Ako si tu dobila sigurnost, naučila si da svet može biti utočište. Ako nisi, odrasla si sa čežnjom da sama sebi budeš i majka i otac, i zid i krov, i nežnost i zaštita.</p><h3>Karakter četvrte kuće</h3><p>Ljudi sa jakom četvrtom kućom uvek nose u sebi osećaj doma – makar ga nikad nisu imali. Traže mesto gde će se spustiti, ljude kod kojih će moći da skinu oklop.</p><p>Četvrta kuća se ne vidi spolja. Ona je podrum duše, mračna soba u kojoj kriješ i ono najlepše i ono najbolnije.</p><h3>Dubina i bol četvrte kuće</h3><p>Ovo je kuća pitanja:</p><p>l:„Gde sam stvarno kod kuće?”|„Da li me neko vidi kada sam slaba?”|„Mogu li ikad da pronađem koren ako su mi ga iščupali?”</p><p>Bol četvrte kuće je osećaj izgubljenosti – kada ni u roditeljskom domu nisi bila kod kuće, kada se osećaj pripadnosti pretvorio u prazninu. Tada te četvrta kuća uči da sama u sebi stvoriš ognjište.</p><h3>Svetla strana četvrte kuće</h3><p>Kada zagrliš to dete u sebi i kažeš mu „Ja sam tvoj dom”, četvrta kuća postaje tvoja najlepša snaga. Tada umeš da stvoriš prostor u kom se drugi osećaju voljeno, mirno i sigurno.</p><p>Možeš da gradiš porodicu, ali i duhovnu kuću, zajednicu – jer znaš koliko znači imati gde da se vratiš. Da budeš plamen koji se nikad ne gasi, kutak u kom svako može da odahne.</p><p>q:„Dom nije adresa.
+Dom je trenutak kada spustiš glavu na jastuk i znaš – ovde sam sigurna.
+Ovde sam voljena. Ovde sam ja.”</p><h2 style="font:700 22px/1.2 Inter,sans-serif;text-transform:uppercase;letter-spacing:.08em;margin:30px 0 12px">Peta kuća – vatra srca</h2><p>Ako je četvrta kuća koren i dom, peta je plamen koji izbija iz tog ognjišta. To je mesto gde srce prestaje da ćuti i počinje da se igra, da stvara, da voli.</p><p>Peta kuća je dete u tebi koje nikad ne prestaje da traži radost i ljubav, bez obzira na godine.</p><h3>Ljubav i zaljubljenost</h3><p>U petoj kući učiš šta znači voleti kroz igru. To je treptaj srca kad ti se neko nasmeje, leptirići u stomaku kada se pogledi dodirnu. Ona faza kada još nema obaveza ni težine, nego samo magija – osećaj da si ponovo dete koje veruje u čuda.</p><p>Ovde se rađaju flert, osmeh i strast – sve ono što boji svet u ružičasto. Ali ovde živi i rana: strah da radost neće dugo trajati, da ljubav ne može zauvek ostati u tom prvom sjaju.</p><h3>Kreativnost</h3><p>Peta kuća je umetnost, stvaranje, inspiracija. Ona te tera da ostaviš trag – da naslikaš, napišeš, otpevaš ono što gori u tebi. To je prostor u kom i ljubav i bol postaju boje, reči i melodije.</p><p>Zato ljudi sa jakom petom kućom ne mogu da žive bez stvaranja. Stvaranje je njihov način da se iznova zaljube u život.</p><h3>Dubina i bol pete kuće</h3><p>U ovoj kući je ranjivo dete koje pita: „Da li sam dovoljno posebna da me vole?” i „Da li moja radost može da traje?”</p><p>Kada ljubav postane igra moći, kada ti radost ubiju kritikom, peta kuća se povlači. Srce tada uči da krije svoje iskre, da se ne otvara lako, da ljubav doživljava kao opasnost.</p><h3>Svetla strana pete kuće</h3><p>Ali kada dozvoliš sebi da se igraš, da voliš bez garancije, da stvaraš bez straha od osude – peta kuća postaje tvoja božanska iskra. Tu otkrivaš da prava ljubav nije samo partner, nego i osećaj da život sam po sebi vredi voleti.</p><p>Tada peta kuća daje dar magnetizma – ljudi žele da budu pored tebe jer zračiš radošću.</p><p>q:„Zaljubi se u nekoga, život, sebe.
+Igraj se dok dišeš, jer igra je najdublja molitva srca.”</p><h2 style="font:700 22px/1.2 Inter,sans-serif;text-transform:uppercase;letter-spacing:.08em;margin:30px 0 12px">Šesta kuća – hram svakodnevnog života</h2><p>Ako je peta kuća vatra igre i ljubavi, u šestoj se ta vatra pretvara u toplinu svakog dana. Ona govori o tvojoj rutini, navikama i o tome kako brineš o telu i duši kroz male radnje koje ponavljaš.</p><p>To je kuća služenja – ne u smislu podaništva, nego posvećenosti. Ona pita: „Kako živim svoje dane?” Jer način na koji provodiš sate postaje tvoj život.</p><h3>Rad i svakodnevica</h3><p>Ovo je prostor tvog rada. Ne samo posla koji ti donosi platu, već i rada koji te oblikuje. Tu učiš kako da budeš od koristi i kako da svoje darove pretočiš u nešto praktično. Tu stoji tvoj odnos prema disciplini, odgovornosti i svakodnevnom trudu.</p><p>Ako si tu našla radost, tvoj posao postaje isceljenje. Ako nisi, šesta kuća može da postane kavez obaveza, umor koji ti jede dušu.</p><h3>Telo i zdravlje</h3><p>Šesta kuća je i telo: tvoje zdravlje, tvoje navike, tvoj odnos prema hrani, snu i ritmu. Ona te uči da svaka bolest nosi poruku, da telo šapuće ono što srce krije.</p><p>U njoj je zapisana mudrost da lek nikad nije samo tableta. Lek je i reč, i odmor, i ljubav prema sebi.</p><h3>Dubina i bol šeste kuće</h3><p>Bol ovde nastaje kada osećaš da nikad nisi dovoljno dobra, da tvoj trud nikad nije dovoljan. Šesta kuća može da stvori osećaj robije – zarobljena si u obavezama, u savršenstvu, u krivici čim staneš da odmoriš. Tada postaje kuća kritike, one unutrašnje, koja ti ne da da dišeš.</p><h3>Svetla strana šeste kuće</h3><p>Ali kada prihvatiš da svakodnevica može biti sveta, da su male stvari jednako važne kao velike – šesta kuća postaje hram. Tada kuvanje postaje meditacija, šetnja molitva, a rad ljubav na delu.</p><p>Šesta kuća je dar da budeš isceliteljka – sebi i drugima. Dar da vidiš da zdravlje, posao i duhovnost nisu odvojeni, već povezani nitima svakog dana.</p><p>q:„Tvoj život nije zbir velikih događaja.
+On je zbir malih dana.
+Učini ih svetlim – i tvoja duša će biti mirna.”</p><h2 style="font:700 22px/1.2 Inter,sans-serif;text-transform:uppercase;letter-spacing:.08em;margin:30px 0 12px">Sedma kuća – ogledalo u kom se vidiš</h2><p>U prvoj kući si sama i gledaš samo u svoje oči. U sedmoj se pojavljuju oni bitni: partner, ljubavnik, prijatelj, neprijatelj. Svako ko stane naspram tebe i svojim licem ti pokaže tvoje.</p><p>Sedma kuća nije samo brak, papir i partnerstvo. To je kuća u kojoj učiš šta znači gledati i biti viđena. U kojoj shvataš da nisi ostrvo i da tvoja slika o sebi ne živi dok se ne ogleda u drugom paru očiju.</p><h3>Ljubav i partnerstva</h3><p>Ovde se rađa najdublja želja: „Hoće li neko zaista biti tu za mene?” Sedma kuća je zaljubljenost kada igra (peta kuća) prestane i počne test – da li ljubav može da izdrži svakodnevicu, razlike i mrak.</p><p>U njoj leži tvoje viđenje ljubavi:</p><p>l:ako ti je u detinjstvu pokazano da ljubav znači sigurnost – tražićeš sigurnost|ako ti je ljubav bila bol, manipulacija i ćutanje – ni ne znaš da u ogledalu zapravo gledaš ranu, a ne osobu</p><p>Partner u sedmoj kući često postaje učitelj. Ne onaj koji te mazi, nego onaj koji ti gurne prst tačno tamo gde te boli. Jer tek tu učiš šta znači biti u dvoje: ranjiva, gola i viđena.</p><h3>Dubina i bol sedme kuće</h3><p>Najveća bol ovde je: „Zašto me ostavio?” Ili: „Zašto uvek biram one koji ne ostaju?”</p><p>Sedma kuća nosi obrazac i ponavljaš ga dok ga ne vidiš. Privlačiš one koji te povrede, jer nesvesno pokušavaš da isceliš staru ranu kroz novo lice. Zato sedma kuća ume da bude pakao – kaleidoskop ljubavi i razočaranja u kom ne znaš da li gledaš njega ili sebe. A istina je: partner ti je ogledalo, a ogledalo nikad ne laže.</p><h3>Svetla strana sedme kuće</h3><p>Kada prestaneš da bežiš od svog odraza, sedma kuća postaje sveto mesto. Tada shvataš da partner nije tvoja „druga polovina”, nego druga cela osoba. Da ljubav nije simbioza, nego dva korena koja rastu jedan pored drugog.</p><p>Tu učiš da partnerstvo može biti i zavet i sloboda – ogledalo u kom se ne plašiš da vidiš i bore, i rane, i svetlost.</p><p>q:„Ne traži spas u drugom.
+Nađi prvo sebe u sebi – pa će onaj koji dođe biti dar, a ne spasilac.”</p><h2 style="font:700 22px/1.2 Inter,sans-serif;text-transform:uppercase;letter-spacing:.08em;margin:30px 0 12px">Osma kuća – vrata tame i ponovnog rođenja</h2><p>Ako je sedma kuća ogledalo, osma je razbijeno ogledalo. Ovde prestaje igra sigurnosti, prestaje „ja i ti” – i počinju rastavljanje, gubitak, smrt i ponovno rađanje.</p><p>Osma kuća je trenutak kada ti neko izmakne tlo pod nogama, kada sve izgori i ostane samo pepeo. To je prostor gde shvataš da kontrola ne postoji i da moraš da pustiš da bi preživela.</p><h3>Smrt i transformacija</h3><p>Osma kuća nije samo smrt tela. Ona je smrt svega što si mislila da jesi: tvoji padovi, propasti, prekidi, izdaje. Ali upravo kroz ono što umire učiš šta ne može da ti se uzme.</p><p>Ona te vodi da pogledaš u oči najdubljem strahu – „Šta ako ostanem bez svega?” – i da tamo, u toj praznini, pronađeš svoju silu.</p><h3>Seksualnost i bliskost</h3><p>Ovo je kuća seksa, ali ne samo fizičkog. Seks kao spajanje duša, rastvaranje granica, susret u kom skidaš i kožu i ego. U osmoj kući nema igara zavođenja – tu je gola istina: ili se predaješ celim bićem, ili se raspadaš.</p><p>Zato osma kuća i plaši i mami. Tu je ekstaza, ali i provalija. Tu je užitak, ali i strah da ćeš izgubiti sebe u drugome.</p><h3>Novac i moć</h3><p>Osma kuća govori i o tuđem novcu, nasleđu i moći. Tu učiš da li ti je tuđa podrška dar ili lanac. Ovde su krediti, nasledstva i veze koje se grade na poverenju ili na zavisnosti. Osma kuća pita: „Možeš li da deliš – ili moraš da kontrolišeš?”</p><h3>Dubina i bol osme kuće</h3><p>Najveća bol ovde je osećaj da te neko stalno uzima, razgolićuje i ostavlja, kao da je ceo život jedan dugi gubitak. Zato ljudi sa jakom osmom kućom često žive kroz krize – jer tek kroz raspadanje otkrivaju sopstvenu snagu.</p><h3>Svetla strana osme kuće</h3><p>Kada prihvatiš da ono što istinski jesi ne može da ti se oduzme, osma kuća postaje dar alhemije. Ona ti daje moć da od bola napraviš lek, od tame svetlost, od raspada celinu.</p><p>Tada postaješ isceliteljka, intuitivni vodič – neko ko ume da sedi pored tuđeg mraka i da ne pobegne. Jer si svoj mrak već prošla.</p><p>q:„Pusti da izgori sve što nisi ti.
+Iz pepela se ne rađa ista žena – rađa se jača.”</p><h2 style="font:700 22px/1.2 Inter,sans-serif;text-transform:uppercase;letter-spacing:.08em;margin:30px 0 12px">Deveta kuća – horizont duše</h2><p>Ako te osma kuća razbije i ogoli, deveta ti pruži ruke i kaže: „Hajde da vidiš šire.”</p><p>Deveta kuća je potraga za smislom – unutrašnja glad koja nikad nije sita. Možeš da imaš i dom, i ljubav, i uspeh, ali ako nema smisla, deveta kuća ti lupa na vrata.</p><h3>Znanje i putovanja</h3><p>Ovo je kuća knjiga, filozofije, religije, fakulteta i učitelja. Ali i kuća aviona, putovanja i lutanja po belom svetu. Sve što ti širi pogled – tu stanuje.</p><p>Deveta kuća ne pita „Šta ću danas da jedem?”. Ona pita: „Zašto uopšte postojim? Kuda idem? Šta je svrha?” I neće stati dok ne nađe svoj put – makar ga tražila u manastiru, u biblioteci ili na drugom kraju sveta.</p><h3>Vera i filozofija</h3><p>Ovde živi tvoja vera. Ne ona koju su te učili, nego ona unutrašnja, koju si sama otkrila. Deveta kuća ti šapuće: „Ne veruj zato što ti neko kaže. Veruj zato što si sama doživela.”</p><p>Zato su ljudi sa jakom devetom kućom večni tragači. Menjaju sisteme, religije i učenja dok ne pronađu ono što im smiruje dušu. Njima nije dovoljno pravilo – njima treba iskustvo.</p><p>q:„Nisam izgubljena.
+Samo tražim put koji je samo moj.”</p><h2 style="font:700 22px/1.2 Inter,sans-serif;text-transform:uppercase;letter-spacing:.08em;margin:30px 0 12px">Deseta kuća – vrh planine</h2><p>Ako je deveta kuća horizont i potraga za smislom, deseta je trenutak kada prestaneš da tražiš i počneš da gradiš. To je tvoja uloga u svetu, tvoja titula, tvoja reputacija, tvoj rad koji ostaje posle tebe. Ona pita: „Šta ću ostaviti iza sebe?”</p><p>U desetoj kući prestaješ da budeš samo dete svojih roditelja i postaješ roditelj svog života. To je trenutak kada sama sebi kažeš: „E sad, ja stojim ovde. Ja sam odgovorna.”</p><h3>Karijera i društvo</h3><p>Deseta kuća govori o karijeri, ali ne samo o poslu. To je ono po čemu te ljudi znaju. Za nekog je to titula, diploma ili funkcija. Za drugog ime, glas, delo, knjiga, pesma. Za trećeg samo osećaj da kad se pojavi, ljudi znaju ko je.</p><p>To je tvoja javna maska, ali i tvoja sudbina. Deseta kuća nije samo izbor posla – ona je ono što te iznutra gura da izađeš iz senke i pokažeš lice.</p><h3>Odnos sa autoritetom</h3><p>U ovoj kući živi slika o ocu, autoritetima, šefovima, učiteljima – svima koji su ti govorili šta „treba”. Ako si tu dobila podršku, postaješ liderka sa integritetom. Ako nisi, nosiš osećaj da stalno moraš da dokazuješ da vrediš, da si dovoljno dobra, da nisi mala.</p><p>Zato deseta kuća ume da bude i rana i motiv – tera te da se penješ, da se dokazuješ, da ne odustaješ.</p><p>q:„Ne penjem se da bi me videli.
+Penjem se da bih videla dokle mogu.”</p><h2 style="font:700 22px/1.2 Inter,sans-serif;text-transform:uppercase;letter-spacing:.08em;margin:30px 0 12px">Jedanaesta kuća – krug ljudi, krug snova</h2><p>Ako je deseta kuća vrh planine, jedanaesta je pogled sa tog vrha. Gledaš dole i vidiš ljude, zajednice, prijatelje, kolektive. I pitaš se: „Šta sad da radim sa onim što sam postala? Kome to pripada?”</p><p>Ovo je kuća snova, ideala i vizija. Kuća u kojoj prestaješ da živiš samo za sebe i počinješ da misliš o „mi”.</p><h3>Prijatelji i zajednica</h3><p>Jedanaesta kuća je krug ljudi koji nisu porodica po krvi, ali jesu porodica po izboru. Prijatelji, mreže, zajednice u kojima dišeš slobodnije nego bilo gde. Ovde živi osećaj pripadnosti – ili nepripadanja.</p><p>Ako je snažna i zdrava, daje ti ljude koji te razumeju bez objašnjavanja, snove koje nosite zajedno, osećaj da nisi sama u ovom ludom svetu. Ako je ranjena, osećaš se kao da nigde ne pripadaš – kao večiti autsajder koji sa strane gleda kako su svi drugi povezani.</p><h3>Svetla strana jedanaeste kuće</h3><p>Kada prihvatiš da nisi tu da se uklopiš, nego da povežeš, jedanaesta kuća postaje tvoja zvezdana mreža. Ona ti daje dar da okupljaš ljude, spajaš ideje i da san tvoje duše postane pokret za druge.</p><p>Ovo je kuća vizionara i reformatora – onih koji menjaju svet jer im nije dovoljno da menjaju samo sebe.</p><p>q:„Nisam ovde da se uklopim.
+Ovde sam da povežem.”</p><h2 style="font:700 22px/1.2 Inter,sans-serif;text-transform:uppercase;letter-spacing:.08em;margin:30px 0 12px">Dvanaesta kuća – soba bez svetla, ogledalo bez stakla</h2><p>Skrivena, mutna, a zapravo najdublja. Dvanaesta kuća je podrum duše, mesto u koje guramo sve što ne znamo da obradimo. Tu se krije i najtamnija bol i najlepša magija. To je kuća u kojoj nisi „ti” spolja, nego „ti” koja šapuće unutra, u mraku.</p><p>Ako je jedanaesta kuća šuma ljudi i snova, dvanaesta je pusto ostrvo. Ostrvo na kom sediš sama sa sobom i nema ko da te spase osim tebe.</p><h3>Skriveno i potisnuto</h3><p>Ovo je skladište duše. Strahovi, krivice, sramota – sve što je „previše” ili „premalo” za svet. Sve što si gurala pod tepih ovde vri i traži da se probudi.</p><p>To je mesto snova, nesvesnog, karme i svih unutrašnjih sabotaža koje te saplete baš kad pomisliš da si slobodna. Kuća senki i glasova koji se javljaju kada ostaneš sama u tišini.</p><h3>Zatvor i samostan</h3><p>Dvanaesta kuća je zatvor koji sama sebi zidaš i samostan u koji se sama povlačiš. Tu su tvoji unutrašnji neprijatelji, ali i tvoji anđeli čuvari. Tvoj beg i tvoja meditacija. Tvoje ludilo i tvoje prosvetljenje.</p><p>Tu nema maski i nema ego predstave. Samo ti – naga, razbijena, ogoljena do kostiju. I upravo tu shvatiš da si deo svega i da sve protiče kroz tebe.</p><p>q:„Evo ti ključ.
+Hoćeš li sebe zaključati – ili osloboditi?”</p></div></div><!--/root-->
+<script>document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[href^="http"]');if(!a)return;e.preventDefault();e.stopPropagation();var w=null;try{w=window.top.open(a.href,'_blank','noopener');}catch(x){}if(!w)window.open(a.href,'_blank','noopener');},true);</script>
+<script>new MutationObserver(function(){document.querySelectorAll('.mj-mail input:not([data-ac])').forEach(function(i){i.setAttribute('data-ac','1');i.setAttribute('autocomplete','off');i.setAttribute('name','mj-'+Math.random().toString(36).slice(2));i.setAttribute('autocorrect','off');i.setAttribute('autocapitalize','none');});}).observe(document.documentElement,{childList:true,subtree:true});</script>
+<script>window.mjSubscribe=function(email){var U='https://assets.mailerlite.com/jsonp/2736473/forms/202130325138048300/subscribe';var fd=new FormData();fd.append('fields[email]',email);fd.append('ml-submit','1');fd.append('anticsrf','true');try{fetch(U,{method:'POST',body:fd,keepalive:true}).catch(function(){fetch(U,{method:'POST',body:fd,mode:'no-cors'})});}catch(err){}};</script>
+<script>function NavMeni({
+  label,
+  items
+}) {
+  const [x, setX] = React.useState(null);
+  const [open, setOpen] = React.useState(false);
+  const ref = React.useRef(null);
+  const t = React.useRef(0);
+  React.useEffect(() => {
+    const host = ref.current && ref.current.parentElement;
+    if (!host) return;
+    const link = [...host.querySelectorAll('a,button')].find(n => n.textContent.trim().toLowerCase() === label.toLowerCase());
+    if (!link) return;
+    const on = () => {
+      clearTimeout(t.current);
+      t.current = setTimeout(() => {
+        const r = link.getBoundingClientRect(),
+          h = host.getBoundingClientRect();
+        setX((r.left - h.left) / (h.width / host.offsetWidth || 1));
+        window.dispatchEvent(new CustomEvent('mjnav', {
+          detail: label
+        }));
+        setOpen(true);
+      }, 140);
+    };
+    const off = () => {
+      clearTimeout(t.current);
+      t.current = setTimeout(() => setOpen(false), 260);
+    };
+    const other = e => {
+      if (e.detail !== label) {
+        clearTimeout(t.current);
+        setOpen(false);
+      }
+    };
+    link.addEventListener('mouseenter', on);
+    link.addEventListener('mouseleave', off);
+    window.addEventListener('mjnav', other);
+    return () => {
+      link.removeEventListener('mouseenter', on);
+      link.removeEventListener('mouseleave', off);
+      window.removeEventListener('mjnav', other);
+    };
+  }, []);
+  return React.createElement("div", {
+    ref: ref,
+    onMouseEnter: () => clearTimeout(t.current),
+    onMouseLeave: () => {
+      clearTimeout(t.current);
+      t.current = setTimeout(() => setOpen(false), 200);
+    },
+    style: {
+      position: 'absolute',
+      left: (x || 0) - 24,
+      top: '100%',
+      marginTop: -14,
+      paddingTop: 14,
+      zIndex: 120,
+      display: open && x != null ? 'block' : 'none'
+    }
+  }, React.createElement("div", {
+    style: {
+      position: 'relative',
+      overflow: 'hidden',
+      minWidth: 280,
+      padding: '14px 0',
+      background: 'rgba(255,255,255,.26)',
+      backdropFilter: 'blur(18px) saturate(1.25)',
+      WebkitBackdropFilter: 'blur(18px) saturate(1.25)',
+      border: '1px solid rgba(255,255,255,.7)',
+      boxShadow: '0 16px 36px rgba(0,0,0,.12)'
+    }
+  }, React.createElement("div", {
+    className: "mj-leopard",
+    style: {
+      position: 'absolute',
+      inset: 0,
+      backgroundSize: '260px auto',
+      opacity: .42,
+      pointerEvents: 'none'
+    }
+  }), React.createElement("div", {
+    style: {
+      position: 'absolute',
+      inset: 0,
+      pointerEvents: 'none',
+      background: 'radial-gradient(ellipse 80% 70% at 40% 50%, rgba(255,255,255,.35) 0%, rgba(255,255,255,.12) 70%, rgba(255,255,255,0) 100%)'
+    }
+  }), React.createElement("div", {
+    style: {
+      position: 'relative'
+    }
+  }, items.map(it => React.createElement("a", {
+    key: it.t,
+    href: it.href,
+    target: it.href ? '_blank' : undefined,
+    rel: "noopener",
+    onClick: it.on ? () => {
+      setOpen(false);
+      it.on();
+    } : undefined,
+    style: {
+      display: 'grid',
+      gap: 3,
+      padding: '10px 24px',
+      cursor: 'pointer',
+      color: '#1D1A17',
+      textDecoration: 'none'
+    },
+    onMouseOver: e => e.currentTarget.style.background = 'rgba(197,160,89,.14)',
+    onMouseOut: e => e.currentTarget.style.background = 'transparent'
+  }, it.k && React.createElement("span", {
+    style: {
+      fontSize: 10,
+      letterSpacing: '.2em',
+      textTransform: 'uppercase',
+      color: '#5C534A'
+    }
+  }, it.k), React.createElement("span", {
+    style: {
+      font: '600 13px Inter,sans-serif',
+      textTransform: 'uppercase',
+      letterSpacing: '.06em'
+    }
+  }, it.t))), label === 'Kontakt' && React.createElement("img", {
+    src: MJ_A + 'maca-providna.png',
+    alt: "Ma\u010Dkica sa nao\u010Darama",
+    style: {
+      position: 'absolute',
+      right: 40,
+      bottom: 12,
+      width: 54,
+      pointerEvents: 'none',
+      animation: 'mj-float 6s ease-in-out infinite'
+    }
+  }))));
+}
+function navMenus(go) {
+  const stone = id => {
+    go('kristali');
+    [450, 1000, 1800].forEach(t => setTimeout(() => {
+      const el = document.getElementById(id);
+      if (el) window.scrollTo({
+        top: el.getBoundingClientRect().top + window.scrollY - 110
+      });
+    }, t));
+  };
+  const astro = el => {
+    window.mjAstroEl = el;
+    go('astro');
+    [60, 300].forEach(t => setTimeout(() => window.dispatchEvent(new CustomEvent('mjastro', {
+      detail: el
+    })), t));
+  };
+  const S = [['labradorit', 'Labradorit'], ['gorski-kristal', 'Gorski kristal'], ['dalmatinski-jaspis', 'Dalmatinski jaspis'], ['zeleni-aventurin', 'Zeleni aventurin'], ['crni-ahat', 'Crni ahat'], ['amazonit', 'Amazonit'], ['hematit', 'Hematit'], ['karneol', 'Karneol'], ['lapis-lazuli', 'Lapis lazuli'], ['ametist', 'Ametist'], ['rozenkvarc', 'Rozenkvarc']];
+  return {
+    'O Nama': [{
+      t: 'O meni',
+      on: () => go('o-nama')
+    }, {
+      k: 'Blog',
+      t: 'Upoznaj me kroz moj Mesec',
+      on: () => go('post')
+    }, {
+      k: 'Psihoskop',
+      t: 'E-knjige',
+      on: () => go('o-nama')
+    }],
+    'Nakit': ['Ogrlice', 'Narukvice', 'Prstenje', 'Minđuše'].map(c => ({
+      t: c,
+      on: () => go('nakit', c)
+    })),
+    'Astro': [...['Vatra', 'Zemlja', 'Vazduh', 'Voda'].map(x => ({
+      k: 'Element',
+      t: x,
+      on: () => astro(x)
+    })), {
+      k: 'Psihoskop',
+      t: 'E-knjige',
+      on: () => go('astro')
+    }],
+    'Blog': (window.MJ_POSTS || []).map(([r, a, k, t]) => ({
+      k,
+      t,
+      on: () => go(r, a)
+    })),
+    'Kontakt': [{
+      t: 'Piši mi',
+      href: 'mailto:marina.rakic1806@gmail.com'
+    }, {
+      t: 'Instagram',
+      href: 'https://www.instagram.com/mnjauprrrrr'
+    }, {
+      t: 'TikTok',
+      href: 'https://www.tiktok.com/@mnjauprrrrr'
+    }, {
+      t: 'Facebook',
+      href: 'https://www.facebook.com/share/1CaxCXrf5x/?mibextid=wwXIfr'
+    }, {
+      t: 'Pinterest',
+      href: 'https://www.pinterest.com/marinar369/'
+    }],
+    'Kristali': S.map(([id, n]) => ({
+      t: n,
+      on: () => stone(id)
+    }))
+  };
+}
+const mjFromHash=()=>{const h=decodeURIComponent(location.hash.slice(1));if(!h)return null;const i=h.indexOf('/');return i<0?{p:h}:{p:h.slice(0,i),arg:h.slice(i+1)}};
+const mjToHash=n=>n.p==='home'?location.pathname:'#'+n.p+(n.arg!=null?'/'+encodeURIComponent(n.arg):'');
+function App() {
+  const NSx = window.MnjauprrrrrDesignSystem_64b9d1;
+  const [r, setR] = React.useState(() => {
+    const hh = mjFromHash();
+    if (hh) return hh;
+    location.replace('/');
+    try {
+      return JSON.parse(localStorage.getItem('mj-r')) || {
+        p: 'home'
+      };
+    } catch (e) {
+      return {
+        p: 'home'
+      };
+    }
+  });
+  React.useEffect(() => {
+    const f = () => { if (!mjFromHash()) { location.href = '/'; return; } setR(mjFromHash()); window.scrollTo(0, 0); };
+    window.addEventListener('popstate', f);
+    return () => window.removeEventListener('popstate', f);
+  }, []);
+  const kind = 'plain';
+  const [cart, setCart] = React.useState([]);
+  const [open, setOpen] = React.useState(false);
+  const go = (p, arg) => {
+    if (p === 'home') { location.href = '/'; return; }
+    if (p === 'kontakt') {
+      window.scrollTo(0, document.body.scrollHeight);
+      return;
+    }
+    const n = {
+      p,
+      arg
+    };
+    setR(n);
+    localStorage.setItem('mj-r', JSON.stringify(n));
+    try { history.pushState(null, '', mjToHash(n)); } catch (e) {}
+    window.scrollTo(0, 0);
+  };
+  const add = (p, q = 1) => {
+    setCart(c => {
+      const f = c.find(i => i.p.id === p.id);
+      return f ? c.map(i => i.p.id === p.id ? {
+        ...i,
+        q: i.q + q
+      } : i) : [...c, {
+        p,
+        q
+      }];
+    });
+    setOpen(true);
+  };
+  const n = cart.reduce((s, i) => s + i.q, 0);
+  const [z, setZ] = React.useState(Math.min(1, window.innerWidth / 1440));
+  const [mob, setMob] = React.useState(window.innerWidth < 760);
+  React.useEffect(() => {
+    const f = () => {
+      setZ(Math.min(1, window.innerWidth / 1440));
+      setMob(window.innerWidth < 760);
+    };
+    window.addEventListener('resize', f);
+    return () => window.removeEventListener('resize', f);
+  }, []);
+  const S = {
+    home: React.createElement(Home, {
+      go: go
+    }),
+    'o-nama': React.createElement(ONama, {
+      go: go
+    }),
+    astro: React.createElement(Astro, {
+      go: go,
+      add: add
+    }),
+    blog: React.createElement(Blog, {
+      go: go
+    }),
+    post: React.createElement(Post, {
+      go: go
+    }),
+    'post-eknjiga': React.createElement(PostEbook, {
+      go: go
+    }),
+    'post-x': React.createElement(PostX, {
+      key: r.arg,
+      go: go,
+      id: r.arg
+    }),
+    kristali: React.createElement(Kristali, {
+      go: go
+    }),
+    nakit: React.createElement(Nakit, {
+      go: go,
+      add: add,
+      cat: r.arg
+    }),
+    proizvod: React.createElement(Proizvod, {
+      key: r.arg,
+      go: go,
+      add: add,
+      id: r.arg
+    })
+  }[r.p] || null;
+  if (!S || r.p === 'home') { location.replace('/'); return null; }
+  const active = {
+    post: 'blog',
+    'post-eknjiga': 'blog',
+    'post-x': 'blog',
+    proizvod: 'nakit'
+  }[r.p] || r.p;
+  const korpa = React.createElement(Korpa, {
+    open: open,
+    items: cart,
+    close: () => setOpen(false),
+    setQty: (id, q) => setCart(c => c.map(i => i.p.id === id ? {
+      ...i,
+      q
+    } : i)),
+    remove: id => setCart(c => c.filter(i => i.p.id !== id))
+  });
+  if (mob) return React.createElement(MJ_KIND.Provider, {
+    value: kind
+  }, React.createElement("div", {
+    style: {
+      width: '100%',
+      minHeight: '100vh',
+      display: 'flex',
+      flexDirection: 'column',
+      overflowX: 'clip',
+      background: 'var(--sedef)'
+    }
+  }, React.createElement(MobileNav, {
+    go: go,
+    active: active,
+    n: n,
+    openCart: () => setOpen(true)
+  }), React.createElement("div", {
+    style: {
+      flex: 1,
+      position: 'relative',
+      background: 'var(--sedef-2)'
+    }
+  }, React.createElement("div", {
+    className: "mj-leopard",
+    style: {
+      position: 'absolute',
+      inset: 0,
+      backgroundSize: '260px auto',
+      opacity: .3,
+      pointerEvents: 'none'
+    }
+  }), React.createElement("div", {
+    style: {
+      position: 'relative'
+    }
+  }, r.p === 'nakit' ? React.createElement(NakitM, {
+    go: go,
+    add: add,
+    cat: r.arg
+  }) : r.p === 'proizvod' ? React.createElement(ProizvodM, {
+    key: r.arg,
+    go: go,
+    add: add,
+    id: r.arg
+  }) : r.p === 'o-nama' ? React.createElement(ONamaM, {
+    go: go
+  }) : r.p === 'home' || !S ? React.createElement(HomeM, {
+    go: go
+  }) : ['astro', 'blog', 'post', 'post-eknjiga', 'post-x', 'kristali'].includes(r.p) ? React.createElement("div", {
+    className: "mj-m-fluid"
+  }, S) : React.createElement("div", {
+    style: {
+      width: 1440,
+      zoom: z
+    }
+  }, S))), React.createElement(FooterM, {
+    astro: r.p === 'astro'
+  }), korpa, window.MJPrizeChip && r.p !== 'home' && React.createElement(window.MJPrizeChip, {
+    openCart: () => setOpen(true)
+  })));
+  return React.createElement(MJ_KIND.Provider, {
+    value: kind
+  }, React.createElement("div", {
+    style: {
+      width: 1440,
+      margin: '0 auto',
+      position: 'relative',
+      background: 'var(--sedef)',
+      zoom: z
+    }
+  }, React.createElement("div", {
+    style: {
+      position: 'sticky',
+      top: 0,
+      zIndex: 100
+    }
+  }, React.createElement(NSx.SiteNav, {
+    logoSrc: MJ_A + 'logo.png',
+    active: active,
+    onNavigate: go
+  }), Object.entries(navMenus(go)).map(([l, it]) => React.createElement(NavMeni, {
+    key: l,
+    label: l,
+    items: it
+  })), React.createElement("div", {
+    style: {
+      position: 'absolute',
+      right: '6%',
+      top: '100%',
+      marginTop: 10
+    }
+  }, React.createElement(NSx.IconButton, {
+    icon: "shopping-bag",
+    label: "Korpa",
+    variant: "krem",
+    badge: n,
+    onClick: () => setOpen(true)
+  }))), S, React.createElement("div", {
+    className: r.p === 'astro' ? 'mj-foot-astro' : undefined,
+    style: {
+      position: 'relative'
+    }
+  }, React.createElement(NSx.SiteFooter, {
+    background: r.p === 'astro' ? '' : MJ_A + 'footer-turmalin.jpg',
+    variant: r.p === 'astro' ? 'svetli' : 'turmalin',
+    catSrc: MJ_A + 'maca-providna.png'
+  })), React.createElement(Korpa, {
+    open: open,
+    items: cart,
+    close: () => setOpen(false),
+    setQty: (id, q) => setCart(c => c.map(i => i.p.id === id ? {
+      ...i,
+      q
+    } : i)),
+    remove: id => setCart(c => c.filter(i => i.p.id !== id))
+  }), window.MJPrizeChip && r.p !== 'home' && React.createElement(window.MJPrizeChip, {
+    openCart: () => setOpen(true)
+  })));
+}
+ReactDOM.createRoot(document.getElementById('root')).render(React.createElement(App, null));</script></body></html>
