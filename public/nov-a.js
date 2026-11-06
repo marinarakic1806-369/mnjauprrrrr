@@ -205,7 +205,7 @@ Sedela sam na podu, okružena kutijicama i lančićima, i razmišljala da sve ba
 Želela sam. Sutradan sam napravila tri nova modela.
 ## Zašto Ovnovi tako razmišljaju
 Ovan je prvi znak zodijaka, onaj kojim počinje proleće i cela astro godina. Ovan je vatreni i kardinalni znak, a vladar mu je Mars, planeta akcije. Ovan ne pita da li je spreman. Ovan kreće, pa usput nauči.
-![Ratnik sa kacigom i kopljem, Mars](ovan-mars-ratnik.jpg)
+![Žena u crvenoj haljini ide kroz gomilu, svojim putem](ovan-crveno.jpg)
 ## Šta nosi Ovan
 - **Hrabrost:** ide tamo gde drugi stoje i razmišljaju.
 - **Iskrenost:** reći će ti istinu u lice, nekad i pre nego što si je tražila.
@@ -218,11 +218,12 @@ Kad si zaglavljena. Kad previše razmišljaš. Kad ti treba neko ko neće saose�
 - **Mesec:** osećanja ti planu i brzo prođu. Ne držiš ljutnju, i to je dar.
 - **Podznak:** ljudi te vide kao snažnu i direktnu, nekad i pre nego što progovoriš.
 - **Mars:** energija ti je ogromna. Treba joj cilj, inače se okreće protiv tebe.
-![Kocka sa znakovima zodijaka, Ovan na vrhu](ovan-kocka.jpg)
+![Ruka sa crvenim noktima drži karticu As sa siluetom žene](ovan-as-ruka.jpg)
 ## Sezona Škorpije za Ovna
 Ovnu je sada aktivna osma kuća: preobražaji, zajednički novac, intima. Dobro vreme da Ovan nauči ono što mu najteže ide: da ostane, da ode dublje i da ne beži od emocije.
 ## Svako ima Ovna u natalu
 Čak i ako ti Sunce nije u Ovnu, Ovan je negde u tvojoj karti. Svih 12 znakova postoji u svakom natalu, samo u različitim kućama. Tamo gde ti stoji Ovan, tu se pali tvoja iskra: tu si najhrabrija i tu ne čekaš dozvolu.
+![Silueta žene izlazi iz karte As](ovan-as-karta.jpg)
 A prva kuća je prirodna kuća Ovna. Kod svakoga nosi energiju početka: kako ulaziš u prostoriju, u nov posao, u novu ljubav. Ali boju joj daje znak u kom ti je podznak.
 - **Podznak u Ribama:** početak je nežan i intuitivan.
 - **Podznak u Jarcu:** početak je promišljen i siguran.
