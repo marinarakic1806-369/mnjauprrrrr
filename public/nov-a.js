@@ -221,6 +221,15 @@ Kad si zaglavljena. Kad previše razmišljaš. Kad ti treba neko ko neće saose�
 ![Kocka sa znakovima zodijaka, Ovan na vrhu](ovan-kocka.jpg)
 ## Sezona Škorpije za Ovna
 Ovnu je sada aktivna osma kuća: preobražaji, zajednički novac, intima. Dobro vreme da Ovan nauči ono što mu najteže ide: da ostane, da ode dublje i da ne beži od emocije.
+## Svako ima Ovna u natalu
+Čak i ako ti Sunce nije u Ovnu, Ovan je negde u tvojoj karti. Svih 12 znakova postoji u svakom natalu, samo u različitim kućama. Tamo gde ti stoji Ovan, tu se pali tvoja iskra: tu si najhrabrija i tu ne čekaš dozvolu.
+A prva kuća je prirodna kuća Ovna. Kod svakoga nosi energiju početka: kako ulaziš u prostoriju, u nov posao, u novu ljubav. Ali boju joj daje znak u kom ti je podznak.
+- **Podznak u Ribama:** početak je nežan i intuitivan.
+- **Podznak u Jarcu:** početak je promišljen i siguran.
+- **Podznak u Lavu:** početak je glasan i topao.
+Iskra je kod svih ista. Samo gori drugom bojom.
+Ako ti u karti nedostaje vatre, Narukvicu Vatra pravim baš za to: po porudžbini, prema elementu koji fali u tvom natalu.
+[Narukvica Vatra](nakit)
 ## Kamenje za Ovna
 Karneol za hrabrost i pokret, Granat za strast i Hematit da se vatra ne razbukti previše.
 > Ili goriš, ili ne postojiš.
