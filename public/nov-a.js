@@ -239,11 +239,14 @@ Kamenje za vatrene znakove potraži u Astro kutku.
 `},
 {id:'mlad-mesec-skorpija',d:'2026-11-08',k:'Mesec',t:'Mlad Mesec: vreme za seme',x:`
 Sutra ujutru, 9. novembra, Mesec je mlad u Škorpiji. Sunce i Mesec su tada u istom znaku i Mesec nam je potpuno taman. Nebo je prazno. I baš zato je to najbolji trenutak da u njega „upišeš" nešto novo. Ritual možeš da uradiš večeras ili sutra uveče.
+![Silueta žene ispod tamnog mladog Meseca sa zlatnim rubom](mesec-silueta.jpg)
 ## Zašto baš mlad Mesec
 Mesec ima ciklus od oko 29 dana. Mlad Mesec je početak, seme. Prva četvrt je rast, pun Mesec je žetva, a poslednja četvrt je puštanje. Kad nešto započneš na mlad Mesec, kao da sadiš u pravo godišnje doba.
+![Vrtešnja u ružičastoj magli sa zlatnim mesecima](mesec-vrtesnja.jpg)
 ## Mlad Mesec u Škorpiji
 Ovo nije Mesec za površne želje. Škorpija ne voli „hoću nove cipele". Ona voli duboke promene: da se oslobodiš straha, da prestaneš da ponavljaš isti obrazac u ljubavi, da preuzmeš kontrolu nad svojim novcem, da napokon kažeš istinu. Ako imaš nešto što želiš da promeniš iz korena, sad je vreme.
 ## Zašto želje ne rade (najčešća greška)
+![Stara knjiga, nož za pisma u obliku ruže i latica](mesec-knjiga-ruza.jpg)
 Pišemo ih u budućem vremenu i iz nedostatka: „Hoću da imam ljubav." Um to čita kao: nemam ljubav. Umesto toga piši u sadašnjem vremenu, kao da se već dešava, i sa osećanjem.
 - **Umesto:** „Hoću više novca."
 - **Piši:** „Zahvalna sam što mi novac dolazi lako i što ga mudro koristim."
@@ -255,6 +258,7 @@ Pišemo ih u budućem vremenu i iz nedostatka: „Hoću da imam ljubav." Um to �
 - Ispod svake napiši jedan mali, konkretan korak koji ćeš preduzeti ove nedelje. Ovo je seme. Bez njega je želja samo san.
 - Papir presavij prema sebi i stavi ispod kamena: Labradorita, Crnog Ahata ili Gorskog Kristala.
 - Ostavi ga tako do punog Meseca, 24. novembra. Tada ćeš videti šta je niklo.
+![Devojka u ružičastoj haljini dodiruje svetlo na nebu](mesec-devojka-svetlo.jpg)
 ## Kako znaš da si ga dobro uradila
 Ne po tome da li se želja ispunila do sutra, nego po tome da li si preduzela onaj prvi korak. Ako jesi, ritual je uspeo.
 > Ne moraš da znaš ceo put. Samo prvi korak.
