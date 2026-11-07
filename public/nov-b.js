@@ -6,6 +6,7 @@ Počinje podznakom (ascendentom), znakom koji se dizao na istočnom horizontu u 
 ![Žena se prvi put pojavljuje u starom ogledalu, zlatna svetlost](prva-kuca-ogledalo-v2.jpg)
 ## Sunce i podznak nisu isto
 Sunce je ono što jesi iznutra, ono za čim težiš. Podznak je kako te svet vidi i kako ti prilaziš svetu. Žena sa Suncem u Ribama i podznakom u Jarcu deluje hladno i sređeno, a iznutra je more emocija. Zato se mnogi „ne prepoznaju" u svom horoskopu: čitaju samo Sunce.
+![Lice napola skriveno rukom](prva-kuca-lice.jpg)
 [~Lapis Lazuli](nakit|kamen:Lapis Lazuli)
 ## Podznak po elementima
 - **Vatra:** ulaziš u prostoriju i ljudi to osete. Direktna, brza, topla.
