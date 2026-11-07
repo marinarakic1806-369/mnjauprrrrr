@@ -151,8 +151,8 @@
 <section id="forma" data-screen-label="Forma" style="position:relative;overflow:hidden;padding:0 clamp(18px,4vw,56px) clamp(50px,6vw,84px)">
   
   
-  <div style="position:relative;max-width:720px;margin:0 auto">
-    <img data-rv="1" src="../assets/site/ilu-leptir.png" alt="" style="display:block;width:clamp(110px,11vw,150px);margin:0 auto 22px">
+  <div style="position:relative;max-width:1240px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:clamp(36px,5vw,72px);align-items:center"><div data-rv="1" style="padding:10px;background:#F4EDE2;border:1px solid #C5A059;box-shadow:0 18px 40px rgba(0,0,0,.14)"><img src="../assets/site/zapis-katedrala-ruze.jpg" alt="Sveća na postolju među belim ružama, katedrala u magli" loading="lazy" style="display:block;width:100%;aspect-ratio:4/5;object-fit:cover"></div><div>
+    
     <div data-rv="1" style="font:500 13px Inter,sans-serif;letter-spacing:.2em;text-transform:uppercase;text-align:center">06 · Poruči</div>
     <h2 data-rv="1" style="margin:14px 0 0;text-align:center;font:700 clamp(28px,3vw,40px)/1.12 Inter,sans-serif;text-transform:uppercase;letter-spacing:.01em;text-wrap:balance">Kada si <span style="font:700 1.3em/0.8 Corinthia,cursive;text-transform:none;letter-spacing:0;color:#8A6A28">rođena?</span></h2>
     <form data-rv="1" onSubmit="{{ posalji }}" style="margin-top:clamp(30px,4vw,48px);padding:clamp(24px,3vw,40px);background:rgba(255,255,255,.3);backdrop-filter:blur(16px) saturate(1.25);-webkit-backdrop-filter:blur(16px) saturate(1.25);border:1px solid rgba(255,255,255,.7);box-shadow:0 16px 36px rgba(0,0,0,.1);display:grid;gap:22px">
@@ -170,7 +170,7 @@
         <span style="font:500 12px Inter,sans-serif;letter-spacing:.14em;text-transform:uppercase">Otvara se tvoj mejl</span>
       </div>
     </form>
-  </div>
+  </div></div>
 </section>
 
 <section data-screen-label="Nakit" style="position:relative;max-width:1340px;margin:0 auto;padding:0 clamp(18px,4vw,56px) clamp(50px,6vw,84px)">
@@ -254,7 +254,7 @@ class Component extends DCLogic {
       tim: [
         { ko: 'Natalna karta', t: 'Marina', img: '../assets/site/zapis-fenjer.jpg', d: 'Zvezdani zapis i ključevi: ko si, odakle dolaziš i kuda te život vodi.' },
         { ko: 'Odnosi i ljubav', t: 'Sinastrija', img: '../assets/site/zapis-sinastrija.jpg', d: 'Drugarica iz astro škole, ekspert za sinastriju: kako se tvoja i njegova karta slažu.' },
-        { ko: 'Brojevi', t: 'Numerologija', img: '', d: 'Drugarica iz astro škole koja čita šta tvoj datum rođenja kaže kroz brojeve.' }
+        { ko: 'Brojevi', t: 'Numerologija', img: '../assets/site/zapis-katedrala-2.jpg', d: 'Drugarica iz astro škole koja čita šta tvoj datum rođenja kaže kroz brojeve.' }
       ],
       pickZapis: () => this.setState({ izbor: 0 }),
       pickKljuc: () => { if (this.state.izbor === 0) this.setState({ izbor: 1 }); },
