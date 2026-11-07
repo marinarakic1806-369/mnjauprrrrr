@@ -239,7 +239,7 @@ Kamenje za vatrene znakove potraži u Astro kutku.
 `},
 {id:'mlad-mesec-skorpija',d:'2026-11-08',k:'Mesec',t:'Mlad Mesec: vreme za seme',x:`
 Sutra ujutru, 9. novembra, Mesec je mlad u Škorpiji. Sunce i Mesec su tada u istom znaku i Mesec nam je potpuno taman. Nebo je prazno. I baš zato je to najbolji trenutak da u njega „upišeš" nešto novo. Ritual možeš da uradiš večeras ili sutra uveče.
-![Silueta žene ispod tamnog mladog Meseca sa zlatnim rubom](mesec-silueta.jpg)
+![Silueta žene ispod tamnog mladog Meseca sa zlatnim rubom](mesec-silueta-v2.jpg)
 ## Zašto baš mlad Mesec
 Mesec ima ciklus od oko 29 dana. Mlad Mesec je početak, seme. Prva četvrt je rast, pun Mesec je žetva, a poslednja četvrt je puštanje. Kad nešto započneš na mlad Mesec, kao da sadiš u pravo godišnje doba.
 ![Vrtešnja u ružičastoj magli sa zlatnim mesecima](mesec-vrtesnja.jpg)
