@@ -242,7 +242,6 @@ Sutra ujutru, 9. novembra, Mesec je mlad u Škorpiji. Sunce i Mesec su tada u is
 ![Silueta žene ispod tamnog mladog Meseca sa zlatnim rubom](mesec-silueta-v2.jpg)
 ## Zašto baš mlad Mesec
 Mesec ima ciklus od oko 29 dana. Mlad Mesec je početak, seme. Prva četvrt je rast, pun Mesec je žetva, a poslednja četvrt je puštanje. Kad nešto započneš na mlad Mesec, kao da sadiš u pravo godišnje doba.
-![Vrtešnja u ružičastoj magli sa zlatnim mesecima](mesec-vrtesnja.jpg)
 ## Mlad Mesec u Škorpiji
 Ovo nije Mesec za površne želje. Škorpija ne voli „hoću nove cipele". Ona voli duboke promene: da se oslobodiš straha, da prestaneš da ponavljaš isti obrazac u ljubavi, da preuzmeš kontrolu nad svojim novcem, da napokon kažeš istinu. Ako imaš nešto što želiš da promeniš iz korena, sad je vreme.
 ## Zašto želje ne rade (najčešća greška)
@@ -261,6 +260,10 @@ Pišemo ih u budućem vremenu i iz nedostatka: „Hoću da imam ljubav." Um to �
 ![Devojka u ružičastoj haljini dodiruje svetlo na nebu](mesec-devojka-svetlo.jpg)
 ## Kako znaš da si ga dobro uradila
 Ne po tome da li se želja ispunila do sutra, nego po tome da li si preduzela onaj prvi korak. Ako jesi, ritual je uspeo.
+## Mesečev Kamen za ovu noć
+Ako postoji kamen rođen za mlad Mesec, to je Mesečev Kamen. Ime je dobio po mekom, mlečnom sjaju koji se preliva kao mesečina. Vekovima ga zovu kamenom novih početaka, jer prati Mesečeve cikluse, od tamnog mladog do punog Meseca.
+![Ruka sa prstenom sa breskvastim Mesečevim Kamenom i narukvicama](mesec-ruka-mesecev-kamen.jpg)
+Na mom prstenu je breskvasti Mesečev Kamen, nijansa koja se vezuje baš za mlad Mesec, za nadu i nežnost prema sebi. Nosi ga dok pišeš želje, ili ga stavi preko papira zajedno sa drugim kamenom.
 > Ne moraš da znaš ceo put. Samo prvi korak.
 Labradorit, kamen magije i novih početaka, imamo u nekoliko komada nakita.
 ![Prsten sa Labradoritom](p-labradorit.jpg)

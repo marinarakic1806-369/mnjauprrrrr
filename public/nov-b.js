@@ -32,7 +32,7 @@ Labradorit je kamen koji te prevari. Pogledaš ga i vidiš sivo-zelen, skoro dos
 ## Legenda o polarnoj svetlosti
 Inuiti pričaju da je polarna svetlost nekada bila zarobljena u stenama obale Labradora. Jedan ratnik ju je udario kopljem i oslobodio je na nebo, ali deo je ostao u kamenu. Tako je, kažu, nastao Labradorit.
 ## Šta radi Labradorit
-![Ruka sa zlatnim prstenom i narukvicama ispred usana](labradorit-ruka-nakit.jpg)
+![Vrtešnja u ružičastoj magli sa zlatnim mesecima](mesec-vrtesnja.jpg)
 - **Budi intuiciju:** pomaže ti da čuješ onaj tihi glas koji zna pre nego što ti znaš.
 - **Štiti auru:** kao štit od tuđih očekivanja i projekcija.
 - **Prati promene:** kamen je prelaza, novih početaka i hrabrosti da se okreneš novom.
