@@ -20,6 +20,9 @@ Svaka planeta ovde izražava se jače, glasnije, bez filtera.
 - **Venera:** šarm koji ne moraš da učiš.
 - **Mars:** energija, sport, ponekad i ožiljak.
 - **Saturn:** u mladosti stidljiva, s godinama sve jača.
+
+Prva kuća je prirodna kuća Ovna i vatre. Ako želiš da tvoj prvi utisak gori, nosi kamen koji je nastao u vulkanu.
+[Ogrlica Vulkan](nakit/vulkan)
 ## Šta da uradiš ove nedelje
 Pitaj troje ljudi da ti u tri reči opišu kakav si im utisak ostavila kad su te upoznali. Uporedi sa svojim podznakom. Iznenadićeš se koliko se poklapa.
 > Prvi utisak ostavljaš pre nego što progovoriš.

@@ -230,9 +230,11 @@ A prva kuća je prirodna kuća Ovna. Kod svakoga nosi energiju početka: kako ul
 - **Podznak u Lavu:** početak je glasan i topao.
 Iskra je kod svih ista. Samo gori drugom bojom.
 Ako ti u karti nedostaje vatre, Narukvicu Vatra pravim baš za to: po porudžbini, prema elementu koji fali u tvom natalu.
-[Narukvica Vatra](nakit)
+[Narukvica Vatra](nakit/narukvica-vatra)
 ## Kamenje za Ovna
 Karneol za hrabrost i pokret, Granat za strast i Hematit da se vatra ne razbukti previše.
+A za iskru koja se vidi izdaleka: Vulkanska Lava, kamen rođen u vatri. Od nje je nova Ogrlica Vulkan.
+[Ogrlica Vulkan](nakit/vulkan)
 > Ili goriš, ili ne postojiš.
 Kamenje za vatrene znakove potraži u Astro kutku.
 [Astro](astro)
