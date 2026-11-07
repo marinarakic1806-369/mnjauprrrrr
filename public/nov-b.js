@@ -3,10 +3,9 @@ window.MJ_NOV=(window.MJ_NOV||[]).concat([
 Da li ti se desilo da te neko upozna i kaže: „Mislila sam da si mnogo ozbiljnija" ili „Izgledaš kao da te ništa ne može uzdrmati"? To nisi ti. To je tvoja prva kuća. Ona je izlog, prvi utisak, maska koju nosiš pre nego što progovoriš.
 ## Šta je prva kuća
 Počinje podznakom (ascendentom), znakom koji se dizao na istočnom horizontu u minutu tvog rođenja. Zato je za nju bitno tačno vreme rođenja. Prirodni znak prve kuće je Ovan, a prirodni vladar Mars. To je kuća akcije, tela, izgleda i načina na koji ulaziš u život.
-![Žena u ogledalu sa zlatnim ramom, pored sveće](prva-kuca-ogledalo.jpg)
+![Žena se prvi put pojavljuje u starom ogledalu, zlatna svetlost](prva-kuca-ogledalo-v2.jpg)
 ## Sunce i podznak nisu isto
 Sunce je ono što jesi iznutra, ono za čim težiš. Podznak je kako te svet vidi i kako ti prilaziš svetu. Žena sa Suncem u Ribama i podznakom u Jarcu deluje hladno i sređeno, a iznutra je more emocija. Zato se mnogi „ne prepoznaju" u svom horoskopu: čitaju samo Sunce.
-![Lice napola skriveno rukom](prva-kuca-lice.jpg)
 [~Lapis Lazuli](nakit|kamen:Lapis Lazuli)
 ## Podznak po elementima
 - **Vatra:** ulaziš u prostoriju i ljudi to osete. Direktna, brza, topla.
