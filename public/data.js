@@ -62,3 +62,11 @@ window.MJVid=function({vid,children}){const r=React.useRef();React.useEffect(()=
 
 /* 6.11.2026: Kristali > Kamen po kamen: klik na kamen vodi do kamena, ne na pocetnu */
 document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('.chips a[href^="#"]');if(!a)return;e.preventDefault();e.stopPropagation();var el=document.getElementById(decodeURIComponent(a.getAttribute('href').slice(1)));if(!el)return;el.style.scrollMarginTop='110px';el.scrollIntoView({behavior:'smooth',block:'start'});},true);
+
+;(function(){var SET={'rozen-trio':1,'turmalin':1,'pirit-ahat':1,'krug':1,'jaspis-set':1};var L='assets/site/lanci-izbor.jpg';
+(window.MJ_PRODUCTS||[]).forEach(function(p){if(!(p.cat||[]).includes('Ogrlice')||SET[p.id])return;p.info=p.info||[];
+var i=p.info.filter(function(r){return r[0]!=='Lanac';});var hasD=i.some(function(r){return r[0]==='Dužina lanca';});
+var priv=i.some(function(r){return r[0]==='Veličina priveska';});
+i.push(['Lanac','Uključen u cenu, prodaje se kao ogrlica'+(priv?' (izbor lanaca na drugoj slici)':'')]);
+if(!hasD)i.push(['Dužina lanca','Mogućnost izbora dužine']);p.info=i;
+if(priv&&!p.imgs)p.imgs=[p.img,L];});})();
