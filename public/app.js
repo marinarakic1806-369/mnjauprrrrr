@@ -5668,16 +5668,36 @@ function ProizvodM({
       border: '1px solid rgba(197,160,89,.7)',
       boxShadow: '0 16px 36px rgba(0,0,0,.12)'
     }
-  }, React.createElement("img", {
-    src: p.img,
-    alt: p.name,
+  }, React.createElement("div", {
+    style: {
+      display: 'flex',
+      overflowX: 'auto',
+      scrollSnapType: 'x mandatory',
+      gap: 8,
+      scrollbarWidth: 'none'
+    }
+  }, (p.imgs || [p.img]).map((u, k) => React.createElement("img", {
+    key: k,
+    src: u,
+    alt: p.name + (k ? ' ' + (k + 1) : ''),
     style: {
       display: 'block',
+      flex: '0 0 100%',
       width: '100%',
       aspectRatio: '4/5',
-      objectFit: 'cover'
+      objectFit: 'cover',
+      scrollSnapAlign: 'start'
     }
-  })), React.createElement("div", null, React.createElement(Kicker, null, p.stone), React.createElement("h1", {
+  })))), p.imgs && p.imgs.length > 1 && React.createElement("div", {
+    style: {
+      marginTop: -8,
+      fontSize: 11,
+      letterSpacing: '.16em',
+      textTransform: 'uppercase',
+      color: 'var(--ink-70)',
+      textAlign: 'center'
+    }
+  }, "Prevuci \u2192 izbor lanca"), React.createElement("div", null, React.createElement(Kicker, null, p.stone), React.createElement("h1", {
     style: {
       ...MJ_H1,
       fontSize: 30,
