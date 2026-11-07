@@ -4697,7 +4697,7 @@ function KorpaForma({
   }, "Pla\u0107anje uplatom na ra\u010Dun \u2013 podatke ti \u0161aljem na mejl. Nakit \u0161aljem Post Expressom \u010Dim uplata stigne."));
 }
 ;// Mobile.jsx
-const MJ_M_LINKS = [['o-nama', 'O nama'], ['nakit', 'Nakit'], ['astro', 'Astro'], ['blog', 'Blog'], ['kontakt', 'Kontakt'], ['kristali', 'Kristali']];
+const MJ_M_LINKS = [['o-nama', 'O nama'], ['nakit', 'Nakit'], ['astro', 'Astro'], ['/zvezdani-zapis/', 'Zvezdani zapis'], ['blog', 'Blog'], ['kontakt', 'Kontakt'], ['kristali', 'Kristali']];
 const MJ_GLASS = {
   background: 'rgba(247,241,232,.74)',
   backdropFilter: 'blur(14px) saturate(1.25)',
@@ -4849,7 +4849,7 @@ function MJMenuOverlay({ o, nav, active, n, openCart, close }) {
       h('div', { style: { position: 'absolute', inset: 0, background: 'radial-gradient(ellipse 95% 75% at 30% 50%,rgba(251,247,240,.8) 0%,rgba(251,247,240,.35) 70%,rgba(251,247,240,.1) 100%)', pointerEvents: 'none' } }),
       h('div', { style: { position: 'relative', height: '100%', boxSizing: 'border-box', padding: '22px 28px 32px', display: 'flex', flexDirection: 'column', overflowY: 'auto' } },
         h('div', { style: { display: 'grid', borderTop: '1px solid rgba(29,26,23,.18)' } },
-          MJ_M_LINKS.map(([p, l], i) => h('a', { key: p, onClick: () => nav(p), style: { cursor: 'pointer', display: 'grid', gridTemplateColumns: '40px minmax(0,1fr)', alignItems: 'baseline', padding: '14px 0', borderBottom: '1px solid rgba(29,26,23,.18)', color: active === p ? '#8A6A28' : '#1D1A17', textDecoration: 'none' } },
+          MJ_M_LINKS.map(([p, l], i) => h('a', { key: p, onClick: () => p[0] === '/' ? (location.href = p) : nav(p), style: { cursor: 'pointer', display: 'grid', gridTemplateColumns: '40px minmax(0,1fr)', alignItems: 'baseline', padding: '14px 0', borderBottom: '1px solid rgba(29,26,23,.18)', color: active === p ? '#8A6A28' : '#1D1A17', textDecoration: 'none' } },
             h('span', { style: { font: '600 11px Inter,sans-serif', letterSpacing: '.14em', opacity: o ? 1 : 0, transition: 'opacity .5s ' + (o ? .35 + i * .06 : 0) + 's' } }, String(i + 1).padStart(2, '0')),
             h('span', { style: { display: 'block', overflow: 'hidden', paddingBottom: '.08em' } },
               h('span', { style: { display: 'block', font: '600 14px Inter,sans-serif', letterSpacing: '.16em', textTransform: 'uppercase', transform: o ? 'none' : 'translateY(110%)', transition: 'transform .7s ' + E + ' ' + (o ? .3 + i * .06 : 0) + 's' } }, l))))),
