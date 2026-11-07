@@ -2,3 +2,5 @@ User-agent: *
 Allow: /
 
 Sitemap: https://mnjauprrrrr.com/sitemap.xml
+
+Disallow: /preuzmi/
