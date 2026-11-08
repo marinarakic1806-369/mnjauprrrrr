@@ -6,10 +6,13 @@ Odgovaraj **na srpskom, latinicom, u ženskom rodu**, kratko i praktično.
 ## GLAVNI PLAN (8. 11. 2026): najvažnije, svaka akcija mora biti korak ka ovome
 
 Cilj: **Zvezdani krug**, Marinina online zajednica za žene na **Skoolu**, sa mesečnom članarinom.
-- Šta članice dobijaju: natal (Marina), sinastrija i numerologija (drugarice iz astro škole),
+- Tim: Marina (natal), astro.zmaj (dugogodišnji astrolog, 13 knjiga o astrologiji i numerologiji), koleginice za sinastriju i numerologiju, čitanje šolje.
+- Šta članice dobijaju: natal (Marina), sinastrija i numerologija (koleginice),
   šolja i afirmacije (saradnica), druženje, siguran prostor, kače svoje slike i proizvode, popust na nakit.
 - Dva nivoa: **Krug** oko 25–30 €/mes i **Zlatni krug** oko 100 €/mes (uz jednu ličnu uslugu mesečno).
-  Prvih 30 osnivačica dobija nižu cenu zauvek.
+  Prvih 18 članica dobija promo cenu koja ostaje ista zauvek.
+  Lične usluge (natal, sinastrija, brojevi, šolja) i nakit NISU u članarini: članice ih dobijaju po posebnoj ceni.
+  U članarini: zajednica, afirmacije, izložbeni kutak, online sastanci na temu izabranu anketom, živi rituali.
 - Bez snimljenih materijala: živi časovi (Mlad Mesec, Pun Mesec) se snimaju i postaju biblioteka.
 - **Žene koje stvaraju:** ne samo ručni rad (torbe, nakit, sveće), nego vremenom i druge sposobne žene: nutricionistkinje,
   izdavačice, lekarke, preduzetnice. Prodaju i nude kroz krug (provizija ili konsignacija). Ne piši „svojim rukama“, nego „nešto svoje“.
