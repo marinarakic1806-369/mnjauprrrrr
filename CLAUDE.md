@@ -6,7 +6,8 @@ Odgovaraj **na srpskom, latinicom, u ženskom rodu**, kratko i praktično.
 ## GLAVNI PLAN (8. 11. 2026): najvažnije, svaka akcija mora biti korak ka ovome
 
 Cilj: **Zvezdani krug**, Marinina online zajednica za žene na **Skoolu**, sa mesečnom članarinom.
-- Tim: Marina (natal), koleginice za sinastriju i numerologiju, čitanje šolje. (Astro.zmaj NIJE u timu, ne pominjati ga.)
+- Tim: Marina radi **Psihoskop** (za tebe ili tebi bitnu osobu, jer je bitno s kim imaš posla; Mesec, Kiron, Pluton, osećanja);
+  natal i sinastrija @memories_by_venus; numerologija @natasha_golubovic; šolja @gledam_ti_u_solju. (Astro.zmaj NIJE u timu.)
 - Šta članice dobijaju: natal (Marina), sinastrija i numerologija (koleginice),
   šolja i afirmacije (saradnica), druženje, siguran prostor, kače svoje slike i proizvode, popust na nakit.
 - Start samo sa **Krugom**: redovno 29 €/mes, **promo 19 €/mes zauvek za prvih 18**. Cena se ne objavljuje u najavi, otkriva se u mejlu listi.
