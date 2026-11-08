@@ -18,6 +18,10 @@ Cilj: **Zvezdani krug**, Marinina online zajednica za žene na **Skoolu**, sa me
   Lične usluge (natal, sinastrija, brojevi, šolja) i nakit NISU u članarini: članice ih dobijaju po posebnoj ceni.
   U članarini: zajednica, afirmacije, izložbeni kutak, online sastanci na temu izabranu anketom, živi rituali.
 - Bez snimljenih materijala: živi časovi (Mlad Mesec, Pun Mesec) se snimaju i postaju biblioteka.
+- Krugu treba EDUKACIJA (ne samo popust i druženje). Marina još priprema materijal: ima Zvezdanu pozornicu i aspekte.
+  Prvi program: **Psihoskop, tvoja osećanja u karti** (Mesec, 4. kuća, Kiron, Pluton), jedna tema mesečno uživo + PDF radna sveska.
+  Claude pravi materijale iz njenih beleški, ona proverava. Šolja-koleginica ima afirmacije i planira kurs šolje.
+  Krug se otvara tek kad su spremna prva 2 modula; okvirno oko 5.2.2027 (Jupiter drugi put na njenom Sev. čvoru). Lista čekanja se puni do tada.
 - **Žene koje stvaraju:** ne samo ručni rad (torbe, nakit, sveće), nego vremenom i druge sposobne žene: nutricionistkinje,
   izdavačice, lekarke, preduzetnice. Prodaju i nude kroz krug (provizija ili konsignacija). Ne piši „svojim rukama“, nego „nešto svoje“.
   Mesečna kutija: kamen meseca, sveća, afirmacija.
