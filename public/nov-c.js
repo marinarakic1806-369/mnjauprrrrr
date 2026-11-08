@@ -1,4 +1,33 @@
 window.MJ_NOV=(window.MJ_NOV||[]).concat([
+{id:'poklon-po-natalu',d:'2026-11-08',k:'Kristali · Astro',t:'Poklon za drugaricu: kamen po njenom natalu',x:`
+Najlepši poklon nije onaj najskuplji. Najlepši poklon je onaj posle kog ona kaže: „Kako si znala?"
+I zato ti kažem: ako znaš njen datum rođenja, onda znaš i poklon.
+## Zašto ne kamen „za njen znak"
+Svi znaju koji je kamen „za Škorpiju" ili „za Lava". Ali tvoja drugarica nije samo njen znak. Njena natalna karta ima i Mesec, Veneru, Marsa i dvanaest kuća, i svaki deo traži nešto drugo.
+Dve Ovnice ne nose isti kamen. Jednoj treba još vatre, drugoj nežnost. Zato gledam celu kartu, a ne samo Sunce.
+![Ruka sa prstenom od Lapis Lazulija preko lica](poklon-lapis.jpg)
+## Šta tražim u njenoj karti
+Tražim **element koji joj nedostaje**. Svaka karta ima vatru, zemlju, vazduh i vodu, ali retko u istoj meri. Ono čega ima najmanje, to joj često i fali u životu:
+- **Fali joj vatra:** stalno čeka pravi trenutak. Treba joj iskra i hrabrost da krene prva.
+- **Fali joj zemlja:** ima sto ideja, a nijedna ne stigne do kraja. Treba joj tlo pod nogama.
+- **Fali joj vazduh:** sve nosi u sebi i teško kaže šta misli. Treba joj lakoća i reči.
+- **Fali joj voda:** jaka je za sve, ali retko pusti sebe da oseti. Treba joj nežnost.
+Kamen koji nosi taj element je kamen baš za nju.
+## Kako ide
+1. Pošalji mi mejlom njen **datum, tačno vreme i mesto rođenja**.
+2. Ja pogledam njenu kartu i napišem ti koji kamen joj odgovara i zašto.
+3. Predložim ti komad nakita sa tim kamenom, izrađen po porudžbini.
+Ako ne znaš tačno vreme, pitaj je onako usput, ili pitaj njenu mamu. Ako ne uspeš, karta može da se pročita i bez vremena, samo bez podznaka i kuća.
+## Primeri
+Narukvice po elementu pravim po porudžbini, za 3.000 dinara. Savet o kamenu je besplatan uz kupovinu.
+[Narukvica Vatra](nakit/narukvica-vatra)
+[Narukvica Vazduh](nakit/narukvica-vazduh)
+> Uz poklon joj napiši u čestitku zašto baš taj kamen. To je deo koji pamti.
+## Pošalji njen datum
+[Kamen po natalu](kamen)
+A ako je ona žena koja voli zvezde koliko i ti, povedi je sa sobom u Zvezdani krug. Upravo okupljamo prve članice.
+[Zvezdani krug](krug)
+`},
 {id:'rak',d:'2026-11-20',k:'Astro kutak',t:'Rak: oklop i srce',x:`
 Rak je znak koji te pusti u kuću tek kad je siguran da nećeš polomiti ništa. Ali kad uđeš, dobićeš toplu supu, ćebe i nekoga ko će zapamtiti kako piješ kafu.
 ## Šta nosi Rak
