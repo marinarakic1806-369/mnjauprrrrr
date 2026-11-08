@@ -48,6 +48,7 @@ Saturn na DSC (partnerstva, ugovori). Najveći izazov joj je samosabotaža: hrab
    pa as karta sa siluetom, pa ruka sa prstenom i narukvicom drži kartu, pa natpis OVAN. Nakit je u kadru suptilno.
 2. **Karusel „Kamen po natalu“:** „Ti nisi samo tvoj znak“, „Isti znak, drugi kamen“, tri koraka,
    ponuda (savet 1.000 RSD, besplatno uz kupovinu), link mnjauprrrrr.com/kamen.
+Reelovi idu **redom po znakovima** po modelu Ovna (crno-belo + jedna boja znaka): Ovan crvena, Bik nežna roze (Rozenkvarc, uživanje, lepe stvari), pa Blizanci... Higgsfield promptovi u 3 kadra, Claude dodaje natpis i zakazuje preko Metricool-a.
 Zajednički imenitelj: **identitet i ličnost** („ti si drugačija, nisi samo znak“), lična priča, jedna boja na crno-belom, nakit kao deo nje.
 Nove objave pravi po ovom modelu i vodi ih ka planu (lista čekanja za Zvezdani krug, Zvezdani zapis, nakit po elementu).
 
