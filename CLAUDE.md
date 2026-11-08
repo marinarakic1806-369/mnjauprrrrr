@@ -9,7 +9,10 @@ Cilj: **Zvezdani krug**, Marinina online zajednica za žene na **Skoolu**, sa me
 - Tim: Marina (natal), astro.zmaj (dugogodišnji astrolog, 13 knjiga o astrologiji i numerologiji), koleginice za sinastriju i numerologiju, čitanje šolje.
 - Šta članice dobijaju: natal (Marina), sinastrija i numerologija (koleginice),
   šolja i afirmacije (saradnica), druženje, siguran prostor, kače svoje slike i proizvode, popust na nakit.
-- Dva nivoa: **Krug** oko 25–30 €/mes i **Zlatni krug** oko 100 €/mes (uz jednu ličnu uslugu mesečno).
+- Start samo sa **Krugom**: redovno 29 €/mes, **promo 19 €/mes zauvek za prvih 18**. Cena se ne objavljuje u najavi, otkriva se u mejlu listi.
+  **Zlatni krug** (oko 100 €/mes, uz jednu ličnu uslugu) dodaje se kasnije. Predavačice i saradnice ne plaćaju članarinu.
+  Članske cene (predlog, 8.11.): Zvezdani zapis 79 € (umesto 100), Zvezdani ključ 49 € (umesto 60),
+  sinastrija, numerologija i šolja 20% popusta na cenu koleginice, savet o kamenu po natalu besplatan, nakit 10% popusta.
   Prvih 18 članica dobija promo cenu koja ostaje ista zauvek.
   Lične usluge (natal, sinastrija, brojevi, šolja) i nakit NISU u članarini: članice ih dobijaju po posebnoj ceni.
   U članarini: zajednica, afirmacije, izložbeni kutak, online sastanci na temu izabranu anketom, živi rituali.
