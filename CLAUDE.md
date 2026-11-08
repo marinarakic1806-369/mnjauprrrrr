@@ -59,6 +59,7 @@ Nove objave pravi po ovom modelu i vodi ih ka planu (lista čekanja za Zvezdani 
 - Naslovi Inter 700, velika slova; Corinthia za skript i CTA; zlatna #C5A059, #E8C982, #8A6A28; krem #F4EDE2;
   leopard pattern (leopard-dugme-2.png); okviri krem sa zlatnom linijom od 1px.
 - Tekst pored fotke se ravna sa ivicama fotke (gore i dole). Leopard pozadina: leopard-besavno.png (bez šavova), 520px, opacity .32.
+- Instagram objave u njenim bojama: krem #EFE5D6 + leopard, zlatna #8A6A28/#C5A059, tamni tekst. NE tamne pozadine (crno samo na fotki).
 - Pregledi uvek kao slike ili HTML koji može da otvori sa strane; PNG za Instagram.
 
 ## Tehnika
