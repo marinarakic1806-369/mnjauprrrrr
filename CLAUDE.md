@@ -20,7 +20,7 @@ Cilj: **Zvezdani krug**, Marinina online zajednica za žene na **Skoolu**, sa me
 - Bez snimljenih materijala: živi časovi (Mlad Mesec, Pun Mesec) se snimaju i postaju biblioteka.
 - Krugu treba EDUKACIJA (ne samo popust i druženje). Marina još priprema materijal: ima Zvezdanu pozornicu i aspekte.
   Prvi program: **Psihoskop, tvoja osećanja u karti** (Mesec, 4. kuća, Kiron, Pluton), jedna tema mesečno uživo + PDF radna sveska.
-  Kurs „Upoznaj svoju kartu“ (Mesec, 4. kuća, Kiron, Pluton) se naplaćuje posebno (cena još nije određena), uz kurs na poklon e-knjiga Zvezdana pozornica. Na /krug/ je kao posebna sekcija.
+  Kurs „Upoznaj svoju kartu“ (Mesec, 4. kuća, Kiron, Pluton) se naplaćuje posebno: predlog 89 € za članice (4 meseca, 4 modula), 129 € ostale; modul 29/39 €. Popust se uvek jasno naznačava (npr. članarina 19 € umesto 29 €, kurs 89 € umesto 129 €), uz kurs na poklon e-knjiga Zvezdana pozornica. Na /krug/ je kao posebna sekcija.
   Claude pravi materijale iz njenih beleški, ona proverava. Šolja-koleginica ima afirmacije i planira kurs šolje.
   Krug se otvara tek kad su spremna prva 2 modula; okvirno oko 5.2.2027 (Jupiter drugi put na njenom Sev. čvoru). Lista čekanja se puni do tada.
 - **Žene koje stvaraju:** ne samo ručni rad (torbe, nakit, sveće), nego vremenom i druge sposobne žene: nutricionistkinje,
@@ -76,4 +76,5 @@ Lekcije 1–40 (1. godina) su kao tekst u `/home/claude/kep/*.txt` (ne ide u git
 Kepler je merilo za proveru: Merkur egz. 13° Devica, Saturn 20° Vaga, Uran 11° Škorpija, Neptun 21° Vodolija,
 Pluton 3° Škorpija; Merkur retro 3 puta godišnje 20–24 dana; Vaga = bubrezi, koža i ten.
 2. godina (D-01 do D-40: tranziti, progresije, direkcije, solarni povratak, firdarije, profekcije, rektifikacija, elekcije, sinastrija, kompozit, konsultacija) je takođe u `/home/claude/kep/`.
+Modul 1 Mesec (radna sveska, 8.11.): `/home/claude/build/mesec.html` → `Psihoskop-Modul-1-Mesec.pdf` (render.py). Karusel 1. kuća: `/home/claude/mm2/karusel-prva-kuca/`.
 Ispravljene krem e-knjige (8.11.): `/home/claude/build/Psihoskop-*-ispravljena.pdf`, izvor `/home/claude/src/poz.final.html` (sa zlatnim krugovima, figs.py) i `asp.fixed.html`, render `python3 render.py`.
