@@ -539,7 +539,7 @@ const P = {
 };
 const HREF = {
   tiktok: 'https://www.tiktok.com/@mnjauprrrrr',
-  instagram: 'https://www.instagram.com/mnjauprrrrr',
+  instagram: 'https://www.instagram.com/mnjauprrrrrr',
   facebook: 'https://www.facebook.com/share/1CaxCXrf5x/?mibextid=wwXIfr',
   pinterest: 'https://www.pinterest.com/marinar369/'
 };

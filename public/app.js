@@ -4839,7 +4839,7 @@ function MJMenuOverlay({ o, nav, active, n, openCart, close }) {
   React.useEffect(() => { document.body.style.overflow = o ? 'hidden' : ''; return () => { document.body.style.overflow = ''; }; }, [o]);
   const cx = vw[0] - 34, cy = -28, D = 2 * Math.hypot(Math.max(cx, vw[0] - cx), vw[1]) + 40;
   const E = 'cubic-bezier(.7,0,.2,1)';
-  const soc = [['Instagram', 'https://www.instagram.com/mnjauprrrrr'], ['TikTok', 'https://www.tiktok.com/@mnjauprrrrr'], ['Pinterest', 'https://www.pinterest.com/marinar369/'], ['Facebook', 'https://www.facebook.com/share/1CaxCXrf5x/?mibextid=wwXIfr']];
+  const soc = [['Instagram', 'https://www.instagram.com/mnjauprrrrrr'], ['TikTok', 'https://www.tiktok.com/@mnjauprrrrr'], ['Pinterest', 'https://www.pinterest.com/marinar369/'], ['Facebook', 'https://www.facebook.com/share/1CaxCXrf5x/?mibextid=wwXIfr']];
   const tx = { font: '600 11px Inter,sans-serif', letterSpacing: '.18em', textTransform: 'uppercase', color: '#1D1A17', textDecoration: 'none' };
   return h('div', { style: { position: 'absolute', left: 0, right: 0, top: 56, height: 'calc(100vh - 56px)', overflow: 'hidden', pointerEvents: o ? 'auto' : 'none' } },
     h('style', null, '@keyframes mjCatWig{0%,100%{transform:rotate(0) scale(1)}50%{transform:rotate(-8deg) scale(1.06)}}'),
