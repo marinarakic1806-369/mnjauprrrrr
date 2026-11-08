@@ -17,7 +17,7 @@
 html,body{margin:0}
 html{scroll-behavior:smooth}
 body{font-family:Inter,sans-serif;color:#1D1A17;background:#EFE5D6;-webkit-font-smoothing:antialiased;position:relative}
-body:before{content:"";position:absolute;inset:0;background:url(/assets/site/leopard-dugme-2.png) calc(50% + 130px) calc(50% + 89.375px)/260px auto repeat,url(/assets/site/leopard-dugme-2.png) center/260px auto repeat;opacity:.3;pointer-events:none;z-index:-1}
+body:before{content:"";position:absolute;inset:0;background:url(/assets/site/leopard-besavno.png) 0 0/520px auto repeat;opacity:.32;pointer-events:none;z-index:-1}
 a{color:inherit;text-decoration:none}
 .bar{position:sticky;top:0;z-index:20;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:14px clamp(18px,4vw,56px);background:rgba(239,229,214,.82);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.65)}
 .logo{font:700 34px/1 Corinthia,cursive}
@@ -66,6 +66,19 @@ h2{margin:14px 0 0;font:700 clamp(30px,3.4vw,46px)/1.1 Inter;text-transform:uppe
 .done{display:none;margin-top:24px;font:700 52px/1.1 Corinthia,cursive;color:#8A6A28}
 footer{text-align:center;padding:40px 18px 60px;font:500 12px Inter;letter-spacing:.16em;text-transform:uppercase}
 footer a{margin:0 10px}
+.two.fit{align-items:stretch}
+.fit>.col{display:flex;flex-direction:column;justify-content:space-between;gap:26px;padding:10px 0}
+.fit>.col>:first-child>:first-child{margin-top:0}
+.fit>.col>:last-child>:last-child{margin-bottom:0}
+.fit .rows{margin-top:0}
+.kurs{position:relative;padding:clamp(28px,4vw,56px);background:rgba(244,237,226,.72);border:1px solid #C5A059;outline:1px solid rgba(197,160,89,.45);outline-offset:-10px;box-shadow:0 16px 36px rgba(0,0,0,.08)}
+.kurs .mods{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(16px,2.4vw,26px);margin-top:clamp(24px,3vw,36px)}
+.kurs .mods div{border-top:1px solid rgba(197,160,89,.7);padding-top:14px}
+.kurs .mods b{display:block;font:700 40px/1 Corinthia,cursive;color:#8A6A28}
+.kurs .mods p{margin:8px 0 0;font:500 16px/1.55 Inter;text-wrap:pretty}
+@media(max-width:860px){.kurs .mods{grid-template-columns:repeat(2,1fr)}}@media(max-width:480px){.kurs .mods{grid-template-columns:1fr}}
+.poklon{display:inline-block;margin-top:clamp(24px,3vw,34px);padding:12px 18px;border:1px solid #C5A059;background:#F4EDE2;font:500 16px/1.5 Inter}
+.poklon span{font:700 28px/1 Corinthia,cursive;color:#8A6A28;margin-right:6px}
 .rv{opacity:0;transform:translateY(22px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.7,.2,1)}
 .rv.in{opacity:1;transform:none}
 </style>
@@ -78,13 +91,13 @@ footer a{margin:0 10px}
 </div>
 
 <div class="wrap">
-  <section class="two">
-    <div class="rv">
+  <section class="two fit">
+    <div class="rv col"><div>
       <div class="k">Zvezdani krug · Uskoro</div>
       <h1>Ti nisi <span>sama.</span></h1>
-      <p class="lead">Online zajednica žena koje žele da razumeju sebe kroz zvezde, brojeve i simbole. Mesto gde možeš da budeš to što jesi, bez straha od osude, i gde ne moraš da se smanjuješ da bi se&nbsp;uklopila.</p>
-      <div class="badge">Prvih 18 članica dobija promo cenu zauvek</div><br>
-      <a class="cta" href="#lista">Upiši me na listu</a>
+      <p class="lead">Online zajednica žena koje žele da razumeju sebe kroz zvezde, brojeve i simbole. Mesto gde možeš da budeš to što jesi, bez straha od osude, i gde ne moraš da se smanjuješ da bi se&nbsp;uklopila.</p></div>
+      <div><div class="badge" style="margin-top:0">Prvih 18 članica dobija promo cenu zauvek</div><br>
+      <a class="cta" href="#lista">Upiši me na listu</a></div>
     </div>
     <div class="frame rv"><img src="/assets/site/mesec-devojka-svetlo.jpg" alt="Devojka u roze haljini dohvata Mesec"></div>
   </section>
@@ -108,12 +121,27 @@ footer a{margin:0 10px}
     <div class="card rv"><b>Sigurno mesto</b><p>Žene koje te razumeju bez osuđivanja, saradnice i budući kupci tvojih proizvoda i&nbsp;usluga.</p></div>
     <div class="card rv"><b>Online sastanci</b><p>Na temu koju vi izaberete u anketi, i živi rituali za Mlad i Pun&nbsp;Mesec.</p></div>
   </div>
-  <p class="note rv">Lične usluge i nakit nisu uključeni u članarinu. Članice ih dobijaju po posebnoj&nbsp;ceni.</p>
+  <p class="note rv">Kurs, lične usluge i nakit nisu uključeni u članarinu. Članice ih dobijaju po posebnoj&nbsp;ceni.</p>
 </div>
 
 <div class="wrap" style="padding-top:0">
-  <section class="two">
-    <div class="rv"><div class="k">Tim</div><h2>Nisam sama <span>ni ja</span></h2><p class="lead" style="margin-top:16px">Uz mene su koleginice, svaka za svoju&nbsp;oblast.</p>
+  <section class="kurs rv">
+    <div class="k">Kurs · Psihoskop</div>
+    <h2>Upoznaj svoju <span>kartu</span></h2>
+    <p class="lead" style="max-width:760px">Tvoja osećanja u karti. Jedna tema mesečno, uživo, uz radnu svesku. Svaki čas se snima i ostaje ti u biblioteci&nbsp;kruga.</p>
+    <div class="mods">
+      <div><b>Mesec</b><p>Šta ti treba da se osećaš sigurno i kako tražiš&nbsp;nežnost.</p></div>
+      <div><b>4. kuća</b><p>Dom, koren i porodica koju nosiš u&nbsp;sebi.</p></div>
+      <div><b>Kiron</b><p>Rana koja boli, ali i dar kojim leči&nbsp;druge.</p></div>
+      <div><b>Pluton</b><p>Snaga koja se rađa posle krize, kad pustiš&nbsp;kontrolu.</p></div>
+    </div>
+    <div class="poklon"><span>Na poklon</span> uz kurs: e-knjiga Zvezdana&nbsp;pozornica.</div>
+  </section>
+</div>
+
+<div class="wrap" style="padding-top:0">
+  <section class="two fit">
+    <div class="rv col"><div><div class="k">Tim</div><h2>Nisam sama <span>ni ja</span></h2><p class="lead" style="margin-top:16px">Uz mene su koleginice, svaka za svoju&nbsp;oblast.</p></div>
       <div class="rows"><div class="row"><b>Psihoskop</b><div><p>Ja, Marina. Za tebe ili tebi bitnu osobu, jer je bitno s kim imaš posla. Mesec, Kiron i Pluton: tvoja&nbsp;osećanja.</p><a href="https://instagram.com/mnjauprrrrrr">@mnjauprrrrrr</a></div></div><div class="row"><b>Natal i sinastrija</b><div><p>Tvoja karta i kako se tvoja i njegova karta&nbsp;slažu.</p><a href="https://instagram.com/memories_by_venus">@memories_by_venus</a></div></div><div class="row"><b>Numerologija</b><div><p>Šta kaže tvoj datum&nbsp;rođenja.</p><a href="https://instagram.com/natasha_golubovic">@natasha_golubovic</a></div></div><div class="row"><b>Šolja</b><div><p>Čitanje simbola iz&nbsp;šolje.</p><a href="https://instagram.com/gledam_ti_u_solju">@gledam_ti_u_solju</a></div></div></div>
     </div>
     <div class="frame rv"><img src="/assets/site/krug-solja.jpg" alt="Šolja kafe na tacni" loading="lazy"></div>
@@ -121,16 +149,17 @@ footer a{margin:0 10px}
 </div>
 
 <div class="wrap" style="padding-top:0">
-  <section class="two">
+  <section class="two fit">
     <div class="frame rv"><img src="/assets/site/zapis-katedrala-ruze.jpg" alt="Sveća među ružama, katedrala u magli" loading="lazy"></div>
-    <div class="rv">
-      <h2>Krug je <span>za tebe</span></h2>
+    <div class="rv col">
+      <div><div class="k">Zvezdani krug</div><h2>Krug je <span>za tebe</span></h2>
       <ul class="list">
         <li>ako znaš da si više od svog&nbsp;znaka,</li>
         <li>ako želiš žene oko sebe koje te&nbsp;razumeju,</li>
         <li>ako stvaraš nešto&nbsp;svoje,</li>
         <li>i ako više ne želiš da se&nbsp;smanjuješ.</li>
-      </ul>
+      </ul></div>
+      <div><a class="cta" href="#lista" style="margin-top:24px">Upiši me na listu</a></div>
     </div>
   </section>
 </div>

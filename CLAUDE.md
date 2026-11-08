@@ -20,6 +20,7 @@ Cilj: **Zvezdani krug**, Marinina online zajednica za žene na **Skoolu**, sa me
 - Bez snimljenih materijala: živi časovi (Mlad Mesec, Pun Mesec) se snimaju i postaju biblioteka.
 - Krugu treba EDUKACIJA (ne samo popust i druženje). Marina još priprema materijal: ima Zvezdanu pozornicu i aspekte.
   Prvi program: **Psihoskop, tvoja osećanja u karti** (Mesec, 4. kuća, Kiron, Pluton), jedna tema mesečno uživo + PDF radna sveska.
+  Kurs „Upoznaj svoju kartu“ (Mesec, 4. kuća, Kiron, Pluton) se naplaćuje posebno (cena još nije određena), uz kurs na poklon e-knjiga Zvezdana pozornica. Na /krug/ je kao posebna sekcija.
   Claude pravi materijale iz njenih beleški, ona proverava. Šolja-koleginica ima afirmacije i planira kurs šolje.
   Krug se otvara tek kad su spremna prva 2 modula; okvirno oko 5.2.2027 (Jupiter drugi put na njenom Sev. čvoru). Lista čekanja se puni do tada.
 - **Žene koje stvaraju:** ne samo ručni rad (torbe, nakit, sveće), nego vremenom i druge sposobne žene: nutricionistkinje,
@@ -57,6 +58,7 @@ Nove objave pravi po ovom modelu i vodi ih ka planu (lista čekanja za Zvezdani 
 - Kamenje se piše velikim slovom: Crni Ahat, Gorski Kristal, Mesečev Kamen.
 - Naslovi Inter 700, velika slova; Corinthia za skript i CTA; zlatna #C5A059, #E8C982, #8A6A28; krem #F4EDE2;
   leopard pattern (leopard-dugme-2.png); okviri krem sa zlatnom linijom od 1px.
+- Tekst pored fotke se ravna sa ivicama fotke (gore i dole). Leopard pozadina: leopard-besavno.png (bez šavova), 520px, opacity .32.
 - Pregledi uvek kao slike ili HTML koji može da otvori sa strane; PNG za Instagram.
 
 ## Tehnika
@@ -68,3 +70,10 @@ Nove objave pravi po ovom modelu i vodi ih ka planu (lista čekanja za Zvezdani 
 - Blog je u nov-a.js, nov-b.js i nov-c.js. Dugmad su `[Tekst](nakit/<id>)` i vode na mnjauprrrrr.com/<putanja>/.
 - Stranica Zvezdani zapis je `public/zvezdani-zapis/`: 100 € ceo zapis, 60 € ključ, PDF za 3 do 5 dana. Link je u meniju svih strana.
 - Testiranje lokalno: `python3 -m http.server 8765` u public/, pa Playwright sa /usr/bin/google-chrome.
+
+## Kepler materijali (Marinina astro škola)
+Lekcije 1–40 (1. godina) su kao tekst u `/home/claude/kep/*.txt` (ne ide u git, autorski materijal).
+Kepler je merilo za proveru: Merkur egz. 13° Devica, Saturn 20° Vaga, Uran 11° Škorpija, Neptun 21° Vodolija,
+Pluton 3° Škorpija; Merkur retro 3 puta godišnje 20–24 dana; Vaga = bubrezi, koža i ten.
+2. godina (D-01 do D-40: tranziti, progresije, direkcije, solarni povratak, firdarije, profekcije, rektifikacija, elekcije, sinastrija, kompozit, konsultacija) je takođe u `/home/claude/kep/`.
+Ispravljene krem e-knjige (8.11.): `/home/claude/build/Psihoskop-*-ispravljena.pdf`, izvor `/home/claude/src/poz.final.html` (sa zlatnim krugovima, figs.py) i `asp.fixed.html`, render `python3 render.py`.
