@@ -56,6 +56,10 @@ Nove objave pravi po ovom modelu i vodi ih ka planu (lista čekanja za Zvezdani 
 Najbolje vreme za objavu (9.11.): radnim danima oko 10 h (najjače sreda, četvrtak, petak), drugi talas oko 18 h; vikend slabiji (subota 10 h, nedelja 18 h).
 Istorija objava se tek učitava posle povezivanja (8.11. kasno uveče).
 
+**Zakazano (uvek proveri pre novog plana):** blog ide svaki dan po datumu `d` u nov-a/b/c.js (npr. 10.11 Labradorit, 11.11 Bik,
+12.11 Venera, 14.11 Rozenkvarc, 16.11 Blizanci, 22.11 Sunce u Strelcu, 24.11 Pun Mesec). Reel/objava za znak ide isti dan kad i blog o tom znaku.
+Marina ima i svoje zakazane mejlove i IG objave (van Metricool-a): pre zakazivanja pitaj šta je već zakazano da ne bude duplo.
+
 ## Pravila brenda
 
 - Proveri sve dvaput, posebno astrologiju. Ono što ne može da se potvrdi, izostavi.
