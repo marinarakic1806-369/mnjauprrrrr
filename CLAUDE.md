@@ -11,7 +11,8 @@ Cilj: **Zvezdani krug**, Marinina online zajednica za žene na **Skoolu**, sa me
 - Dva nivoa: **Krug** oko 25–30 €/mes i **Zlatni krug** oko 100 €/mes (uz jednu ličnu uslugu mesečno).
   Prvih 30 osnivačica dobija nižu cenu zauvek.
 - Bez snimljenih materijala: živi časovi (Mlad Mesec, Pun Mesec) se snimaju i postaju biblioteka.
-- **Zanatski kutak:** žene koje pletu torbe i prave nakit i sveće prodaju kroz krug (provizija ili konsignacija).
+- **Žene koje stvaraju:** ne samo ručni rad (torbe, nakit, sveće), nego vremenom i druge sposobne žene: nutricionistkinje,
+  izdavačice, lekarke, preduzetnice. Prodaju i nude kroz krug (provizija ili konsignacija). Ne piši „svojim rukama“, nego „nešto svoje“.
   Mesečna kutija: kamen meseca, sveća, afirmacija.
 - Paketi: kamen i afirmacija, element koji fali (Zvezdani ključ i narukvica), ljubavni paket (sinastrija i Rozenkvarc).
 - Sajt je izlog (nakit, blog, Zvezdani zapis), a Skool je kuća zajednice. Svoju aplikaciju ne pravimo.
