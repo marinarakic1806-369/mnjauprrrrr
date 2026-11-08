@@ -51,6 +51,10 @@ Saturn na DSC (partnerstva, ugovori). Najveći izazov joj je samosabotaža: hrab
 Zajednički imenitelj: **identitet i ličnost** („ti si drugačija, nisi samo znak“), lična priča, jedna boja na crno-belom, nakit kao deo nje.
 Nove objave pravi po ovom modelu i vodi ih ka planu (lista čekanja za Zvezdani krug, Zvezdani zapis, nakit po elementu).
 
+**Metricool** je povezan (brand id 7969694, Instagram @mnjauprrrrrr i TikTok, vremenska zona Europe/Budapest).
+Najbolje vreme za objavu (9.11.): radnim danima oko 10 h (najjače sreda, četvrtak, petak), drugi talas oko 18 h; vikend slabiji (subota 10 h, nedelja 18 h).
+Istorija objava se tek učitava posle povezivanja (8.11. kasno uveče).
+
 ## Pravila brenda
 
 - Proveri sve dvaput, posebno astrologiju. Ono što ne može da se potvrdi, izostavi.
