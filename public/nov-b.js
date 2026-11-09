@@ -71,6 +71,9 @@ Sunce je u Škorpiji, a Bik je njen suprotni znak. Ono što je Škorpiji tuđe, 
 - **Venera:** voliš dodirom i delima, ne rečima.
 ## Mali ritual za Bika (i za sve nas)
 Ove nedelje uradi jednu stvar polako i sa svim čulima: skuvaj kafu bez telefona, prošetaj bez slušalica, namaži ruke kremom kao da je to ritual. Bik nas uči da je zadovoljstvo takođe neka vrsta molitve.
+## Nisi samo Bik
+Većina nas zna samo svoj znak, a Sunce je samo jedan deo karte. Možeš biti Bik sa Mesecom u Ovnu i podznakom u Blizancima, pa se uopšte ne prepoznaješ u „mirnom, tvrdoglavom Biku“. To ne znači da astrologija ne radi. Znači da si više od jednog znaka. Zato u Zvezdanom krugu učimo da čitamo celu kartu, polako, kao pravi Bik.
+[Zvezdani krug](krug)
 ## Kamenje za Bika
 Rozenkvarc (Venerin kamen), Zeleni Aventurin za obilje i Smaragd za ljubav koja traje.
 > Polako, doći će.
