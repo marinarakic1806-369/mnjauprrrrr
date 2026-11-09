@@ -72,7 +72,7 @@ Opisi moraju biti NJENIM glasom: dublje, direktnije, kratke rečenice, lično (k
 **MailerLite** je povezan (9.11.): 17 pretplatnica, automatizacija „Simple welcome email“. Zakazano 24 mejla: dnevni mejl u 18 h (10.–29.11, prate blog), nedeljni u 07 h (16.11, 23.11, 30.11, 7.12 sa popustom, 14.12, 21.12). Pre izmene mejla pitaj nju.
 Novi dizajn mejla (9.11.): `/home/claude/mail/tpl.py` (render(dict)), leopard-mejl.jpg pozadina, zaglavlje newsletter-zaglavlje-2.jpg (velika mačka), pozdrav i potpis kao slike (mejl-cao.png, mejl-marina.png), Inter + Corinthia zlatna, Instagram link sa 6 r. Tekst mejla: storytelling, pogodi je u srce, njen ton, P.S. sa pozivom da odgovori. Od 15.11 u P.S. i lista čekanja za Krug (tpl2.KRUG).
 Postupak: stari mejlovi (builder) ne mogu da se menjaju preko API-ja, pa: get_campaign (pročitaj tekst), create_campaign sa tpl2 HTML (ista grupa: dnevni „Svaki dan“ 202799874387740544, nedeljni „PRETPLATNICE“ 202130396470576577), schedule_campaign isto vreme, delete_campaign stari. Ne izmišljaj njene lične priče; zadrži njene.
-URAĐENO 9.11: 10–17.11. Sledi do kraja novembra (18–30.11); decembar (7, 14, 21.12) NE diraj dok ne kaže (spisak u /home/claude/mail/campaigns.json).
+URAĐENO 9.11: ceo novembar (10–30.11) u novom dizajnu, ID-jevi u /home/claude/mail/novembar-novi.json. Decembar (7, 14, 21.12) NE diraj dok ne kaže (spisak u /home/claude/mail/campaigns.json).
 Moje dodatne objave su DRUGAČIJE: sa fotkom (karusel/reel) u 10 h ili 18 h, sa drugačijim opisom (vežba, pitanje, lični ugao), nikad prepisan tekst bloga.
 
 ## Pravila brenda
