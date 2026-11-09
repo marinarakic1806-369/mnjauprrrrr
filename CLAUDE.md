@@ -67,7 +67,8 @@ Istorija objava se tek učitava posle povezivanja (8.11. kasno uveče).
 
 **Zakazano (uvek proveri pre novog plana):** blog ide svaki dan po datumu `d` u nov-a/b/c.js (npr. 10.11 Labradorit, 11.11 Bik,
 12.11 Venera, 14.11 Rozenkvarc, 16.11 Blizanci, 22.11 Sunce u Strelcu, 24.11 Pun Mesec). Reel/objava za znak ide isti dan kad i blog o tom znaku.
-Marina ima i svoje zakazane mejlove i IG objave (van Metricool-a): pre zakazivanja pitaj šta je već zakazano da ne bude duplo.
+Marina ima zakazane mejlove i IG objave uz svaki blog (van Metricool-a): IG objava sa istim naslovom i tekstom bloga izlazi svaki dan u 07:00 (slika sa tekstom).
+Moje dodatne objave su DRUGAČIJE: sa fotkom (karusel/reel) u 10 h ili 18 h, sa drugačijim opisom (vežba, pitanje, lični ugao), nikad prepisan tekst bloga.
 
 ## Pravila brenda
 
