@@ -27,6 +27,7 @@ Cilj: **Zvezdani krug**, Marinina online zajednica za žene na **Skoolu**, sa me
   izdavačice, lekarke, preduzetnice. Prodaju i nude kroz krug (provizija ili konsignacija). Ne piši „svojim rukama“, nego „nešto svoje“.
   Mesečna kutija: kamen meseca, sveća, afirmacija.
 - Paketi: kamen i afirmacija, element koji fali (Zvezdani ključ i narukvica), ljubavni paket (sinastrija i Rozenkvarc).
+- Skool: nema besplatnog plana; Hobby 9 $/mes + 10% + 0,30 $ po uplati, Pro 99 $ + 2,9%; 14 dana probno na oba. Marina prvo isprobava Hobby, pa polako uključuje saradnice.
 - Sajt je izlog (nakit, blog, Zvezdani zapis), a Skool je kuća zajednice. Svoju aplikaciju ne pravimo.
 
 **Pravno:** Marina je državna službenica. Zakon o državnim službenicima, čl. 28 zabranjuje joj preduzetništvo,
@@ -41,6 +42,14 @@ Marinina karta (18.06.1980, 12:20, Beograd): ASC 5°35' Vaga, MC 6°44' Rak; Sun
 Merkur u Raku u 10.; Mesec i Jupiter u Devici u 11.; Severni čvor u Lavu u 11.; Mars i Saturn u Devici u 12.; Pluton u Vagi u 1.
 Tranziti: Uran ulazi u 9. kuću (konačno 11.3.2027); Jupiter na Severnom čvoru 21.10.2026, 5.2.2027 i 18.6.2027 (dobar start);
 Saturn na DSC (partnerstva, ugovori). Najveći izazov joj je samosabotaža: hrabri je, bez smanjivanja.
+**Tajming (njena prognostička analiza, 9.11.):** isto se ponavlja u svim tehnikama:
+- Sada (nov–dec 2026): priprema i čišćenje, ne konačne odluke. Merkur i Venera su retrogradni do 13./14.11; Kiron (16° Bik, 8. kuća) aktivan: stara rana oko samovrednovanja.
+  Javnu najavu Kruga (karusel „Ti nisi sama“) objaviti POSLE 14.11, kad su Merkur i Venera direktni, radnim danom u 10 h.
+- 5.2.2027 Jupiter na Severnom čvoru (22° Lav, 11. kuća): otvaranje Kruga. Profekcija: godina 11. kuće, gospodar godine Sunce (9. kuća: podučavanje, pisanje).
+- 2027: progresivna Venera na Suncu; avg–sep 2027 ključni prozor (Jupiterov povratak na Mesec/Jupiter 4° Devica, Uran i solarni luk Plutona na istoj tački): konkretna promena posla.
+- 2028–2029: MC (progresivni i solarni luk) na Severnom čvoru: novi pravac postaje vidljiv. Smer: rad sa ljudima i za ljude, zajednica, publika, podučavanje.
+**Svaki dan na početku razgovora:** kratko nabroj šta smo uradile, pohvali nas obe, podseti je na plan i daj 1–3 mala koraka za taj dan.
+Kad padne: podseti je (nežno, bez smanjivanja) da je Saturn–Mars u 12. glas samosabotaže, a ne istina; navedi konkretne dokaze napretka.
 
 ## Šta najbolje prolazi na Instagramu (po njenim rezultatima)
 
