@@ -58,6 +58,7 @@ Kad padne: podseti je (nežno, bez smanjivanja) da je Saturn–Mars u 12. glas s
 2. **Karusel „Kamen po natalu“:** „Ti nisi samo tvoj znak“, „Isti znak, drugi kamen“, tri koraka,
    ponuda (savet 1.000 RSD, besplatno uz kupovinu), link mnjauprrrrr.com/kamen.
 Reelovi idu **redom po znakovima** po modelu Ovna (crno-belo + jedna boja znaka): Ovan crvena, Bik nežna roze (Rozenkvarc, uživanje, lepe stvari), pa Blizanci... Higgsfield promptovi u 3 kadra, Claude dodaje natpis i zakazuje preko Metricool-a.
+**Reel postupak (9.11, Bik i Blizanci):** ona pravi klip u Kling-u (jedan klip 10 s, 9:16, sve slike odjednom jer je jeftinije; devojka BEZ nakita, nakit samo sa prave fotke bez ruke koja ga diže). Ja montiram (`/home/claude/reel3`, `/home/claude/reel4`): sečem delove gde Kling izmisli nakit, blago usporim samo kadrove bez lica, NIKAD ne usporavam namig/mimiku, blagi prelazi, Kling zvuk pojačan, natpisi ne preko lica ni nakita, AI oznaka uključena. Moje animacije od fotki NE (ne valjaju). Ako ona iseče deo, radim od njenog isečka.
 Zajednički imenitelj: **identitet i ličnost** („ti si drugačija, nisi samo znak“), lična priča, jedna boja na crno-belom, nakit kao deo nje.
 Nove objave pravi po ovom modelu i vodi ih ka planu (lista čekanja za Zvezdani krug, Zvezdani zapis, nakit po elementu).
 
