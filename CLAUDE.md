@@ -85,6 +85,7 @@ Moje dodatne objave su DRUGAČIJE: sa fotkom (karusel/reel) u 10 h ili 18 h, sa 
 - Kamenje se piše velikim slovom: Crni Ahat, Gorski Kristal, Mesečev Kamen.
 - Naslovi Inter 700, velika slova; Corinthia za skript i CTA; zlatna #C5A059, #E8C982, #8A6A28; krem #F4EDE2;
   leopard pattern (leopard-dugme-2.png); okviri krem sa zlatnom linijom od 1px.
+- **Leopard po stranama (10.11):** 1. strana leopard-besavno 720px, opacity .30 (kao njene stare objave); 2. strana krupnije 1300px, .30; 3. i dalje najkrupnije (leopard.jpg cover, .55). Jutarnje 11–30.11 su prepravljene (tekst-MMDD-1c/2c.jpg).
 - Tekst pored fotke se ravna sa ivicama fotke (gore i dole). Leopard pozadina: leopard-besavno.png (bez šavova), 520px, opacity .32.
 - Instagram objave u njenim bojama: krem #EFE5D6 + leopard, zlatna #8A6A28/#C5A059, tamni tekst. NE tamne pozadine (crno samo na fotki).
 - Pregledi uvek kao slike ili HTML koji može da otvori sa strane; PNG za Instagram.
