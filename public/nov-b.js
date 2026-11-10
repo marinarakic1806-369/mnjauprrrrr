@@ -35,7 +35,6 @@ Labradorit je kamen koji te prevari. Pogledaš ga i vidiš sivo-zelen, skoro dos
 ## Legenda o polarnoj svetlosti
 Inuiti pričaju da je polarna svetlost nekada bila zarobljena u stenama obale Labradora. Jedan ratnik ju je udario kopljem i oslobodio je na nebo, ali deo je ostao u kamenu. Tako je, kažu, nastao Labradorit.
 ## Šta radi Labradorit
-![Vrtešnja u ružičastoj magli sa zlatnim mesecima](mesec-vrtesnja.webp)
 - **Budi intuiciju:** pomaže ti da čuješ onaj tihi glas koji zna pre nego što ti znaš.
 - **Štiti auru:** kao štit od tuđih očekivanja i projekcija.
 - **Prati promene:** kamen je prelaza, novih početaka i hrabrosti da se okreneš novom.
@@ -54,6 +53,9 @@ Sa Gorskim Kristalom da pojača jasnoću, sa Crnim Ahatom da intuicija ne preras
 ![Prsten Severnjača sa Labradoritom](p-labradorit.jpg)
 Labradorit je prvi kamen u mojoj kolekciji, i to s razlogom.
 [Labradorit](nakit|kamen:Labradorit)
+![Vrteška pod Mesecom, Zvezdani krug](zvezdani-krug-vrteska.webp)
+Neke stvari se vrte u krug. Ova se vrti oko tebe. **Zvezdani krug** je zajednica za žene koje znaju da su više od svog znaka. Upiši se na listu čekanja.
+[Zvezdani krug](krug)
 `},
 {id:'bik',d:'2026-11-11',k:'Astro kutak',t:'Bik: snaga koja se ne žuri',x:`
 U svetu gde svi jure, Bik ostaje. Ne zato što je spor, nego zato što zna nešto što ostali zaboravljaju: ono što je dobro ne mora da se požuruje.
