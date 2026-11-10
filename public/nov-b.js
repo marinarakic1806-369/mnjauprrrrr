@@ -33,7 +33,7 @@ Svih 12 kuća i šta znači svaki znak na njihovom vrhu opisala sam u e-knjizi Z
 {id:'labradorit',d:'2026-11-10',k:'Magija kristala',t:'Labradorit: kamen magije i intuicije',x:`
 Labradorit je kamen koji te prevari. Pogledaš ga i vidiš sivo-zelen, skoro dosadan kamen. Onda ga okreneš na svetlu i odjednom bljesne plavom, zelenom i zlatnom, kao polarna svetlost uhvaćena u kamen. Zato ga volim više od svih. Liči na žene koje su mi najdraže: ne pokazuju sve odmah.
 ## Legenda o polarnoj svetlosti
-Inuiti pričaju da je polarna svetlost nekada bila zarobljena u stenama obale Labradora. Jedan ratnik ju je udario kopljem i oslobodio je na nebo, ali deo je ostao u kamenu. Tako je, kažu, nastao Labradorit.
+Inuiti, narod sa dalekog severa, pričaju da je polarna svetlost nekada bila zarobljena u stenama obale Labradora. Jedan ratnik ju je udario kopljem i oslobodio je na nebo, ali deo je ostao u kamenu. Tako je, kažu, nastao Labradorit.
 ## Šta radi Labradorit
 - **Budi intuiciju:** pomaže ti da čuješ onaj tihi glas koji zna pre nego što ti znaš.
 - **Štiti auru:** kao štit od tuđih očekivanja i projekcija.
