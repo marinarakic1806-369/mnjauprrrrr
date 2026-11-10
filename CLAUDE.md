@@ -28,6 +28,8 @@ Cilj: **Zvezdani krug**, Marinina online zajednica za žene na **Skoolu**, sa me
   Mesečna kutija: kamen meseca, sveća, afirmacija.
 - Paketi: kamen i afirmacija, element koji fali (Zvezdani ključ i narukvica), ljubavni paket (sinastrija i Rozenkvarc).
 - Skool: nema besplatnog plana; Hobby 9 $/mes + 10% + 0,30 $ po uplati, Pro 99 $ + 2,9%; 14 dana probno na oba. Marina prvo isprobava Hobby, pa polako uključuje saradnice.
+- Skool činjenice (10.11): cene SAMO u USD (članice plaćaju u USD, isplata u lokalnoj valuti, svake srede, preko Stripe Express na bankovni račun, bez PayPal-a); Skool je merchant of record i sam obračunava EU PDV (dodaje ga na cenu). Postojeće članice zadržavaju staru cenu kad se cena digne (grandfathering) = „prvih 18 zauvek“ radi samo. Ima nivoe (tiers), freemium, godišnju i jednokratnu cenu, 7 dana probno za članice. Srbija: Stripe cross-border lista je sadrži, ali proveriti u probnom periodu (Payouts tab) sa SESTRINIM računom.
+- Najava Kruga: karusel 7 strana (4 animirane) zakazan kao NACRT 18.11 u 10 h (Metricool id 423240874, uuid 5580269053780838100), izvor /home/claude/mm2/krug2 (k.html, rend.py). Posle OK: Inro za reč KRUG.
 - Sajt je izlog (nakit, blog, Zvezdani zapis), a Skool je kuća zajednice. Svoju aplikaciju ne pravimo.
 
 **Pravno:** Marina je državna službenica. Zakon o državnim službenicima, čl. 28 zabranjuje joj preduzetništvo,
@@ -88,7 +90,7 @@ Moje dodatne objave su DRUGAČIJE: sa fotkom (karusel/reel) u 10 h ili 18 h, sa 
 - Naslovi Inter 700, velika slova; Corinthia za skript i CTA; zlatna #C5A059, #E8C982, #8A6A28; krem #F4EDE2;
   leopard pattern (leopard-dugme-2.png); okviri krem sa zlatnom linijom od 1px.
 - **Leopard po stranama (10.11):** 1. strana leopard-besavno 720px, opacity .30 (kao njene stare objave); 2. strana krupnije 1300px, .30; 3. i dalje najkrupnije (leopard.jpg cover, .55). Jutarnje 11–30.11 su prepravljene (tekst-MMDD-1c/2c.jpg).
-- **Karusel sa fotkom (10.11, njena kritika):** 1. strana = fotka PREKO CELE strane, bez leoparda, bez belog fade-a/gradijenta; tekst preko praznog dela fotke (ne preko nakita ni lica). Najjače su crno-bele editorijal fotke sa nakitom u boji (stikla, rukavica i novine, ruka preko lica sa Lapisom, upaljač, čaša). Unutrašnje fotke: CELA fotka u zlatnom okviru 1px (object-fit contain), nikad isečen nakit. Generator `/home/claude/mm2/kar18/gen2.py` + cov.json. Ako fali dobra fotka, ona pravi nove.
+- **Karusel sa fotkom (10.11, njena kritika):** 1. strana = fotka PREKO CELE strane, bez leoparda, bez belog fade-a/gradijenta; tekst preko praznog dela fotke (ne preko nakita ni lica). Najjače su crno-bele editorijal fotke sa nakitom u boji (stikla, rukavica i novine, ruka preko lica sa Lapisom, upaljač, čaša). Unutrašnje fotke: CELA fotka u zlatnom okviru 1px (object-fit contain), nikad isečen nakit. Generator `/home/claude/mm2/kar18/gen2.py` + cov.json. Ako fali dobra fotka, ona pravi nove. Fotke nakita samo na BELOJ/krem podlozi (NE zelena satenska pozadina). Ne koristi fotke koje su već na njenom feedu (npr. ruka preko lica sa Lapisom). Naslovni kadar reela: najjači kadar (Strelac: prsten Lapis na kraju, Blizanci: devojka u zelenom kaputu).
 - Tekst pored fotke se ravna sa ivicama fotke (gore i dole). Leopard pozadina: leopard-besavno.png (bez šavova), 520px, opacity .32.
 - Instagram objave u njenim bojama: krem #EFE5D6 + leopard, zlatna #8A6A28/#C5A059, tamni tekst. NE tamne pozadine (crno samo na fotki).
 - Pregledi uvek kao slike ili HTML koji može da otvori sa strane; PNG za Instagram.
