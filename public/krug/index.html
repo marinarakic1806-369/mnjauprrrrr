@@ -33,7 +33,7 @@ h1{margin:18px 0 0;font:700 clamp(48px,6.4vw,92px)/1 Inter;text-transform:upperc
 h1 span,h2 span{font:700 1.35em/.9 Corinthia,cursive;text-transform:none;letter-spacing:0;color:#8A6A28}
 h2{margin:14px 0 0;font:700 clamp(30px,3.4vw,46px)/1.1 Inter;text-transform:uppercase;text-wrap:balance}
 .lead{margin:26px 0 0;max-width:540px;font:500 20px/1.65 Inter;text-wrap:pretty}
-.frame{padding:10px;background:#F4EDE2;border:1px solid #C5A059;box-shadow:0 18px 40px rgba(0,0,0,.14)}
+.frame{padding:0;background:none;border:1px solid #C5A059;box-shadow:0 18px 40px rgba(0,0,0,.14)}
 .frame img{display:block;width:100%;aspect-ratio:4/5;object-fit:cover}
 .badge{display:inline-block;margin-top:28px;padding:9px 16px;background:#1D1A17;color:#E8C982;font:600 11px Inter;letter-spacing:.2em;text-transform:uppercase}
 .cta{display:inline-block;margin-top:30px;padding:12px 34px 15px;border-radius:999px;background:#F4EDE2;border:1px solid #C5A059;font:700 36px/1 Corinthia,cursive;box-shadow:0 10px 26px rgba(0,0,0,.1);transition:transform .3s}
@@ -85,6 +85,9 @@ footer a{margin:0 10px}
 .zv:before,.zv:after{content:"";position:absolute;left:50%;top:50%;width:130%;height:2px;background:linear-gradient(90deg,transparent,#FFF3D6,transparent);transform:translate(-50%,-50%)}
 .zv:after{transform:translate(-50%,-50%) rotate(90deg)}
 @keyframes zv{0%,100%{opacity:.45;transform:translate(-50%,-50%) scale(.75) rotate(0deg)}50%{opacity:1;transform:translate(-50%,-50%) scale(1.2) rotate(20deg)}}
+.maca{animation:mjf 5s ease-in-out infinite;pointer-events:none}
+@media(max-width:860px){.herofr{margin-top:60px}}
+@keyframes mjf{0%,100%{transform:translateY(0) rotate(-3deg)}50%{transform:translateY(-12px) rotate(3deg)}}
 </style>
 </head>
 <body>
@@ -100,11 +103,10 @@ footer a{margin:0 10px}
       <div class="k">Zvezdani krug · Uskoro</div>
       <h1>Ti nisi <span>sama.</span></h1>
       <p class="lead">Online zajednica žena koje žele da razumeju sebe kroz zvezde, brojeve i simbole. Mesto gde možeš da budeš to što jesi, bez straha od osude, i gde ne moraš da se smanjuješ da bi se&nbsp;uklopila.</p></div>
-      <div><div class="badge" style="margin-top:0">Prvih 18 članica dobija promo cenu</div></div>
       <div>
       <a class="cta" href="#lista">Upiši me na listu</a></div>
     </div>
-    <div class="frame rv"><img src="/assets/site/krug-vrteska.webp" alt="Vrteška pod Mesecom se vrti u krug"></div>
+    <div class="rv herofr" style="position:relative"><img class="maca" src="/assets/site/maca-providna.png" alt="Mačkica" style="position:absolute;right:6px;top:-58px;width:104px;z-index:3"><div class="badge" style="margin:0 0 16px;max-width:calc(100% - 125px)">Prvih 18 članica dobija promo cenu</div><div class="frame"><img src="/assets/site/mesec-vrtesnja.webp" alt="Vrteška pod Mesecom se vrti u krug"></div></div>
   </section>
 </div>
 
@@ -177,6 +179,7 @@ footer a{margin:0 10px}
   </form>
 </div>
 
+<div style="text-align:center;padding:10px 0 30px"><img class="maca" src="/assets/site/maca-providna.png" alt="Mačkica" style="width:120px"><div style="font:700 44px/1 Corinthia,cursive;color:#8A6A28;margin-top:6px">Vidimo se u&nbsp;krugu</div></div>
 <footer><a href="/zvezdani-zapis/">Zvezdani zapis</a> · <a href="/kamen/">Kamen za tvoj natal</a> · <a href="/nakit/">Nakit</a> · <a href="/blog/">Blog</a></footer>
 
 <script>
