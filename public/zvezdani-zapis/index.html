@@ -153,7 +153,7 @@
   
   <div style="position:relative;max-width:1240px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:clamp(36px,5vw,72px);align-items:center"><div data-rv="1" style="padding:10px;background:#F4EDE2;border:1px solid #C5A059;box-shadow:0 18px 40px rgba(0,0,0,.14)"><img src="../assets/site/zapis-katedrala-ruze.jpg" alt="Sveća na postolju među belim ružama, katedrala u magli" loading="lazy" style="display:block;width:100%;aspect-ratio:4/5;object-fit:cover"></div><div>
     
-    <div data-rv="1" style="font:500 13px Inter,sans-serif;letter-spacing:.2em;text-transform:uppercase;text-align:center">06 · Poruči</div>
+    <div data-rv="1" style="font:500 13px Inter,sans-serif;letter-spacing:.2em;text-transform:uppercase;text-align:center">06 · Upit</div>
     <h2 data-rv="1" style="margin:14px 0 0;text-align:center;font:700 clamp(28px,3vw,40px)/1.12 Inter,sans-serif;text-transform:uppercase;letter-spacing:.01em;text-wrap:balance">Kada si <span style="font:700 1.3em/0.8 Corinthia,cursive;text-transform:none;letter-spacing:0;color:#8A6A28">rođena?</span></h2>
     <form data-rv="1" onSubmit="{{ posalji }}" style="margin-top:clamp(30px,4vw,48px);padding:clamp(24px,3vw,40px);background:rgba(255,255,255,.3);backdrop-filter:blur(16px) saturate(1.25);-webkit-backdrop-filter:blur(16px) saturate(1.25);border:1px solid rgba(255,255,255,.7);box-shadow:0 16px 36px rgba(0,0,0,.1);display:grid;gap:22px">
       <sc-for list="{{ polja }}" as="f" hint-placeholder-count="3">
@@ -164,9 +164,9 @@
       <div style="display:grid;gap:10px;font:600 11px Inter,sans-serif;letter-spacing:.2em;text-transform:uppercase">Šta želiš
         <div style="display:flex;flex-wrap:wrap;gap:8px"><sc-for list="{{ izbori }}" as="z" hint-placeholder-count="7"><button type="button" onClick="{{ z.go }}" style="padding:9px 14px;border-radius:999px;border:1px solid {{ z.bc }};background:{{ z.bg }};color:{{ z.c }};font:600 12px Inter,sans-serif;letter-spacing:.06em;text-transform:none;cursor:pointer">{{ z.t }}</button></sc-for></div>
       </div>
-      <p style="margin:0;font:500 15px/1.6 Inter,sans-serif;text-wrap:pretty">Tačno vreme rođenja je važno za podznak i kuće. Posle tvog mejla šaljem ti podatke za uplatu, a PDF stiže na mejl 3 do 5 dana posle&nbsp;uplate.</p>
+      <p style="margin:0;font:500 15px/1.6 Inter,sans-serif;text-wrap:pretty">Tačno vreme rođenja je važno za podznak i kuće. Posle tvog mejla javljam ti se sa svim&nbsp;detaljima.</p>
       <div style="display:flex;justify-content:space-between;align-items:center;gap:18px;flex-wrap:wrap">
-        <button type="submit" style="padding:12px 34px 15px;border:1px solid rgba(255,255,255,.8);border-radius:999px;background:#F4EDE2;color:#1D1A17;font:700 34px/1 Corinthia,cursive;cursor:pointer;box-shadow:0 10px 26px rgba(0,0,0,.1);transition:transform .3s cubic-bezier(.2,.7,.2,1),border-color .3s" style-hover="transform:translateY(-2px);border-color:#C5A059;color:#8A6A28">Poruči zapis</button>
+        <button type="submit" style="padding:12px 34px 15px;border:1px solid rgba(255,255,255,.8);border-radius:999px;background:#F4EDE2;color:#1D1A17;font:700 34px/1 Corinthia,cursive;cursor:pointer;box-shadow:0 10px 26px rgba(0,0,0,.1);transition:transform .3s cubic-bezier(.2,.7,.2,1),border-color .3s" style-hover="transform:translateY(-2px);border-color:#C5A059;color:#8A6A28">Pošalji upit</button>
         <span style="font:500 12px Inter,sans-serif;letter-spacing:.14em;text-transform:uppercase">Otvara se tvoj mejl</span>
       </div>
     </form>
@@ -248,8 +248,8 @@ class Component extends DCLogic {
       tackaLabel: this.T[st.t][1],
       koraci: [
         { n: '1', t: 'Izabereš zapis ili ključ i pošalješ datum, tačno vreme i mesto rođenja.' },
-        { n: '2', t: 'Odgovorim ti mejlom sa podacima za uplatu.' },
-        { n: '3', t: 'Tvoj zapis stiže kao PDF na mejl, 3 do 5 dana posle uplate.' }
+        { n: '2', t: 'Odgovorim ti mejlom sa svim detaljima.' },
+        { n: '3', t: 'Tvoj zapis stiže kao PDF na mejl.' }
       ],
       tim: [
         { ko: 'Natalna karta', t: 'Marina', img: '../assets/site/zapis-fenjer.jpg', d: 'Zvezdani zapis i ključevi: ko si, odakle dolaziš i kuda te život vodi.' },

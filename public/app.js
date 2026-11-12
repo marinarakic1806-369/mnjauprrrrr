@@ -4223,7 +4223,7 @@ function Proizvod({
     }
   }, "Po\u0161alji upit") : React.createElement(window.MJCta, {
     onClick: addP
-  }, "Dodaj u korpu")), React.createElement("div", {
+  }, "Po\u0161alji upit")), React.createElement("div", {
     style: {
       borderTop: '1px solid var(--hairline-strong)'
     }
@@ -4397,7 +4397,7 @@ function Korpa({
       lineHeight: 1.6,
       color: '#1D1A17'
     }
-  }, "Tvoja porud\u017Ebina je primljena. Javljam ti se na mejl sa podacima za uplatu, a nakit \u0161aljem Post Expressom \u010Dim uplata stigne."), React.createElement("a", {
+  }, "Tvoj upit je primljen. Javljam ti se na mejl."), React.createElement("a", {
     onClick: close,
     style: {
       marginTop: 10,
@@ -4694,7 +4694,7 @@ function KorpaForma({
       color: 'var(--ink-70)',
       textAlign: 'center'
     }
-  }, "Pla\u0107anje uplatom na ra\u010Dun \u2013 podatke ti \u0161aljem na mejl. Nakit \u0161aljem Post Expressom \u010Dim uplata stigne."));
+  }, "Javljam ti se na mejl."));
 }
 ;// Mobile.jsx
 const MJ_M_LINKS = [['o-nama', 'O nama'], ['nakit', 'Nakit'], ['astro', 'Astro'], ['/zvezdani-zapis/', 'Zvezdani zapis'], ['blog', 'Blog'], ['kontakt', 'Kontakt'], ['kristali', 'Kristali']];
@@ -4803,13 +4803,7 @@ function MobileNav({
     style: {
       marginLeft: 'auto'
     }
-  }, React.createElement(NSx.IconButton, {
-    icon: "shopping-bag",
-    label: "Korpa",
-    variant: "krem",
-    badge: n,
-    onClick: openCart
-  })), React.createElement("button", {
+  }, null), React.createElement("button", {
     "aria-label": "Meni",
     onClick: () => setO(v => !v),
     style: {
@@ -4855,7 +4849,7 @@ function MJMenuOverlay({ o, nav, active, n, openCart, close }) {
               h('span', { style: { display: 'block', font: '600 14px Inter,sans-serif', letterSpacing: '.16em', textTransform: 'uppercase', transform: o ? 'none' : 'translateY(110%)', transition: 'transform .7s ' + E + ' ' + (o ? .3 + i * .06 : 0) + 's' } }, l))))),
         h('img', { src: MJ_A + 'maca-providna.png', alt: '', style: { display: 'block', width: 92, height: 'auto', margin: '26px auto 22px', animation: 'mjCatWig 2.6s ease-in-out infinite' } }),
         h('div', { style: { marginTop: 'auto', display: 'grid', gap: 18, justifyItems: 'start', opacity: o ? 1 : 0, transition: o ? 'opacity .6s .75s' : 'opacity .2s' } },
-          h('a', { onClick: () => { close(); openCart && openCart(); }, style: { ...tx, cursor: 'pointer', padding: '13px 22px', border: '1px solid #1D1A17', borderRadius: 999 } }, 'Korpa · ' + (n || 0)),
+          
           h('div', { style: { display: 'flex', flexWrap: 'wrap', gap: '10px 18px' } }, soc.map(([t, u]) => h('a', { key: t, href: u, target: '_blank', rel: 'noopener', style: tx }, t))),
           h('a', { href: 'mailto:marina@mnjauprrrrr.com', style: { font: '500 14px Inter,sans-serif', color: '#1D1A17', textDecoration: 'none' } }, 'marina@mnjauprrrrr.com')))));
 }
@@ -5764,7 +5758,7 @@ function ProizvodM({
   }, "Po\u0161alji upit") : React.createElement(Button, {
     size: "sm",
     onClick: addP
-  }, "Dodaj u korpu")), React.createElement("div", {
+  }, "Po\u0161alji upit")), React.createElement("div", {
     style: {
       borderTop: '1px solid var(--hairline-strong)'
     }

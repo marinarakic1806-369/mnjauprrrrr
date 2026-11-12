@@ -1202,7 +1202,7 @@ function ProductCard({
       transform: h ? 'none' : 'translateY(8px)',
       transition: 'all .3s'
     }
-  }, "Dodaj u korpu")), /*#__PURE__*/React.createElement("div", {
+  }, "Po\u0161alji upit")), /*#__PURE__*/React.createElement("div", {
     style: {
       display: 'grid',
       gap: 5,
@@ -2282,7 +2282,7 @@ function Proizvod({
   }), /*#__PURE__*/React.createElement(Button, {
     size: "lg",
     onClick: () => add(p, q)
-  }, "Dodaj u korpu")), /*#__PURE__*/React.createElement("div", {
+  }, "Po\u0161alji upit")), /*#__PURE__*/React.createElement("div", {
     style: {
       borderTop: '1px solid var(--hairline-strong)'
     }
