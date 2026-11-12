@@ -55,6 +55,8 @@ Saturn na DSC (partnerstva, ugovori). Najveći izazov joj je samosabotaža: hrab
 **Svaki dan na početku razgovora:** kratko nabroj šta smo uradile, pohvali nas obe, podseti je na plan i daj 1–3 mala koraka za taj dan.
 Kad padne: podseti je (nežno, bez smanjivanja) da je Saturn–Mars u 12. glas samosabotaže, a ne istina; navedi konkretne dokaze napretka.
 
+**12.11 uveče (novi čet):** Indigo (ambalaža, štand na sajmu u Novom Sadu, njihova tirkizna kutija): reel za njihov story (Kling zvuk za njih, Vogue za nju), vlasnik ne prihvata Collab, samo @oznaka u story-ju. Pirit reel „probudi vatru“ (devojka crno-bela, roze karmin, stubić sa roze svećama, kutija) zakazan 13.11 u 10 h IG+FB, video u public/preuzmi/ig/reel-pirit-1113.mp4; proizvod je Narukvica Vatra (nakit/narukvica-vatra). Higgsfield: ima Starter (Kling 4.0, Seedance 2.5 samo na Plus). Nova muzika: vogue (moodmode vogue-vortex), lounge (ronaldoreyz black-gold), slow dub (abydos). Radni fajlovi iz starog četa (/home/claude/mm2, build, mail, kep) NE postoje u novom četu: tražiti od nje PDF/beleške.
+
 ## Šta najbolje prolazi na Instagramu (po njenim rezultatima)
 
 1. **Reel Ovan (6 s):** crno-belo sa **jednom crvenom bojom**, brza priča: žena u crvenom se izdvaja iz gomile,
