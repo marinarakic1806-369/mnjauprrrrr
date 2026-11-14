@@ -5,7 +5,12 @@ https://claude.ai/artifact/Qc34zLx6brzoSmftoTmdry (srpski), isti link + #en (eng
 Artifact slug: bf267efd-73a0-4e06-b628-172642870d62 (read: public, pri objavi shared_live "public").
 
 ## Fajlovi
-- index.html + img/: izvor portfolija (publish_files: index.html i img/*, mode patch).
+- sajt/index.html + sajt/img/: izvor portfolija (publish_files: index.html i img/*, mode patch).
+  Od 14.11 isti folder ide i na Vercel (proba po Nikolinom kursu): projekat importovan iz ovog repoa,
+  Root Directory = mackica-web/sajt, Framework = Other. Svaki push na main sam objavljuje novu verziju.
+  U sajt/ stavljati SAMO ono što sme da bude javno (ne klijenti/, alati/, objave/).
+  img/og.jpg je slika za pregled linka (Viber, IG, FB), pravi se iz alati/fonts.css + Playwright.
+- NAPOMENA: repozitorijum je JAVAN; u klijenti/ ne upisivati mejlove, telefone ni cene klijentkinja.
 - klijenti/: beleške i mejlovi po klijentkinji (house-of-joy.md: mejl sa konkurencijom i listom za čekiranje, 14.11 čeka odgovor).
 - objave/: IG karuseli (1-instagram, 2-sekunde, 3-pet, 4-mnjau, 5-hoj) i pin-marina.png.
 - alati/gen.py: generator karusela (Playwright, Inter). alati/pin.html: pin objava.

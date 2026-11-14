@@ -1,6 +1,6 @@
 # House of Joy (Željka Dragaš)
 
-Sajt: houseofjoy.pages.dev · IG @houseofjoy_barajevo · mejl dragaszeljka@gmail.com
+Sajt: houseofjoy.pages.dev · IG @houseofjoy_barajevo
 Vila sa bazenom i đakuzijem, Barajevo. Drugarica, sama tražila sajt. Prvi sajt objavila na story-ju, drugi smo korigovale.
 
 ## Status (14. 11. 2026)
