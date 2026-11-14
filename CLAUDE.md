@@ -57,6 +57,8 @@ Kad padne: podseti je (nežno, bez smanjivanja) da je Saturn–Mars u 12. glas s
 
 **12.11 uveče (novi čet):** Indigo (ambalaža, štand na sajmu u Novom Sadu, njihova tirkizna kutija): reel za njihov story (Kling zvuk za njih, Vogue za nju), vlasnik ne prihvata Collab, samo @oznaka u story-ju. Pirit reel „probudi vatru“ (devojka crno-bela, roze karmin, stubić sa roze svećama, kutija) zakazan 13.11 u 10 h IG+FB, video u public/preuzmi/ig/reel-pirit-1113.mp4; proizvod je Narukvica Vatra (nakit/narukvica-vatra). Higgsfield: ima Starter (Kling 4.0, Seedance 2.5 samo na Plus). Nova muzika: vogue (moodmode vogue-vortex), lounge (ronaldoreyz black-gold), slow dub (abydos). Radni fajlovi iz starog četa (/home/claude/mm2, build, mail, kep) NE postoje u novom četu: tražiti od nje PDF/beleške.
 
+**mackica.web (13–14.11):** Marinin drugi posao, izrada sajtova (IG @mackica.web). Sve o tome, portfolio i alati su u folderu `mackica-web/` ovog repozitorijuma (README.md tamo; ne ide na sajt). Za taj posao se otvara poseban čet, ali vodi ka Krugu (popust za članice u „Ženama koje stvaraju“). Higgsfield pravi nalog: nepretpostavljaj@gmail.com (stari bez kredita: marina.rakic1806). Google prostor očišćen na 62%.
+
 ## Šta najbolje prolazi na Instagramu (po njenim rezultatima)
 
 1. **Reel Ovan (6 s):** crno-belo sa **jednom crvenom bojom**, brza priča: žena u crvenom se izdvaja iz gomile,

@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="sr-Latn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>mackica.web · Sajtovi koji prodaju</title>
+<meta name="description" content="Marina pravi moderne sajtove za male biznise: brzi, lepi i napravljeni prvo za telefon.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0d0d0d;--cream:#f6f0e8;--pink:#ff3d7f;--pink2:#ffd6e4;--mint:#c8f0e3;--muted:#6f6a64}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;overflow-x:hidden}
+body{background:var(--cream);color:var(--ink);font-family:Inter,system-ui,sans-serif;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+.serif{font-family:'Instrument Serif',serif;font-style:italic;font-weight:400;letter-spacing:0}
+
+/* kursor */
+.cur{position:fixed;left:0;top:0;width:18px;height:18px;border-radius:50%;background:var(--pink);pointer-events:none;z-index:999;transform:translate(-50%,-50%);transition:width .25s,height .25s,background .25s;mix-blend-mode:multiply}
+.cur.big{width:84px;height:84px;background:var(--pink2)}
+@media (hover:none){.cur{display:none}}
+
+/* nav */
+nav{position:fixed;top:16px;left:50%;transform:translateX(-50%);z-index:50;display:flex;align-items:center;gap:28px;background:rgba(246,240,232,.72);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(13,13,13,.08);border-radius:60px;padding:10px 12px 10px 18px;width:min(940px,calc(100% - 24px))}
+.logo{display:flex;align-items:center;gap:10px;font-family:Syne;font-weight:800;font-size:19px;letter-spacing:-.3px}
+.logo .cat{width:46px;height:auto;margin:-6px 0;animation:wig 3.2s ease-in-out infinite;transform-origin:50% 90%}
+nav .links{display:flex;gap:22px;margin-left:auto;font-size:14px;font-weight:500}
+nav .links a{opacity:.7;transition:opacity .2s}
+nav .links a:hover{opacity:1}
+.btn{display:inline-flex;align-items:center;gap:10px;background:var(--ink);color:#fff;border-radius:60px;padding:14px 22px;font-weight:600;font-size:15px;transition:transform .2s,background .2s;will-change:transform}
+.btn:hover{background:var(--pink)}
+.btn.ghost{background:transparent;color:var(--ink);border:1.5px solid var(--ink)}
+.btn.ghost:hover{background:var(--ink);color:#fff}
+nav .btn{padding:10px 18px;font-size:14px}
+@media(max-width:720px){nav{gap:10px;padding:8px 8px 8px 12px}nav .links{display:none}nav .btn{margin-left:auto;padding:9px 14px;font-size:13px;white-space:nowrap;flex-shrink:0}.logo{font-size:16px;gap:6px;min-width:0}.logo .cat{width:38px}}
+
+/* hero */
+.hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;padding:140px 6vw 60px;position:relative}
+.kick{display:inline-flex;align-items:center;gap:10px;font-size:14px;font-weight:600;letter-spacing:.3px;margin-bottom:28px}
+.dot{width:9px;height:9px;border-radius:50%;background:#20c26b;box-shadow:0 0 0 0 rgba(32,194,107,.6);animation:ping 1.8s infinite}
+h1{font-family:Syne;font-weight:800;font-size:clamp(54px,8.6vw,160px);line-height:.88;letter-spacing:-.045em}
+h1 .line{display:block;overflow:hidden;padding-bottom:.2em;margin-bottom:-.14em}
+h1 .line>span{display:inline-block;transform:translateY(110%);animation:up 1s cubic-bezier(.2,.9,.2,1) forwards}
+h1 .line:nth-child(2)>span{animation-delay:.12s}
+h1 .rot{color:var(--pink);font-family:'Instrument Serif';font-style:italic;font-weight:400;letter-spacing:-.02em;display:inline-block;min-width:4ch}
+.rot.swap{animation:jello .7s}
+.lede{max-width:560px;font-size:clamp(17px,1.6vw,21px);line-height:1.55;color:#3b3732;margin-top:34px}
+.cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:34px}
+.sticker{font-family:Syne;color:var(--ink);cursor:pointer;position:absolute;font-family:Syne;font-weight:700;font-size:15px;padding:12px 18px;border-radius:40px;border:1.5px solid var(--ink);background:#fff;box-shadow:4px 4px 0 var(--ink);animation:float 5s ease-in-out infinite,shake 2.2s ease-in-out infinite;cursor:pointer;user-select:none}
+.sticker:hover{animation:shake .5s infinite}
+.s1{right:7vw;top:22vh;background:var(--pink2);transform:rotate(8deg)}
+.s2{right:16vw;top:46vh;background:var(--mint);animation-delay:-1.5s,-.7s;transform:rotate(-6deg)}
+.s3{right:5vw;top:63vh;animation-delay:-3s,-1.4s;transform:rotate(4deg)}
+@media(max-width:900px){.sticker{position:static;display:inline-block;margin:8px 8px 0 0;animation:shake 2.2s ease-in-out infinite;box-shadow:3px 3px 0 var(--ink)}.stk{margin-top:30px}}
+
+/* marquee */
+.marq{background:var(--ink);color:var(--cream);overflow:hidden;padding:22px 0;transform:rotate(-2deg);margin:40px -2vw 0;border-top:2px solid var(--pink);border-bottom:2px solid var(--pink)}
+.marq .track{display:flex;gap:42px;width:max-content;animation:marq 26s linear infinite;font-family:Syne;font-weight:800;font-size:clamp(26px,4vw,52px);letter-spacing:-.02em;white-space:nowrap}
+.marq .track span:nth-child(even){font-family:'Instrument Serif';font-style:italic;font-weight:400;color:var(--pink)}
+.marq.rev{transform:rotate(1.5deg);background:var(--pink);border-color:var(--ink);margin-top:-14px}
+.marq.rev .track{animation-direction:reverse;color:var(--ink)}
+.marq.rev .track span:nth-child(even){color:#fff}
+
+/* sekcije */
+section{padding:90px 6vw}
+@media(max-width:900px){section{padding:70px 6vw}.hero{min-height:auto;padding-bottom:10px}}
+.eyebrow{font-size:13px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:var(--muted);margin-bottom:18px}
+h2{font-family:Syne;font-weight:800;font-size:clamp(40px,6.5vw,96px);line-height:.95;letter-spacing:-.04em}
+h2 .serif{color:var(--pink)}
+
+/* radovi */
+.work{display:grid;gap:90px;margin-top:60px}
+.proj{display:grid;grid-template-columns:1.35fr 1fr;gap:60px;align-items:center}
+.proj.flip{grid-template-columns:1fr 1.35fr}
+.proj.flip .stage{order:2}
+@media(max-width:900px){.proj,.proj.flip{grid-template-columns:1fr}.proj.flip .stage{order:0}.proj .stage{padding:78px calc(4vw + 10px) 40px 4vw;margin:20px -6vw 0}.proj .stage .tilt{width:100%}.proj .stage .browser{width:85%}.proj .stage .phone{width:36%;min-width:0;border-width:6px;border-radius:24px}.stage .phone .scr{border-radius:18px}.badge{font-size:12px;padding:8px 12px;left:-6px;top:-10px}}
+.stage{position:relative;perspective:1400px;padding:30px 70px 40px 0}
+.tilt{transform-style:preserve-3d;transition:transform .15s ease-out;position:relative}
+.browser{border-radius:16px;overflow:hidden;background:#fff;box-shadow:0 40px 90px -20px rgba(13,13,13,.35);border:1px solid rgba(13,13,13,.08)}
+.bar{height:34px;background:#efe9e1;display:flex;align-items:center;gap:7px;padding:0 14px}
+.bar i{width:10px;height:10px;border-radius:50%;background:#d6cdc1}
+.bar i:nth-child(1){background:#ff6159}.bar i:nth-child(2){background:#ffbd2e}.bar i:nth-child(3){background:#28c941}
+.bar u{margin-left:14px;flex:1;max-width:280px;height:20px;border-radius:10px;background:#fff;font-size:11px;color:#8b847b;text-decoration:none;display:flex;align-items:center;padding-left:10px}
+.phone{position:absolute;right:0;bottom:0;width:30%;min-width:150px;aspect-ratio:9/19.5;border-radius:34px;border:8px solid var(--ink);background:var(--ink);overflow:hidden;box-shadow:0 30px 70px -10px rgba(13,13,13,.45);transform:translateZ(70px)}
+.phone .scr{position:absolute;inset:0;overflow:hidden;border-radius:26px}
+.phone .scr{background:#fff}
+.phone .scr img{width:100%;animation:scroll 16s ease-in-out infinite alternate}
+.phone:before{content:"";position:absolute;top:7px;left:50%;transform:translateX(-50%);width:34%;height:16px;background:var(--ink);border-radius:20px;z-index:2}
+.badge{position:absolute;left:-14px;top:0;z-index:3;font-family:Syne;font-weight:800;font-size:14px;background:var(--pink);color:#fff;padding:10px 16px;border-radius:40px;transform:rotate(-8deg);animation:shake 2.6s ease-in-out infinite}
+.info h3{font-family:Syne;font-weight:800;font-size:clamp(34px,4.2vw,58px);letter-spacing:-.035em;line-height:1}
+.info .type{font-family:'Instrument Serif';font-style:italic;font-size:26px;color:var(--pink);margin:8px 0 22px}
+.info p{font-size:17px;line-height:1.6;color:#3b3732;max-width:460px}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin:24px 0 30px}
+.tags span{font-size:13px;font-weight:600;padding:8px 14px;border-radius:30px;border:1.5px solid var(--ink);background:#fff;transition:transform .2s}
+.tags span:hover{transform:rotate(-4deg) scale(1.08);background:var(--pink2)}
+
+/* sta dobijas */
+.feat{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:60px}
+@media(max-width:900px){.feat{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.feat{grid-template-columns:1fr}}
+.card{cursor:pointer;background:#fff;border:1.5px solid var(--ink);border-radius:26px;padding:32px 28px 30px;transition:transform .25s cubic-bezier(.2,.9,.2,1.4),box-shadow .25s,background .2s;box-shadow:0 0 0 var(--ink)}
+.card:hover{transform:translate(-6px,-6px) rotate(-1.5deg);box-shadow:8px 8px 0 var(--ink)}
+.card:nth-child(3n+1):hover,.card:nth-child(3n+1).on{background:var(--mint)}
+.card:nth-child(3n+2):hover,.card:nth-child(3n+2).on{background:var(--pink2)}
+.card:nth-child(2){background:var(--pink2)}
+.card.on{transform:translate(-6px,-6px) rotate(-1.5deg);box-shadow:8px 8px 0 var(--ink)}
+.card:nth-child(3n):hover,.card:nth-child(3n).on{background:var(--mint)}
+.card .ic{font-size:30px;margin-bottom:22px;display:inline-block}
+.card:hover .ic{animation:jello .8s}
+.card h4{font-family:Syne;font-weight:700;font-size:23px;letter-spacing:-.02em;margin-bottom:10px}
+.card p{font-size:15.5px;line-height:1.55;color:#4a453f}
+
+/* proces */
+.proc{background:#fff;color:var(--ink);border:1.5px solid var(--ink);border-radius:44px;margin:0 2vw}
+.proc .eyebrow{color:var(--muted)}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:70px;border-top:1px solid #3a3632}
+@media(max-width:900px){.steps{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.steps{grid-template-columns:1fr}}
+.step{padding:34px 26px 10px 0;border-right:1px solid #3a3632;margin-right:26px}
+.step:last-child{border-right:0}
+.step .n{font-family:'Instrument Serif';font-style:italic;font-size:64px;color:var(--pink);line-height:1}
+.step h4{font-family:Syne;font-weight:700;font-size:24px;margin:14px 0 10px}
+.step p{font-size:15.5px;line-height:1.55;color:#c9c1b6}
+
+/* kraj */
+.end{text-align:center}
+.end h2{font-size:clamp(48px,9vw,150px)}
+.end p{font-size:19px;color:#3b3732;margin:28px auto 40px;max-width:520px;line-height:1.55}
+.big{font-size:18px;padding:20px 32px}
+.handle{display:block;margin-top:18px;font-size:15px;color:var(--muted)}
+footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;padding:30px 6vw 40px;font-size:13px;color:var(--muted);border-top:1px solid rgba(13,13,13,.1)}
+
+
+.hero{display:grid;grid-template-columns:1.25fr .9fr;gap:5vw;align-items:center}
+.hpic{position:relative;overflow:visible;margin-bottom:40px;justify-self:center;width:min(430px,100%)}
+.frame{border-radius:240px 240px 32px 32px;overflow:hidden;border:2px solid var(--ink);box-shadow:12px 12px 0 var(--pink);transform:rotate(2deg);transition:transform .4s cubic-bezier(.2,.9,.2,1.4)}
+.frame:hover{transform:rotate(-1deg) scale(1.02)}
+.frame img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 38%}
+.hpic .s1{right:-10px;top:8%;left:auto}
+.hpic .s2{left:-44px;top:70%;right:auto}
+.hpic .s3{right:-14px;bottom:-2%;top:auto}
+@media(max-width:900px){.hero{grid-template-columns:1fr;padding-top:120px}.hpic{width:100%;margin-top:34px}.hpic .stk{text-align:center}.cta{justify-content:center}.cta .btn{flex:1 1 0;justify-content:center;white-space:nowrap;padding:14px 12px;font-size:14px}}
+.ic svg{width:36px;height:36px;stroke:#0d0d0d;stroke-width:1.6;fill:#0d0d0d;stroke-linecap:round;stroke-linejoin:round}
+.ic svg .w{stroke:#fff;fill:none}
+.card .ic{animation:blink 2.4s ease-in-out infinite}
+.card:nth-child(2) .ic{animation-delay:.4s}.card:nth-child(3) .ic{animation-delay:.8s}.card:nth-child(4) .ic{animation-delay:1.2s}.card:nth-child(5) .ic{animation-delay:1.6s}.card:nth-child(6) .ic{animation-delay:2s}
+@keyframes blink{0%,100%{opacity:1;transform:scale(1)}45%{opacity:1;transform:scale(1)}55%{opacity:.25;transform:scale(.9)}65%{opacity:1;transform:scale(1.12)}75%{transform:scale(1)}}
+/* House of Joy u mint/tirkiz stilu */
+.hoj .type{color:#22b3a3}
+.hoj h3{color:#0d0d0d}
+.hoj .tags span:hover{background:var(--mint)}
+.hoj .btn{background:var(--mint);color:var(--ink);border:1.5px solid var(--ink);box-shadow:4px 4px 0 var(--ink)}
+.hoj .btn:hover{background:var(--ink);color:var(--mint)}
+.mnj .btn{background:var(--pink);color:#fff;border:1.5px solid var(--ink);box-shadow:4px 4px 0 var(--ink)}
+.mnj .btn:hover{background:var(--ink);color:var(--pink)}
+.hoj .badge{background:var(--mint);color:var(--ink);border:1.5px solid var(--ink)}
+
+
+.say{position:absolute;left:50%;top:calc(100% + 34px);transform:translateX(-50%) scale(.6);opacity:0;pointer-events:none;width:min(330px,92vw);display:flex;flex-direction:column;align-items:center;transition:opacity .25s,transform .35s cubic-bezier(.2,.9,.2,1.5);z-index:5}
+.say .bub{position:relative;background:var(--bc,#fff);color:var(--ink);border:1.5px solid var(--ink);box-shadow:4px 4px 0 var(--ink);font-family:Syne;font-weight:700;font-size:17px;line-height:1.35;padding:16px 20px;border-radius:22px;text-align:center}
+.say .bub:after{content:"";position:absolute;bottom:-10px;left:50%;width:18px;height:18px;margin-left:-9px;background:var(--bc,#fff);border-right:1.5px solid var(--ink);border-bottom:1.5px solid var(--ink);transform:rotate(45deg)}
+.say img{width:92px;margin-top:14px;animation:wig 2.4s ease-in-out infinite;transform-origin:50% 90%}
+.say.on{opacity:1;transform:translateX(-50%) scale(1)}
+.sticker.act{animation:shake .5s 2}
+@media(max-width:900px){.say{position:relative;left:auto;top:auto;transform:scale(.6);margin:0 auto;display:none}.say.on{display:flex;transform:scale(1);margin-top:22px;width:100%;max-width:340px;scroll-margin:90px}.say img{width:84px}.hpic{display:flex;flex-direction:column;align-items:center}}
+/* proces */
+.plist{margin-top:60px;border-top:1.5px solid var(--ink)}
+.prow{display:grid;grid-template-columns:110px 1fr 300px;gap:36px;padding:38px 0;border-bottom:1.5px solid var(--ink);align-items:start;transition:background .3s,padding .3s}
+.prow:hover{padding-left:8px}
+.prow .n{font-family:'Instrument Serif';font-style:italic;font-size:72px;color:var(--pink);line-height:.9}
+.prow h4{font-family:Syne;font-weight:800;font-size:30px;letter-spacing:-.02em;margin-bottom:12px}
+.prow p{font-size:16.5px;line-height:1.65;color:#3b3732;max-width:620px}
+.prow .get{border:1.5px solid var(--ink);border-radius:20px;padding:18px 20px;font-size:15px;line-height:1.5;color:var(--ink);background:var(--cream);box-shadow:3px 3px 0 var(--ink)}
+.prow .get b{display:block;font-family:Syne;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:var(--pink);margin-bottom:6px}
+@media(max-width:900px){.prow{grid-template-columns:1fr;gap:12px}.prow .n{font-size:56px}}
+
+
+.browser .view{position:relative;aspect-ratio:1440/900;overflow:hidden;background:#fff}
+.browser .view img{width:100%;animation:scroll 22s ease-in-out infinite alternate}
+/* moja slika u telefonu */
+.hfone{position:relative;width:min(300px,100%);aspect-ratio:9/19.5;border-radius:46px;border:10px solid var(--ink);background:var(--ink);overflow:hidden;box-shadow:14px 14px 0 var(--pink);transform:rotate(3deg);transition:transform .45s cubic-bezier(.2,.9,.2,1.4);margin:0 auto}
+.hfone:hover{transform:rotate(-2deg) scale(1.03)}
+.hfone:before{content:"";position:absolute;top:9px;left:50%;transform:translateX(-50%);width:34%;height:20px;background:var(--ink);border-radius:20px;z-index:2}
+.hfone img{width:100%;height:100%;object-fit:cover;object-position:50% 30%;border-radius:36px}
+.hfone .bar2{position:absolute;bottom:8px;left:50%;transform:translateX(-50%);width:36%;height:5px;border-radius:5px;background:rgba(255,255,255,.75);z-index:2}
+@media(max-width:900px){.hfone{width:min(250px,70vw)}}
+
+
+.prow .more{display:grid;grid-template-rows:0fr;transition:grid-template-rows .45s ease}
+.prow .more>p{overflow:hidden}
+.prow.open .more{grid-template-rows:1fr}
+.prow h4{margin-bottom:0}.prow.open h4{margin-bottom:12px}
+.prow .get{font-family:Inter;text-align:left;cursor:pointer;position:relative;animation:nudge 2.6s ease-in-out infinite}
+.prow .get u{text-decoration:none;font-weight:600}
+.prow:nth-child(odd) .get{background:var(--pink2)}
+.prow:nth-child(even) .get{background:var(--mint)}
+.prow .get .pl{position:absolute;right:14px;top:12px;font-style:normal;font-family:Syne;font-weight:800;font-size:22px;color:var(--pink);transition:transform .3s}
+.prow.open .get{animation:none;box-shadow:1px 1px 0 var(--ink);transform:translate(2px,2px)}
+.prow.open .get .pl{transform:rotate(45deg)}
+.prow .get:hover{transform:translate(-2px,-2px);box-shadow:5px 5px 0 var(--ink)}
+.prow:nth-child(2) .get{animation-delay:.5s}.prow:nth-child(3) .get{animation-delay:1s}.prow:nth-child(4) .get{animation-delay:1.5s}.prow:nth-child(5) .get{animation-delay:2s}
+@keyframes nudge{0%,70%,100%{translate:0 0}75%{translate:0 -6px}80%{translate:0 0}85%{translate:0 -3px}90%{translate:0 0}}
+.prow{align-items:center}
+.end{padding:90px 6vw}
+.mail{display:inline-block;margin-top:10px;font-size:17px;font-weight:600;border-bottom:2px solid var(--pink);padding-bottom:2px}
+
+
+.walk{position:relative;height:120px;margin:-10px -2vw 22px;overflow-x:clip;overflow-y:visible}
+.walker{position:absolute;bottom:30px;left:0;width:78px;animation:bob .9s ease-in-out infinite;will-change:transform}
+.paws{position:absolute;inset:0}
+.paw{position:absolute;width:22px;height:22px;opacity:0;transition:opacity .2s;transform:rotate(90deg)}
+.paw svg{width:100%;height:100%;fill:var(--ink)}
+@keyframes walkx{0%{transform:translateX(-90px)}88%{transform:translateX(calc(var(--w,1200px) + 10px))}100%{transform:translateX(calc(var(--w,1200px) + 10px))}}
+@keyframes bob{0%,100%{translate:0 0;rotate:-2deg}50%{translate:0 -3px;rotate:2deg}}
+@keyframes pawin{0%{opacity:0}1%{opacity:1}90%{opacity:1}100%{opacity:0}}
+
+
+@media(max-width:900px){.hpic{margin-bottom:0}.hpic .stk{margin-top:30px}.say.on{margin-top:34px!important}#radovi{padding-top:44px}}
+
+.lang{margin-left:auto;display:flex;align-items:center;gap:5px;border:0;background:none;cursor:pointer;padding:4px 2px;font-family:Syne;font-weight:700;font-size:13px;letter-spacing:.5px;color:var(--ink)}
+.lang:after{content:"";order:2}
+.lang span{padding:0;transition:color .2s,opacity .2s;opacity:.4}
+.lang span[data-l=sr]:after{content:" /";opacity:.4;color:var(--ink)}
+html:not([lang=en]) .lang [data-l=sr],html[lang=en] .lang [data-l=en]{opacity:1}
+nav .links{margin-left:0}
+nav .links+.lang{margin-left:auto}
+@media(max-width:720px){.lang{font-size:12px}.lang span{padding:0}nav .btn{margin-left:0;padding:8px 11px;font-size:12px}.logo .lt{font-size:14px}.logo .cat{width:34px}nav{gap:8px}}
+@media(max-width:340px){nav .btn{display:none}}.lang{flex-shrink:0}
+[data-en],#rot{transition:opacity .28s ease}
+body.swap [data-en],body.swap #rot{opacity:0}
+
+@media(max-width:900px){
+ .proj .info{display:contents}
+ .proj h3{order:0;margin:0}
+ .proj .stage,.proj.flip .stage{order:1;margin-top:6px!important}
+ .proj .type{order:2;margin:-6px 0 14px!important}
+ .proj .info>p,.proj .tags,.proj .info>.btn{order:3}
+ .proj{gap:0}
+ .proj .info>p{margin-bottom:0}
+ .proj .tags{margin:20px 0 24px}
+ .proj .info>.btn{justify-self:start}
+}
+/* reveal */
+.rv{opacity:0;transform:translateY(60px) rotate(1.5deg);transition:opacity .9s ease,transform 1s cubic-bezier(.2,.9,.2,1)}
+.rv.in{opacity:1;transform:none}
+
+@keyframes up{to{transform:translateY(0)}}
+@keyframes wig{0%,60%,100%{transform:rotate(0)}65%{transform:rotate(-14deg)}72%{transform:rotate(12deg)}79%{transform:rotate(-8deg)}86%{transform:rotate(5deg)}}
+@keyframes ping{0%{box-shadow:0 0 0 0 rgba(32,194,107,.55)}80%,100%{box-shadow:0 0 0 12px rgba(32,194,107,0)}}
+@keyframes float{0%,100%{translate:0 0}50%{translate:0 -16px}}
+@keyframes shake{0%,100%{rotate:0deg}20%{rotate:-6deg}40%{rotate:5deg}60%{rotate:-3deg}80%{rotate:2deg}}
+@keyframes jello{0%,100%{transform:scale(1,1)}30%{transform:scale(1.18,.84)}45%{transform:scale(.88,1.12)}60%{transform:scale(1.06,.95)}75%{transform:scale(.97,1.03)}}
+@keyframes marq{to{transform:translateX(-50%)}}
+@keyframes scroll{0%,6%{transform:translateY(0)}94%,100%{transform:translateY(var(--d,-70%))}}
+
+@media (prefers-reduced-motion:reduce){*,*:before{animation:none!important;transition:none!important}h1 .line>span{transform:none}.rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<div class="cur" id="cur"></div>
+
+<nav>
+  <a class="logo" href="#top" aria-label="mackica.web">
+    <img src="img/macka.png" alt="" class="cat">
+    <span class="lt">mackica.web</span>
+  </a>
+  <div class="links"><a href="#radovi" data-en="Work">Radovi</a><a href="#dobijas" data-en="What you get">Šta dobijaš</a><a href="#kako" data-en="How I work">Kako radim</a></div>
+  <button class="lang" id="lang" type="button" aria-label="Language"><span data-l="sr">SR</span><span data-l="en">EN</span></button>
+  <a class="btn mag" href="#kontakt" data-en="Message me ↗">Piši mi ↗</a>
+</nav>
+
+<header class="hero" id="top"><div class="htext">
+  <div class="kick" data-en="&lt;span class=&quot;dot&quot;&gt;&lt;/span&gt;Taking new projects"><span class="dot"></span>Primam nove projekte</div>
+  <h1><span class="line"><span data-en="Websites that">Sajtovi koji</span></span><span class="line"><span><span class="rot" id="rot">prodaju.</span></span></span></h1>
+  <p class="lede" data-en="I’m Marina. I build modern websites for small businesses: fast, beautiful and made for the phone first. Your site looks like you and works for you while you sleep.">Ja sam Marina. Pravim moderne sajtove za male biznise: brze, lepe i napravljene prvo za telefon. Tvoj sajt izgleda kao ti i radi za tebe dok spavaš.</p>
+  <div class="cta"><a class="btn mag" href="#radovi" data-en="See my work ↓">Pogledaj radove ↓</a><a class="btn ghost mag" href="mailto:marina.rakic1806@gmail.com?subject=Sajt" data-en="Email me ✉">Piši mi na mail ✉</a></div>
+  </div>
+  <div class="hpic">
+    <div class="hfone"><img src="img/marina.jpg" alt="Marina, mackica.web"><span class="bar2"></span></div>
+    <div class="stk">
+    <button class="sticker s1" data-say="Jer telefon ne ispuštamo iz ruku. 📱 Ni ti, ni tvoji kupci." data-say-en="Because we never put our phones down. 📱 Neither do your customers." data-en="📱 phone first">📱 prvo za telefon</button>
+    <button class="sticker s2" data-say="Kad je sajt spor, ti odmah izađeš, zar ne? ⚡ Tvoji kupci isto." data-say-en="When a site is slow, you leave right away, don’t you? ⚡ So do your customers." data-en="⚡ fast as a cat">⚡ brz kao mačka</button>
+    <button class="sticker s3" data-say="Želiš da se širiš i van Srbije? 🌍 Tvoj sajt priča oba jezika." data-say-en="Want to grow beyond Serbia? 🌍 Your site speaks both languages.">🇷🇸 SR / EN 🇬🇧</button>
+    </div>
+    <div class="say" id="say" aria-live="polite"><div class="bub" id="sayt"></div><img src="img/macka.png" alt=""></div>
+  </div>
+</header>
+
+
+
+<section id="radovi">
+  <div class="eyebrow rv" data-en="Work">Radovi</div>
+  <h2 class="rv" data-en="I don’t talk.&lt;br&gt;&lt;span class=&quot;serif&quot;&gt;I show.&lt;/span&gt;">Ne pričam.<br><span class="serif">Pokazujem.</span></h2>
+
+  <div class="work">
+    <article class="proj hoj">
+      <div class="stage rv">
+        <div class="tilt">
+          <span class="badge" data-en="live ✦">uživo ✦</span>
+          <div class="browser"><div class="bar"><i></i><i></i><i></i><u>houseofjoy.pages.dev</u></div><div class="view"><img src="img/hoj-dscroll.jpg" alt="House of Joy na računaru"></div></div>
+          <div class="phone"><div class="scr"><img src="img/hoj-scroll.jpg" alt="House of Joy na telefonu"></div></div>
+        </div>
+      </div>
+      <div class="info rv">
+        <h3>House of Joy</h3>
+        <div class="type" data-en="Private villa with a pool">Privatna vila sa bazenom</div>
+        <p data-en="A villa for parties, workshops and getaways near Belgrade. In a few seconds guests see the space, the pool and the prices, then call or book with one tap.">Vila za proslave, radionice i odmor kod Beograda. Gost za par sekundi vidi prostor, bazen i cene, pa jednim dodirom zove ili rezerviše.</p>
+        <div class="tags"><span data-en="Tap to book">Rezervacija na dodir</span><span>SR / EN</span><span data-en="Price list">Cenovnik</span><span data-en="Gallery">Galerija</span><span data-en="Map">Mapa</span></div>
+        <a class="btn mag" href="https://houseofjoy.pages.dev/" target="_blank" rel="noopener" data-en="View site ↗">Pogledaj sajt ↗</a>
+      </div>
+    </article>
+
+    <article class="proj flip mnj">
+      <div class="stage rv">
+        <div class="tilt">
+          <span class="badge" style="background:#0d0d0d" data-en="live ✦">uživo ✦</span>
+          <div class="browser"><div class="bar"><i></i><i></i><i></i><u>mnjauprrrrr.com</u></div><div class="view"><img src="img/mnjau-dscroll.jpg" alt="Mnjauprrrrr na računaru"></div></div>
+          <div class="phone"><div class="scr"><img src="img/mnjau-scroll.jpg" alt="Mnjauprrrrr na telefonu"></div></div>
+        </div>
+      </div>
+      <div class="info rv">
+        <h3>Mnjauprrrrr</h3>
+        <div class="type" data-en="Jewelry, astrology and a blog">Nakit, astrologija i blog</div>
+        <p data-en="A jewelry brand with soul. Every piece has its own page, and the whole site carries the same style as the Instagram: leopard, gold and cream.">Brend nakita sa dušom. Svaki komad ima svoju stranu, a ceo sajt nosi isti stil kao Instagram: leopard, zlatna i krem.</p><p style="margin-top:12px" data-en="The blog gets a new post every day and has become the main way to talk to customers. An Instagram caption is short and limited; the blog has room for the whole story, and Google finds it.">Blog dobija novi tekst svaki dan i postao je glavni način da razgovara sa kupcima. Instagram opis je kratak i ograničen, a na blogu ima mesta za celu priču, i Google ga pronalazi.</p>
+        <div class="tags"><span data-en="Jewelry catalog">Katalog nakita</span><span data-en="Blog: talking to customers">Blog: razgovor sa kupcima</span><span data-en="Short links for Instagram">Kratki linkovi za Instagram</span><span data-en="Services">Usluge</span></div>
+        <a class="btn mag" href="https://mnjauprrrrr.com/" target="_blank" rel="noopener" data-en="View site ↗">Pogledaj sajt ↗</a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section id="dobijas">
+  <div class="eyebrow rv" data-en="What you get">Šta dobijaš</div>
+  <h2 class="rv" data-en="A pretty site is only &lt;span class=&quot;serif&quot;&gt;the beginning.&lt;/span&gt;">Lep sajt je samo <span class="serif">početak.</span></h2>
+  <div class="feat">
+    <div class="card rv"><span class="ic"><svg viewBox="0 0 24 24"><rect x="6" y="2.5" width="12" height="19" rx="2.5"/><path class="w" d="M10.5 18.5h3"/></svg></span><h4 data-en="Perfect on the phone">Savršen na telefonu</h4><p data-en="Your customers come from Instagram, which means from their phones. I build for the phone first, then for the computer.">Tvoji kupci dolaze sa Instagrama, dakle sa telefona. Tamo prvo pravim, pa tek onda za računar.</p></div>
+    <div class="card rv"><span class="ic"><svg viewBox="0 0 24 24"><path d="M13 2.5 4.5 13.5H12l-1 8 8.5-11H12z"/></svg></span><h4 data-en="Fast">Brz</h4><p data-en="It loads instantly. Nobody waits, and nobody leaves before seeing what you offer.">Učitava se odmah. Niko ne čeka i niko ne zatvara stranu pre nego što vidi šta nudiš.</p></div>
+    <div class="card rv"><span class="ic"><svg viewBox="0 0 24 24"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8z"/><path d="M19 16l.7 1.8 1.8.7-1.8.7L19 21l-.7-1.8-1.8-.7 1.8-.7z"/></svg></span><h4 data-en="In your style">U tvom stilu</h4><p data-en="Your colors, your photos, your voice. A site people recognize, not another template.">Tvoje boje, tvoje fotke, tvoj glas. Sajt koji se prepoznaje, a ne još jedan šablon.</p></div>
+    <div class="card rv"><span class="ic"><svg viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z"/><path class="w" d="M8 9.5h8M8 12.5h5"/></svg></span><h4 data-en="Contact in one tap">Kontakt na jedan klik</h4><p data-en="A call, a message, an inquiry or a booking. No searching, no ten-field forms.">Poziv, poruka, upit ili rezervacija. Bez traženja i bez formulara od deset polja.</p></div>
+    <div class="card rv"><span class="ic"><svg viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m15.5 15.5 5 5" stroke-width="3"/></svg></span><h4 data-en="Visible on Google">Vidljiv na Google-u</h4><p data-en="Titles, descriptions and structure so you’re found by people already looking for exactly what you do.">Naslovi, opisi i struktura da te nađu ljudi koji već traže baš to što radiš.</p></div>
+    <div class="card rv"><span class="ic"><svg viewBox="0 0 24 24"><ellipse cx="12" cy="16" rx="4.2" ry="3.6"/><circle cx="6" cy="10.5" r="1.8"/><circle cx="9.5" cy="6.5" r="1.8"/><circle cx="14.5" cy="6.5" r="1.8"/><circle cx="18" cy="10.5" r="1.8"/></svg></span><h4 data-en="Maintenance on request">Održavanje po dogovoru</h4><p data-en="No time to deal with your site? I maintain it for you: I update prices, photos and texts and make sure everything works. On request.">Nemaš vremena da se baviš sajtom? Ja ga održavam umesto tebe: menjam cene, slike i tekstove i pazim da sve radi. Po dogovoru.</p></div>
+  </div>
+</section>
+
+<section class="proc" id="kako">
+  <div class="walk" aria-hidden="true"><div class="paws" id="paws"></div><img class="walker" src="img/macka.png" alt=""></div>
+  <div class="eyebrow rv" data-en="How I work">Kako radim</div>
+  <h2 class="rv" data-en="From idea to a site&lt;br&gt;&lt;span class=&quot;serif&quot;&gt;that works for you.&lt;/span&gt;">Od ideje do sajta<br><span class="serif">koji radi za tebe.</span></h2>
+  <div class="plist">
+    <div class="prow rv"><div class="n">01</div><div><h4 data-en="Getting to know you and planning">Upoznavanje i plan</h4><div class="more"><p data-en="We talk about your business, your customers and your competition, and what the site should bring you: inquiries, bookings or sales. We agree on the pages, the deadline and the price, and you get it all in writing, with no surprises.">Razgovaramo o tvom biznisu, kupcima i konkurenciji, i o tome šta sajt treba da donese: upite, rezervacije ili prodaju. Dogovaramo koje strane su potrebne, rok i cenu, i sve to dobiješ napisano, bez iznenađenja.</p></div></div><button class="get" type="button"><b data-en="You get">Dobijaš</b><u data-en="A site plan and a clear quote.">Plan sajta i jasnu ponudu.</u><i class="pl">+</i></button></div>
+    <div class="prow rv"><div class="n">02</div><div><h4 data-en="Content and structure">Sadržaj i struktura</h4><div class="more"><p data-en="I plan the pages and write or polish the texts so a customer understands in seconds what you offer and what to do next. I tell you exactly which photos are needed, and if you don’t have them, we find a solution together.">Pravim raspored strana i pišem ili sređujem tekstove tako da kupac za par sekundi shvati šta nudiš i šta sledeće da uradi. Kažem ti tačno koje fotografije su potrebne, a ako ih nemaš, smislimo rešenje zajedno.</p></div></div><button class="get" type="button"><b data-en="You get">Dobijaš</b><u data-en="A sitemap and texts for your approval.">Mapu sajta i tekstove na odobrenje.</u><i class="pl">+</i></button></div>
+    <div class="prow rv"><div class="n">03</div><div><h4 data-en="Design that fits your brand">Dizajn po tvom brendu</h4><div class="more"><p data-en="Colors, fonts and photos that look like you, not like a template. I design for the phone first, then the computer. We adjust until you say “that’s it”.">Boje, fontovi i fotografije koje liče na tebe, a ne na šablon. Prvo dizajniram za telefon, pa za računar. Menjamo dok ne kažeš „to je to“.</p></div></div><button class="get" type="button"><b data-en="You get">Dobijaš</b><u data-en="The look of every page before the build.">Izgled svih strana pre izrade.</u><i class="pl">+</i></button></div>
+    <div class="prow rv"><div class="n">04</div><div><h4 data-en="Build and connect">Izrada i povezivanje</h4><div class="more"><p data-en="I build a fast, secure site and connect everything that brings you customers: call and message buttons, Instagram, a map and inquiry forms. I set up titles, descriptions and a sitemap so Google finds you more easily.">Pravim brz i bezbedan sajt i povezujem sve što ti donosi kupce: dugmad za poziv i poruke, Instagram, mapu i forme za upit. Podešavam naslove, opise i mapu sajta da te Google lakše pronađe.</p></div></div><button class="get" type="button"><b data-en="You get">Dobijaš</b><u data-en="The site on a test address to try out.">Sajt na probnoj adresi da ga isprobaš.</u><i class="pl">+</i></button></div>
+    <div class="prow rv"><div class="n">05</div><div><h4 data-en="Launch and support">Puštanje i podrška</h4><div class="more"><p data-en="I connect your domain, test the site on several phones and browsers, and show you how to change prices, texts and photos yourself. After launch I’m here for questions, and if you’d rather not worry about anything, I take over regular maintenance, on request.">Povezujem tvoj domen, proveravam sajt na više telefona i browsera i pokazujem ti kako da sama menjaš cene, tekstove i slike. Posle puštanja tu sam za pitanja, a ako želiš da ne brineš ni o čemu, preuzimam i redovno održavanje, po dogovoru.</p></div></div><button class="get" type="button"><b data-en="You get">Dobijaš</b><u data-en="The live site, a link for your bio, a guide and maintenance if you want it.">Sajt uživo, link za bio, uputstvo i održavanje po želji.</u><i class="pl">+</i></button></div>
+  </div>
+</section>
+
+<section class="end" id="kontakt">
+  <div class="eyebrow rv" data-en="Contact">Kontakt</div>
+  <h2 class="rv" data-en="Yours is &lt;span class=&quot;serif&quot;&gt;next.&lt;/span&gt;">Tvoj je <span class="serif">sledeći.</span></h2>
+  <p class="rv" data-en="Send me “SITE” on Instagram or email me a few words about your business. I reply fast, no strings attached.">Napiši mi „SAJT“ na Instagramu ili mi pošalji mejl sa par reči o svom biznisu. Javljam se brzo, bez obaveze.</p>
+  <a class="btn big mag rv" href="https://instagram.com/mackica.web" target="_blank" rel="noopener" data-en="Message me on Instagram ↗">Piši mi na Instagramu ↗</a>
+  <span class="handle rv">@mackica.web</span>
+  <a class="mail rv" href="mailto:marina.rakic1806@gmail.com?subject=Sajt">✉ marina.rakic1806@gmail.com</a>
+</section>
+
+<footer><span>© 2026 mackica.web · Marina</span><span data-en="Made with 🐾 and lots of coffee">Napravljeno sa 🐾 i mnogo kafe</span></footer>
+
+<script>
+(function(){
+  var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  // marquee
+  var w1=['SALONI','lepote','RADIONICE','ručnog rada','NAKIT','i moda','VILE','za proslave','KAFIĆI','i barovi','USLUGE','svih vrsta'];
+  var w2=['BRZO','LEPO','NA TELEFONU','SA STILOM','BEZ ŠABLONA','ZA TEBE'];
+  function fill(el,arr){var h='';for(var k=0;k<2;k++)arr.forEach(function(x){h+='<span>'+x+'</span><span>✦</span>'});el.innerHTML=h}
+  
+  // rotirajuca rec
+  var words=['prodaju.','zavode.','se pamte.','rade za tebe.'],i=0,r=document.getElementById('rot');
+
+  var EN=false,ws_sr=['prodaju.','zavode.','se pamte.','rade za tebe.'],ws_en=['sell.','seduce.','stick.','work for you.'];
+  document.querySelectorAll('[data-en]').forEach(function(e){e.setAttribute('data-sr',e.innerHTML)});
+  function setLang(l){EN=(l==='en');document.documentElement.lang=EN?'en':'sr-Latn';
+    document.querySelectorAll('[data-en]').forEach(function(e){e.innerHTML=e.getAttribute(EN?'data-en':'data-sr')});
+    words=EN?ws_en:ws_sr;r.textContent=words[i%words.length];
+    document.title=EN?'mackica.web · Websites that sell':'mackica.web · Sajtovi koji prodaju';
+    var sy=document.getElementById('say');if(sy)sy.classList.remove('on');
+    try{history.replaceState(null,'',EN?'#en':location.pathname+location.search)}catch(x){}}
+  document.getElementById('lang').addEventListener('click',function(){var l=EN?'sr':'en';document.body.classList.add('swap');setTimeout(function(){setLang(l);requestAnimationFrame(function(){document.body.classList.remove('swap')})},280)});
+  if(location.hash==='#en')setLang('en');
+  if(!reduce)setInterval(function(){i=(i+1)%words.length;r.classList.remove('swap');void r.offsetWidth;r.textContent=words[i];r.classList.add('swap')},2200);
+  // reveal
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.15});
+  document.querySelectorAll('.rv').forEach(function(el,k){el.style.transitionDelay=(k%3)*80+'ms';io.observe(el)});
+  document.querySelectorAll('.prow').forEach(function(r){r.querySelector('.get').addEventListener('click',function(){r.classList.toggle('open')})});
+  var cards=document.querySelectorAll('.card');
+  cards.forEach(function(c){c.addEventListener('click',function(){var was=c.classList.contains('on');cards.forEach(function(x){x.classList.remove('on')});if(!was)c.classList.add('on')})});
+  if(matchMedia('(hover: none)').matches){var co=new IntersectionObserver(function(es){es.forEach(function(e){e.target.classList.toggle('on',e.isIntersecting)})},{rootMargin:'-42% 0px -42% 0px'});cards.forEach(function(c){co.observe(c)})}
+
+  (function(){var w=document.querySelector('.walk'),pw=document.getElementById('paws'),cat=w&&w.querySelector('.walker');if(!w)return;
+    var paw='<svg viewBox="0 0 24 24"><ellipse cx="12" cy="15.5" rx="4.6" ry="4"/><circle cx="5.5" cy="9.5" r="2.1"/><circle cx="9.5" cy="5.5" r="2.1"/><circle cx="14.5" cy="5.5" r="2.1"/><circle cx="18.5" cy="9.5" r="2.1"/></svg>';
+    var W=0,ps=[],T=11000,t0=performance.now();
+    function build(){W=w.offsetWidth;pw.innerHTML='';ps=[];for(var x=24,i=0;x<W-10;x+=44,i++){var e=document.createElement('span');e.className='paw';e.innerHTML=paw;e.style.left=x+'px';e.style.bottom=(i%2?20:6)+'px';pw.appendChild(e);ps.push([e,x])}}
+    build();addEventListener('resize',build);
+    if(matchMedia('(prefers-reduced-motion: reduce)').matches){cat.style.left='calc(50% - 39px)';return}
+    (function tick(now){var p=((now-t0)%T)/T,run=.88,cx=-90+Math.min(p/run,1)*(W+100);cat.style.transform='translateX('+cx+'px)';
+      for(var k=0;k<ps.length;k++){ps[k][0].style.opacity=(cx+40>ps[k][1]&&p<.97)?1:0}requestAnimationFrame(tick)})(t0);
+  })();
+  var say=document.getElementById('say'),last=null;
+  document.querySelectorAll('.sticker').forEach(function(b){b.addEventListener('click',function(e){e.stopPropagation();
+    document.querySelectorAll('.sticker').forEach(function(x){x.classList.remove('act')});
+    if(last===b&&say.classList.contains('on')){say.classList.remove('on');last=null;return}
+    b.classList.add('act');document.getElementById('sayt').textContent=b.getAttribute(EN&&b.hasAttribute('data-say-en')?'data-say-en':'data-say');say.style.setProperty('--bc',getComputedStyle(b).backgroundColor);say.classList.remove('on');void say.offsetWidth;say.classList.add('on');last=b;setTimeout(function(){say.scrollIntoView({behavior:'smooth',block:'center'})},120)})});
+  document.addEventListener('click',function(){say.classList.remove('on');document.querySelectorAll('.sticker').forEach(function(x){x.classList.remove('act')})});
+  function dist(){document.querySelectorAll('.phone .scr,.browser .view').forEach(function(sc){var im=sc.querySelector('img');function set(){var d=im.offsetHeight-sc.offsetHeight;if(d>0)im.style.setProperty('--d',(-d)+'px')}if(im.complete)set();else im.addEventListener('load',set)})}
+  dist();addEventListener('resize',dist);
+  if(reduce)return;
+  // kursor
+  var c=document.getElementById('cur'),x=0,y=0,cx=0,cy=0;
+  addEventListener('mousemove',function(e){x=e.clientX;y=e.clientY});
+  (function loop(){cx+=(x-cx)*.2;cy+=(y-cy)*.2;c.style.transform='translate('+(cx-9)+'px,'+(cy-9)+'px)';requestAnimationFrame(loop)})();
+  c.style.left='0';c.style.top='0';
+  document.querySelectorAll('a,.sticker,.card,.tilt').forEach(function(el){el.addEventListener('mouseenter',function(){c.classList.add('big')});el.addEventListener('mouseleave',function(){c.classList.remove('big')})});
+  // magnetna dugmad
+  document.querySelectorAll('.mag').forEach(function(b){
+    b.addEventListener('mousemove',function(e){var R=b.getBoundingClientRect();b.style.transform='translate('+((e.clientX-R.left-R.width/2)*.25)+'px,'+((e.clientY-R.top-R.height/2)*.35)+'px)'});
+    b.addEventListener('mouseleave',function(){b.style.transform=''});
+  });
+  // 3D nagib radova
+  document.querySelectorAll('.stage').forEach(function(s){var t=s.querySelector('.tilt');
+    s.addEventListener('mousemove',function(e){var R=s.getBoundingClientRect(),px=(e.clientX-R.left)/R.width-.5,py=(e.clientY-R.top)/R.height-.5;t.style.transform='rotateY('+(px*14)+'deg) rotateX('+(-py*10)+'deg)'});
+    s.addEventListener('mouseleave',function(){t.style.transform=''});
+  });
+  // stikeri se pomeraju sa misem
+  var st=document.querySelectorAll('.sticker');
+  addEventListener('mousemove',function(e){if(innerWidth<900)return;var dx=e.clientX/innerWidth-.5,dy=e.clientY/innerHeight-.5;st.forEach(function(s,k){var f=(k+1)*14;s.style.translate=(dx*f)+'px '+(dy*f)+'px'})});
+})();
+</script>
+</body>
+</html>
