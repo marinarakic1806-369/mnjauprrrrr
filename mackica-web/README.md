@@ -6,6 +6,7 @@ Artifact slug: bf267efd-73a0-4e06-b628-172642870d62 (read: public, pri objavi sh
 
 ## Fajlovi
 - index.html + img/: izvor portfolija (publish_files: index.html i img/*, mode patch).
+- klijenti/: beleške i mejlovi po klijentkinji (house-of-joy.md: mejl sa konkurencijom i listom za čekiranje, 14.11 čeka odgovor).
 - objave/: IG karuseli (1-instagram, 2-sekunde, 3-pet, 4-mnjau, 5-hoj) i pin-marina.png.
 - alati/gen.py: generator karusela (Playwright, Inter). alati/pin.html: pin objava.
   alati/rec3.py: snimak portfolija za story/reel (CDP screencast 432x768 @2x, ciklama "prst", muzika Vogue).
@@ -24,5 +25,7 @@ Artifact slug: bf267efd-73a0-4e06-b628-172642870d62 (read: public, pri objavi sh
 - Radovi: House of Joy (houseofjoy.pages.dev), Mnjauprrrrr (mnjauprrrrr.com).
 - Usluge: izrada sajta + održavanje po dogovoru. Mejl za upite: marina.rakic1806@gmail.com.
 - Naplata mora preko sestrine firme (Marina je državna službenica), pitanje za knjigovođu.
-- Sledeće: ponuda za ženu sa lutkama; kasnije sopstvena adresa (mackica-web.pages.dev).
+- Žena sa lutkama (23,8K pratilaca, sertifikat; upoznale se u grupi kod Skrabatorke): 14.11 poslata poruka sa primerom sajta
+  https://claude.ai/artifact/KwydBTTDhEYWKtD2as4oFb, čeka odgovor. Pravilo: mejl za dokumente + Viber da javi da je stigao.
+- Sledeće: ponuda za ženu sa lutkama kad odgovori; kasnije sopstvena adresa (mackica-web.pages.dev).
 - Veza sa Zvezdanim krugom: posle otvaranja (5.2.2027) članicama "Žene koje stvaraju" popust na sajt (10–15%).
