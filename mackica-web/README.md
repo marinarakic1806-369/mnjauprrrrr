@@ -28,6 +28,11 @@ Artifact slug: bf267efd-73a0-4e06-b628-172642870d62 (read: public, pri objavi sh
   mačkica hoda i ostavlja crne šapice, desktop ne dirati bez potrebe; na telefonu: naziv, pa snimak, pa podnaslov.
 - SR / EN prekidač (obična velika slova), tekstovi u data-en atributima.
 
+## Ideje za buduće projekte
+- **Apple stil (njen izbor, 14.11, primer iPhone 14 Pro strana):** „skupo“ deluje. Crna pozadina, ogromna fotografija proizvoda u centru,
+  kratak naslov od dve reči („Pro. Beyond.“), tanka siva slova, mnogo praznog prostora, izbor boje proizvoda tačkicama,
+  sporo otkrivanje proizvoda dok se skroluje (sticky slike, zoom, fade). Za klijenta sa luksuznim proizvodom (nakit, kozmetika, vila).
+
 ## Posao
 - Radovi: House of Joy (houseofjoy.pages.dev), Mnjauprrrrr (mnjauprrrrr.com).
 - Usluge: izrada sajta + održavanje po dogovoru. Mejl za upite: marina.rakic1806@gmail.com.

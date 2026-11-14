@@ -251,6 +251,7 @@ body.swap [data-en],body.swap #rot{opacity:0}
  .proj .tags{margin:20px 0 24px}
  .proj .info>.btn{justify-self:start}
 }
+@media(min-width:901px){.hero{min-height:auto;padding-bottom:20px}#radovi{padding-top:150px}}
 /* reveal */
 .rv{opacity:0;transform:translateY(60px) rotate(1.5deg);transition:opacity .9s ease,transform 1s cubic-bezier(.2,.9,.2,1)}
 .rv.in{opacity:1;transform:none}
@@ -420,7 +421,7 @@ body.swap [data-en],body.swap #rot{opacity:0}
   document.querySelectorAll('.sticker').forEach(function(b){b.addEventListener('click',function(e){e.stopPropagation();
     document.querySelectorAll('.sticker').forEach(function(x){x.classList.remove('act')});
     if(last===b&&say.classList.contains('on')){say.classList.remove('on');last=null;return}
-    b.classList.add('act');document.getElementById('sayt').textContent=b.getAttribute(EN&&b.hasAttribute('data-say-en')?'data-say-en':'data-say');say.style.setProperty('--bc',getComputedStyle(b).backgroundColor);say.classList.remove('on');void say.offsetWidth;say.classList.add('on');last=b;setTimeout(function(){say.scrollIntoView({behavior:'smooth',block:'center'})},120)})});
+    b.classList.add('act');document.getElementById('sayt').textContent=b.getAttribute(EN&&b.hasAttribute('data-say-en')?'data-say-en':'data-say');say.style.setProperty('--bc',getComputedStyle(b).backgroundColor);say.classList.remove('on');void say.offsetWidth;say.classList.add('on');last=b;setTimeout(function(){if(innerWidth<=900){say.scrollIntoView({behavior:'smooth',block:'center'});return}var r=say.getBoundingClientRect();if(r.bottom>innerHeight-24)scrollBy({top:r.bottom-innerHeight+40,behavior:'smooth'})},120)})});
   document.addEventListener('click',function(){say.classList.remove('on');document.querySelectorAll('.sticker').forEach(function(x){x.classList.remove('act')})});
   function dist(){document.querySelectorAll('.phone .scr,.browser .view').forEach(function(sc){var im=sc.querySelector('img');function set(){var d=im.offsetHeight-sc.offsetHeight;if(d>0)im.style.setProperty('--d',(-d)+'px')}if(im.complete)set();else im.addEventListener('load',set)})}
   dist();addEventListener('resize',dist);
