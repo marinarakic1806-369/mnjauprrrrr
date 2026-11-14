@@ -1,6 +1,8 @@
 # mackica.web (Marinin posao: izrada sajtova)
 
-Instagram @mackica.web, bio: bio.site/marina.marina. Portfolio je javan:
+Instagram @mackica.web, bio: bio.site/marina.marina.
+**Portfolio uživo (Vercel, od 14.11): https://mackica-web.vercel.app/** (Vercel nalog marinarakic1806-5814, Hobby, projekat mackica-web).
+Portfolio je javan i kao artifact:
 https://claude.ai/artifact/Qc34zLx6brzoSmftoTmdry (srpski), isti link + #en (engleski).
 Artifact slug: bf267efd-73a0-4e06-b628-172642870d62 (read: public, pri objavi shared_live "public").
 
