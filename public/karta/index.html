@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="sr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Tvoja karta i element koji ti fali | Mnjauprrrrr</title>
+<meta name="description" content="Upiši datum, sat i mesto rođenja i odmah vidi svoju natalnu kartu, elemente u procentima i element koji ti fali, sa kamenom koji ga vraća.">
+<meta property="og:title" content="Koji element ti fali? Tvoja karta za minut">
+<meta property="og:description" content="Ti nisi samo tvoj znak. Upiši datum, sat i mesto rođenja i vidi koji element ti fali i koji kamen ti pripada.">
+<meta property="og:image" content="https://mnjauprrrrr.com/assets/site/p-prsten-riznica.jpg">
+<meta property="og:url" content="https://mnjauprrrrr.com/karta/">
+<link rel="canonical" href="https://mnjauprrrrr.com/karta/">
+<link rel="icon" href="/assets/site/logo.png">
+<link rel="stylesheet" href="/tokens/fonts.css">
+<style>
+*{box-sizing:border-box}
+html,body{margin:0}
+body{font-family:Inter,sans-serif;color:#1D1A17;background:#EFE5D6;-webkit-font-smoothing:antialiased;position:relative}
+body:before{content:"";position:absolute;inset:0;background:url(/assets/site/leopard-besavno.png) 0 0/520px auto repeat;opacity:.32;pointer-events:none;z-index:-1}
+a{color:inherit;text-decoration:none}
+.bar{position:sticky;top:0;z-index:20;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:14px clamp(18px,4vw,56px);background:rgba(239,229,214,.82);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.65)}
+.logo{font:700 34px/1 Corinthia,cursive}
+.links{display:flex;gap:clamp(14px,2.4vw,32px);font:600 11px Inter;letter-spacing:.18em;text-transform:uppercase}
+.links a:hover{color:#8A6A28}
+.pill{font:600 11px Inter;letter-spacing:.18em;text-transform:uppercase;padding:11px 18px;border:1px solid #1D1A17;border-radius:999px;white-space:nowrap}
+@media(max-width:860px){.links{display:none}}
+.wrap{max-width:980px;margin:0 auto;padding:clamp(36px,6vw,80px) clamp(16px,4vw,48px)}
+.lab{font:700 12px Inter;letter-spacing:.24em;text-transform:uppercase;color:#8A6A28}
+h1{margin:14px 0 0;font:800 clamp(34px,5.4vw,64px)/1.05 Inter;text-transform:uppercase;letter-spacing:.01em;text-wrap:balance}
+.scr{font:700 clamp(44px,6vw,72px)/1 Corinthia,cursive;color:#8A6A28}
+.lead{font:400 clamp(17px,1.6vw,20px)/1.6 Inter;max-width:640px;margin:18px 0 0}
+.card{background:#F4EDE2;border:1px solid #C5A059;padding:clamp(22px,4vw,44px);margin-top:clamp(28px,4vw,44px)}
+form{display:grid;grid-template-columns:1fr 1fr;gap:16px 18px}
+@media(max-width:620px){form{grid-template-columns:1fr}}
+.f{display:flex;flex-direction:column;gap:7px}
+.f.full{grid-column:1/-1}
+label{font:700 11px Inter;letter-spacing:.18em;text-transform:uppercase;color:#8A6A28}
+input{font:400 17px Inter;padding:14px 14px;border:1px solid #C5A059;background:#fff;color:#1D1A17;border-radius:0;width:100%;-webkit-appearance:none;appearance:none;min-height:52px}
+input:focus{outline:2px solid #C5A059;outline-offset:1px}
+.chk{display:flex;gap:10px;align-items:flex-start;font:400 14px/1.45 Inter;text-transform:none;letter-spacing:0;color:#1D1A17}
+.chk input{width:20px;height:20px;min-height:0;margin:1px 0 0;flex:0 0 20px;-webkit-appearance:checkbox;appearance:auto}
+.hint{font:400 13px/1.45 Inter;color:#5b534a}
+.btn{grid-column:1/-1;font:700 13px Inter;letter-spacing:.2em;text-transform:uppercase;padding:18px 24px;background:#1D1A17;color:#F4EDE2;border:0;cursor:pointer;min-height:56px}
+.btn:hover{background:#8A6A28}
+.err{grid-column:1/-1;color:#7A2E2E;font:600 14px Inter;display:none}
+#rez{display:none}
+.h2{margin:0;font:800 clamp(26px,3.6vw,40px)/1.1 Inter;text-transform:uppercase;text-wrap:balance}
+.stubs{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:20px}
+@media(max-width:620px){.stubs{grid-template-columns:1fr}}
+.stub{background:#fff;border:1px solid #C5A059;padding:16px;text-align:center}
+.stub small{display:block;font:700 11px Inter;letter-spacing:.18em;text-transform:uppercase;color:#8A6A28}
+.stub b{display:block;font:800 22px Inter;margin-top:6px;text-transform:uppercase}
+.bars{margin-top:22px;display:grid;gap:12px}
+.br{display:grid;grid-template-columns:96px 1fr 56px;align-items:center;gap:12px;font:700 15px Inter}
+.br .t{height:16px;background:#fff;border:1px solid #C5A059;position:relative}
+.br .t i{position:absolute;left:0;top:0;bottom:0;background:#C5A059}
+.br.low .t i{background:#9E9E9E}
+.br.low{color:#1D1A17}
+.br em{font-style:normal;font-weight:400;text-align:right}
+.ch svg{width:100%;height:auto;display:block}
+.miss{display:grid;grid-template-columns:1fr 1fr;gap:clamp(16px,3vw,28px);margin-top:22px}
+@media(max-width:700px){.miss{grid-template-columns:1fr}}
+.el{background:#fff;border:1px solid #C5A059;padding:20px}
+.el .n{font:700 12px Inter;letter-spacing:.22em;text-transform:uppercase;color:#8A6A28}
+.el h3{margin:6px 0 4px;font:800 26px Inter;text-transform:uppercase}
+.el .z{font:600 14px Inter;color:#5b534a}
+.el p{font:400 16px/1.55 Inter;margin:12px 0}
+.el .k{font:700 15px Inter}
+.pr{display:flex;gap:14px;align-items:center;margin-top:14px;border-top:1px solid #E6D9C3;padding-top:14px}
+.pr img{width:96px;height:120px;object-fit:contain;background:#F4EDE2;border:1px solid #C5A059;padding:4px;flex:0 0 96px}
+.pr b{display:block;font:800 16px Inter;text-transform:uppercase}
+.pr span{display:block;font:400 13px Inter;color:#5b534a;margin:4px 0 8px}
+.pr a{display:inline-block;font:700 11px Inter;letter-spacing:.18em;text-transform:uppercase;border-bottom:1px solid #C5A059;padding-bottom:2px;color:#8A6A28}
+.cta{text-align:center}
+.cta .btn{display:inline-block;margin-top:18px}
+.note{font:400 13px/1.5 Inter;color:#5b534a;margin-top:16px}
+.el p,.lead,.note,.k,.cta p{text-wrap:pretty}
+#rez{scroll-margin-top:80px}
+@media(max-width:620px){.card.ch{padding:16px 4px}.cta .btn{letter-spacing:.12em}}
+.foot{text-align:center;padding:30px 16px 50px;font:400 13px Inter;color:#5b534a}
+</style>
+</head>
+<body>
+<div class="bar">
+  <a class="logo" href="/">Mnjauprrrrr</a>
+  <div class="links"><a href="/nakit/">Nakit</a><a href="/kristali/">Kristali</a><a href="/astro/">Astro</a><a href="/zvezdani-zapis/">Zvezdani zapis</a><a href="/blog/">Blog</a></div>
+  <a class="pill" href="/krug/">Zvezdani krug</a>
+</div>
+
+<div class="wrap">
+  <div class="lab">Besplatno · za minut</div>
+  <h1>Koji element tebi&nbsp;fali?</h1>
+  <div class="scr">ti nisi samo tvoj znak</div>
+  <p class="lead">Upiši datum, sat i mesto rođenja. Dobićeš svoju kartu, elemente u procentima i dva elementa koja ti najviše fale, sa kamenom koji ih vraća u&nbsp;tvoj&nbsp;život.</p>
+
+  <div class="card" id="forma">
+    <form id="f" novalidate>
+      <div class="f"><label for="ime">Ime</label><input id="ime" name="ime" autocomplete="given-name" required></div>
+      <div class="f"><label for="mejl">Mejl</label><input id="mejl" name="mejl" type="email" autocomplete="email" inputmode="email" required></div>
+      <div class="f"><label for="dat">Datum rođenja</label><input id="dat" type="date" min="1920-01-01" max="2015-12-31" required></div>
+      <div class="f"><label for="vr">Sat rođenja</label><input id="vr" type="time" required>
+        <span class="chk"><input type="checkbox" id="nz"><span>Ne znam tačan sat <span class="hint">(sat piše u izvodu iz matične knjige rođenih)</span></span></span></div>
+      <div class="f full"><label for="mesto">Mesto rođenja</label><input id="mesto" list="gradovi" placeholder="Počni da kucaš, npr. Kragujevac" autocomplete="off" required>
+        <span class="hint">Gradovi iz Srbije i bivše Jugoslavije. Ako je tvoj grad mali, izaberi najbliži veći.</span></div>
+      <label class="chk full" style="grid-column:1/-1"><input type="checkbox" id="ok" required><span>Želim da mi Marina šalje mejlove o kamenju, astrologiji i Zvezdanom krugu. Mogu da se odjavim kad poželim.</span></label>
+      <div class="err" id="err"></div>
+      <button class="btn" type="submit">Izračunaj moju kartu</button>
+    </form>
+    <datalist id="gradovi"></datalist>
+  </div>
+
+  <div id="rez">
+    <div class="card">
+      <div class="lab" id="rLab">Tvoja karta</div>
+      <h2 class="h2" id="rNasl" style="margin-top:10px"></h2>
+      <div class="stubs" id="stubs"></div>
+      <div class="bars" id="bars"></div>
+      <p class="note" id="nzNote" style="display:none">Bez tačnog sata ne znamo tvoj podznak i kuće, a Mesec može biti i u susednom znaku. Kad nađeš sat u izvodu, izračunaj ponovo.</p>
+    </div>
+
+    <div class="card">
+      <div class="lab">Fale ti</div>
+      <h2 class="h2" id="mNasl" style="margin-top:10px"></h2>
+      <div class="miss" id="miss"></div>
+    </div>
+
+    <div class="card ch" id="chCard">
+      <div class="lab" style="text-align:center;margin-bottom:10px">Tvoja natalna karta</div>
+      <div id="ch"></div>
+      <p class="note" style="text-align:center">Svetlo sivo: <b id="lg1"></b> · Tamno sivo: <b id="lg2"></b>. Zaokružene su planete u tim&nbsp;elementima.</p>
+    </div>
+
+    <div class="card cta">
+      <div class="scr">ovo je tek prvi korak</div>
+      <p class="lead" style="margin:10px auto 0">U Zvezdanom krugu zajedno čitamo karte, uživo, korak po korak. Tvoj Mesec, tvoje rane, tvoja snaga. Upiši se na listu čekanja, prvih 18 dobija promo cenu&nbsp;zauvek.</p>
+      <a class="btn" href="/krug/">Upiši me na listu čekanja</a>
+      <p class="note">Ovo je automatski izračun. Za ličnu analizu cele karte pogledaj <a href="/zvezdani-zapis/" style="border-bottom:1px solid #C5A059">Zvezdani zapis</a>.</p>
+    </div>
+  </div>
+</div>
+<div class="foot">Mnjauprrrrr · nakit od hirurškog čelika i poludragog kamenja</div>
+
+<script>
+(function(){
+var D=Math.PI/180,R=180/Math.PI;
+function sin(x){return Math.sin(x*D)}function cos(x){return Math.cos(x*D)}
+var M360=function(x){return ((x%360)+360)%360};
+var GR=[["Beograd",44.8167,20.4667],["Novi Sad",45.2671,19.8335],["Niš",43.3209,21.8958],["Kragujevac",44.0142,20.9114],["Subotica",46.1003,19.6656],["Zrenjanin",45.3836,20.3819],["Pančevo",44.8708,20.6403],["Čačak",43.8914,20.3497],["Kraljevo",43.7258,20.6894],["Novi Pazar",43.1367,20.5122],["Smederevo",44.6628,20.93],["Leskovac",42.9981,21.9461],["Užice",43.8556,19.8425],["Valjevo",44.27,19.89],["Kruševac",43.58,21.3339],["Vranje",42.5514,21.9003],["Šabac",44.7558,19.6939],["Sombor",45.7733,19.1122],["Požarevac",44.62,21.1897],["Pirot",43.1531,22.5861],["Zaječar",43.9042,22.2847],["Kikinda",45.8297,20.4653],["Sremska Mitrovica",44.9764,19.6122],["Jagodina",43.9772,21.2611],["Vršac",45.1167,21.3036],["Bor",44.0744,22.0958],["Prokuplje",43.2342,21.5881],["Loznica",44.5333,19.2236],["Inđija",45.0483,20.0817],["Ruma",45.0081,19.8222],["Aranđelovac",44.3069,20.56],["Gornji Milanovac",44.0246,20.4617],["Paraćin",43.8608,21.4078],["Ćuprija",43.9275,21.37],["Smederevska Palanka",44.3653,20.9589],["Obrenovac",44.6547,20.2003],["Bačka Palanka",45.2506,19.3919],["Vrbas",45.5714,19.6406],["Bečej",45.6164,20.0478],["Kula",45.6083,19.5272],["Senta",45.9275,20.0772],["Negotin",44.2264,22.5308],["Trstenik",43.6169,20.9997],["Ivanjica",43.58,20.2297],["Prijepolje",43.3906,19.6486],["Aleksinac",43.5417,21.7069],["Priština",42.6629,21.1655],["Kosovska Mitrovica",42.8914,20.866],["Prizren",42.2139,20.7397],["Peć",42.6593,20.2883],["Sarajevo",43.8563,18.4131],["Banja Luka",44.7722,17.191],["Tuzla",44.5384,18.6763],["Mostar",43.3438,17.8078],["Bijeljina",44.7569,19.2144],["Zenica",44.2034,17.9077],["Doboj",44.7311,18.0864],["Trebinje",42.7117,18.3436],["Brčko",44.8727,18.8106],["Prijedor",44.98,16.7139],["Zvornik",44.3858,19.1028],["Višegrad",43.7828,19.2928],["Foča",43.5064,18.7781],["Podgorica",42.4304,19.2594],["Nikšić",42.7731,18.9445],["Herceg Novi",42.4531,18.5375],["Bar",42.0931,19.1003],["Budva",42.2911,18.8403],["Kotor",42.4247,18.7712],["Pljevlja",43.3567,19.3583],["Bijelo Polje",43.0383,19.7476],["Cetinje",42.3906,18.9142],["Berane",42.8425,19.8733],["Zagreb",45.815,15.9819],["Split",43.5081,16.4402],["Rijeka",45.3271,14.4422],["Osijek",45.555,18.6955],["Zadar",44.1194,15.2314],["Vukovar",45.3511,19.0025],["Dubrovnik",42.6507,18.0944],["Pula",44.8666,13.8496],["Knin",44.0406,16.1997],["Vinkovci",45.2883,18.8047],["Skoplje",41.9981,21.4254],["Bitolj",41.0297,21.3292],["Kumanovo",42.1322,21.7144],["Ohrid",41.1172,20.8016],["Ljubljana",46.0569,14.5058],["Maribor",46.5547,15.6459]];
+GR.sort(function(a,b){return a[0].localeCompare(b[0],'sr')});
+var dl=document.getElementById('gradovi');GR.forEach(function(g){var o=document.createElement('option');o.value=g[0];dl.appendChild(o)});
+function norm(s){return s.toLowerCase().trim().replace(/č|ć/g,'c').replace(/š/g,'s').replace(/ž/g,'z').replace(/đ/g,'dj').replace(/dž/g,'dz')}
+function nadjiGrad(s){var n=norm(s);for(var i=0;i<GR.length;i++)if(norm(GR[i][0])===n)return GR[i];return null}
+
+function jd(y,m,d,h){if(m<=2){y-=1;m+=12}var A=Math.floor(y/100),B=2-A+Math.floor(A/4);return Math.floor(365.25*(y+4716))+Math.floor(30.6001*(m+1))+d+B-1524.5+h/24}
+function lastSun(y,m){var d=new Date(Date.UTC(y,m,0));return d.getUTCDate()-d.getUTCDay()}
+// Jugoslavija/Srbija: letnje vreme od 1983 (zadnja nedelja marta do zadnje nedelje septembra, od 1996 do zadnje nedelje oktobra), u 01:00 UT
+function utOffset(y,mo,d,h){
+  if(y<1983)return 1;
+  var s=Date.UTC(y,2,lastSun(y,3),1),em=y<1996?9:10,e=Date.UTC(y,em-1,lastSun(y,em),1);
+  var t=Date.UTC(y,mo-1,d,0)+(h-1)*3600e3;return (t>=s&&t<e)?2:1;
+}
+var EL={Merkur:[0.38709927,0.20563593,7.00497902,252.2503235,77.45779628,48.33076593,0.00000037,0.00001906,-0.00594749,149472.67411175,0.16047689,-0.12534081],
+Venera:[0.72333566,0.00677672,3.39467605,181.9790995,131.60246718,76.67984255,0.0000039,-0.00004107,-0.0007889,58517.81538729,0.00268329,-0.27769418],
+Zemlja:[1.00000261,0.01671123,-0.00001531,100.46457166,102.93768193,0,0.00000562,-0.00004392,-0.01294668,35999.37244981,0.32327364,0],
+Mars:[1.52371034,0.0933941,1.84969142,-4.55343205,-23.94362959,49.55953891,0.00001847,0.00007882,-0.00813131,19140.30268499,0.44441088,-0.29257343],
+Jupiter:[5.202887,0.04838624,1.30439695,34.39644051,14.72847983,100.47390909,-0.00011607,-0.00013253,-0.00183714,3034.74612775,0.21252668,0.20469106],
+Saturn:[9.53667594,0.05386179,2.48599187,49.95424423,92.59887831,113.66242448,-0.0012506,-0.00050991,0.00193609,1222.49362201,-0.41897216,-0.28867794],
+Uran:[19.18916464,0.04725744,0.77263783,313.23810451,170.9542763,74.01692503,-0.00196176,-0.00004397,-0.00242939,428.48202785,0.40805281,0.04240589],
+Neptun:[30.06992276,0.00859048,1.77004347,-55.12002969,44.96476227,131.78422574,0.00026291,0.00005105,0.00035372,218.45945325,-0.32241464,-0.00508664],
+Pluton:[39.48211675,0.2488273,17.14001206,238.92903833,224.06891629,110.30393684,-0.00031596,0.0000517,0.00004818,145.20780515,-0.04062942,-0.01183482]};
+var MT=[[6288774,0,0,1,0],[1274027,2,0,-1,0],[658314,2,0,0,0],[213618,0,0,2,0],[-185116,0,1,0,0],[-114332,0,0,0,2],[58793,2,0,-2,0],[57066,2,-1,-1,0],[53322,2,0,1,0],[45758,2,-1,0,0],[-40923,0,1,-1,0],[-34720,1,0,0,0],[-30383,0,1,1,0],[15327,2,0,0,-2],[-12528,0,0,1,2],[10980,0,0,1,-2],[10675,4,0,-1,0],[10034,0,0,3,0],[8548,4,0,-2,0],[-7888,2,1,-1,0],[-6766,2,1,0,0],[-5163,1,0,-1,0],[4987,1,1,0,0],[4036,2,-1,1,0],[3994,2,0,2,0],[3861,4,0,0,0],[3665,2,0,-3,0],[-2689,0,1,-2,0],[-2602,2,0,-1,2],[2390,2,-1,-2,0],[-2348,1,0,1,0],[2236,2,-2,0,0],[-2120,0,1,2,0],[-2069,0,2,0,0]];
+function karta(y,mo,d,hUT,lat,lon){
+  var J=jd(y,mo,d,hUT),T=(J-2451545)/36525,eps=23.439291-0.0130042*T;
+  function helio(n){var e0=EL[n],v=[];for(var i=0;i<6;i++)v.push(e0[i]+e0[i+6]*T);var a=v[0],e=v[1],I=v[2],L=v[3],w=v[4],O=v[5];
+    var M=M360(L-w),om=w-O,E=M+R*e*sin(M);for(var k=0;k<30;k++)E=E-(E-R*e*sin(E)-M)/(1-e*cos(E));
+    var x=a*(cos(E)-e),yy=a*Math.sqrt(1-e*e)*sin(E);
+    var X=(cos(om)*cos(O)-sin(om)*sin(O)*cos(I))*x+(-sin(om)*cos(O)-cos(om)*sin(O)*cos(I))*yy;
+    var Y=(cos(om)*sin(O)+sin(om)*cos(O)*cos(I))*x+(-sin(om)*sin(O)+cos(om)*cos(O)*cos(I))*yy;return [X,Y]}
+  var pr=1.396971*T;
+  function geo(n){var p=helio(n),z=helio('Zemlja');return M360(R*Math.atan2(p[1]-z[1],p[0]-z[0])+pr)}
+  var L0=280.46646+36000.76983*T,Ms=357.52911+35999.05029*T;
+  var C=(1.914602-0.004817*T)*sin(Ms)+0.019993*sin(2*Ms)+0.000289*sin(3*Ms),om=125.04-1934.136*T;
+  var P={};P['Sunce']=M360(L0+C-0.00569-0.00478*sin(om));
+  var Lp=218.3164477+481267.88123421*T,Dm=297.8501921+445267.1114034*T,Mm=357.5291092+35999.0502909*T,Mp=134.9633964+477198.8675055*T,F=93.272095+483202.0175233*T,Es=1-0.002516*T,s=0;
+  MT.forEach(function(t){s+=t[0]*Math.pow(Es,Math.abs(t[2]))*sin(t[1]*Dm+t[2]*Mm+t[3]*Mp+t[4]*F)});
+  P['Mesec']=M360(Lp+s/1e6);
+  ['Merkur','Venera','Mars','Jupiter','Saturn','Uran','Neptun','Pluton'].forEach(function(n){P[n]=geo(n)});
+  P['Sev. čvor']=M360(125.04452-1934.136261*T);
+  var GMST=M360(280.46061837+360.98564736629*(J-2451545)+0.000387933*T*T),RAMC=M360(GMST+lon),e=eps;
+  var MC=M360(R*Math.atan2(sin(RAMC),cos(RAMC)*cos(e)));
+  var ASC=M360(R*Math.atan2(cos(RAMC),-(sin(RAMC)*cos(e)+Math.tan(lat*D)*sin(e))));
+  function cusp(h){var off={11:30,12:60,2:120,3:150}[h],f={11:1/3,12:2/3,2:2/3,3:1/3}[h],ra=M360(RAMC+off);
+    for(var k=0;k<100;k++){var lam=R*Math.atan2(sin(ra),cos(ra)*cos(e)),dec=Math.asin(sin(e)*sin(lam)),ad=R*Math.asin(Math.max(-1,Math.min(1,Math.tan(lat*D)*Math.tan(dec))));
+      ra=(h==11||h==12)?M360(RAMC+f*(90+ad)):M360(RAMC+180-f*(90-ad))}
+    return M360(R*Math.atan2(sin(ra),cos(ra)*cos(e)))}
+  var H={1:ASC,10:MC,11:cusp(11),12:cusp(12),2:cusp(2),3:cusp(3)};
+  [[4,10],[5,11],[6,12],[7,1],[8,2],[9,3]].forEach(function(p){H[p[0]]=M360(H[p[1]]+180)});
+  var cus=[];for(var i=1;i<=12;i++)cus.push(H[i]);
+  return {P:P,H:cus,ASC:ASC,MC:MC};
+}
+var SN=['Ovan','Bik','Blizanci','Rak','Lav','Devica','Vaga','Škorpija','Strelac','Jarac','Vodolija','Ribe'];
+var ELN=['Vatra','Zemlja','Vazduh','Voda'];
+var ELZ=['Ovan, Lav, Strelac','Bik, Devica, Jarac','Blizanci, Vaga, Vodolija','Rak, Škorpija, Ribe'];
+var ELT=[
+ {t:'Hrabrost i strast. Da kreneš pre nego što si potpuno sigurna i da ne čekaš dozvolu da zauzmeš svoje mesto.',k:'Pirit i Vulkanska&nbsp;Lava',p:[['narukvica-vatra','Narukvica Vatra','Pirit · pravim je po porudžbini','p-narukvica-vatra-pirit.jpg'],['mindjuse-pirit','Minđuše Pirit kiša','Pirit','p-mindjuse-pirit.jpg']]},
+ {t:'Tlo pod nogama. Telo, novac, rutina. Da ideje ne ostanu samo u glavi, nego postanu nešto što možeš da dodirneš.',k:'Crni Ahat i&nbsp;Jaspis',p:[['ahat-zvezdica','Prsten Zvezdica','Crni Ahat','p-ahat-zvezdica.jpg'],['razigrani-jaspis','Ogrlica Razigrani Jaspis','Dalmatinski Jaspis','p-ogrlica-razigrani-jaspis.jpg']]},
+ {t:'Lakoća. Reči. Ljudi sa kojima podeliš teret, umesto da ga nosiš sama. Hrabrost da izgovoriš ono što stvarno misliš.',k:'Amazonit i Gorski&nbsp;Kristal',p:[['narukvica-vazduh','Narukvica Vazduh','Amazonit · Gorski Kristal · pravim je po porudžbini','p-narukvica-vazduh-amazonit.jpg'],['morski-dah','Ogrlica Morski dah','Amazonit','p-ogrlica-morski-dah.jpg']]},
+ {t:'Osećanja bez plana i bez obaveze. Intuicija. Dozvola da budeš mekša i da kažeš: sad sam ja na redu.',k:'Mesečev Kamen i&nbsp;Labradorit',p:[['prsten-riznica','Prsten Mesečeva riznica','Mesečev Kamen · Hematit · Crni Ahat','p-prsten-riznica.jpg'],['cela-si','Ogrlica Cela si','Labradorit','p-ogrlica-cela-si.jpg']]}];
+// bodovi: Sunce, Mesec, podznak 3; Merkur, Venera, Mars 2; Jupiter, Saturn, MC 1; Uran, Neptun, Pluton 0,5
+var W={'Sunce':3,'Mesec':3,'Merkur':2,'Venera':2,'Mars':2,'Jupiter':1,'Saturn':1,'Uran':.5,'Neptun':.5,'Pluton':.5};
+function sg(l){return Math.floor(M360(l)/30)}
+function elOf(l){return sg(l)%4}
+function stp(l){return Math.floor(M360(l)%30)+'°'}
+
+function crtaj(k,nz,low){
+  var P=k.P,C=k.H,ASC=nz?0:k.ASC,K=540/560,INK='#1D1A17',GR2='#8C8C8C',G='#3A3A3A';
+  var GL={'Sunce':'☉','Mesec':'☽','Merkur':'☿','Venera':'♀','Mars':'♂','Jupiter':'♃','Saturn':'♄','Uran':'♅','Neptun':'♆','Pluton':'♇','Sev. čvor':'☊'},SG='♈♉♊♋♌♍♎♏♐♑♒♓';
+  var fill={};fill[low[0]]='#D9D9D9';fill[low[1]]='#9E9E9E';
+  function xy(l,r){var t=(180+(l-ASC))*D;return [720+r*Math.cos(t)*K,620-r*Math.sin(t)*K]}
+  function f1(n){return n.toFixed(1)}
+  var o=['<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 50 1440 1140">'];
+  o.push('<circle cx="720" cy="620" r="540" fill="#fff" stroke="'+GR2+'" stroke-width="2"/>');
+  for(var i=0;i<12;i++){var el=i%4;if(fill[el]!==undefined){var pts=[];for(var t=0;t<=30;t+=2)pts.push(xy(i*30+t,490));for(t=30;t>=0;t-=2)pts.push(xy(i*30+t,560));o.push('<polygon points="'+pts.map(function(p){return f1(p[0])+','+f1(p[1])}).join(' ')+'" fill="'+fill[el]+'"/>')}}
+  [[560,2],[490,1.5]].concat(nz?[]:[[300,1.5]]).forEach(function(c){o.push('<circle cx="720" cy="620" r="'+f1(c[0]*K)+'" fill="none" stroke="'+GR2+'" stroke-width="'+c[1]+'"/>')});
+  o.push('<circle cx="720" cy="620" r="'+f1(130*K)+'" fill="#fff" stroke="'+GR2+'"/>');
+  for(i=0;i<12;i++){var a=xy(i*30,490),b=xy(i*30,560);o.push('<line x1="'+f1(a[0])+'" y1="'+f1(a[1])+'" x2="'+f1(b[0])+'" y2="'+f1(b[1])+'" stroke="'+GR2+'" stroke-width="1.5"/>');
+    var p=xy(i*30+15,515);o.push('<text x="'+f1(p[0])+'" y="'+f1(p[1])+'" font-size="30" fill="'+G+'" text-anchor="middle" dominant-baseline="central">'+SG[i]+'︎</text>');
+    p=xy(i*30+15,550);var th=180+(i*30+15-ASC),rot=-(th-90);if(Math.sin(th*D)<0)rot+=180;
+    o.push('<text x="'+f1(p[0])+'" y="'+f1(p[1])+'" transform="rotate('+f1(rot)+' '+f1(p[0])+' '+f1(p[1])+')" font-family="Inter" font-weight="700" font-size="12" letter-spacing="2" fill="'+G+'" text-anchor="middle" dominant-baseline="central">'+SN[i].toUpperCase()+'</text>')}
+  if(!nz){C.forEach(function(c,j){var ang=j%3===0,a=xy(c,130),b=xy(c,490);o.push('<line x1="'+f1(a[0])+'" y1="'+f1(a[1])+'" x2="'+f1(b[0])+'" y2="'+f1(b[1])+'" stroke="'+(ang?INK:GR2)+'" stroke-width="'+(ang?3:1.2)+'"/>');
+      var nx=C[(j+1)%12],mid=c+M360(nx-c)/2,p=xy(mid,155);o.push('<text x="'+f1(p[0])+'" y="'+f1(p[1])+'" font-family="Inter" font-weight="700" font-size="20" fill="'+G+'" text-anchor="middle" dominant-baseline="central">'+(j+1)+'</text>')});
+    var a=xy(k.ASC,130),b=xy(k.ASC,620);o.push('<line x1="'+f1(a[0])+'" y1="'+f1(a[1])+'" x2="'+f1(b[0]-8)+'" y2="'+f1(b[1])+'" stroke="'+INK+'" stroke-width="9" stroke-linecap="round"/>');
+    a=xy(k.MC,130);b=xy(k.MC,600);o.push('<line x1="'+f1(a[0])+'" y1="'+f1(a[1])+'" x2="'+f1(b[0])+'" y2="'+f1(b[1])+'" stroke="'+INK+'" stroke-width="5" stroke-linecap="round"/>')}
+  o.push('<text x="720" y="628" font-family="Corinthia" font-weight="700" font-size="58" fill="'+INK+'" text-anchor="middle">'+esc(ime.slice(0,14))+'</text>');
+  var names=Object.keys(P),srt=names.slice().sort(function(a,b){return M360(P[a]-ASC)-M360(P[b]-ASC)}),ps=srt.map(function(n){return M360(P[n]-ASC)});
+  for(var it=0;it<200;it++){var ch=false;for(i=0;i<ps.length-1;i++)if(ps[i+1]-ps[i]<9){var m=(ps[i]+ps[i+1])/2;ps[i]=m-4.5;ps[i+1]=m+4.5;ch=true}if(!ch)break}
+  var SP={};srt.forEach(function(n,i){SP[n]=ps[i]+ASC});
+  if(!nz)names.forEach(function(n){var dd=M360(SP[n]-k.MC+180)-180;if(Math.abs(dd)<7)SP[n]=k.MC+(dd>=0?7:-7)});
+  names.forEach(function(n){var l=P[n],p=SP[n],a=xy(l,490),b=xy(l,470);o.push('<line x1="'+f1(a[0])+'" y1="'+f1(a[1])+'" x2="'+f1(b[0])+'" y2="'+f1(b[1])+'" stroke="'+INK+'" stroke-width="2.5"/>');
+    var a2=xy(p,455);o.push('<line x1="'+f1(b[0])+'" y1="'+f1(b[1])+'" x2="'+f1(a2[0])+'" y2="'+f1(a2[1])+'" stroke="'+INK+'" stroke-width="1" opacity=".5"/>');
+    var q=xy(p,428),e=elOf(l);if(fill[e]!==undefined)o.push('<circle cx="'+f1(q[0])+'" cy="'+f1(q[1])+'" r="27" fill="'+fill[e]+'" stroke="'+INK+'" stroke-width="2"/>');
+    o.push('<text x="'+f1(q[0])+'" y="'+f1(q[1])+'" font-size="38" fill="'+INK+'" text-anchor="middle" dominant-baseline="central">'+GL[n]+'︎</text>');
+    q=xy(p,372);o.push('<text x="'+f1(q[0])+'" y="'+f1(q[1])+'" font-family="Inter" font-weight="700" font-size="14" fill="'+INK+'" text-anchor="middle" dominant-baseline="central">'+n+' <tspan font-weight="600" fill="'+G+'">'+stp(l)+'</tspan></text>')});
+  if(!nz){var y=xy(k.ASC,560)[1],at='ASC '+stp(k.ASC)+' '+SN[sg(k.ASC)].toUpperCase();
+    o.push('<rect x="6" y="'+f1(y-30)+'" width="210" height="60" rx="12" fill="'+INK+'"/><text x="111" y="'+f1(y-9)+'" font-family="Inter" font-weight="800" font-size="18" fill="#F4EDE2" text-anchor="middle" dominant-baseline="central">'+at+'</text><text x="111" y="'+f1(y+14)+'" font-family="Inter" font-weight="700" font-size="13" letter-spacing="2" fill="#E8C982" text-anchor="middle" dominant-baseline="central">PODZNAK</text>');
+    var q=xy(k.MC,600),mt='MC '+stp(k.MC)+' '+SN[sg(k.MC)].toUpperCase();
+    o.push('<rect x="'+f1(q[0]-105)+'" y="'+f1(q[1]-38)+'" width="210" height="38" rx="19" fill="'+INK+'"/><text x="'+f1(q[0])+'" y="'+f1(q[1]-19)+'" font-family="Inter" font-weight="800" font-size="16" fill="#F4EDE2" text-anchor="middle" dominant-baseline="central">'+mt+'</text>')}
+  o.push('</svg>');return o.join('');
+}
+function esc(s){return String(s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+var ime='';
+var nzEl=document.getElementById('nz'),vr=document.getElementById('vr');
+nzEl.addEventListener('change',function(){vr.disabled=nzEl.checked;if(nzEl.checked)vr.value=''});
+document.getElementById('f').addEventListener('submit',function(ev){
+  ev.preventDefault();var er=document.getElementById('err');er.style.display='none';
+  function bad(t){er.textContent=t;er.style.display='block'}
+  ime=document.getElementById('ime').value.trim();var mejl=document.getElementById('mejl').value.trim(),dat=document.getElementById('dat').value,nz=nzEl.checked,v=vr.value,g=nadjiGrad(document.getElementById('mesto').value);
+  if(!ime)return bad('Upiši svoje ime.');
+  if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(mejl))return bad('Proveri mejl, nešto ne valja.');
+  if(!/^\d{4}-\d{2}-\d{2}$/.test(dat))return bad('Upiši datum rođenja.');
+  if(!nz&&!/^\d{2}:\d{2}/.test(v))return bad('Upiši sat rođenja ili označi da ga ne znaš.');
+  if(!g)return bad('Izaberi mesto sa spiska (počni da kucaš, pa klikni na grad).');
+  if(!document.getElementById('ok').checked)return bad('Označi da želiš mejlove, tako ti šaljem i rezultat i nove tekstove.');
+  var y=+dat.slice(0,4),mo=+dat.slice(5,7),d=+dat.slice(8,10),hl=nz?12:(+v.slice(0,2)+(+v.slice(3,5))/60);
+  var off=utOffset(y,mo,d,hl),k=karta(y,mo,d,hl-off,g[1],g[2]);
+  var sc=[0,0,0,0],pts=[];
+  for(var n in W){sc[elOf(k.P[n])]+=W[n];pts.push([n,k.P[n]])}
+  if(!nz){sc[elOf(k.ASC)]+=3;sc[elOf(k.MC)]+=1}
+  var tot=sc.reduce(function(a,b){return a+b},0),pc=sc.map(function(x){return Math.round(x/tot*1000)/10});
+  var ord=[0,1,2,3].sort(function(a,b){return sc[a]-sc[b]}),low=[ord[0],ord[1]];
+  // MailerLite
+  try{var fd=new FormData();fd.append('fields[email]',mejl);fd.append('fields[name]',ime);fd.append('fields[company]','Karta: fali '+ELN[low[0]]+' i '+ELN[low[1]]);fd.append('ml-submit','1');fd.append('anticsrf','true');
+    fetch('https://assets.mailerlite.com/jsonp/2736473/forms/202130325138048300/subscribe',{method:'POST',body:fd,mode:'no-cors'}).catch(function(){})}catch(x){}
+  // prikaz
+  document.getElementById('rLab').textContent='Tvoja karta · '+ime;
+  document.getElementById('rNasl').innerHTML='Sunce u '+lok(sg(k.P['Sunce']))+', Mesec u&nbsp;'+lok(sg(k.P['Mesec']))+(nz?'':', podznak&nbsp;'+SN[sg(k.ASC)]);
+  var st=[['Sunce',SN[sg(k.P['Sunce'])]+' '+stp(k.P['Sunce'])],['Mesec',SN[sg(k.P['Mesec'])]+' '+stp(k.P['Mesec'])],['Podznak',nz?'?':SN[sg(k.ASC)]+' '+stp(k.ASC)]];
+  document.getElementById('stubs').innerHTML=st.map(function(s){return '<div class="stub"><small>'+s[0]+'</small><b>'+s[1]+'</b></div>'}).join('');
+  document.getElementById('bars').innerHTML=[0,1,2,3].map(function(i){var lw=low.indexOf(i)>=0;return '<div class="br'+(lw?' low':'')+'"><span>'+ELN[i]+'</span><span class="t"><i style="width:'+pc[i]+'%"></i></span><em>'+String(pc[i]).replace('.',',')+'%</em></div>'}).join('');
+  document.getElementById('nzNote').style.display=nz?'block':'none';
+  document.getElementById('mNasl').innerHTML=ELN[low[0]]+' i&nbsp;'+ELN[low[1]].toLowerCase();
+  document.getElementById('miss').innerHTML=low.map(function(i,j){var e=ELT[i],tu=pts.filter(function(p){return elOf(p[1])===i}).map(function(p){return p[0]});
+    var u=tu.length?'U tvojoj karti ovde su samo: '+tu.join(', ')+'.':'U tvojoj karti ovde nema nijedne planete.';
+    return '<div class="el"><div class="n">'+(j?'Odmah posle':'Najviše ti fali')+'</div><h3>'+ELN[i]+'</h3><div class="z">'+ELZ[i]+'</div><p>'+e.t+'</p><p class="z" style="margin-top:0">'+u+'</p><div class="k">Tvoj kamen: '+e.k+'</div>'+
+      e.p.map(function(p){return '<div class="pr"><img src="/assets/site/'+p[3]+'" alt="'+p[1]+'" loading="lazy"><div><b>'+p[1]+'</b><span>'+p[2]+'</span><a href="/nakit/'+p[0]+'/">Pogledaj</a></div></div>'}).join('')+'</div>'}).join('');
+  document.getElementById('ch').innerHTML=crtaj(k,nz,low);
+  document.getElementById('lg1').textContent=ELN[low[0]].toLowerCase();document.getElementById('lg2').textContent=ELN[low[1]].toLowerCase();
+  var r=document.getElementById('rez');r.style.display='block';setTimeout(function(){r.scrollIntoView({behavior:'smooth',block:'start'})},60);
+});
+function lok(i){return ['Ovnu','Biku','Blizancima','Raku','Lavu','Devici','Vagi','Škorpiji','Strelcu','Jarcu','Vodoliji','Ribama'][i]}
+})();
+</script>
+</body>
+</html>
