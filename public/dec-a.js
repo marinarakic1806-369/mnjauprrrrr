@@ -3,12 +3,15 @@ window.MJ_NOV=(window.MJ_NOV||[]).concat([
 Ceo novembar si čekala. Odluke su stajale, ljudi su se vraćali iz prošlosti, novac je kasnio. Decembar je mesec kada se točak ponovo okreće. Ne naglo, nego sigurno.
 ## Šta se dešava na nebu
 - **4. decembar:** Venera se vraća u Škorpiju i ostaje do 7. januara. Ljubav postaje duboka, ljubomorna i iskrena.
+- **6. decembar:** Merkur konačno ulazi u Strelca. Posle sporog, zapetljanog novembra, razgovori idu brže i lakše se planira.
 - **9. decembar:** Mlad Mesec u Strelcu. Najbolja noć za želju koja ide daleko.
 - **11. decembar:** Saturn se okreće direktno u Ovnu. Kočnica koju si osećala od leta polako popušta.
 - **12. decembar:** Neptun se okreće direktno. Magla se diže.
 - **13. decembar:** Jupiter kreće retrogradno u Lavu, sve do aprila. Sreća se vraća po ono što si propustila.
+- **15. decembar:** Venera izlazi iz senke retrogradnog hoda. Priča sa ljubavnim i novčanim zastojima iz oktobra i novembra se zvanično zatvara.
 - **21. decembar:** zimski solsticij, Sunce ulazi u Jarca. Najduža noć, pa svetlo raste.
 - **24. decembar:** pun Mesec u Raku, i to najveći supermesec u celoj godini.
+- **25. decembar:** Merkur ulazi u Jarca. Fokus se seli sa priče na konkretan plan za Novu godinu.
 ## Mars ceo mesec u Devici
 Mars je u Devici ceo decembar. To znači: manje priče, više urađenog. Spisak, plan, jedan korak dnevno. Ne sanjaj veliko pa odustani. Uradi malo, pa još malo.
 ## Zašto baš sada
