@@ -1,6 +1,7 @@
 window.MJ_NOV=(window.MJ_NOV||[]).concat([
 {id:'saturn-direktan',d:'2026-12-11',k:'Tranziti',t:'Saturn se okreće: kočnica popušta',x:`
 Od leta imaš osećaj da guraš kola uzbrdo. Radiš, trudiš se, a stvari stoje. Papiri kasne. Odgovori ne stižu. Noćas, oko pola jedan, Saturn se okreće direktno na 7°56' Ovna. Sutra se okreće i Neptun. Dve najsporije kočnice na nebu puštaju točak.
+![Saturn se okreće: kočnica popušta](dec-saturn-direktan.jpg)
 ## Šta je Saturn radio unazad
 Saturn je planeta vremena, granica i odgovornosti. Kad je retrogradan, vraća te na lekcije koje nisi završila. Kao učiteljica koja ti vrati zadatak i kaže: još jednom, ali sad kako treba.
 ## Saturn u Ovnu
@@ -18,6 +19,7 @@ Napiši šta si naučila ove godine. Ne šta si izgubila, nego šta znaš sada a
 `},
 {id:'afrodita-i-ares',d:'2026-12-12',k:'Mitovi i zvezde',t:'Afrodita i Ares: afera koju su gledali svi bogovi',x:`
 Najlepša boginja bila je udata za najružnijeg boga. Hefest, kovač, hrom i čađav, ceo dan u podzemnoj kovačnici. A ona je volela drugog. Aresa, boga rata. Mladog, divljeg, opasnog.
+![Afrodita i Ares: afera koju su gledali svi bogovi](dec-afrodita-i-ares.jpg)
 ## Tajna u bračnom krevetu
 Priču peva slepi pevač Demodok u Homerovoj Odiseji. Afrodita i Ares su se sastajali u Hefestovoj kući, u njegovom krevetu, dok je on radio. Ali Helios, Sunce, vidi sve. Video je i njih. I rekao je mužu.
 ## Zlatna mreža
@@ -35,6 +37,7 @@ Koju svoju želju držiš u tajnosti jer se plašiš da će ti se smejati?
 `},
 {id:'jupiter-retrogradni',d:'2026-12-13',k:'Tranziti',t:'Jupiter retrogradni: sreća se vraća po tebe',x:`
 Noćas, oko dva sata, Jupiter se okrenuo unazad na 27° Lava. Ostaje retrogradan do sredine aprila 2027. Zvuči kao loša vest. Nije. Jupiter unazad je sreća koja se vraća po ono što si propustila.
+![Jupiter retrogradni: sreća se vraća po tebe](dec-jupiter-retrogradni.jpg)
 ## Ko je Jupiter
 Najveća planeta, u astrologiji veliki dobročinitelj. Rast, novac, učenje, putovanja, vera da će biti dobro. Gde Jupiter prolazi, tamo se otvaraju vrata.
 ## Jupiter u Lavu

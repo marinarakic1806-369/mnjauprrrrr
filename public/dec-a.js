@@ -22,6 +22,7 @@ Ceo decembar te ovde čeka po jedan tekst dnevno. Ljubav, novac, mitovi o zabran
 `},
 {id:'devica',d:'2026-12-02',k:'Astro kutak',t:'Devica: ljubav koja se dokazuje delom',x:`
 Devica neće reći „volim te" deset puta dnevno. Ali će zapamtiti da ne voliš luk, da ti je hladno u kolenima i da ti se ujutru ne priča. Pa će ćutati, skuvati kafu i staviti ćebe preko tebe.
+![Devica: ljubav koja se dokazuje delom](dec-devica.jpg)
 ## Znak koji primećuje sve
 Devica je zemljani znak kojim vlada Merkur. Promenljiva je, prilagodljiva, uvek u pokretu. Ona vidi ono što drugi preskoče: mrlju, grešku, tvoj umoran pogled.
 ## Senka Device
@@ -38,6 +39,7 @@ Ogrlicu sa znakom Device imamo na sajtu.
 `},
 {id:'pirit',d:'2026-12-03',k:'Magija kristala',t:'Pirit: kamen koji zove novac',x:`
 Zovu ga „zlato budala". Tragači za zlatom su ga kroz istoriju bacali razočarani jer sija kao zlato, a nije. A on se samo smejao. Jer pravo bogatstvo nikad nije u sjaju, nego u onome što ti sjaj probudi.
+![Pirit: kamen koji zove novac](dec-pirit.jpg)
 ## Šta je Pirit
 Pirit je mineral gvožđa i sumpora. U prirodi raste u savršenim kockama, kao da ih je neko izrezao lenjirom. Ime dolazi od grčke reči za vatru, jer kad ga udariš o čelik, iskri.
 ## Zašto se veruje da privlači novac
@@ -56,6 +58,7 @@ Pirit nosimo u minđušama, ogrlici i u Narukvici Vatra. Lep je kao novogodišnj
 `},
 {id:'venera-u-skorpiji',d:'2026-12-04',k:'Tranziti',t:'Venera u Škorpiji: sve ili ništa',x:`
 Danas se Venera vraća u Škorpiju i ostaje do 7. januara. Ako si mislila da je ovo mesec za laku ljubav, nije. Ovo je mesec za pravu.
+![Venera u Škorpiji: sve ili ništa](dec-venera-u-skorpiji.jpg)
 ## Venera se vraća tamo gde je počela
 Venera je bila retrogradna od 3. oktobra do 13. novembra. Počela je unazad baš u Škorpiji, otišla u Vagu, okrenula se i sada se vraća. Sve što je tada izašlo na površinu, ljubomora, stara ljubav, pitanje „da li me stvarno voli", sada traži odgovor.
 ## Zašto je Veneri teško u Škorpiji
@@ -73,6 +76,7 @@ Sutra počinjemo seriju o zabranjenim ljubavima iz mitova. Prva je najmračnija:
 `},
 {id:'persefona-i-had',d:'2026-12-05',k:'Mitovi i zvezde',t:'Persefona i Had: zrno koje te veže',x:`
 Brala je cveće na livadi. Jedan cvet bio je lepši od svih ostalih. Kad je pružila ruku ka njemu, zemlja se otvorila. Iz mraka su izleteli crni konji, a za uzdama je stajao on. Gospodar podzemlja.
+![Persefona i Had: zrno koje te veže](dec-persefona-i-had.jpg)
 ## Otmica
 Ovako počinje Homerska himna Demetri, stara oko 2.600 godina. Had je oteo Persefonu uz znanje njenog oca Zevsa. Niko nije pitao nju. Njena majka Demetra, boginja žita, tražila ju je danima noseći baklje. Kad je saznala istinu, prestala je da daje plodove. Zemlja je zamrla. Ljudi su gladovali.
 ## Zrno nara
@@ -89,6 +93,7 @@ Ovaj mit je Škorpija, Pluton i osma kuća. On je svaka ljubav posle koje nisi i
 `},
 {id:'sesta-kuca',d:'2026-12-06',k:'Kuće u natalu',t:'Šesta kuća: ono što radiš kad niko ne gleda',x:`
 Svi pričaju o velikim snovima. Malo ko priča o ponedeljku ujutru. A tvoj život se ne menja u velikim trenucima, nego u onome što radiš svakog dana. To je šesta kuća.
+![Šesta kuća: ono što radiš kad niko ne gleda](dec-sesta-kuca.jpg)
 ## Šta je šesta kuća
 - **Rutina:** jutro, obroci, san, red u kući.
 - **Posao:** ne karijera i titula, nego svakodnevni rad i atmosfera na poslu.
@@ -108,11 +113,13 @@ Ne znaš koji znak ti je na šestoj kući? Izračunaj kartu besplatno na sajtu.
 `},
 {id:'vaga',d:'2026-12-07',k:'Astro kutak',t:'Vaga: lepota koja ne moli',x:`
 Vaga uđe u sobu i nešto se promeni. Ne mora da viče. Dovoljno je da se nasmeje i svi se opuste. Ljudi misle da je laka. Nije. Ona je samo naučila da lepota otvara vrata koja sila razbija.
+![Vaga: lepota koja ne moli](dec-vaga.jpg)
 ## Znak Venere
 Vaga je vazdušni, kardinalni znak kojim vlada Venera. Kardinalna znači da započinje. Vaga pokreće razgovore, veze, saradnje. U njoj je i Saturn egzaltiran, što znači da je Vaga i znak pravde. Ona ne voli samo lepo. Voli i fer.
 ## Senka Vage
 Toliko želi mir da ponekad proda sebe za njega. Kaže „nema veze" kad ima veze. Bira ono što odgovara drugima. A onda jednog dana pukne i niko ne razume odakle.
 > Mir koji plaćaš sobom nije mir. To je kredit.
+![Vaga: lepota koja ne moli](dec-vaga-2.jpg)
 ## Vaga u ljubavi
 Treba joj partner, ne publika. Neko sa kim može da razgovara, da izađe, da bude lepa i da bude viđena. Grubost je odbija zauvek. Ako je povrediš, neće vikati. Samo će polako nestati.
 ## Venera u Škorpiji ovog meseca
@@ -123,10 +130,12 @@ Rozenkvarc za ljubav prema sebi, Lapis Lazuli za istinu i Labradorit za intuicij
 `},
 {id:'mlad-mesec-strelac',d:'2026-12-08',k:'Mesec',t:'Mlad Mesec u Strelcu: pucaj dalje',x:`
 Noćas, 9. decembra u 01:52 po našem vremenu, Mesec je mlad u Strelcu, na 16°57'. Poslednji Mlad Mesec u 2026. godini. Ako imaš jednu želju za koju se stidiš da je izgovoriš naglas, ovo je noć za nju.
+![Mlad Mesec u Strelcu: pucaj dalje](dec-mlad-mesec-strelac.jpg)
 ## Strelac ne želi malo
 Strelac je znak koji gađa iza horizonta. Putovanje, škola, knjiga, nova zemlja, nova verzija tebe. On ne pita da li je moguće. Pita gde je strela.
 ## Šta je posebno ovog puta
 Nekoliko sati kasnije Merkur pravi kvadrat sa Marsom. Razgovori mogu da budu oštri. Zato nameru napiši, ne izgovaraj je svakome. A Jupiter, vladar Strelca, četiri dana kasnije počinje retrogradno kretanje. Želja koju posadiš sada raste polako, ali duboko.
+![Mlad Mesec u Strelcu: pucaj dalje](dec-mlad-mesec-strelac-2.jpg)
 ## Ritual za večeras
 - Upali sveću posle mraka. Ne treba ti ništa skupo.
 - Napiši tri rečenice u sadašnjem vremenu: „Ja putujem." „Ja zarađujem." „Ja učim."
@@ -140,6 +149,7 @@ Za pun Mesec u Raku, 24. decembra, vraćamo se ovoj nameri.
 `},
 {id:'venera-kvadrat-pluton',d:'2026-12-09',k:'Tranziti',t:'Venera i Pluton: privlačnost koja plaši',x:`
 Danas Venera u Škorpiji pravi kvadrat sa Plutonom u Vodoliji. Na jeziku astrologije to je ljubav i Had u napetosti. Na tvom jeziku: neko ti ne izlazi iz glave i ne znaš da li je to dobro.
+![Venera i Pluton: privlačnost koja plaši](dec-venera-kvadrat-pluton.jpg)
 ## Šta je kvadrat
 Kvadrat je ugao od 90 stepeni. Dve planete se guraju, ne mogu ni jedna bez druge, ni zajedno mirno. Venera želi da voli. Pluton želi da poseduje, da preobrazi, da ide do dna.
 ## Kako se ovo oseća
