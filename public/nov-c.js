@@ -51,7 +51,7 @@ Kamenje za vodene znakove potraži u Astro kutku.
 [Astro](astro)
 `},
 {id:'karneol',d:'2026-11-21',k:'Magija kristala',t:'Karneol: vatra i hrabrost',x:`
-Prvi put sam Karneol nosila na dan kad sam morala da kažem „ne" jednom velikom poslu. Ruke su mi se tresle. Narandžasti kamen u džepu je bio topao, i stalno sam ga stezala. Rekla sam „ne". Najbolja odluka te godine.
+Znaš onaj osećaj kad ti se ruke tresu, srce iznutra pulsira kao ludo, strah od osude i odbacivanja ti stegne grlo? E baš tad treba da izabereš i kažeš NE. Karneol je kamen koji ti pomaže da to „ne" ipak izgovoriš.
 ## Kamen vatre
 Karneol je narandžasto-crveni kalcedon. Stari Egipćani su ga zvali „kamen zalaska sunca" i stavljali u grobnice da hrabri dušu na putu. Vezuje se za sakralnu čakru, ispod pupka: kreativnost, želju, životnu snagu.
 ## Šta radi Karneol
