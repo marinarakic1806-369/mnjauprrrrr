@@ -39,7 +39,7 @@ Ogrlicu sa znakom Device imamo na sajtu.
 `},
 {id:'pirit',d:'2026-12-03',k:'Magija kristala',t:'Pirit: kamen koji zove novac',x:`
 Zovu ga „zlato budala". Tragači za zlatom su ga kroz istoriju bacali razočarani jer sija kao zlato, a nije. A on se samo smejao. Jer pravo bogatstvo nikad nije u sjaju, nego u onome što ti sjaj probudi.
-![Pirit: kamen koji zove novac](dec-pirit.jpg)
+![Pirit: kamen koji zove novac](p-narukvica-vatra-pirit.jpg)
 ## Šta je Pirit
 Pirit je mineral gvožđa i sumpora. U prirodi raste u savršenim kockama, kao da ih je neko izrezao lenjirom. Ime dolazi od grčke reči za vatru, jer kad ga udariš o čelik, iskri.
 ## Zašto se veruje da privlači novac
