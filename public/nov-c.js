@@ -50,28 +50,28 @@ Mesečev Kamen, Biser i Rozenkvarc za srce koje je predugo bilo zatvoreno.
 Kamenje za vodene znakove potraži u Astro kutku.
 [Astro](astro)
 `},
-{id:'karneol',d:'2026-11-21',k:'Magija kristala',t:'Karneol: vatra i hrabrost',x:`
-Znaš onaj osećaj kad ti se ruke tresu, srce iznutra pulsira kao ludo, strah od osude i odbacivanja ti stegne grlo? E baš tad treba da izabereš i kažeš NE. Karneol je kamen koji ti pomaže da to „ne" ipak izgovoriš.
-## Kamen vatre
-Karneol je narandžasto-crveni kalcedon. Stari Egipćani su ga zvali „kamen zalaska sunca" i stavljali u grobnice da hrabri dušu na putu. Vezuje se za sakralnu čakru, ispod pupka: kreativnost, želju, životnu snagu.
-## Šta radi Karneol
+{id:'karneol',d:'2026-11-21',k:'Magija kristala',t:'Pirit: vatra i hrabrost',x:`
+Znaš onaj osećaj kad ti se ruke tresu, srce iznutra pulsira kao ludo, strah od osude i odbacivanja ti stegne grlo? E baš tad treba da izabereš i kažeš NE. Pirit je kamen koji ti pomaže da to „ne" ipak izgovoriš.
+## Pirit, kamen vatre
+Pirit je metalno-zlatni mineral, nekad zvan „zlato budala" jer sija kao pravo zlato, a nije. Kroz istoriju je nošen kao zaštita, podsetnik na unutrašnju vatru i hrabrost koja ne traži dozvolu.
+## Šta radi Pirit
 - **Daje hrabrost:** za razgovore koje odlažeš i odluke koje te plaše.
 - **Budi motivaciju:** kad znaš šta treba, ali nemaš snage da kreneš.
-- **Pali kreativnost:** za umetnice, preduzetnice, sve koje stvaraju.
-- **Vraća radost tela:** ples, strast, osećaj da si živa.
+- **Čuva granice:** podseća te da „ne" nije sebičnost, nego zaštita.
+- **Vraća osećaj snage:** kad ti treba da osetiš da imaš kontrolu.
 ## Zašto baš pred Strelca
-Sutra Sunce ulazi u Strelca, vatreni znak slobode. Posle dubine Škorpije dolazi vatra. Karneol je most: pomaže ti da sve što si shvatila u tami pretvoriš u akciju.
+Sutra Sunce ulazi u Strelca, vatreni znak slobode. Posle dubine Škorpije dolazi vatra. Pirit je most: pomaže ti da sve što si shvatila u tami pretvoriš u akciju.
 ## Za koga je
 Za Ovnove, Lavove i Strelce, za Device koje sve planiraju, a ništa ne počnu, i za sve koje su predugo bile tihe.
 ## Ritual i nega
-- **Čišćenje:** tekuća voda. Karneol se lako čisti i retko „zasiti".
-- **Punjenje:** na suncu, za razliku od Ametista i Rozenkvarca. On voli svetlo.
+- **Čišćenje:** suva mekana krpica ili četkica. Pirit ne voli vodu, vlaga ga vremenom nagriza.
+- **Punjenje:** kratko na suncu. On voli svetlo i energiju.
 - **Ritual hrabrosti:** pre teškog razgovora drži ga u desnoj ruci i reci tri puta „Smem."
 ## Sa čim ga ne kombinovati
-Ako ti je potreban mir, ne nosi ga uz Ametist. Ako ti treba snaga i fokus, kombinuj ga sa Hematitom.
+Ako ti je potreban mir, ne nosi ga uz Ametist. Ako ti treba dodatna snaga i uzemljenje, kombinuj ga sa Hematitom.
 > Hrabrost nije odsustvo straha, nego korak uprkos njemu.
-Modeli sa Karneolom stižu uskoro. Do tada, sve o kamenju je na stranici Kristali.
-[Kristali](kristali)
+Narukvica Vatra: brušene kuglice Pirita i zlatno srce sa malim medom, rađena po porudžbini prema elementu koji fali u tvom natalu.
+[Narukvica Vatra](nakit/narukvica-vatra)
 `},
 {id:'sunce-u-strelcu',d:'2026-11-22',k:'Tranziti',t:'Sunce ulazi u Strelca',x:`
 Danas se nešto menja u vazduhu. Posle mesec dana tame, dubine i preispitivanja, Sunce ulazi u Strelca. Kao kad otvoriš prozor posle duge zime.
