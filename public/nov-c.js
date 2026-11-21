@@ -50,7 +50,7 @@ Mesečev Kamen, Biser i Rozenkvarc za srce koje je predugo bilo zatvoreno.
 Kamenje za vodene znakove potraži u Astro kutku.
 [Astro](astro)
 `},
-{id:'karneol',d:'2026-11-21',k:'Magija kristala',t:'Pirit: vatra i hrabrost',x:`
+{id:'vatra-i-hrabrost',d:'2026-11-21',k:'Magija kristala',t:'Pirit: vatra i hrabrost',x:`
 Znaš onaj osećaj kad ti se ruke tresu, srce iznutra pulsira kao ludo, strah od osude i odbacivanja ti stegne grlo? E baš tad treba da izabereš i kažeš NE. Pirit je kamen koji ti pomaže da to „ne" ipak izgovoriš.
 ## Pirit, kamen vatre
 Pirit je metalno-zlatni mineral, nekad zvan „zlato budala" jer sija kao pravo zlato, a nije. Kroz istoriju je nošen kao zaštita, podsetnik na unutrašnju vatru i hrabrost koja ne traži dozvolu.
