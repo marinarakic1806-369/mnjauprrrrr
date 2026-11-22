@@ -73,6 +73,12 @@ input:focus{outline:2px solid #C5A059;outline-offset:1px}
 .pr a{display:inline-block;font:700 11px Inter;letter-spacing:.18em;text-transform:uppercase;border-bottom:1px solid #C5A059;padding-bottom:2px;color:#8A6A28}
 .cta{text-align:center}
 .cta .btn{display:inline-block;margin-top:18px}
+.cta.soft{background:transparent;border:1px solid #C5A059;opacity:.92}
+.cta.soft .scr{font-size:clamp(30px,4vw,44px)}
+.cta.soft .lead{font-size:15px;max-width:560px}
+.cta.soft .btn{background:transparent;color:#1D1A17;border:1px solid #1D1A17;padding:14px 22px;min-height:auto}
+.cta.soft .btn:hover{background:#1D1A17;color:#F4EDE2}
+.pr a{margin-right:10px}
 .note{font:400 13px/1.5 Inter;color:#5b534a;margin-top:16px}
 .el p,.lead,.note,.k,.cta p{text-wrap:pretty}
 #rez{scroll-margin-top:80px}
@@ -131,10 +137,16 @@ input:focus{outline:2px solid #C5A059;outline-offset:1px}
     </div>
 
     <div class="card cta">
+      <div class="scr">nabavi svoj kamen</div>
+      <p class="lead" style="margin:10px auto 0">Kamenje i nakit koji si upravo videla su tu za tebe. Javi mi se za komad koji te zove, odgovaram lično.</p>
+      <a class="btn" id="upitBtn" href="mailto:marina.rakic1806@gmail.com?subject=Upit%3A%20kamen%20po%20natalu">Pošalji upit za svoj kamen</a>
+      <p class="note">Ovo je automatski izračun. Za ličnu analizu cele karte pogledaj <a href="/zvezdani-zapis/" style="border-bottom:1px solid #C5A059">Zvezdani zapis</a>.</p>
+    </div>
+
+    <div class="card cta soft">
       <div class="scr">ovo je tek prvi korak</div>
       <p class="lead" style="margin:10px auto 0">U Zvezdanom krugu zajedno čitamo karte, uživo, korak po korak. Tvoj Mesec, tvoje rane, tvoja snaga. Upiši se na listu čekanja, prvih 18 dobija promo cenu&nbsp;zauvek.</p>
       <a class="btn" href="/krug/">Upiši me na listu čekanja</a>
-      <p class="note">Ovo je automatski izračun. Za ličnu analizu cele karte pogledaj <a href="/zvezdani-zapis/" style="border-bottom:1px solid #C5A059">Zvezdani zapis</a>.</p>
     </div>
   </div>
 </div>
@@ -282,7 +294,8 @@ document.getElementById('f').addEventListener('submit',function(ev){
   document.getElementById('miss').innerHTML=low.map(function(i,j){var e=ELT[i],tu=pts.filter(function(p){return elOf(p[1])===i}).map(function(p){return p[0]});
     var u=tu.length?'U tvojoj karti ovde su samo: '+tu.join(', ')+'.':'U tvojoj karti ovde nema nijedne planete.';
     return '<div class="el"><div class="n">'+(j?'Odmah posle':'Najviše ti fali')+'</div><h3>'+ELN[i]+'</h3><div class="z">'+ELZ[i]+'</div><p>'+e.t+'</p><p class="z" style="margin-top:0">'+u+'</p><div class="k">Tvoj kamen: '+e.k+'</div>'+
-      e.p.map(function(p){return '<div class="pr"><img src="/assets/site/'+p[3]+'" alt="'+p[1]+'" loading="lazy"><div><b>'+p[1]+'</b><span>'+p[2]+'</span><a href="/nakit/'+p[0]+'/">Pogledaj</a></div></div>'}).join('')+'</div>'}).join('');
+      e.p.map(function(p){return '<div class="pr"><img src="/assets/site/'+p[3]+'" alt="'+p[1]+'" loading="lazy"><div><b>'+p[1]+'</b><span>'+p[2]+'</span><a href="/nakit/'+p[0]+'/">Pogledaj</a><a href="mailto:marina.rakic1806@gmail.com?subject='+encodeURIComponent('Upit: '+p[1])+'">Pošalji upit</a></div></div>'}).join('')+'</div>'}).join('');
+  var ub=document.getElementById('upitBtn');if(ub)ub.href='mailto:marina.rakic1806@gmail.com?subject='+encodeURIComponent('Upit: kamen po natalu – '+ime+' (fali '+ELN[low[0]]+' i '+ELN[low[1]]+')');
   document.getElementById('ch').innerHTML=crtaj(k,nz,low);
   document.getElementById('lg1').textContent=ELN[low[0]].toLowerCase();document.getElementById('lg2').textContent=ELN[low[1]].toLowerCase();
   var r=document.getElementById('rez');r.style.display='block';setTimeout(function(){r.scrollIntoView({behavior:'smooth',block:'start'})},60);
