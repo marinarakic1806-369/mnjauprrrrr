@@ -31,19 +31,35 @@ h1{margin:14px 0 0;font:800 clamp(32px,5.4vw,56px)/1.08 Inter;text-transform:upp
 .lead{font:400 clamp(16px,1.6vw,19px)/1.6 Inter;max-width:560px;margin:16px auto 0}
 
 .stage{position:relative;width:min(84vw,380px);aspect-ratio:1/1;margin:clamp(34px,5vw,54px) auto 0}
-.ptr{position:absolute;top:-14px;left:50%;transform:translateX(-50%);width:0;height:0;border-left:16px solid transparent;border-right:16px solid transparent;border-top:26px solid #8A6A28;z-index:5;filter:drop-shadow(0 2px 3px rgba(0,0,0,.25))}
-.wheel{width:100%;height:100%;border-radius:50%;position:relative;border:6px solid #F4EDE2;box-shadow:0 0 0 2px #C5A059,0 18px 40px rgba(0,0,0,.22);transition:transform 4.2s cubic-bezier(.12,.72,.14,1);
+.ptr{position:absolute;top:-14px;left:50%;transform:translateX(-50%);width:0;height:0;border-left:16px solid transparent;border-right:16px solid transparent;border-top:26px solid #8A6A28;z-index:6;filter:drop-shadow(0 2px 3px rgba(0,0,0,.25))}
+.glow{position:absolute;inset:-18px;border-radius:50%;background:radial-gradient(circle,rgba(197,160,89,.45) 0%,rgba(197,160,89,0) 70%);opacity:0;transition:opacity .4s;z-index:0;pointer-events:none}
+.glow.on{opacity:1;animation:pulse 1.1s ease-in-out infinite}
+@keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.07)}}
+.wheel{width:100%;height:100%;border-radius:50%;position:relative;border:6px solid #FBF6EC;box-shadow:0 0 0 2px #C5A059,0 18px 40px rgba(0,0,0,.18);transition:transform 4.2s cubic-bezier(.12,.72,.14,1);z-index:1;
   background:conic-gradient(from 0deg,
-    #C96A3B 0deg 90deg,
-    #6B7A4F 90deg 180deg,
-    #7FAAC9 180deg 270deg,
-    #3E5C76 270deg 360deg)}
+    #EDA6BA 0deg 90deg,
+    #A8D2A0 90deg 180deg,
+    #8FD3CB 180deg 270deg,
+    #ECDAAE 270deg 360deg)}
 .wheel:before{content:"";position:absolute;inset:0;border-radius:50%;background:
   repeating-conic-gradient(#C5A059 0deg 1.4deg,transparent 1.4deg 90deg);
-  mix-blend-mode:normal;pointer-events:none}
+  pointer-events:none}
 .wheel i{position:absolute;left:50%;top:50%;width:0;height:0;pointer-events:none}
-.wheel i b{position:absolute;display:block;font:800 13px Inter;letter-spacing:.14em;text-transform:uppercase;color:#F4EDE2;text-shadow:0 1px 4px rgba(0,0,0,.35);white-space:nowrap;transform-origin:0 0}
-.hub{position:absolute;left:50%;top:50%;width:26%;height:26%;transform:translate(-50%,-50%);border-radius:50%;background:#F4EDE2;border:2px solid #C5A059;z-index:3;display:flex;align-items:center;justify-content:center;font:700 24px/1 Corinthia,cursive;color:#8A6A28}
+.wheel i b{position:absolute;display:block;font:800 13px Inter;letter-spacing:.14em;text-transform:uppercase;color:#5b4430;text-shadow:0 1px 3px rgba(255,255,255,.4);white-space:nowrap;transform-origin:0 0}
+.hub{position:absolute;left:50%;top:50%;width:30%;height:30%;transform:translate(-50%,-50%);border-radius:50%;z-index:4;display:flex;align-items:center;justify-content:center}
+.hub .cat{width:100%;height:100%;border-radius:50%;object-fit:cover;border:3px solid #FBF6EC;box-shadow:0 0 0 2px #C5A059,0 6px 16px rgba(0,0,0,.2);background:#fff}
+.hub.hop{animation:hop .85s cubic-bezier(.34,1.56,.64,1)}
+@keyframes hop{
+  0%{transform:translate(-50%,-50%) scale(1) rotate(0deg)}
+  30%{transform:translate(calc(-50% + var(--dx,0px)),calc(-50% + var(--dy,0px))) scale(1.2) rotate(var(--rot,0deg))}
+  58%{transform:translate(-50%,-50%) scale(.92) rotate(0deg)}
+  78%{transform:translate(-50%,-50%) scale(1.07) rotate(0deg)}
+  100%{transform:translate(-50%,-50%) scale(1) rotate(0deg)}
+}
+.spark{position:absolute;left:50%;top:50%;width:0;height:0;z-index:5;pointer-events:none}
+.spark i{position:absolute;left:0;top:0;width:7px;height:7px;border-radius:50%;background:#C5A059;opacity:0;transform-origin:0 0}
+.spark.go i{animation:sparkOut .75s ease-out forwards}
+@keyframes sparkOut{0%{opacity:1;transform:translate(0,0) scale(1)}100%{opacity:0;transform:var(--sp) scale(.3)}}
 
 .spin{margin-top:clamp(28px,4vw,40px);font:700 13px Inter;letter-spacing:.2em;text-transform:uppercase;padding:18px 36px;background:#1D1A17;color:#F4EDE2;border:0;cursor:pointer;min-height:56px}
 .spin:hover{background:#8A6A28}
@@ -52,7 +68,9 @@ h1{margin:14px 0 0;font:800 clamp(32px,5.4vw,56px)/1.08 Inter;text-transform:upp
 #rez{display:none;text-align:left;margin-top:clamp(30px,5vw,46px)}
 .card{background:#F4EDE2;border:1px solid #C5A059;padding:clamp(22px,4vw,38px);margin-top:clamp(20px,3.4vw,30px)}
 .n{font:700 12px Inter;letter-spacing:.22em;text-transform:uppercase;color:#8A6A28}
-.card h2{margin:6px 0 4px;font:800 clamp(24px,3.2vw,34px) Inter;text-transform:uppercase}
+.card h2{margin:6px 0 4px;font:800 clamp(24px,3.2vw,34px) Inter;text-transform:uppercase;background:linear-gradient(100deg,#8A6A28 20%,#E8C982 42%,#8A6A28 64%);background-size:220% auto;background-position:200% 0;-webkit-background-clip:text;background-clip:text;color:#1D1A17}
+.card h2.shine{color:transparent;animation:shine 1.3s ease-out 1}
+@keyframes shine{0%{background-position:200% 0}100%{background-position:-20% 0}}
 .card .z{font:600 14px Inter;color:#5b534a}
 .card p{font:400 16px/1.55 Inter;margin:12px 0}
 .k{font:700 15px Inter}
@@ -84,13 +102,15 @@ h1{margin:14px 0 0;font:800 clamp(32px,5.4vw,56px)/1.08 Inter;text-transform:upp
 
   <div class="stage">
     <div class="ptr"></div>
+    <div class="glow" id="glow"></div>
     <div class="wheel" id="wheel">
       <i style="transform:rotate(45deg)"><b style="transform:translate(-50%,-150px) rotate(0deg)">Vatra</b></i>
       <i style="transform:rotate(135deg)"><b style="transform:translate(-50%,-150px) rotate(0deg)">Zemlja</b></i>
       <i style="transform:rotate(225deg)"><b style="transform:translate(-50%,-150px) rotate(0deg)">Vazduh</b></i>
       <i style="transform:rotate(315deg)"><b style="transform:translate(-50%,-150px) rotate(0deg)">Voda</b></i>
-      <div class="hub">✦</div>
     </div>
+    <div class="spark" id="spark"></div>
+    <div class="hub" id="hub"><img class="cat" src="/assets/site/logo.png" alt="Mnjauprrrrr mačkica"></div>
   </div>
   <button class="spin" id="spinBtn">Zavrti točak</button>
 
@@ -122,26 +142,59 @@ var ELT=[
  {t:'Lakoća. Reči. Ljudi sa kojima podeliš teret, umesto da ga nosiš sama. Hrabrost da izgovoriš ono što stvarno misliš.',k:'Amazonit i Gorski&nbsp;Kristal',p:[['narukvica-vazduh','Narukvica Vazduh','Amazonit · Gorski Kristal · pravim je po porudžbini','p-narukvica-vazduh-amazonit.jpg'],['morski-dah','Ogrlica Morski dah','Amazonit','p-ogrlica-morski-dah.jpg']]},
  {t:'Osećanja bez plana i bez obaveze. Intuicija. Dozvola da budeš mekša i da kažeš: sad sam ja na redu.',k:'Mesečev Kamen i&nbsp;Labradorit',p:[['prsten-riznica','Prsten Mesečeva riznica','Mesečev Kamen · Hematit · Crni Ahat','p-prsten-riznica.jpg'],['cela-si','Ogrlica Cela si','Labradorit','p-ogrlica-cela-si.jpg']]}];
 
-var wheel=document.getElementById('wheel'),btn=document.getElementById('spinBtn'),rot=0,spinning=false;
+var wheel=document.getElementById('wheel'),btn=document.getElementById('spinBtn'),hub=document.getElementById('hub'),glow=document.getElementById('glow'),sparkWrap=document.getElementById('spark'),rot=0,spinning=false;
+// ugao centra svakog segmenta (0deg = vrh, u smeru kazaljke)
+var segCenters=[45,135,225,315];
+
 btn.addEventListener('click',function(){
   if(spinning)return;spinning=true;btn.disabled=true;
+  glow.classList.add('on');
   var idx=Math.floor(Math.random()*4);
-  // segmenti: 0 Vatra(0-90) 1 Zemlja(90-180) 2 Vazduh(180-270) 3 Voda(270-360), pokazivač na vrhu (0deg)
-  var segCenter=[45,135,225,315][idx];
-  var extra=4*360; // par punih krugova
+  var segCenter=segCenters[idx];
+  var extra=4*360;
   var jitter=(Math.random()*40-20);
   var target=rot - (rot%360) + extra + (360-segCenter) + jitter;
   rot=target;
   wheel.style.transform='rotate('+target+'deg)';
   setTimeout(function(){
     spinning=false;btn.disabled=false;
+    glow.classList.remove('on');
+    zaskoci(idx);
     prikazi(idx);
   },4300);
 });
 
+function zaskoci(idx){
+  // mačkica skoči ka pobedničkom segmentu (gore=0deg) pa se vrati
+  var ang=(segCenter2screenAngle(idx))*Math.PI/180;
+  var dist=14;
+  var dx=Math.sin(ang)*dist,dy=-Math.cos(ang)*dist;
+  hub.style.setProperty('--dx',dx.toFixed(1)+'px');
+  hub.style.setProperty('--dy',dy.toFixed(1)+'px');
+  hub.style.setProperty('--rot',(Math.sin(ang)*10).toFixed(1)+'deg');
+  hub.classList.remove('hop');void hub.offsetWidth;hub.classList.add('hop');
+
+  // iskre
+  sparkWrap.innerHTML='';
+  var n=8;
+  for(var i=0;i<n;i++){
+    var a=(360/n)*i,rad=a*Math.PI/180,r=46;
+    var sx=Math.cos(rad)*r,sy=Math.sin(rad)*r;
+    var s=document.createElement('i');
+    s.style.setProperty('--sp','translate('+sx.toFixed(1)+'px,'+sy.toFixed(1)+'px)');
+    s.style.animationDelay=(i*0.02)+'s';
+    sparkWrap.appendChild(s);
+  }
+  sparkWrap.classList.remove('go');void sparkWrap.offsetWidth;sparkWrap.classList.add('go');
+}
+function segCenter2screenAngle(idx){return segCenters[idx]}
+
 function prikazi(i){
   var e=ELT[i];
-  document.getElementById('rNasl').textContent=ELN[i];
+  document.getElementById('rLab').textContent='Danas ti zove';
+  var h2=document.getElementById('rNasl');
+  h2.textContent=ELN[i];
+  h2.classList.remove('shine');void h2.offsetWidth;h2.classList.add('shine');
   document.getElementById('rZnaci').textContent=ELZ[i];
   document.getElementById('rTekst').textContent=e.t;
   document.getElementById('rKamen').innerHTML='Tvoj kamen: '+e.k;
