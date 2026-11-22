@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="sr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Zavrti Zvezdani točak | Mnjauprrrrr</title>
+<meta name="description" content="Zavrti točak i saznaj koji element te zove danas, sa kamenom i nakitom koji ga vraćaju u tvoj život.">
+<meta property="og:title" content="Zavrti Zvezdani točak">
+<meta property="og:description" content="Vatra, Zemlja, Vazduh ili Voda – zavrti točak i saznaj koji te element zove danas.">
+<meta property="og:image" content="https://mnjauprrrrr.com/assets/site/p-prsten-riznica.jpg">
+<meta property="og:url" content="https://mnjauprrrrr.com/tocak/">
+<link rel="canonical" href="https://mnjauprrrrr.com/tocak/">
+<link rel="icon" href="/assets/site/logo.png">
+<link rel="stylesheet" href="/tokens/fonts.css">
+<style>
+*{box-sizing:border-box}
+html,body{margin:0}
+body{font-family:Inter,sans-serif;color:#1D1A17;background:#EFE5D6;-webkit-font-smoothing:antialiased;position:relative;overflow-x:hidden}
+body:before{content:"";position:absolute;inset:0;background:url(/assets/site/leopard-besavno.png) 0 0/520px auto repeat;opacity:.32;pointer-events:none;z-index:-1}
+a{color:inherit;text-decoration:none}
+.bar{position:sticky;top:0;z-index:20;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:14px clamp(18px,4vw,56px);background:rgba(239,229,214,.82);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.65)}
+.logo{font:700 34px/1 Corinthia,cursive}
+.links{display:flex;gap:clamp(14px,2.4vw,32px);font:600 11px Inter;letter-spacing:.18em;text-transform:uppercase}
+.links a:hover{color:#8A6A28}
+.pill{font:600 11px Inter;letter-spacing:.18em;text-transform:uppercase;padding:11px 18px;border:1px solid #1D1A17;border-radius:999px;white-space:nowrap}
+@media(max-width:860px){.links{display:none}}
+.wrap{max-width:720px;margin:0 auto;padding:clamp(36px,6vw,70px) clamp(16px,4vw,48px);text-align:center}
+.lab{font:700 12px Inter;letter-spacing:.24em;text-transform:uppercase;color:#8A6A28}
+h1{margin:14px 0 0;font:800 clamp(32px,5.4vw,56px)/1.08 Inter;text-transform:uppercase;letter-spacing:.01em;text-wrap:balance}
+.scr{font:700 clamp(40px,6vw,64px)/1 Corinthia,cursive;color:#8A6A28}
+.lead{font:400 clamp(16px,1.6vw,19px)/1.6 Inter;max-width:560px;margin:16px auto 0}
+
+.stage{position:relative;width:min(84vw,380px);aspect-ratio:1/1;margin:clamp(34px,5vw,54px) auto 0}
+.ptr{position:absolute;top:-14px;left:50%;transform:translateX(-50%);width:0;height:0;border-left:16px solid transparent;border-right:16px solid transparent;border-top:26px solid #8A6A28;z-index:5;filter:drop-shadow(0 2px 3px rgba(0,0,0,.25))}
+.wheel{width:100%;height:100%;border-radius:50%;position:relative;border:6px solid #F4EDE2;box-shadow:0 0 0 2px #C5A059,0 18px 40px rgba(0,0,0,.22);transition:transform 4.2s cubic-bezier(.12,.72,.14,1);
+  background:conic-gradient(from 0deg,
+    #C96A3B 0deg 90deg,
+    #6B7A4F 90deg 180deg,
+    #7FAAC9 180deg 270deg,
+    #3E5C76 270deg 360deg)}
+.wheel:before{content:"";position:absolute;inset:0;border-radius:50%;background:
+  repeating-conic-gradient(#C5A059 0deg 1.4deg,transparent 1.4deg 90deg);
+  mix-blend-mode:normal;pointer-events:none}
+.wheel i{position:absolute;left:50%;top:50%;width:0;height:0;pointer-events:none}
+.wheel i b{position:absolute;display:block;font:800 13px Inter;letter-spacing:.14em;text-transform:uppercase;color:#F4EDE2;text-shadow:0 1px 4px rgba(0,0,0,.35);white-space:nowrap;transform-origin:0 0}
+.hub{position:absolute;left:50%;top:50%;width:26%;height:26%;transform:translate(-50%,-50%);border-radius:50%;background:#F4EDE2;border:2px solid #C5A059;z-index:3;display:flex;align-items:center;justify-content:center;font:700 24px/1 Corinthia,cursive;color:#8A6A28}
+
+.spin{margin-top:clamp(28px,4vw,40px);font:700 13px Inter;letter-spacing:.2em;text-transform:uppercase;padding:18px 36px;background:#1D1A17;color:#F4EDE2;border:0;cursor:pointer;min-height:56px}
+.spin:hover{background:#8A6A28}
+.spin:disabled{opacity:.45;cursor:default}
+
+#rez{display:none;text-align:left;margin-top:clamp(30px,5vw,46px)}
+.card{background:#F4EDE2;border:1px solid #C5A059;padding:clamp(22px,4vw,38px);margin-top:clamp(20px,3.4vw,30px)}
+.n{font:700 12px Inter;letter-spacing:.22em;text-transform:uppercase;color:#8A6A28}
+.card h2{margin:6px 0 4px;font:800 clamp(24px,3.2vw,34px) Inter;text-transform:uppercase}
+.card .z{font:600 14px Inter;color:#5b534a}
+.card p{font:400 16px/1.55 Inter;margin:12px 0}
+.k{font:700 15px Inter}
+.pr{display:flex;gap:14px;align-items:center;margin-top:14px;border-top:1px solid #E6D9C3;padding-top:14px}
+.pr img{width:88px;height:112px;object-fit:contain;background:#F4EDE2;border:1px solid #C5A059;padding:4px;flex:0 0 88px}
+.pr b{display:block;font:800 16px Inter;text-transform:uppercase}
+.pr span{display:block;font:400 13px Inter;color:#5b534a;margin:4px 0 8px}
+.pr a{display:inline-block;font:700 11px Inter;letter-spacing:.18em;text-transform:uppercase;border-bottom:1px solid #C5A059;padding-bottom:2px;color:#8A6A28;margin-right:10px}
+.cta{text-align:center}
+.cta .btn{display:inline-block;margin-top:18px;font:700 13px Inter;letter-spacing:.2em;text-transform:uppercase;padding:18px 24px;background:#1D1A17;color:#F4EDE2;min-height:56px}
+.cta .btn:hover{background:#8A6A28}
+.note{font:400 13px/1.5 Inter;color:#5b534a;margin-top:16px}
+.foot{text-align:center;padding:30px 16px 50px;font:400 13px Inter;color:#5b534a}
+@media(max-width:620px){.pr{flex-direction:row}}
+</style>
+</head>
+<body>
+<div class="bar">
+  <a class="logo" href="/">Mnjauprrrrr</a>
+  <div class="links"><a href="/nakit/">Nakit</a><a href="/kristali/">Kristali</a><a href="/astro/">Astro</a><a href="/karta/">Karta</a><a href="/blog/">Blog</a></div>
+  <a class="pill" href="/krug/">Zvezdani krug</a>
+</div>
+
+<div class="wrap">
+  <div class="lab">Besplatno · 10 sekundi</div>
+  <h1>Zavrti svoj<br>Zvezdani točak</h1>
+  <div class="scr">koji element te zove danas</div>
+  <p class="lead">Vatra, Zemlja, Vazduh ili Voda. Zavrti točak i saznaj koji kamen danas radi za tebe – pa, ako hoćeš dublje, izračunaj i celu kartu.</p>
+
+  <div class="stage">
+    <div class="ptr"></div>
+    <div class="wheel" id="wheel">
+      <i style="transform:rotate(45deg)"><b style="transform:translate(-50%,-150px) rotate(0deg)">Vatra</b></i>
+      <i style="transform:rotate(135deg)"><b style="transform:translate(-50%,-150px) rotate(0deg)">Zemlja</b></i>
+      <i style="transform:rotate(225deg)"><b style="transform:translate(-50%,-150px) rotate(0deg)">Vazduh</b></i>
+      <i style="transform:rotate(315deg)"><b style="transform:translate(-50%,-150px) rotate(0deg)">Voda</b></i>
+      <div class="hub">✦</div>
+    </div>
+  </div>
+  <button class="spin" id="spinBtn">Zavrti točak</button>
+
+  <div id="rez">
+    <div class="card" id="elCard">
+      <div class="n" id="rLab">Danas ti zove</div>
+      <h2 id="rNasl"></h2>
+      <div class="z" id="rZnaci"></div>
+      <p id="rTekst"></p>
+      <p class="k" id="rKamen"></p>
+      <div id="rProizvodi"></div>
+    </div>
+    <div class="card cta">
+      <div class="scr">ovo je tek nagoveštaj</div>
+      <p class="lead" style="margin:10px auto 0">Pravu kartu (Sunce, Mesec, podznak i tačan element koji ti fali) dobiješ za minut, sa datumom, satom i mestom rođenja.</p>
+      <a class="btn" href="/karta/">Izračunaj moju punu kartu</a>
+    </div>
+  </div>
+</div>
+<div class="foot">Mnjauprrrrr · nakit od hirurškog čelika i poludragog kamenja</div>
+
+<script>
+(function(){
+var ELN=['Vatra','Zemlja','Vazduh','Voda'];
+var ELZ=['Ovan, Lav, Strelac','Bik, Devica, Jarac','Blizanci, Vaga, Vodolija','Rak, Škorpija, Ribe'];
+var ELT=[
+ {t:'Hrabrost i strast. Da kreneš pre nego što si potpuno sigurna i da ne čekaš dozvolu da zauzmeš svoje mesto.',k:'Pirit i Vulkanska&nbsp;Lava',p:[['narukvica-vatra','Narukvica Vatra','Pirit · pravim je po porudžbini','p-narukvica-vatra-pirit.jpg'],['mindjuse-pirit','Minđuše Pirit kiša','Pirit','p-mindjuse-pirit.jpg']]},
+ {t:'Tlo pod nogama. Telo, novac, rutina. Da ideje ne ostanu samo u glavi, nego postanu nešto što možeš da dodirneš.',k:'Crni Ahat i&nbsp;Jaspis',p:[['ahat-zvezdica','Prsten Zvezdica','Crni Ahat','p-ahat-zvezdica.jpg'],['razigrani-jaspis','Ogrlica Razigrani Jaspis','Dalmatinski Jaspis','p-ogrlica-razigrani-jaspis.jpg']]},
+ {t:'Lakoća. Reči. Ljudi sa kojima podeliš teret, umesto da ga nosiš sama. Hrabrost da izgovoriš ono što stvarno misliš.',k:'Amazonit i Gorski&nbsp;Kristal',p:[['narukvica-vazduh','Narukvica Vazduh','Amazonit · Gorski Kristal · pravim je po porudžbini','p-narukvica-vazduh-amazonit.jpg'],['morski-dah','Ogrlica Morski dah','Amazonit','p-ogrlica-morski-dah.jpg']]},
+ {t:'Osećanja bez plana i bez obaveze. Intuicija. Dozvola da budeš mekša i da kažeš: sad sam ja na redu.',k:'Mesečev Kamen i&nbsp;Labradorit',p:[['prsten-riznica','Prsten Mesečeva riznica','Mesečev Kamen · Hematit · Crni Ahat','p-prsten-riznica.jpg'],['cela-si','Ogrlica Cela si','Labradorit','p-ogrlica-cela-si.jpg']]}];
+
+var wheel=document.getElementById('wheel'),btn=document.getElementById('spinBtn'),rot=0,spinning=false;
+btn.addEventListener('click',function(){
+  if(spinning)return;spinning=true;btn.disabled=true;
+  var idx=Math.floor(Math.random()*4);
+  // segmenti: 0 Vatra(0-90) 1 Zemlja(90-180) 2 Vazduh(180-270) 3 Voda(270-360), pokazivač na vrhu (0deg)
+  var segCenter=[45,135,225,315][idx];
+  var extra=4*360; // par punih krugova
+  var jitter=(Math.random()*40-20);
+  var target=rot - (rot%360) + extra + (360-segCenter) + jitter;
+  rot=target;
+  wheel.style.transform='rotate('+target+'deg)';
+  setTimeout(function(){
+    spinning=false;btn.disabled=false;
+    prikazi(idx);
+  },4300);
+});
+
+function prikazi(i){
+  var e=ELT[i];
+  document.getElementById('rNasl').textContent=ELN[i];
+  document.getElementById('rZnaci').textContent=ELZ[i];
+  document.getElementById('rTekst').textContent=e.t;
+  document.getElementById('rKamen').innerHTML='Tvoj kamen: '+e.k;
+  document.getElementById('rProizvodi').innerHTML=e.p.map(function(p){return '<div class="pr"><img src="/assets/site/'+p[3]+'" alt="'+p[1]+'" loading="lazy"><div><b>'+p[1]+'</b><span>'+p[2]+'</span><a href="/nakit/'+p[0]+'/">Pogledaj</a><a href="mailto:marina.rakic1806@gmail.com?subject='+encodeURIComponent('Upit: '+p[1])+'">Pošalji upit</a></div></div>'}).join('');
+  var r=document.getElementById('rez');r.style.display='block';
+  setTimeout(function(){r.scrollIntoView({behavior:'smooth',block:'start'})},60);
+}
+})();
+</script>
+</body>
+</html>
