@@ -4697,7 +4697,7 @@ function KorpaForma({
   }, "Javljam ti se na mejl."));
 }
 ;// Mobile.jsx
-const MJ_M_LINKS = [['o-nama', 'O nama'], ['nakit', 'Nakit'], ['astro', 'Astro'], ['/zvezdani-zapis/', 'Zvezdani zapis'], ['blog', 'Blog'], ['kontakt', 'Kontakt'], ['kristali', 'Kristali']];
+const MJ_M_LINKS = [['o-nama', 'O nama'], ['nakit', 'Nakit'], ['astro', 'Astro'], ['/zvezdani-zapis/', 'Zvezdani zapis'], ['blog', 'Blog'], ['kontakt', 'Kontakt'], ['kristali', 'Kristali'], ['/tocak/', 'Intuitivno']];
 const MJ_GLASS = {
   background: 'rgba(247,241,232,.74)',
   backdropFilter: 'blur(14px) saturate(1.25)',
