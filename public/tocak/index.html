@@ -37,17 +37,18 @@ h1{margin:14px 0 0;font:800 clamp(32px,5.4vw,56px)/1.08 Inter;text-transform:upp
 @keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.07)}}
 .wheel{width:100%;height:100%;border-radius:50%;position:relative;border:6px solid #FBF6EC;box-shadow:0 0 0 2px #C5A059,0 18px 40px rgba(0,0,0,.18);transition:transform 4.2s cubic-bezier(.12,.72,.14,1);z-index:1;
   background:conic-gradient(from 0deg,
-    #EDA6BA 0deg 90deg,
-    #A8D2A0 90deg 180deg,
-    #8FD3CB 180deg 270deg,
-    #ECDAAE 270deg 360deg)}
+    #E7D2C3 0deg 90deg,
+    #DBE0CC 90deg 180deg,
+    #D5E1E4 180deg 270deg,
+    #D8DBE1 270deg 360deg)}
 .wheel:before{content:"";position:absolute;inset:0;border-radius:50%;background:
   repeating-conic-gradient(#C5A059 0deg 1.4deg,transparent 1.4deg 90deg);
   pointer-events:none}
 .wheel i{position:absolute;left:50%;top:50%;width:0;height:0;pointer-events:none}
-.wheel i b{position:absolute;display:block;font:800 13px Inter;letter-spacing:.14em;text-transform:uppercase;color:#5b4430;text-shadow:0 1px 3px rgba(255,255,255,.4);white-space:nowrap;transform-origin:0 0}
+.wheel i b{position:absolute;display:block;font:800 13px Inter;letter-spacing:.14em;text-transform:uppercase;color:#5b4430;text-shadow:0 1px 3px rgba(255,255,255,.5);white-space:nowrap;transform-origin:0 0}
 .hub{position:absolute;left:50%;top:50%;width:30%;height:30%;transform:translate(-50%,-50%);border-radius:50%;z-index:4;display:flex;align-items:center;justify-content:center}
-.hub .cat{width:100%;height:100%;border-radius:50%;object-fit:cover;border:3px solid #FBF6EC;box-shadow:0 0 0 2px #C5A059,0 6px 16px rgba(0,0,0,.2);background:#fff}
+.hub .cat{width:100%;height:100%;border-radius:50%;object-fit:cover;border:3px solid #FBF6EC;box-shadow:0 0 0 2px #C5A059,0 6px 16px rgba(0,0,0,.2);background:#fff;animation:mjCatWig 2.6s ease-in-out infinite}
+@keyframes mjCatWig{0%,100%{transform:rotate(0) scale(1)}50%{transform:rotate(-8deg) scale(1.06)}}
 .hub.hop{animation:hop .85s cubic-bezier(.34,1.56,.64,1)}
 @keyframes hop{
   0%{transform:translate(-50%,-50%) scale(1) rotate(0deg)}
@@ -61,11 +62,12 @@ h1{margin:14px 0 0;font:800 clamp(32px,5.4vw,56px)/1.08 Inter;text-transform:upp
 .spark.go i{animation:sparkOut .75s ease-out forwards}
 @keyframes sparkOut{0%{opacity:1;transform:translate(0,0) scale(1)}100%{opacity:0;transform:var(--sp) scale(.3)}}
 
-.spin{margin-top:clamp(28px,4vw,40px);font:700 13px Inter;letter-spacing:.2em;text-transform:uppercase;padding:18px 36px;background:#1D1A17;color:#F4EDE2;border:0;cursor:pointer;min-height:56px}
-.spin:hover{background:#8A6A28}
-.spin:disabled{opacity:.45;cursor:default}
+.pbtn{display:inline-block;font:600 12px Inter;letter-spacing:.18em;text-transform:uppercase;padding:16px 30px;border:1px solid #1D1A17;border-radius:999px;background:transparent;color:#1D1A17;cursor:pointer;transition:background .3s,color .3s,border-color .3s}
+.pbtn:hover{background:#1D1A17;color:#F4EDE2}
+.pbtn:disabled{opacity:.45;cursor:default}
+.spin{margin-top:clamp(28px,4vw,40px)}
 
-#rez{display:none;text-align:left;margin-top:clamp(30px,5vw,46px)}
+#rez{display:none;text-align:left;margin-top:clamp(30px,5vw,46px);scroll-margin-top:96px}
 .card{background:#F4EDE2;border:1px solid #C5A059;padding:clamp(22px,4vw,38px);margin-top:clamp(20px,3.4vw,30px)}
 .n{font:700 12px Inter;letter-spacing:.22em;text-transform:uppercase;color:#8A6A28}
 .card h2{margin:6px 0 4px;font:800 clamp(24px,3.2vw,34px) Inter;text-transform:uppercase;background:linear-gradient(100deg,#8A6A28 20%,#E8C982 42%,#8A6A28 64%);background-size:220% auto;background-position:200% 0;-webkit-background-clip:text;background-clip:text;color:#1D1A17}
@@ -80,8 +82,7 @@ h1{margin:14px 0 0;font:800 clamp(32px,5.4vw,56px)/1.08 Inter;text-transform:upp
 .pr span{display:block;font:400 13px Inter;color:#5b534a;margin:4px 0 8px}
 .pr a{display:inline-block;font:700 11px Inter;letter-spacing:.18em;text-transform:uppercase;border-bottom:1px solid #C5A059;padding-bottom:2px;color:#8A6A28;margin-right:10px}
 .cta{text-align:center}
-.cta .btn{display:inline-block;margin-top:18px;font:700 13px Inter;letter-spacing:.2em;text-transform:uppercase;padding:18px 24px;background:#1D1A17;color:#F4EDE2;min-height:56px}
-.cta .btn:hover{background:#8A6A28}
+.cta .pbtn{margin-top:18px}
 .note{font:400 13px/1.5 Inter;color:#5b534a;margin-top:16px}
 .foot{text-align:center;padding:30px 16px 50px;font:400 13px Inter;color:#5b534a}
 @media(max-width:620px){.pr{flex-direction:row}}
@@ -95,7 +96,6 @@ h1{margin:14px 0 0;font:800 clamp(32px,5.4vw,56px)/1.08 Inter;text-transform:upp
 </div>
 
 <div class="wrap">
-  <div class="lab">Besplatno · 10 sekundi</div>
   <h1>Zavrti svoj<br>Zvezdani točak</h1>
   <div class="scr">koji element te zove danas</div>
   <p class="lead">Vatra, Zemlja, Vazduh ili Voda. Zavrti točak i saznaj koji kamen danas radi za tebe – pa, ako hoćeš dublje, izračunaj i celu kartu.</p>
@@ -112,7 +112,7 @@ h1{margin:14px 0 0;font:800 clamp(32px,5.4vw,56px)/1.08 Inter;text-transform:upp
     <div class="spark" id="spark"></div>
     <div class="hub" id="hub"><img class="cat" src="/assets/site/logo.png" alt="Mnjauprrrrr mačkica"></div>
   </div>
-  <button class="spin" id="spinBtn">Zavrti točak</button>
+  <button class="spin pbtn" id="spinBtn">Zavrti točak</button>
 
   <div id="rez">
     <div class="card" id="elCard">
@@ -124,9 +124,9 @@ h1{margin:14px 0 0;font:800 clamp(32px,5.4vw,56px)/1.08 Inter;text-transform:upp
       <div id="rProizvodi"></div>
     </div>
     <div class="card cta">
-      <div class="scr">ovo je tek nagoveštaj</div>
+      <div class="scr">ako hoćeš, roni dublje</div>
       <p class="lead" style="margin:10px auto 0">Pravu kartu (Sunce, Mesec, podznak i tačan element koji ti fali) dobiješ za minut, sa datumom, satom i mestom rođenja.</p>
-      <a class="btn" href="/karta/">Izračunaj moju punu kartu</a>
+      <a class="pbtn" href="/karta/">Zaroni dublje u svoju kartu</a>
     </div>
   </div>
 </div>
