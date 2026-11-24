@@ -107,3 +107,4 @@
 #utisci .u-q{flex:1 1 auto;min-height:calc(1.6em*3)!important}
 #utisci .u-by,#utisci .u-t a.u-ig{flex:0 0 auto}
 #utisci .u-t a.u-ig{margin:-6px 0 0}
+#utisci{padding-top:clamp(20px,2.6vw,40px)}
