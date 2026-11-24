@@ -68,3 +68,14 @@
 #utisci .u-by b{font-weight:700}
 #utisci .u-by span{font-weight:500;color:#8A6A28!important;letter-spacing:.1em}
 @media (max-width:860px){#utisci .u-c{flex:0 0 78vw;height:auto!important}#utisci .u-c img{top:auto!important;height:auto!important}#utisci .u-q{min-height:0!important}}
+
+/* v18 editorial / quiet luxury */
+#utisci .u-c{border-radius:0;background:#F7F2EA;box-shadow:none}
+#utisci .u-c img{aspect-ratio:4/5;filter:grayscale(.35)!important}
+#utisci .u-c img[alt="Marija"]{filter:grayscale(.8) contrast(1.05)!important}
+#utisci .u-c img[alt="Svetlana"]{filter:grayscale(.5)!important}
+#utisci .u-t{padding:28px 28px 32px;gap:18px;border-top:1px solid #C5A059;margin:0 0 0}
+#utisci .u-q{font:300 18px/1.7 Montserrat,Inter,sans-serif!important;letter-spacing:.01em;color:#2A2420!important;min-height:calc(1.7em*3)!important}
+#utisci .u-by{font:500 10px/1.5 Montserrat,Inter,sans-serif!important;letter-spacing:.26em;color:#2A2420!important}
+#utisci .u-by b{font-weight:700}
+#utisci .u-by span{letter-spacing:.2em;color:#8A6A28!important}
