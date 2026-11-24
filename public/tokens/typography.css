@@ -1,5 +1,5 @@
 :root{
---font-sans:'Inter',Arial,sans-serif;
+--font-sans:'Inter','Montserrat',Arial,sans-serif;
 --font-script:'Corinthia',cursive;
 /* Desktop sizes at 1440 (source scales them with --v = min(100vw,1440px)/1440) */
 --fs-h1:56px;          /* page titles: Inter 700 caps, .02em */
