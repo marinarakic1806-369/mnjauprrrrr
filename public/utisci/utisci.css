@@ -53,3 +53,18 @@
 #utisci .u-c img[alt="Marija"]{filter:grayscale(.8) contrast(1.05)!important}
 #utisci .u-c img[alt="Svetlana"]{filter:grayscale(.6)!important}
 @media (max-width:860px){#utisci{margin-top:0;padding-top:28px}}
+
+/* v17 minimalistički: fotka gore, bela kartica sa tekstom ispod */
+#utisci .u-c{height:auto!important;background:#FBF8F3;border-radius:6px;box-shadow:none;display:flex;flex-direction:column;overflow:hidden;transform:none!important}
+#utisci .u-c::after{display:none!important}
+#utisci .u-c img,#utisci .u-c img[alt="Marija"]{position:static!important;width:100%!important;height:auto!important;aspect-ratio:1/1;object-fit:cover;filter:none;transform:none!important;top:auto!important;left:auto!important;display:block}
+#utisci .u-c.on img{transform:none!important}
+#utisci .u-c img[alt="Marija"]{filter:grayscale(.8) contrast(1.05)!important}
+#utisci .u-c img[alt="Svetlana"]{filter:grayscale(.6)!important}
+#utisci .u-t{position:static!important;height:auto!important;min-height:0;padding:22px 24px 26px;display:grid;gap:14px;align-content:start;justify-items:start;text-align:left;color:#1D1A17}
+#utisci .u-t::before{display:none!important}
+#utisci .u-q{min-height:calc(1.6em*3)!important;margin:0!important;font:400 15px/1.6 Montserrat,Inter,sans-serif!important;color:#3A332C!important}
+#utisci .u-by{font:600 11px/1.4 Montserrat,Inter,sans-serif!important;letter-spacing:.14em;text-transform:uppercase;color:#1D1A17!important}
+#utisci .u-by b{font-weight:700}
+#utisci .u-by span{font-weight:500;color:#8A6A28!important;letter-spacing:.1em}
+@media (max-width:860px){#utisci .u-c{flex:0 0 78vw;height:auto!important}#utisci .u-c img{top:auto!important;height:auto!important}#utisci .u-q{min-height:0!important}}
