@@ -82,3 +82,4 @@
 #utisci .u-c img,#utisci .u-c img[alt="Marija"]{aspect-ratio:4/5!important}
 #utisci .u-t a.u-ig{font:500 12px/1 Montserrat,Inter,sans-serif;letter-spacing:.04em;text-transform:none;color:#8A6A28;border:0;padding:0;margin:-6px 0 0;text-decoration:none}
 #utisci .u-t a.u-ig:hover{text-decoration:underline}
+#utisci .u-t a.u-ig{justify-self:start!important}
