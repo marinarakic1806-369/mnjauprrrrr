@@ -1,8 +1,8 @@
-<!doctype html>
-<html lang="sr">
+<!DOCTYPE html>
+<html lang="sr-Latn">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Tvoja karta i element koji ti fali | Mnjauprrrrr</title>
 <meta name="description" content="Upiši datum, sat i mesto rođenja i odmah vidi svoju natalnu kartu, elemente u procentima i element koji ti fali, sa kamenom koji ga vraća.">
 <meta property="og:title" content="Koji element ti fali? Tvoja karta za minut">
@@ -11,79 +11,26 @@
 <meta property="og:url" content="https://mnjauprrrrr.com/karta/">
 <link rel="canonical" href="https://mnjauprrrrr.com/karta/">
 <link rel="icon" href="/assets/site/logo.png">
-<link rel="stylesheet" href="/tokens/fonts.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
+:root{--sedef:#F4EDE2;--ink:#5A3E22;--zlato:#C5A059;--zlato-tamno:#8A6A28}
 *{box-sizing:border-box}
-html,body{margin:0}
-body{font-family:Inter,sans-serif;color:#1D1A17;background:#EFE5D6;-webkit-font-smoothing:antialiased;position:relative}
-body:before{content:"";position:absolute;inset:0;background:url(/assets/site/leopard-besavno.png) 0 0/520px auto repeat;opacity:.32;pointer-events:none;z-index:-1}
-a{color:inherit;text-decoration:none}
-.bar{position:sticky;top:0;z-index:20;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:14px clamp(18px,4vw,56px);background:rgba(239,229,214,.82);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.65)}
-.logo{font:700 34px/1 Corinthia,cursive}
-.links{display:flex;gap:clamp(14px,2.4vw,32px);font:600 11px Inter;letter-spacing:.18em;text-transform:uppercase}
-.links a:hover{color:#8A6A28}
-.pill{font:600 11px Inter;letter-spacing:.18em;text-transform:uppercase;padding:11px 18px;border:1px solid #1D1A17;border-radius:999px;white-space:nowrap}
+html,body{margin:0;padding:0;background:var(--sedef)}
+body{font-family:Montserrat,ui-sans-serif,system-ui,sans-serif;color:var(--ink);-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.bar{position:sticky;top:0;z-index:30;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:10px clamp(18px,4vw,56px);background:rgba(244,237,226,.78);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.7)}
+.logo{font:400 36px/1.25 'Great Vibes',cursive;padding:0 6px 0 4px;color:#8A6A28;text-decoration:none}
+.links{display:flex;gap:clamp(14px,2.4vw,30px);font:600 10.5px Montserrat,sans-serif;letter-spacing:.2em;text-transform:uppercase}
+.links a{text-decoration:none}.links a:hover{color:#8A6A28}
+.pill{font:600 10.5px Montserrat,sans-serif;letter-spacing:.2em;text-transform:uppercase;padding:10px 16px;border:1px solid rgba(90,62,34,.55);border-radius:999px;white-space:nowrap;text-decoration:none}
 @media(max-width:860px){.links{display:none}}
-.wrap{max-width:980px;margin:0 auto;padding:clamp(36px,6vw,80px) clamp(16px,4vw,48px)}
-.lab{font:700 12px Inter;letter-spacing:.24em;text-transform:uppercase;color:#8A6A28}
-h1{margin:14px 0 0;font:800 clamp(34px,5.4vw,64px)/1.05 Inter;text-transform:uppercase;letter-spacing:.01em;text-wrap:balance}
-.scr{font:700 clamp(44px,6vw,72px)/1 Corinthia,cursive;color:#8A6A28}
-.lead{font:400 clamp(17px,1.6vw,20px)/1.6 Inter;max-width:640px;margin:18px 0 0}
-.card{background:#F4EDE2;border:1px solid #C5A059;padding:clamp(22px,4vw,44px);margin-top:clamp(28px,4vw,44px)}
-form{display:grid;grid-template-columns:1fr 1fr;gap:16px 18px}
-@media(max-width:620px){form{grid-template-columns:1fr}}
-.f{display:flex;flex-direction:column;gap:7px}
-.f.full{grid-column:1/-1}
-label{font:700 11px Inter;letter-spacing:.18em;text-transform:uppercase;color:#8A6A28}
-input{font:400 17px Inter;padding:14px 14px;border:1px solid #C5A059;background:#fff;color:#1D1A17;border-radius:0;width:100%;-webkit-appearance:none;appearance:none;min-height:52px}
-input:focus{outline:2px solid #C5A059;outline-offset:1px}
-.chk{display:flex;gap:10px;align-items:flex-start;font:400 14px/1.45 Inter;text-transform:none;letter-spacing:0;color:#1D1A17}
-.chk input{width:20px;height:20px;min-height:0;margin:1px 0 0;flex:0 0 20px;-webkit-appearance:checkbox;appearance:auto}
-.hint{font:400 13px/1.45 Inter;color:#5b534a}
-.btn{grid-column:1/-1;font:700 13px Inter;letter-spacing:.2em;text-transform:uppercase;padding:18px 24px;background:#1D1A17;color:#F4EDE2;border:0;cursor:pointer;min-height:56px}
-.btn:hover{background:#8A6A28}
-.err{grid-column:1/-1;color:#7A2E2E;font:600 14px Inter;display:none}
-#rez{display:none}
-.h2{margin:0;font:800 clamp(26px,3.6vw,40px)/1.1 Inter;text-transform:uppercase;text-wrap:balance}
-.stubs{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:20px}
-@media(max-width:620px){.stubs{grid-template-columns:1fr}}
-.stub{background:#fff;border:1px solid #C5A059;padding:16px;text-align:center}
-.stub small{display:block;font:700 11px Inter;letter-spacing:.18em;text-transform:uppercase;color:#8A6A28}
-.stub b{display:block;font:800 22px Inter;margin-top:6px;text-transform:uppercase}
-.bars{margin-top:22px;display:grid;gap:12px}
-.br{display:grid;grid-template-columns:96px 1fr 56px;align-items:center;gap:12px;font:700 15px Inter}
-.br .t{height:16px;background:#fff;border:1px solid #C5A059;position:relative}
-.br .t i{position:absolute;left:0;top:0;bottom:0;background:#C5A059}
-.br.low .t i{background:#9E9E9E}
-.br.low{color:#1D1A17}
-.br em{font-style:normal;font-weight:400;text-align:right}
-.ch svg{width:100%;height:auto;display:block}
-.miss{display:grid;grid-template-columns:1fr 1fr;gap:clamp(16px,3vw,28px);margin-top:22px}
-@media(max-width:700px){.miss{grid-template-columns:1fr}}
-.el{background:#fff;border:1px solid #C5A059;padding:20px}
-.el .n{font:700 12px Inter;letter-spacing:.22em;text-transform:uppercase;color:#8A6A28}
-.el h3{margin:6px 0 4px;font:800 26px Inter;text-transform:uppercase}
-.el .z{font:600 14px Inter;color:#5b534a}
-.el p{font:400 16px/1.55 Inter;margin:12px 0}
-.el .k{font:700 15px Inter}
-.pr{display:flex;gap:14px;align-items:center;margin-top:14px;border-top:1px solid #E6D9C3;padding-top:14px}
-.pr img{width:96px;height:120px;object-fit:contain;background:#F4EDE2;border:1px solid #C5A059;padding:4px;flex:0 0 96px}
-.pr b{display:block;font:800 16px Inter;text-transform:uppercase}
-.pr span{display:block;font:400 13px Inter;color:#5b534a;margin:4px 0 8px}
-.pr a{display:inline-block;font:700 11px Inter;letter-spacing:.18em;text-transform:uppercase;border-bottom:1px solid #C5A059;padding-bottom:2px;color:#8A6A28}
-.cta{text-align:center}
-.cta .btn{display:inline-block;margin-top:18px}
-.cta.soft{background:transparent;border:1px solid #C5A059;opacity:.92}
-.cta.soft .scr{font-size:clamp(30px,4vw,44px)}
-.cta.soft .lead{font-size:15px;max-width:560px}
-.cta.soft .btn{background:transparent;color:#1D1A17;border:1px solid #1D1A17;padding:14px 22px;min-height:auto}
-.cta.soft .btn:hover{background:#1D1A17;color:#F4EDE2}
-.pr a{margin-right:10px}
-.note{font:400 13px/1.5 Inter;color:#5b534a;margin-top:16px}
-.el p,.lead,.note,.k,.cta p{text-wrap:pretty}
-#rez{scroll-margin-top:80px}
-@media(max-width:620px){.card.ch{padding:16px 4px}.cta .btn{letter-spacing:.12em}}
-.foot{text-align:center;padding:30px 16px 50px;font:400 13px Inter;color:#5b534a}
+.glassbtn{position:relative;display:inline-block;margin:2px -50px -16px;padding:26px 50px;pointer-events:auto;touch-action:pan-y}
+.glassbtn canvas{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;-webkit-mask-image:radial-gradient(ellipse 50% 50% at 50% 50%,#000 58%,transparent 100%);mask-image:radial-gradient(ellipse 50% 50% at 50% 50%,#000 58%,transparent 100%)}
+.cta{position:relative;z-index:2;display:inline-flex;align-items:center;justify-content:center;padding:10px 34px 10px;border-radius:999px;text-decoration:none;color:#5A3E22;background:linear-gradient(180deg,rgba(255,255,255,.26),rgba(255,255,255,.04) 60%,rgba(255,255,255,.14));-webkit-backdrop-filter:blur(9px) saturate(1.9) brightness(1.06);backdrop-filter:blur(9px) saturate(1.9) brightness(1.06);border:1px solid rgba(255,255,255,.75);box-shadow:0 0 0 1px rgba(90,62,34,.24),inset 0 2px 2px rgba(255,255,255,.95),inset 0 -3px 5px rgba(255,255,255,.4),inset 0 0 16px rgba(255,255,255,.5),0 8px 20px rgba(90,60,15,.14);pointer-events:auto;transition:transform .25s,box-shadow .25s}
+.cta:hover{transform:translateY(-1px) scale(1.03);box-shadow:0 0 0 1px rgba(90,62,34,.3),inset 0 2px 2px rgba(255,255,255,.95),inset 0 -3px 5px rgba(255,255,255,.45),inset 0 0 20px rgba(255,255,255,.6),0 12px 26px rgba(138,106,40,.24)}
+.cta:focus-visible{outline:2px solid #8A6A28;outline-offset:4px}
+.cta .lbl{display:block;text-align:center;padding:0 0 0 2px;font-family:'Great Vibes',cursive;font-weight:400;font-size:25px;line-height:1.1;white-space:nowrap;color:#5A3E22}
 </style>
 </head>
 <body>
@@ -92,14 +39,95 @@ input:focus{outline:2px solid #C5A059;outline-offset:1px}
   <div class="links"><a href="/nakit/">Nakit</a><a href="/kristali/">Kristali</a><a href="/astro/">Astro</a><a href="/zvezdani-zapis/">Zvezdani zapis</a><a href="/blog/">Blog</a></div>
   <a class="pill" href="/krug/">Zvezdani krug</a>
 </div>
+<style>
+#karta{position:relative;z-index:1;background:var(--sedef) url("/assets/kamen/pozadina.jpg?v=1") center/cover;color:var(--ink);overflow:hidden}
+#karta:before{content:"";position:absolute;inset:0;background:rgba(244,237,226,.45);pointer-events:none}
+#karta *{box-sizing:border-box}
+#karta .kw{position:relative;max-width:760px;margin:0 auto;padding:clamp(34px,6vw,70px) clamp(16px,4vw,34px) clamp(40px,6vw,70px)}
+#karta .lab{font:600 11px Montserrat,sans-serif;letter-spacing:.3em;text-transform:uppercase;color:#8A6A28;text-align:center}
+#karta .gtx{font-family:'Great Vibes',cursive;font-weight:400;line-height:1.05;background:linear-gradient(100deg,#8A6A28 0%,#C5A059 28%,#F1D58E 50%,#C5A059 72%,#8A6A28 100%);-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent;padding:.08em .06em}
+#karta .kh{margin:0;font-size:clamp(58px,13vw,104px);text-align:center}
+#karta .lead{font:400 clamp(15px,1.5vw,17px)/1.7 Montserrat,sans-serif;max-width:520px;margin:6px auto 0;text-align:center;text-wrap:pretty}
 
-<div class="wrap">
-  <div class="lab">Besplatno · za minut</div>
-  <h1>Koji element tebi&nbsp;fali?</h1>
-  <div class="scr">ti nisi samo tvoj znak</div>
+/* papir iz koverte: tabela za unos */
+#karta .stack{--ew:min(540px,88vw);position:relative;margin-top:clamp(26px,4vw,40px)}
+#karta .card{position:relative;background:#FBF6EC;border:1px solid rgba(197,160,89,.7);border-radius:4px;padding:clamp(22px,4vw,40px);box-shadow:0 26px 50px rgba(70,45,15,.16),inset 0 0 0 5px rgba(251,246,236,1),inset 0 0 0 6px rgba(197,160,89,.28)}
+#karta .stack .card{z-index:3;padding-bottom:clamp(30px,5vw,44px)}
+#karta .envbox{position:relative;z-index:2;width:var(--ew);margin:calc(var(--ew) * -0.3) auto 0}
+#karta .pbtn{position:absolute;z-index:4;left:50%;top:calc(var(--ew) * .465);margin:0;transform:translate(-50%,-50%)}
+#karta .pbtn .cta{border:1px solid rgba(255,255,255,.8);cursor:pointer;font:inherit;-webkit-appearance:none;appearance:none}
+#karta .pbtn{padding:20px 38px}
+#karta .pbtn .cta{padding:7px 24px 8px;background:linear-gradient(180deg,rgba(255,255,255,.3),rgba(255,255,255,.03) 60%,rgba(255,255,255,.14))}
+#karta .pbtn .cta .lbl{font-size:clamp(19px,5vw,22px)}
+
+#karta .envimg{display:block;width:100%;height:auto;filter:drop-shadow(0 22px 30px rgba(60,40,20,.28));pointer-events:none;user-select:none}
+#karta form{display:grid;grid-template-columns:1fr 1fr;gap:20px 22px}
+@media(max-width:620px){#karta form{grid-template-columns:1fr}}
+#karta .f{display:flex;flex-direction:column;gap:4px;min-width:0}
+#karta .f.full{grid-column:1/-1}
+#karta label{font:600 10.5px Montserrat,sans-serif;letter-spacing:.22em;text-transform:uppercase;color:#8A6A28}
+#karta input:not([type=checkbox]){font:500 16px Montserrat,sans-serif;padding:10px 2px 11px;border:0;border-bottom:1px solid rgba(90,62,34,.38);background:transparent;color:#4A3219;border-radius:0;width:100%;-webkit-appearance:none;appearance:none;min-height:46px;transition:border-color .2s,box-shadow .2s}
+#karta input:not([type=checkbox])::placeholder{color:rgba(90,62,34,.45)}
+#karta input:not([type=checkbox]):focus{outline:0;border-bottom-color:#C5A059;box-shadow:0 1px 0 0 #C5A059}
+#karta .chk{display:flex;gap:10px;align-items:flex-start;font:400 13px/1.5 Montserrat,sans-serif;text-transform:none;letter-spacing:0;color:#5A3E22;margin-top:6px}
+#karta .chk input{width:19px;height:19px;min-height:0;margin:2px 0 0;flex:0 0 19px;accent-color:#B58B3F}
+#karta .hint{font:400 12px/1.5 Montserrat,sans-serif;color:#7a6650}
+#karta .err{grid-column:1/-1;color:#8A3A2E;font:600 13px Montserrat,sans-serif;display:none}
+#karta .sub{grid-column:1/-1;display:flex;justify-content:center;margin-top:4px}
+#rez{display:none}
+#karta .kbtn{position:relative;display:inline-flex;align-items:center;justify-content:center;padding:11px 38px 12px;border-radius:999px;border:1px solid rgba(255,255,255,.8);background:linear-gradient(180deg,rgba(255,255,255,.55),rgba(255,255,255,.1) 60%,rgba(255,255,255,.3)),linear-gradient(120deg,rgba(197,160,89,.22),rgba(241,213,142,.12));-webkit-backdrop-filter:blur(8px) saturate(1.8);backdrop-filter:blur(8px) saturate(1.8);box-shadow:0 0 0 1px rgba(138,106,40,.4),inset 0 2px 2px rgba(255,255,255,.95),inset 0 -3px 6px rgba(255,255,255,.4),0 10px 22px rgba(90,60,15,.16);cursor:pointer;text-decoration:none;transition:transform .25s,box-shadow .25s;color:#5A3E22;font-family:'Great Vibes',cursive;font-size:28px;line-height:1.1;white-space:nowrap}
+#karta .kbtn:hover{transform:translateY(-1px) scale(1.025);box-shadow:0 0 0 1px rgba(138,106,40,.55),inset 0 2px 2px rgba(255,255,255,.95),inset 0 -3px 6px rgba(255,255,255,.45),0 14px 26px rgba(138,106,40,.26)}
+#karta .kbtn:focus-visible{outline:2px solid #8A6A28;outline-offset:4px}
+#karta .kbtn.sm{font-size:24px;padding:9px 30px 10px}
+
+/* rezultat */
+#karta #rez .card{margin-top:clamp(22px,3.4vw,34px);background:rgba(251,246,236,.82);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px)}
+#karta #rez{scroll-margin-top:24px}
+#karta .h2{margin:8px 0 0;font:700 clamp(21px,3.2vw,30px)/1.15 Montserrat,sans-serif;text-transform:uppercase;letter-spacing:.03em;text-wrap:balance;color:#4A3219}
+#karta .stubs{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:20px}
+@media(max-width:620px){#karta .stubs{grid-template-columns:1fr}}
+#karta .stub{background:rgba(255,255,255,.55);border:1px solid rgba(197,160,89,.6);padding:14px;text-align:center;border-radius:3px}
+#karta .stub small{display:block;font:600 10px Montserrat,sans-serif;letter-spacing:.24em;text-transform:uppercase;color:#8A6A28}
+#karta .stub b{display:block;font:700 17px Montserrat,sans-serif;margin-top:6px;text-transform:uppercase;letter-spacing:.04em}
+#karta .bars{margin-top:22px;display:grid;gap:12px}
+#karta .kbr{display:grid;grid-template-columns:78px 1fr 52px;align-items:center;gap:12px;font:600 13px Montserrat,sans-serif;letter-spacing:.06em;text-transform:uppercase}
+#karta .kbr .t{height:12px;background:rgba(255,255,255,.7);border:1px solid rgba(197,160,89,.6);position:relative;border-radius:99px;overflow:hidden}
+#karta .kbr .t i{position:absolute;left:0;top:0;bottom:0;background:linear-gradient(90deg,#C5A059,#E8C982);border-radius:99px}
+#karta .kbr.low .t i{background:linear-gradient(90deg,#9a8a74,#bcae98)}
+#karta .kbr em{font-style:normal;font-weight:500;text-align:right;letter-spacing:0}
+#karta .ch svg{width:100%;height:auto;display:block}
+#karta .miss{display:grid;grid-template-columns:1fr 1fr;gap:clamp(16px,3vw,26px);margin-top:22px}
+@media(max-width:700px){#karta .miss{grid-template-columns:1fr}}
+#karta .el{background:rgba(255,255,255,.55);border:1px solid rgba(197,160,89,.6);padding:20px;border-radius:3px}
+#karta .el .n{font:600 10.5px Montserrat,sans-serif;letter-spacing:.24em;text-transform:uppercase;color:#8A6A28}
+#karta .el h3{margin:6px 0 4px;font:700 22px Montserrat,sans-serif;text-transform:uppercase;letter-spacing:.04em}
+#karta .el .z{font:500 13px Montserrat,sans-serif;color:#7a6650}
+#karta .el p{font:400 15px/1.6 Montserrat,sans-serif;margin:12px 0}
+#karta .el .k{font:600 14px Montserrat,sans-serif}
+#karta .pr{display:flex;gap:14px;align-items:center;margin-top:14px;border-top:1px solid rgba(197,160,89,.35);padding-top:14px}
+#karta .pr img{width:84px;height:104px;object-fit:contain;background:#F4EDE2;border:1px solid rgba(197,160,89,.6);padding:4px;flex:0 0 84px;border-radius:2px}
+#karta .pr b{display:block;font:700 14px Montserrat,sans-serif;text-transform:uppercase;letter-spacing:.03em}
+#karta .pr span{display:block;font:400 12px/1.4 Montserrat,sans-serif;color:#7a6650;margin:4px 0 8px}
+#karta .pr a{display:inline-block;font:600 10.5px Montserrat,sans-serif;letter-spacing:.18em;text-transform:uppercase;border-bottom:1px solid #C5A059;padding-bottom:2px;color:#8A6A28;margin-right:12px;text-decoration:none}
+#karta .kcta{text-align:center}
+#karta .kcta .kbtn{margin-top:16px}
+#karta .kcta .scr{font-size:clamp(40px,7vw,60px)}
+#karta .kcta.soft{background:transparent!important;box-shadow:none!important}
+#karta .note{font:400 12.5px/1.6 Montserrat,sans-serif;color:#7a6650;margin-top:16px}
+#karta .note a{border-bottom:1px solid #C5A059;color:inherit;text-decoration:none}
+#karta .el p,#karta .lead,#karta .note{text-wrap:pretty}
+#karta .foot{position:relative;text-align:center;padding:20px 16px 44px;font:400 12px Montserrat,sans-serif;color:#7a6650}
+@media(max-width:620px){#karta .card.ch{padding:16px 6px}#karta .kbtn{font-size:25px;padding:10px 28px 11px}}
+</style>
+
+<section id="karta" aria-label="Kada si rođena?">
+ <div class="kw">
+  <div id="forma" style="scroll-margin-top:20px"></div>
+  <h2 class="kh gtx">Kada si rođena?</h2>
   <p class="lead">Upiši datum, sat i mesto rođenja. Dobićeš svoju kartu, elemente u procentima i dva elementa koja ti najviše fale, sa kamenom koji ih vraća u&nbsp;tvoj&nbsp;život.</p>
 
-  <div class="card" id="forma">
+  <div class="stack">
+   <div class="card" id="kcard">
     <form id="f" novalidate>
       <div class="f"><label for="ime">Ime</label><input id="ime" name="ime" autocomplete="given-name" required></div>
       <div class="f"><label for="mejl">Mejl</label><input id="mejl" name="mejl" type="email" autocomplete="email" inputmode="email" required></div>
@@ -108,50 +136,52 @@ input:focus{outline:2px solid #C5A059;outline-offset:1px}
         <span class="chk"><input type="checkbox" id="nz"><span>Ne znam tačan sat <span class="hint">(sat piše u izvodu iz matične knjige rođenih)</span></span></span></div>
       <div class="f full"><label for="mesto">Mesto rođenja</label><input id="mesto" list="gradovi" placeholder="Počni da kucaš, npr. Kragujevac" autocomplete="off" required>
         <span class="hint">Gradovi iz Srbije i bivše Jugoslavije. Ako je tvoj grad mali, izaberi najbliži veći.</span></div>
-      <label class="chk full" style="grid-column:1/-1"><input type="checkbox" id="ok" required><span>Želim da mi Marina šalje mejlove o kamenju, astrologiji i Zvezdanom krugu. Mogu da se odjavim kad poželim.</span></label>
+      <label class="chk full" style="grid-column:1/-1;font-weight:400"><input type="checkbox" id="ok" required><span>Želim da mi Marina šalje mejlove o kamenju, astrologiji i Zvezdanom krugu. Mogu da se odjavim kad poželim.</span></label>
       <div class="err" id="err"></div>
-      <button class="btn" type="submit">Izračunaj moju kartu</button>
     </form>
     <datalist id="gradovi"></datalist>
+   </div>
+   <div class="envbox"><img class="envimg" src="/assets/kamen/koverta.webp?v=1" alt="" width="900" height="1030"><div class="glassbtn pbtn" id="gb"><canvas id="gc" aria-hidden="true"></canvas><button class="cta" type="submit" form="f"><span class="lbl">Izračunaj kartu</span></button></div></div>
   </div>
 
   <div id="rez">
     <div class="card">
-      <div class="lab" id="rLab">Tvoja karta</div>
-      <h2 class="h2" id="rNasl" style="margin-top:10px"></h2>
+      <div class="lab" id="rLab" style="text-align:left">Tvoja karta</div>
+      <h3 class="h2" id="rNasl"></h3>
       <div class="stubs" id="stubs"></div>
       <div class="bars" id="bars"></div>
       <p class="note" id="nzNote" style="display:none">Bez tačnog sata ne znamo tvoj podznak i kuće, a Mesec može biti i u susednom znaku. Kad nađeš sat u izvodu, izračunaj ponovo.</p>
     </div>
 
     <div class="card">
-      <div class="lab">Fale ti</div>
-      <h2 class="h2" id="mNasl" style="margin-top:10px"></h2>
+      <div class="lab" style="text-align:left">Fale ti</div>
+      <h3 class="h2" id="mNasl"></h3>
       <div class="miss" id="miss"></div>
     </div>
 
     <div class="card ch" id="chCard">
-      <div class="lab" style="text-align:center;margin-bottom:10px">Tvoja natalna karta</div>
+      <div class="lab" style="margin-bottom:10px">Tvoja natalna karta</div>
       <div id="ch"></div>
       <p class="note" style="text-align:center">Svetlo sivo: <b id="lg1"></b> · Tamno sivo: <b id="lg2"></b>. Zaokružene su planete u tim&nbsp;elementima.</p>
     </div>
 
-    <div class="card cta">
-      <div class="scr">nabavi svoj kamen</div>
-      <p class="lead" style="margin:10px auto 0">Kamenje i nakit koji si upravo videla su tu za tebe. Javi mi se za komad koji te zove, odgovaram lično.</p>
-      <a class="btn" id="upitBtn" href="mailto:marina.rakic1806@gmail.com?subject=Upit%3A%20kamen%20po%20natalu">Pošalji upit za svoj kamen</a>
-      <p class="note">Ovo je automatski izračun. Za ličnu analizu cele karte pogledaj <a href="/zvezdani-zapis/" style="border-bottom:1px solid #C5A059">Zvezdani zapis</a>.</p>
+    <div class="card kcta">
+      <div class="scr gtx">nabavi svoj kamen</div>
+      <p class="lead" style="margin-top:8px">Kamenje i nakit koji si upravo videla su tu za tebe. Javi mi se za komad koji te zove, odgovaram lično.</p>
+      <a class="kbtn" id="upitBtn" href="mailto:marina.rakic1806@gmail.com?subject=Upit%3A%20kamen%20po%20natalu">Pošalji upit</a>
+      <p class="note">Ovo je automatski izračun. Za ličnu analizu cele karte pogledaj <a href="/zvezdani-zapis/">Zvezdani zapis</a>.</p>
     </div>
 
-    <div class="card cta soft">
-      <div class="scr">ovo je tek prvi korak</div>
-      <p class="lead" style="margin:10px auto 0">U Zvezdanom krugu zajedno čitamo karte, uživo, korak po korak. Tvoj Mesec, tvoje rane, tvoja snaga. Upiši se na listu čekanja, prvih 18 dobija promo cenu&nbsp;zauvek.</p>
-      <a class="btn" href="/krug/">Upiši me na listu čekanja</a>
+    <div class="card kcta soft">
+      <div class="scr gtx">ovo je tek prvi korak</div>
+      <p class="lead" style="margin-top:8px">U Zvezdanom krugu zajedno čitamo karte, uživo, korak po korak. Tvoj Mesec, tvoje rane, tvoja snaga. Upiši se na listu čekanja, prvih 18 dobija promo cenu&nbsp;zauvek.</p>
+      <a class="kbtn sm" href="/krug/">Upiši me na listu čekanja</a>
     </div>
   </div>
-</div>
-<div class="foot">Mnjauprrrrr · nakit od hirurškog čelika i poludragog kamenja</div>
-
+ </div>
+ <div class="foot">Mnjauprrrrr · nakit od hirurškog čelika i poludragog kamenja</div>
+</section>
+<script></script>
 <script>
 (function(){
 var D=Math.PI/180,R=180/Math.PI;
@@ -238,12 +268,12 @@ function crtaj(k,nz,low){
   for(i=0;i<12;i++){var a=xy(i*30,490),b=xy(i*30,560);o.push('<line x1="'+f1(a[0])+'" y1="'+f1(a[1])+'" x2="'+f1(b[0])+'" y2="'+f1(b[1])+'" stroke="'+GR2+'" stroke-width="1.5"/>');
     var p=xy(i*30+15,515);o.push('<text x="'+f1(p[0])+'" y="'+f1(p[1])+'" font-size="30" fill="'+G+'" text-anchor="middle" dominant-baseline="central">'+SG[i]+'︎</text>');
     p=xy(i*30+15,550);var th=180+(i*30+15-ASC),rot=-(th-90);if(Math.sin(th*D)<0)rot+=180;
-    o.push('<text x="'+f1(p[0])+'" y="'+f1(p[1])+'" transform="rotate('+f1(rot)+' '+f1(p[0])+' '+f1(p[1])+')" font-family="Inter" font-weight="700" font-size="12" letter-spacing="2" fill="'+G+'" text-anchor="middle" dominant-baseline="central">'+SN[i].toUpperCase()+'</text>')}
+    o.push('<text x="'+f1(p[0])+'" y="'+f1(p[1])+'" transform="rotate('+f1(rot)+' '+f1(p[0])+' '+f1(p[1])+')" font-family="Montserrat" font-weight="700" font-size="12" letter-spacing="2" fill="'+G+'" text-anchor="middle" dominant-baseline="central">'+SN[i].toUpperCase()+'</text>')}
   if(!nz){C.forEach(function(c,j){var ang=j%3===0,a=xy(c,130),b=xy(c,490);o.push('<line x1="'+f1(a[0])+'" y1="'+f1(a[1])+'" x2="'+f1(b[0])+'" y2="'+f1(b[1])+'" stroke="'+(ang?INK:GR2)+'" stroke-width="'+(ang?3:1.2)+'"/>');
-      var nx=C[(j+1)%12],mid=c+M360(nx-c)/2,p=xy(mid,155);o.push('<text x="'+f1(p[0])+'" y="'+f1(p[1])+'" font-family="Inter" font-weight="700" font-size="20" fill="'+G+'" text-anchor="middle" dominant-baseline="central">'+(j+1)+'</text>')});
+      var nx=C[(j+1)%12],mid=c+M360(nx-c)/2,p=xy(mid,155);o.push('<text x="'+f1(p[0])+'" y="'+f1(p[1])+'" font-family="Montserrat" font-weight="700" font-size="20" fill="'+G+'" text-anchor="middle" dominant-baseline="central">'+(j+1)+'</text>')});
     var a=xy(k.ASC,130),b=xy(k.ASC,620);o.push('<line x1="'+f1(a[0])+'" y1="'+f1(a[1])+'" x2="'+f1(b[0]-8)+'" y2="'+f1(b[1])+'" stroke="'+INK+'" stroke-width="9" stroke-linecap="round"/>');
     a=xy(k.MC,130);b=xy(k.MC,600);o.push('<line x1="'+f1(a[0])+'" y1="'+f1(a[1])+'" x2="'+f1(b[0])+'" y2="'+f1(b[1])+'" stroke="'+INK+'" stroke-width="5" stroke-linecap="round"/>')}
-  o.push('<text x="720" y="628" font-family="Corinthia" font-weight="700" font-size="58" fill="'+INK+'" text-anchor="middle">'+esc(ime.slice(0,14))+'</text>');
+  o.push('<text x="720" y="628" font-family="Great Vibes" font-weight="400" font-size="70" fill="'+INK+'" text-anchor="middle">'+esc(ime.slice(0,14))+'</text>');
   var names=Object.keys(P),srt=names.slice().sort(function(a,b){return M360(P[a]-ASC)-M360(P[b]-ASC)}),ps=srt.map(function(n){return M360(P[n]-ASC)});
   for(var it=0;it<200;it++){var ch=false;for(i=0;i<ps.length-1;i++)if(ps[i+1]-ps[i]<9){var m=(ps[i]+ps[i+1])/2;ps[i]=m-4.5;ps[i+1]=m+4.5;ch=true}if(!ch)break}
   var SP={};srt.forEach(function(n,i){SP[n]=ps[i]+ASC});
@@ -252,11 +282,11 @@ function crtaj(k,nz,low){
     var a2=xy(p,455);o.push('<line x1="'+f1(b[0])+'" y1="'+f1(b[1])+'" x2="'+f1(a2[0])+'" y2="'+f1(a2[1])+'" stroke="'+INK+'" stroke-width="1" opacity=".5"/>');
     var q=xy(p,428),e=elOf(l);if(fill[e]!==undefined)o.push('<circle cx="'+f1(q[0])+'" cy="'+f1(q[1])+'" r="27" fill="'+fill[e]+'" stroke="'+INK+'" stroke-width="2"/>');
     o.push('<text x="'+f1(q[0])+'" y="'+f1(q[1])+'" font-size="38" fill="'+INK+'" text-anchor="middle" dominant-baseline="central">'+GL[n]+'︎</text>');
-    q=xy(p,372);o.push('<text x="'+f1(q[0])+'" y="'+f1(q[1])+'" font-family="Inter" font-weight="700" font-size="14" fill="'+INK+'" text-anchor="middle" dominant-baseline="central">'+n+' <tspan font-weight="600" fill="'+G+'">'+stp(l)+'</tspan></text>')});
+    q=xy(p,372);o.push('<text x="'+f1(q[0])+'" y="'+f1(q[1])+'" font-family="Montserrat" font-weight="700" font-size="14" fill="'+INK+'" text-anchor="middle" dominant-baseline="central">'+n+' <tspan font-weight="600" fill="'+G+'">'+stp(l)+'</tspan></text>')});
   if(!nz){var y=xy(k.ASC,560)[1],at='ASC '+stp(k.ASC)+' '+SN[sg(k.ASC)].toUpperCase();
-    o.push('<rect x="6" y="'+f1(y-30)+'" width="210" height="60" rx="12" fill="'+INK+'"/><text x="111" y="'+f1(y-9)+'" font-family="Inter" font-weight="800" font-size="18" fill="#F4EDE2" text-anchor="middle" dominant-baseline="central">'+at+'</text><text x="111" y="'+f1(y+14)+'" font-family="Inter" font-weight="700" font-size="13" letter-spacing="2" fill="#E8C982" text-anchor="middle" dominant-baseline="central">PODZNAK</text>');
+    o.push('<rect x="6" y="'+f1(y-30)+'" width="210" height="60" rx="12" fill="'+INK+'"/><text x="111" y="'+f1(y-9)+'" font-family="Montserrat" font-weight="800" font-size="18" fill="#F4EDE2" text-anchor="middle" dominant-baseline="central">'+at+'</text><text x="111" y="'+f1(y+14)+'" font-family="Montserrat" font-weight="700" font-size="13" letter-spacing="2" fill="#E8C982" text-anchor="middle" dominant-baseline="central">PODZNAK</text>');
     var q=xy(k.MC,600),mt='MC '+stp(k.MC)+' '+SN[sg(k.MC)].toUpperCase();
-    o.push('<rect x="'+f1(q[0]-105)+'" y="'+f1(q[1]-38)+'" width="210" height="38" rx="19" fill="'+INK+'"/><text x="'+f1(q[0])+'" y="'+f1(q[1]-19)+'" font-family="Inter" font-weight="800" font-size="16" fill="#F4EDE2" text-anchor="middle" dominant-baseline="central">'+mt+'</text>')}
+    o.push('<rect x="'+f1(q[0]-105)+'" y="'+f1(q[1]-38)+'" width="210" height="38" rx="19" fill="'+INK+'"/><text x="'+f1(q[0])+'" y="'+f1(q[1]-19)+'" font-family="Montserrat" font-weight="800" font-size="16" fill="#F4EDE2" text-anchor="middle" dominant-baseline="central">'+mt+'</text>')}
   o.push('</svg>');return o.join('');
 }
 function esc(s){return String(s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
@@ -288,19 +318,67 @@ document.getElementById('f').addEventListener('submit',function(ev){
   document.getElementById('rNasl').innerHTML='Sunce u '+lok(sg(k.P['Sunce']))+', Mesec u&nbsp;'+lok(sg(k.P['Mesec']))+(nz?'':', podznak&nbsp;'+SN[sg(k.ASC)]);
   var st=[['Sunce',SN[sg(k.P['Sunce'])]+' '+stp(k.P['Sunce'])],['Mesec',SN[sg(k.P['Mesec'])]+' '+stp(k.P['Mesec'])],['Podznak',nz?'?':SN[sg(k.ASC)]+' '+stp(k.ASC)]];
   document.getElementById('stubs').innerHTML=st.map(function(s){return '<div class="stub"><small>'+s[0]+'</small><b>'+s[1]+'</b></div>'}).join('');
-  document.getElementById('bars').innerHTML=[0,1,2,3].map(function(i){var lw=low.indexOf(i)>=0;return '<div class="br'+(lw?' low':'')+'"><span>'+ELN[i]+'</span><span class="t"><i style="width:'+pc[i]+'%"></i></span><em>'+String(pc[i]).replace('.',',')+'%</em></div>'}).join('');
+  document.getElementById('bars').innerHTML=[0,1,2,3].map(function(i){var lw=low.indexOf(i)>=0;return '<div class="kbr'+(lw?' low':'')+'"><span>'+ELN[i]+'</span><span class="t"><i style="width:'+pc[i]+'%"></i></span><em>'+String(pc[i]).replace('.',',')+'%</em></div>'}).join('');
   document.getElementById('nzNote').style.display=nz?'block':'none';
   document.getElementById('mNasl').innerHTML=ELN[low[0]]+' i&nbsp;'+ELN[low[1]].toLowerCase();
   document.getElementById('miss').innerHTML=low.map(function(i,j){var e=ELT[i],tu=pts.filter(function(p){return elOf(p[1])===i}).map(function(p){return p[0]});
     var u=tu.length?'U tvojoj karti ovde su samo: '+tu.join(', ')+'.':'U tvojoj karti ovde nema nijedne planete.';
     return '<div class="el"><div class="n">'+(j?'Odmah posle':'Najviše ti fali')+'</div><h3>'+ELN[i]+'</h3><div class="z">'+ELZ[i]+'</div><p>'+e.t+'</p><p class="z" style="margin-top:0">'+u+'</p><div class="k">Tvoj kamen: '+e.k+'</div>'+
-      e.p.map(function(p){return '<div class="pr"><img src="/assets/site/'+p[3]+'" alt="'+p[1]+'" loading="lazy"><div><b>'+p[1]+'</b><span>'+p[2]+'</span><a href="/nakit/'+p[0]+'/">Pogledaj</a><a href="mailto:marina.rakic1806@gmail.com?subject='+encodeURIComponent('Upit: '+p[1])+'">Pošalji upit</a></div></div>'}).join('')+'</div>'}).join('');
+      e.p.map(function(p){return '<div class="pr"><img src="'+((window.__PIMG&&window.__PIMG[p[3]])||('/assets/site/'+p[3]))+'" alt="'+p[1]+'" loading="lazy"><div><b>'+p[1]+'</b><span>'+p[2]+'</span><a href="/nakit/'+p[0]+'/">Pogledaj</a><a href="mailto:marina.rakic1806@gmail.com?subject='+encodeURIComponent('Upit: '+p[1])+'">Pošalji upit</a></div></div>'}).join('')+'</div>'}).join('');
   var ub=document.getElementById('upitBtn');if(ub)ub.href='mailto:marina.rakic1806@gmail.com?subject='+encodeURIComponent('Upit: kamen po natalu – '+ime+' (fali '+ELN[low[0]]+' i '+ELN[low[1]]+')');
   document.getElementById('ch').innerHTML=crtaj(k,nz,low);
   document.getElementById('lg1').textContent=ELN[low[0]].toLowerCase();document.getElementById('lg2').textContent=ELN[low[1]].toLowerCase();
   var r=document.getElementById('rez');r.style.display='block';setTimeout(function(){r.scrollIntoView({behavior:'smooth',block:'start'})},60);
 });
 function lok(i){return ['Ovnu','Biku','Blizancima','Raku','Lavu','Devici','Vagi','Škorpiji','Strelcu','Jarcu','Vodoliji','Ribama'][i]}
+})();
+
+</script>
+
+<script>
+(function(){var still=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;var $=function(s){return document.querySelector(s)};
+  // liquid glass: gold strokes that follow the finger or drift on their own behind the button
+  var gb=document.getElementById('gb')||document.createElement('div'),gc=document.getElementById('gc')||document.createElement('canvas'),gx=gc.getContext('2d'),gW=0,gH=0,gOn=false,gRaf=0,gLast=0,gt=0,gp=null,gPtr=null,gPtrT=-9999;
+  function gSize(){
+    var w=gb.offsetWidth,h=gb.offsetHeight,d=Math.min(2,window.devicePixelRatio||1);
+    if(w===gW&&h===gH)return;gW=w;gH=h;gc.width=Math.round(w*d);gc.height=Math.round(h*d);gx.setTransform(d,0,0,d,0,0);
+  }
+  gb.addEventListener('pointermove',function(e){var r=gb.getBoundingClientRect();gPtr={x:e.clientX-r.left,y:e.clientY-r.top};gPtrT=performance.now()});
+  function gTick(now){
+    gRaf=0;if(!gOn)return;
+    var dt=Math.min(50,now-gLast);gLast=now;gSize();
+    gx.globalCompositeOperation='destination-out';gx.fillStyle='rgba(0,0,0,'+Math.min(1,0.045*dt/16.7).toFixed(3)+')';gx.fillRect(0,0,gW,gH);
+    var tx,ty;
+    if(gPtr&&now-gPtrT<1500){tx=gPtr.x;ty=gPtr.y}
+    else if(still){tx=null}
+    else{
+      gt+=dt/1000;
+      tx=gW/2+gW*0.42*Math.sin(gt*2.3)+gW*0.08*Math.sin(gt*5.1+1);
+      ty=gH/2+gH*0.40*Math.sin(gt*3.1+.6)+gH*0.08*Math.sin(gt*6.7);
+    }
+    if(tx!==null){
+      if(!gp)gp={x:tx,y:ty};
+      var nx=gp.x+(tx-gp.x)*0.3,ny=gp.y+(ty-gp.y)*0.3;
+      if(Math.hypot(nx-gp.x,ny-gp.y)>0.25){
+        var k=(Math.sin(gt*1.3)+1)/2,
+            c='rgba('+Math.round(196+(236-196)*k)+','+Math.round(166+(220-166)*k)+','+Math.round(104+(170-104)*k)+',.36)';
+        gx.globalCompositeOperation='source-over';gx.lineCap='round';gx.lineJoin='round';
+        gx.beginPath();gx.moveTo(gp.x,gp.y);gx.lineTo(nx,ny);
+        gx.shadowColor='rgba(232,208,150,.35)';gx.shadowBlur=14;gx.strokeStyle=c;gx.lineWidth=16;gx.stroke();
+        gx.shadowBlur=0;gx.strokeStyle='rgba(255,246,222,.22)';gx.lineWidth=4;gx.stroke();
+      }
+      gp.x=nx;gp.y=ny;
+    }
+    gRaf=requestAnimationFrame(gTick);
+  }
+  function glass(on){
+    if(on===gOn)return;gOn=on;
+    if(on){gLast=performance.now();if(!gRaf)gRaf=requestAnimationFrame(gTick)}
+    else{if(gRaf){cancelAnimationFrame(gRaf);gRaf=0}gx.clearRect(0,0,gc.width,gc.height);gp=null}
+  }
+
+
+  if('IntersectionObserver' in window&&gb.parentNode){new IntersectionObserver(function(en){glass(en[0].isIntersecting)},{threshold:.05}).observe(gb)}
 })();
 </script>
 </body>
