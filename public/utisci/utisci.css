@@ -108,3 +108,6 @@
 #utisci .u-by,#utisci .u-t a.u-ig{flex:0 0 auto}
 #utisci .u-t a.u-ig{margin:-6px 0 0}
 #utisci{padding-top:clamp(20px,2.6vw,40px)}
+/* v32 naslov kao ostale sekcije */
+#utisci h2{font:700 clamp(22px,2.6vw,34px)/1.14 Montserrat,Inter,sans-serif!important;letter-spacing:.03em;color:#5A3E22!important;text-transform:uppercase}
+#utisci h2 em{font:400 1.5em/.8 'Great Vibes',cursive!important;letter-spacing:0;color:#8A6A28!important;text-transform:none}
