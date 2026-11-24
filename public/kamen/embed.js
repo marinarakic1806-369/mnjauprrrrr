@@ -3,7 +3,7 @@
   function go(){
     var k=document.getElementById('kp');
     if(k&&k===last&&document.getElementById('note')){stable++}else{stable=0;last=k}
-    if(stable>=3){ (function(){
+    if(stable>=2){ (function(){
 (function(){
   var $=function(s){return document.querySelector(s)};
   var root=$('#kp'),stage=$('#stage'),cam=$('#cam'),env=$('#env'),word=$('#word'),l1=$('#l1'),l2=$('#l2'),hint=$('#hint'),cta=document.getElementById('cta')||document.createElement('a');
@@ -205,8 +205,8 @@
   new ResizeObserver(function(){layout();render(cur)}).observe(stage);
   window.addEventListener('scroll',kick,{passive:true});
 })();
-})(); return }
-    if(++tries<200) setTimeout(go,150);
+})(); requestAnimationFrame(function(){requestAnimationFrame(function(){k.classList.add('kp-ready')})}); return }
+    if(++tries<200) setTimeout(go,100);
   }
   if(document.readyState==='complete') go(); else window.addEventListener('load',go);
 })();

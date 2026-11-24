@@ -40,3 +40,5 @@
 @media (min-aspect-ratio:21/20){#kp .glassbtn{margin:14px -34px -18px;padding:22px 34px}#kp .cta{padding:6px 16px 7px}#kp .cta .lbl{font-size:22px}}
 @media (prefers-reduced-motion:reduce){#kp #hint i{animation:none}}
 #kp{font-family:Montserrat,ui-sans-serif,system-ui,sans-serif;color:var(--ink);-webkit-font-smoothing:antialiased;background:var(--sedef)}
+
+#kp:not(.kp-ready) #stage{visibility:hidden}
