@@ -4779,7 +4779,7 @@ function MobileNav({
     style: {
       display: 'flex',
       alignItems: 'center',
-      gap: 8,
+      gap: 10,
       cursor: 'pointer',
       textDecoration: 'none',
       color: 'var(--ink)'
@@ -4788,15 +4788,15 @@ function MobileNav({
     src: MJ_A + 'logo.png',
     alt: "Mnjauprrrrr",
     style: {
-      width: 36,
-      height: 36,
+      width: 52,
+      height: 52,
       borderRadius: 999
     }
   }), React.createElement("span", {
     style: {
       fontFamily: 'var(--font-script)',
       fontWeight: 700,
-      fontSize: 28,
+      fontSize: 46,
       lineHeight: 1
     }
   }, "Mnjauprrrrr")), React.createElement("div", {
