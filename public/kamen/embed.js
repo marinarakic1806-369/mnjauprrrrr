@@ -208,5 +208,5 @@
 })(); requestAnimationFrame(function(){requestAnimationFrame(function(){k.classList.add('kp-ready')})}); return }
     if(++tries<200) setTimeout(go,100);
   }
-  if(document.readyState==='complete') go(); else window.addEventListener('load',go);
+  go();
 })();

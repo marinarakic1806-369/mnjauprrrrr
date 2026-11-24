@@ -42,3 +42,5 @@
 #kp{font-family:Montserrat,ui-sans-serif,system-ui,sans-serif;color:var(--ink);-webkit-font-smoothing:antialiased;background:var(--sedef)}
 
 #kp:not(.kp-ready) #stage{visibility:hidden}
+
+#kp:not(.kp-ready){background:var(--sedef) url('/assets/kamen/pozadina.jpg?v=1') center top/100% 100svh repeat-y}
