@@ -83,3 +83,12 @@
 #utisci .u-t a.u-ig{font:500 12px/1 Montserrat,Inter,sans-serif;letter-spacing:.04em;text-transform:none;color:#8A6A28;border:0;padding:0;margin:-6px 0 0;text-decoration:none}
 #utisci .u-t a.u-ig:hover{text-decoration:underline}
 #utisci .u-t a.u-ig{justify-self:start!important}
+
+/* v23 crno-krem: tamne kartice, fotke crno-bele sa malo boje */
+#utisci .u-c{background:#141110}
+#utisci .u-c img,#utisci .u-c img[alt="Marija"],#utisci .u-c img[alt="Svetlana"]{filter:grayscale(.8) contrast(1.05)!important}
+#utisci .u-t{border-top:1px solid #C5A059}
+#utisci .u-q{color:#F4EDE2!important}
+#utisci .u-by{color:#F4EDE2!important}
+#utisci .u-by span{color:#E8C982!important}
+#utisci .u-t a.u-ig{color:#E8C982}
