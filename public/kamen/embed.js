@@ -21,7 +21,7 @@
     var nv=document.querySelector('[data-nav]');root.style.setProperty('--navh',(nv?Math.round(nv.getBoundingClientRect().height):0)+'px');var r=stage.getBoundingClientRect();W=r.width;H=r.height;
     var wide=W>=H*1.05,X={wide:wide};
     if(!wide){
-      X.bw=Math.min(W*0.84,H*0.5/RATIO);X.cx0=W/2;X.cy0=H*0.38;
+      X.bw=Math.min(W*0.84,H*0.5/RATIO);X.cx0=W/2;X.cy0=H*0.43;
       X.sw=Math.min(W*0.26,H*0.13/RATIO);X.top=H*0.035;
       X.cx1=W/2;X.cy1=X.top+X.sw*RATIO/2;
       X.zTop=H*0.70;X.zw=Math.min(W*0.88,520);X.zl=(W-X.zw)/2;
@@ -38,9 +38,9 @@
       X.vSolo=Math.min(W*0.28,H*0.3/RV);
       X.byA=H*0.42;X.byF=H*0.4;X.wyF=H*0.12;
     }
-    X.short=!wide&&H<W*1.5;if(X.short)X.ay=H*0.28;
+    var NV=parseFloat(root.style.getPropertyValue('--navh'))||0;X.NV=NV;X.short=!wide&&(H+NV)<W*1.5;if(X.short)X.ay=H*0.28;
     L=X;
-    document.getElementById('note').style.top=wide?'19.5%':'';
+    document.getElementById('note').style.top=wide?'19.5%':'20%';
     env.style.width=px(L.bw);
     // note on the paper
     var fs=L.bw*0.25;
@@ -68,7 +68,7 @@
       var room=H*0.97-lh-gap,bot=L.byF+bh/2;
       if(bot>room||L.short){
         var need=room-H*0.1;                       // height available for the bracelet
-        if(L.short||(!L.wide&&need<bh*0.82)){
+        if(L.short||(!L.wide&&need<bh*0.82-L.NV*0.9)){
           L.compact=true;
           L.vSolo=Math.min(W*0.5,Math.max(need,H*0.2)/RV);bh=L.vSolo*RV;L.byA=0;
           L.byF=Math.max(H*0.07+bh/2,Math.min(room-bh/2,H*0.1+bh/2));L.byA=L.byF+H*0.02;
