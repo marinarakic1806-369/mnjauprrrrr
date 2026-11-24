@@ -50,6 +50,6 @@
 #utisci .u-nav button:last-child:hover{background:transparent;color:#8A6A28;opacity:1}
 @media (max-width:860px){#utisci .u-nav{display:none}}
 
-#utisci .u-c img[alt="Marija"]{filter:grayscale(1) contrast(1.05)!important}
+#utisci .u-c img[alt="Marija"]{filter:grayscale(.8) contrast(1.05)!important}
 #utisci .u-c img[alt="Svetlana"]{filter:grayscale(.6)!important}
 @media (max-width:860px){#utisci{margin-top:0;padding-top:28px}}
