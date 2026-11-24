@@ -21,21 +21,21 @@
     var nv=document.querySelector('[data-nav]');root.style.setProperty('--navh',(nv?Math.round(nv.getBoundingClientRect().height):0)+'px');var r=stage.getBoundingClientRect();W=r.width;H=r.height;
     var wide=W>=H*1.05,X={wide:wide};
     if(!wide){
-      X.bw=Math.min(W*0.84,H*0.5/RATIO);X.cx0=W/2;X.cy0=H*0.43;
+      X.bw=Math.min(W*0.92,H*0.58/RATIO);X.cx0=W/2;X.cy0=H*0.43;
       X.sw=Math.min(W*0.26,H*0.13/RATIO);X.top=H*0.035;
       X.cx1=W/2;X.cy1=X.top+X.sw*RATIO/2;
       X.zTop=H*0.70;X.zw=Math.min(W*0.88,520);X.zl=(W-X.zw)/2;
       var aH=H*0.5;
       X.ax=W/2;X.ay=H*0.5;X.wMax=W*0.78;
-      X.vSolo=Math.min(W*0.66,H*0.32/RV);
+      X.vSolo=Math.min(W*0.82,H*0.40/RV);
       X.byA=H*0.44;X.byF=H*0.42;X.wyF=H*0.14;
     }else{
-      X.bw=Math.min(H*0.66/RATIO,W*0.42);X.cx0=W/2;X.cy0=H*0.5;
+      X.bw=Math.min(H*0.80/RATIO,W*0.5);X.cx0=W/2;X.cy0=H*0.5;
       X.sw=Math.min(W*0.24,H*0.34/RATIO);X.top=H*0.07;
       X.cx1=W*0.2;X.cy1=X.top+X.sw*RATIO/2;
       X.zw=Math.min(W*0.6,680);X.zl=(W-X.zw)/2;X.zTop=X.top+X.sw*RATIO+H*0.07;
-      X.ax=W/2;X.ay=H*0.4;X.wMax=W*0.5;
-      X.vSolo=Math.min(W*0.28,H*0.3/RV);
+      X.ax=W/2;X.ay=H*0.4;X.wMax=W*0.62;
+      X.vSolo=Math.min(W*0.36,H*0.40/RV);
       X.byA=H*0.42;X.byF=H*0.4;X.wyF=H*0.12;
     }
     var NV=parseFloat(root.style.getPropertyValue('--navh'))||0;X.NV=NV;X.short=!wide&&(H+NV)<W*1.5;if(X.short)X.ay=H*0.28;
@@ -48,9 +48,9 @@
     var max=L.bw*0.59*0.94,wm=Math.max(l1.offsetWidth,l2.offsetWidth,1);
     if(wm>max){fs=fs*max/wm;[l1,l2].forEach(function(e){e.style.fontSize=px(fs)})}
     // big word behind the bracelets
-    var wf=Math.min(L.wMax/3.1,H*(L.short?0.13:(L.wide?0.14:0.2)));
+    var wf=Math.min(L.wMax/5.6,H*(L.short?0.13:(L.wide?0.14:0.2)));
     word.style.fontSize=px(wf);
-    var ww=Math.max(word.children[0].offsetWidth,word.children[1].offsetWidth,1);
+    var ww=Math.max(word.offsetWidth,1);
     if(ww>L.wMax){wf=wf*L.wMax/ww;word.style.fontSize=px(wf)}
     WW=word.offsetWidth;WH=word.offsetHeight;
     cam.style.transformOrigin=L.ax+'px '+(H*0.45)+'px';

@@ -30,7 +30,7 @@ body{font-family:Montserrat,ui-sans-serif,system-ui,sans-serif;color:var(--ink);
 #note span{display:block;line-height:1}
 #cam{position:absolute;inset:0;will-change:transform}
 #word{position:absolute;left:0;top:0;line-height:.98;will-change:transform,opacity,filter}
-#word span{display:block}
+#word{white-space:nowrap}#word span{display:inline}
 .br{position:absolute;left:0;top:0;margin:0;will-change:transform,opacity,filter}
 .br img{display:block;width:100%;height:auto;user-select:none;-webkit-user-drag:none}
 #hint{position:absolute;left:0;right:0;bottom:calc(env(safe-area-inset-bottom,0px) + 26px);text-align:center;font-size:12px;font-weight:600;letter-spacing:.28em;text-transform:uppercase;color:var(--zlato-tamno)}
@@ -53,7 +53,7 @@ body{font-family:Montserrat,ui-sans-serif,system-ui,sans-serif;color:var(--ink);
 <section id="kp" aria-label="Kamen po natalu">
   <div id="stage">
     <div id="cam">
-      <div id="word" class="gold" aria-hidden="true"><span>Kamen po</span><span>natalu</span></div>
+      <div id="word" class="gold" aria-hidden="true"><span>Kamen po</span> <span>natalu</span></div>
       <figure class="br" id="c0"><img src="/assets/kamen/narukvica-vatra.webp?v=1" alt="Narukvica Vatra od Pirita i zlatnog hirurškog čelika" width="800" height="837"></figure>
     </div>
 
@@ -87,21 +87,21 @@ body{font-family:Montserrat,ui-sans-serif,system-ui,sans-serif;color:var(--ink);
     var r=stage.getBoundingClientRect();W=r.width;H=r.height;
     var wide=W>=H*1.05,X={wide:wide};
     if(!wide){
-      X.bw=Math.min(W*0.84,H*0.5/RATIO);X.cx0=W/2;X.cy0=H*0.46;
+      X.bw=Math.min(W*0.92,H*0.58/RATIO);X.cx0=W/2;X.cy0=H*0.46;
       X.sw=Math.min(W*0.26,H*0.13/RATIO);X.top=H*0.035;
       X.cx1=W/2;X.cy1=X.top+X.sw*RATIO/2;
       X.zTop=H*0.70;X.zw=Math.min(W*0.88,520);X.zl=(W-X.zw)/2;
       var aH=H*0.5;
       X.ax=W/2;X.ay=H*0.5;X.wMax=W*0.78;
-      X.vSolo=Math.min(W*0.66,H*0.32/RV);
+      X.vSolo=Math.min(W*0.82,H*0.40/RV);
       X.byA=H*0.44;X.byF=H*0.42;X.wyF=H*0.14;
     }else{
-      X.bw=Math.min(H*0.66/RATIO,W*0.42);X.cx0=W/2;X.cy0=H*0.5;
+      X.bw=Math.min(H*0.80/RATIO,W*0.5);X.cx0=W/2;X.cy0=H*0.5;
       X.sw=Math.min(W*0.24,H*0.34/RATIO);X.top=H*0.07;
       X.cx1=W*0.2;X.cy1=X.top+X.sw*RATIO/2;
       X.zw=Math.min(W*0.6,680);X.zl=(W-X.zw)/2;X.zTop=X.top+X.sw*RATIO+H*0.07;
-      X.ax=W/2;X.ay=H*0.4;X.wMax=W*0.5;
-      X.vSolo=Math.min(W*0.28,H*0.3/RV);
+      X.ax=W/2;X.ay=H*0.4;X.wMax=W*0.62;
+      X.vSolo=Math.min(W*0.36,H*0.40/RV);
       X.byA=H*0.42;X.byF=H*0.4;X.wyF=H*0.12;
     }
     X.short=!wide&&H<W*1.5;if(X.short)X.ay=H*0.28;
@@ -114,9 +114,9 @@ body{font-family:Montserrat,ui-sans-serif,system-ui,sans-serif;color:var(--ink);
     var max=L.bw*0.59*0.94,wm=Math.max(l1.offsetWidth,l2.offsetWidth,1);
     if(wm>max){fs=fs*max/wm;[l1,l2].forEach(function(e){e.style.fontSize=px(fs)})}
     // big word behind the bracelets
-    var wf=Math.min(L.wMax/3.1,H*(L.short?0.13:(L.wide?0.14:0.2)));
+    var wf=Math.min(L.wMax/5.6,H*(L.short?0.13:(L.wide?0.14:0.2)));
     word.style.fontSize=px(wf);
-    var ww=Math.max(word.children[0].offsetWidth,word.children[1].offsetWidth,1);
+    var ww=Math.max(word.offsetWidth,1);
     if(ww>L.wMax){wf=wf*L.wMax/ww;word.style.fontSize=px(wf)}
     WW=word.offsetWidth;WH=word.offsetHeight;
     cam.style.transformOrigin=L.ax+'px '+(H*0.45)+'px';

@@ -100,3 +100,10 @@
 #utisci .u-by{color:#2A2420!important}
 #utisci .u-by span{color:#8A6A28!important}
 #utisci .u-t a.u-ig{color:#8A6A28}
+
+/* v29 poravnanje: ime na ime, instagram na instagram; razmak ispod dugmeta */
+#utisci{margin-top:0;padding-top:clamp(56px,6vw,96px)}
+#utisci .u-t{flex:1 1 auto;display:flex!important;flex-direction:column;align-items:flex-start;gap:14px}
+#utisci .u-q{flex:1 1 auto;min-height:calc(1.6em*3)!important}
+#utisci .u-by,#utisci .u-t a.u-ig{flex:0 0 auto}
+#utisci .u-t a.u-ig{margin:-6px 0 0}
