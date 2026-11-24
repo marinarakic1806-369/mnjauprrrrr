@@ -92,3 +92,11 @@
 #utisci .u-by{color:#F4EDE2!important}
 #utisci .u-by span{color:#E8C982!important}
 #utisci .u-t a.u-ig{color:#E8C982}
+
+/* v24 vraćeno na krem kartice (fotke ostaju crno-bele sa malo boje) */
+#utisci .u-c{background:#F7F2EA}
+#utisci .u-t{border-top:1px solid #C5A059}
+#utisci .u-q{color:#2A2420!important}
+#utisci .u-by{color:#2A2420!important}
+#utisci .u-by span{color:#8A6A28!important}
+#utisci .u-t a.u-ig{color:#8A6A28}
