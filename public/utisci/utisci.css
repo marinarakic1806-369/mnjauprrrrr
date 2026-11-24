@@ -1,4 +1,4 @@
-#utisci{background:#F4EDE2 url("/assets/kamen/pozadina.jpg?v=1") center/cover no-repeat fixed;padding:clamp(48px,6vw,96px) clamp(16px,4vw,56px);font-family:Montserrat,Inter,sans-serif;color:#1D1A17;position:relative}
+#utisci{background:#F4EDE2 url("/assets/kamen/pozadina.jpg?v=1") center/cover no-repeat fixed;margin-top:-80px;padding:0 clamp(16px,4vw,56px) clamp(40px,5vw,72px);font-family:Montserrat,Inter,sans-serif;color:#1D1A17;position:relative}
 #utisci::before{content:"";position:absolute;inset:0;background:rgba(244,237,226,.3);pointer-events:none}
 #utisci>*{position:relative}
 #utisci .u-head{max-width:760px;margin:0 auto clamp(28px,4vw,48px);text-align:center;display:grid;gap:10px;justify-items:center}
@@ -22,7 +22,7 @@
 #utisci .u-p{font:600 11px Inter,sans-serif;letter-spacing:.18em;text-transform:uppercase;color:#F3E9DA}
 #utisci .u-pr{font:500 12px Inter,sans-serif;color:#E8C982}
 #utisci .u-ig{justify-self:center;margin-top:4px;font:600 11px Inter,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#FBF7F0;border:1px solid rgba(232,201,130,.8);border-radius:999px;padding:9px 16px;text-decoration:none}
-#utisci .u-nav{display:flex;gap:12px;justify-content:center;margin-top:6px}
+#utisci .u-nav-old{display:flex;gap:12px;justify-content:center;margin-top:6px}
 #utisci .u-nav button{width:48px;height:48px;border-radius:50%;border:1px solid #C5A059;background:transparent;color:#8A6A28;font:400 22px/1 Inter,sans-serif;cursor:pointer;transition:background .3s,color .3s}
 #utisci .u-nav button:hover{background:#C5A059;color:#fff}
 @media (max-width:860px){
@@ -43,3 +43,9 @@
 #utisci .u-q{min-height:calc(1.55em*3)}
 @media (max-width:860px){#utisci .u-q{min-height:0}}
 @media (max-width:860px){#utisci,#mfoot{background-attachment:scroll}}
+
+#utisci .u-nav{position:absolute;right:max(6px,calc((100% - 1240px)/2 - 34px));top:50%;margin:0;display:block}
+#utisci .u-nav button:first-child{display:none}
+#utisci .u-nav button:last-child{width:34px;height:34px;border:0;background:transparent;color:#8A6A28;font:400 30px/1 Inter,sans-serif;opacity:.75;padding:0;border-radius:0}
+#utisci .u-nav button:last-child:hover{background:transparent;color:#8A6A28;opacity:1}
+@media (max-width:860px){#utisci .u-nav{display:none}}

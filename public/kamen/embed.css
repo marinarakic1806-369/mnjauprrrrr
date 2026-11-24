@@ -11,7 +11,7 @@
 #kp{--sedef:#F4EDE2;--ink:#5A3E22;--zlato:#C5A059;--zlato-tamno:#8A6A28;--krem:#F3E9DA}
 #kp,#kp *{box-sizing:border-box}
 #kp{position:relative;width:100%;height:340svh}
-#kp #stage{position:sticky;top:var(--navh,0px);width:100%;height:calc(100svh - var(--navh,0px));overflow:hidden;background:var(--sedef) url("/assets/kamen/pozadina.jpg?v=1") center/cover no-repeat;contain:paint}
+#kp #stage{position:sticky;top:var(--navh,0px);width:100%;height:calc(100svh - var(--navh,0px));overflow:hidden;background:var(--sedef) url("/assets/kamen/pozadina.jpg?v=1") center/cover no-repeat fixed;contain:paint}
 #kp #stage::before{content:"";position:absolute;inset:0;background:rgba(244,237,226,.3);pointer-events:none}
 #kp #env{position:absolute;left:0;top:0;z-index:5;will-change:transform;filter:drop-shadow(0 18px 28px rgba(60,40,20,.22))}
 #kp #env img{display:block;width:100%;height:auto;user-select:none;-webkit-user-drag:none}

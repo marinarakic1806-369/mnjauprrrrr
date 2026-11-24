@@ -17,10 +17,10 @@
     if(!s.querySelector('.u-nav')){
       var nav=document.createElement('div');nav.className='u-nav';
       nav.innerHTML='<button type="button" aria-label="Prethodna">&larr;</button><button type="button" aria-label="Sledeća">&rarr;</button>';
-      row.insertAdjacentElement('afterend',nav);
+      row.parentNode.appendChild(nav);
       var step=function(d){var w=cs[0].getBoundingClientRect().width+18;row.scrollBy({left:d*w,behavior:'smooth'})};
       nav.children[0].addEventListener('click',function(){step(-1)});
-      nav.children[1].addEventListener('click',function(){step(1)});
+      nav.children[1].addEventListener('click',function(){var end=row.scrollLeft+row.clientWidth>=row.scrollWidth-4;if(end)row.scrollTo({left:0,behavior:'smooth'});else step(1)});row.addEventListener('scroll',function(){var end=row.scrollLeft+row.clientWidth>=row.scrollWidth-4;nav.children[1].innerHTML=end?'&larr;':'&rarr;'},{passive:true});
     }
     on(cs[0]);
   }

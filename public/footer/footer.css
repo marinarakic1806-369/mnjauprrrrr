@@ -21,3 +21,6 @@
   #mfoot .f-soc.r{order:3;margin-top:-6px}
   #mfoot .f-soc a{width:52px;height:52px}
 }
+
+#mfoot .f-soc.l{visibility:hidden}
+@media (max-width:860px){#mfoot .f-soc.l{display:none}}
