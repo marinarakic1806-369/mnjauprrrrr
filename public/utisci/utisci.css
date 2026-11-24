@@ -7,11 +7,11 @@
 #utisci .u-row{max-width:1240px;margin:0 auto;display:flex;gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding:10px 2px 40px;-webkit-overflow-scrolling:touch}
 #utisci .u-row::-webkit-scrollbar{display:none}
 #utisci .u-c{position:relative;flex:0 0 calc((100% - 36px)/3);height:clamp(480px,46vw,600px);scroll-snap-align:start;border-radius:20px;overflow:hidden;background:#2a2622;outline:none;box-shadow:0 22px 44px -26px rgba(60,40,15,.55);transition:transform .5s cubic-bezier(.2,.7,.2,1),box-shadow .5s}
-#utisci .u-c img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:filter .5s,transform 1.2s cubic-bezier(.2,.7,.2,1);filter:brightness(.8)}
+#utisci .u-c img{position:absolute;left:0;top:-80px;width:100%;height:calc(100% + 80px);object-fit:cover;transition:filter .5s,transform 1.2s cubic-bezier(.2,.7,.2,1);filter:brightness(.8)}
 #utisci .u-c.on img{filter:none;transform:scale(1.03)}
 #utisci .u-c.on{box-shadow:0 28px 50px -24px rgba(60,40,15,.65)}
 #utisci .u-c::after{content:"";position:absolute;left:0;right:0;bottom:0;height:66%;background:linear-gradient(180deg,rgba(18,12,7,0),rgba(18,12,7,.55) 40%,rgba(18,12,7,.92));pointer-events:none}
-#utisci .u-t{position:absolute;left:0;right:0;bottom:0;z-index:3;height:clamp(260px,21vw,285px);padding:0 clamp(22px,2.2vw,32px) clamp(22px,2.2vw,30px);display:grid;grid-auto-rows:min-content;align-content:start;justify-items:center;text-align:center;gap:8px;color:#FBF7F0}
+#utisci .u-t{position:absolute;left:0;right:0;bottom:0;z-index:3;height:clamp(255px,20vw,270px);padding:0 clamp(22px,2.2vw,32px) 16px;display:grid;grid-auto-rows:min-content;align-content:start;justify-items:center;text-align:center;gap:8px;color:#FBF7F0}
 #utisci .u-t::before{content:"\201C";font:400 160px/.62 Corinthia,cursive;color:#E8C982;height:62px;display:block}
 #utisci .u-c:not(:has(.u-q)) .u-t::before{visibility:hidden}
 #utisci .u-q{margin:0 0 4px;font:500 clamp(15px,1.2vw,17px)/1.5 Inter,sans-serif}
@@ -25,7 +25,7 @@
 @media (max-width:860px){
   #utisci .u-row{margin:0 -16px;padding-inline:16px;scroll-padding-inline:16px;gap:12px}
   #utisci .u-c{flex:0 0 82vw;height:500px}
-  #utisci .u-c img{filter:none}
+  #utisci .u-c img{filter:none;top:-120px;height:calc(100% + 120px)}
   #utisci .u-c.on{transform:none}
   #utisci .u-n{font-size:52px}
   #utisci .u-t::before{font-size:170px;height:66px}
