@@ -113,3 +113,5 @@
 #utisci h2 em{font:400 1.5em/.8 'Great Vibes',cursive!important;letter-spacing:0;color:#8A6A28!important;text-transform:none}
 /* 25.11: telefon: opis sekcije 18px kao citati, potpisi i profili veci */
 @media (max-width:860px){#utisci .u-sub{font:400 18px/1.6 Montserrat,Inter,sans-serif;color:#2A2420}#utisci .u-by{font-size:12px!important}#utisci .u-t a.u-ig{font-size:15px}}
+/* 25.11: telefon: naslov jos nize od dugmeta Otkrij tvoj kamen */
+@media (max-width:860px){#utisci{padding-top:clamp(90px,26vw,130px)!important}}
