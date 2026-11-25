@@ -535,7 +535,7 @@ function Home({
 }
 window.Home = Home;
 ;// Pages.jsx
-function ONama({
+function ONamaOld({
   go
 }) {
   const Cta = window.MJCta;
@@ -5817,7 +5817,7 @@ Object.assign(window, {
   NakitM,
   ProizvodM
 });
-function ONamaM({
+function ONamaMOld({
   go
 }) {
   const {
@@ -6853,3 +6853,41 @@ function MJPrizeChip({
 }
 window.MJPrizeChip = MJPrizeChip;
 
+
+
+function ONamaNew({ go }) {
+  const css = "\n.on{position:relative;overflow:hidden;background:var(--sedef-2);padding:150px 0 130px;font-family:Montserrat,Inter,sans-serif;color:#2A2420}\n.on .lp{position:absolute;inset:0;background-size:260px auto;opacity:.3;pointer-events:none}\n.on .wash{position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse 55% 75% at 50% 40%,rgba(244,237,226,.9) 0%,rgba(244,237,226,.5) 65%,rgba(244,237,226,0) 100%)}\n.on .in{position:relative;max-width:820px;margin:0 auto;padding:0 24px;text-align:center}\n.on .kick{font:600 13px/1 'Inter',Montserrat,sans-serif;letter-spacing:.34em;text-transform:uppercase;color:#8A6A28}\n.on h1{margin:26px 0 0;font:800 clamp(44px,8vw,92px)/1.02 'Inter',Montserrat,sans-serif;letter-spacing:.02em;text-transform:uppercase;color:#5A3E22}\n.on .sc1{display:block;margin:-6px 0 0;font:400 clamp(84px,11vw,160px)/.9 'Corinthia','Great Vibes',cursive;color:#8A6A28;transform:rotate(-4deg);padding:0 .1em .12em;text-transform:none;letter-spacing:0}\n.on .rule{width:120px;height:1px;background:linear-gradient(90deg,transparent,#C5A059,transparent);margin:34px auto 38px}\n.on .lead{margin:0 auto;max-width:700px;font:500 24px/1.6 'Inter',Montserrat,sans-serif;color:#3A2C1D;letter-spacing:.005em}\n.on h2{margin:84px 0 30px;font:700 clamp(30px,4vw,44px)/1.1 'Inter',Montserrat,sans-serif;letter-spacing:.06em;text-transform:uppercase;color:#5A3E22}\n.on h2::after{content:\"\";display:block;width:70px;height:2px;background:#C5A059;margin:20px auto 0}\n.on .p{margin:0 0 22px;font:300 19px/1.9 'Inter',Montserrat,sans-serif;color:#2A2420;text-align:justify;text-align-last:left;hyphens:auto;-webkit-hyphens:auto}\n.on .strong{margin:40px auto 40px;max-width:680px;font:700 27px/1.4 'Inter',Montserrat,sans-serif;color:#5A3E22}\n.on .script{margin:38px auto;max-width:700px;font:400 clamp(58px,6.2vw,86px)/.98 'Corinthia','Great Vibes',cursive;color:#8A6A28}\n.on .quote{margin:44px auto 36px;max-width:700px;padding:30px 0;border-top:1px solid rgba(197,160,89,.7);border-bottom:1px solid rgba(197,160,89,.7);font:italic 400 24px/1.6 'Inter',Montserrat,sans-serif;color:#3A2C1D;text-align:center}\n.on .card{margin:90px auto 0;max-width:400px;background:#F7F2EA;box-shadow:0 22px 40px -22px rgba(60,40,15,.45);text-align:left}\n.on .card .ph{display:block;width:100%;aspect-ratio:4/5;object-fit:cover;object-position:100% 30%;filter:grayscale(.45) sepia(.26) saturate(1.1) brightness(1.1)}\n.on .card .tx{padding:28px 28px 32px;border-top:1px solid #C5A059}\n.on .card .q{margin:0 0 20px;font:300 24px/1.5 'Inter',Montserrat,sans-serif;color:#2A2420}\n.on .card .by{font:700 12px/1.6 'Inter',Montserrat,sans-serif;letter-spacing:.26em;text-transform:uppercase;color:#2A2420}\n.on .card .by span{font-weight:500;color:#8A6A28;letter-spacing:.2em}\n@media (max-width:860px){.on{padding:110px 0 90px}.on .lead{font-size:20px}.on .p{font-size:18px;line-height:1.85}.on .strong{font-size:22px}.on .quote{font-size:20px}.on h2{margin-top:64px}.on .card{margin-top:64px;max-width:340px}.on .card .q{font-size:22px}}\n";
+  return React.createElement("section", { className: "on", lang: "sr" },
+    React.createElement("style", null, css),
+    React.createElement("div", { className: "lp mj-leopard" }),
+    React.createElement("div", { className: "wash" }),
+    React.createElement("div", { className: "in" },
+      React.createElement("div", { className: "kick" }, "Astrologija \u00B7 O nama"),
+      React.createElement("h1", null, "Upoznaj me", React.createElement("span", { className: "sc1" }, "kroz moj Mesec")),
+      React.createElement("div", { className: "rule" }),
+      React.createElement("p",{className:"lead"},"S obzirom da mi je Sunce u znaku Blizanaca, može se slobodno reći „O nama“. Pričaću ti malo o sebi na moj način. Upoznaćeš me kroz moj Mesec."),
+      React.createElement("h2",null,"Mesec u natalu"),
+      React.createElement("p",{className:"p"},"Položaj Meseca u natalu daje informacije o svemu što ti dolazi kao sudbina. Sunce i njegovi aspekti pričaju o stvarima koje svesno činiš, tvom karakteru, onome što biraš da budeš, a Mesec, eee, on je tvoja sudbina, ono što postaješ kroz vreme. Mesec je baš brz i svi njegovi aspekti su jako lični."),
+      React.createElement("p",{className:"p"},"On opisuje tebe, kakva si stvarno, ne kako se predstavljaš svetu, već kakva si kod kuće, u odajama doma svoga. Aspekti Meseca i drugih planeta će ti reći šta te čeka u životu, šta ti je sudbina namenila, ono na šta ne možeš mnogo da utičeš slobodnom voljom."),
+      React.createElement("p",{className:"script"},"Tvoje nesvesne potrebe, osećaji tvoje duše."),
+      React.createElement("p",{className:"strong"},"Gledaj sad u svoj natal i nađi Mesec. Put\u00A0duše\u00A0su\u00A0aspekti."),
+      React.createElement("h2",null,"Dispozitor planete"),
+      React.createElement("p",{className:"strong"},"Draga ti je neka planeta u natalu, sto posto imaš neku najdražu."),
+      React.createElement("p",{className:"p"},"Sasvim slučajno je dispozitor moje duše, mog Meseca, planeta Merkur – svestrani dečko koji nosi titulu glasnika Bogova, ozbiljno odgovorna funkcija."),
+      React.createElement("p",{className:"p"},"Volim mog Merkurića, rođak je vetropirast i lukav, propusnicu i za zagrobni život ima, vodi duše preminulih dole, a sve to dok komunicira s Bogovima gore i trguje usput u sadašnjem vremenu sa običnim smrtnicima."),
+      React.createElement("p",{className:"p"},"Znači, moja duša, moj Mesec, je u Devici, tu joj je onako, nije nešto preterano ushićena."),
+      React.createElement("p",{className:"p"},"Kažu ovi pametni astrolozi da je u Devici Mesec peregriniran, što vam jezikom nas običnih smrtnika znači: nalazi se na nepoznatom terenu, uči da se ponaša, zbunjen je, neinformisan."),
+      React.createElement("p",{className:"p"},"Devica je perfekcionista, samo analizira, čisti, radi ko luda da umanji tu urođenu anomaliju mozga."),
+      React.createElement("p",{className:"p"},"Mesec hoće nežnost, zagrljaje, sevdalinke. On hoće da bude u Raku – tu mu je sedište."),
+      React.createElement("p",{className:"script"},"E sad, taj moj zbunjeni Mesec ima za dispozitora Merkura u Raku."),
+      React.createElement("p",{className:"quote"},"Jupiiiii, mučeniku svanulo – misli se u sebi: „Bar rečima neka me neko pomazi, izem ti ovu Devicu, samo mi zvoca, nikad zadovoljna.“"),
+      React.createElement("p",{className:"p"},"Tako vam je, ljudići: moja duša, moj Mesec, pomilovan po glavi od strane Merkura – zbog koga većina vas ne voli Blizance. Nemate pojma koliko su oni u stvari gotivni, iskreni drugari – kad su ti drugari."),
+      React.createElement("div", { className: "card" },
+        React.createElement("img", { className: "ph", src: MJ_A + "selfie.jpg", alt: "Marina" }),
+        React.createElement("div", { className: "tx" },
+          React.createElement("p", { className: "q" }, "\u201EPromena je jedina konstanta.\u201C"),
+          React.createElement("div", { className: "by" }, "\u2014 Marina, ", React.createElement("span", null, "Krug i Mnjauprrrrr"))))));
+}
+
+function ONama(p){return ONamaNew(p)}
+function ONamaM(p){return ONamaNew(p)}
