@@ -33,7 +33,7 @@
     }
     ['touchstart','pointerdown','click'].forEach(function(e){row.addEventListener(e,function(){paused=true},{passive:true})});
     if('IntersectionObserver' in window){new IntersectionObserver(function(en){vis=en[0].isIntersecting},{threshold:.4}).observe(row)}
-    timer=setInterval(auto,3600);
+    /* bez automatskog pomeranja: kartice se listaju samo prstom */
     // slike svih kartica se ucitavaju unapred (cim se sekcija priblizi), da slajd ne ceka
     function pre(){cs.forEach(function(c){var im=c.querySelector('img');if(im){im.loading='eager';im.decoding='async'}})}
     if('IntersectionObserver' in window){var io=new IntersectionObserver(function(en){if(en[0].isIntersecting){pre();io.disconnect()}},{rootMargin:'1800px 0px'});io.observe(s)}else pre();
