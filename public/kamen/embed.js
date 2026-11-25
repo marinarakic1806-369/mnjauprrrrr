@@ -54,7 +54,7 @@
     if(ww>L.wMax){wf=wf*L.wMax/ww;word.style.fontSize=px(wf)}
     WW=word.offsetWidth;WH=word.offsetHeight;
     cam.style.transformOrigin=L.ax+'px '+(H*0.45)+'px';
-    var ts=wide?Math.max(22,Math.min(34,W*0.024)):Math.max(20,Math.min(28,W*0.064));
+    var ts=wide?Math.max(22,Math.min(34,W*0.026)):Math.max(20,Math.min(28,W*0.064));
     beats.forEach(function(b){
       b.style.width=px(L.zw);b.style.left=px(L.zl);b.style.top=px(L.zTop);
       b.querySelector('h2').style.fontSize=px(ts);

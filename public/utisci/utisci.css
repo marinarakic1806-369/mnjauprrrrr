@@ -135,3 +135,4 @@
   #utisci .u-c.on img{transform:none!important}
   #utisci .u-row{-webkit-overflow-scrolling:touch}
 }
+@media (min-width:861px){#utisci .u-q{font-size:20px!important;min-height:calc(1.6em*5)!important}#utisci .u-sub{font:400 16px/1.6 Montserrat,Inter,sans-serif;color:#5C534A;max-width:640px}}
