@@ -136,3 +136,21 @@
   #utisci .u-row{-webkit-overflow-scrolling:touch}
 }
 @media (min-width:861px){#utisci .u-q{font-size:20px!important;min-height:calc(1.6em*5)!important}#utisci .u-sub{font:400 16px/1.6 Montserrat,Inter,sans-serif;color:#5C534A;max-width:640px}}
+
+/* v53 (proba): cela fotka + tamni prelaz + zlatni navodnici, tekst manji, animacija ulaska */
+#utisci .u-c{position:relative;display:block!important;background:#2a2622!important;border-radius:10px!important;box-shadow:0 14px 28px -16px rgba(60,40,15,.55)!important}
+#utisci .u-c img,#utisci .u-c img[alt="Marija"]{aspect-ratio:3/4!important;height:auto!important;width:100%!important}
+#utisci .u-c::after{display:block!important;content:"";position:absolute;left:0;right:0;top:0;bottom:0;height:auto!important;background:linear-gradient(180deg,rgba(24,16,9,0) 38%,rgba(24,16,9,.55) 62%,rgba(24,16,9,.9));pointer-events:none}
+#utisci .u-t{position:absolute!important;left:0;right:0;bottom:0;z-index:3;border-top:0!important;padding:0 20px 20px!important;gap:8px!important;display:flex!important;flex-direction:column;align-items:flex-start;text-align:left;height:auto!important}
+#utisci .u-t::before{display:block!important;content:"\201C";font:400 96px/.7 'Great Vibes',cursive;color:#E8C982;height:34px;margin:0 0 2px -2px;visibility:visible}
+#utisci .u-c:not(:has(.u-q)) .u-t::before{display:none!important}
+#utisci .u-q{flex:0 0 auto!important;min-height:0!important;margin:0!important;font:400 13.5px/1.55 Montserrat,Inter,sans-serif!important;color:#FBF7F0!important}
+#utisci .u-by{font:600 11.5px/1.4 Montserrat,Inter,sans-serif!important;letter-spacing:.04em!important;text-transform:none!important;color:#FBF7F0!important}
+#utisci .u-by span{font-weight:500;letter-spacing:.02em!important;color:#E8C982!important}
+#utisci .u-t a.u-ig{font-size:12px;margin:0!important;color:#E8C982!important}
+@media (min-width:861px){#utisci .u-q{font-size:13.5px!important;min-height:0!important}}
+@media (max-width:860px){#utisci .u-c{flex:0 0 78vw;}#utisci .u-q{font-size:14px!important}#utisci .u-by{font-size:12px!important}#utisci .u-t a.u-ig{font-size:13px}}
+/* animacija ulaska: dolazi odozdo, redom */
+#utisci .u-c.rv{opacity:0;transform:translateY(22px)!important}
+#utisci .u-c.rv.in{opacity:1;transform:none!important;transition:opacity .6s ease-out var(--d,0s),transform .6s ease-out var(--d,0s)}
+@media (prefers-reduced-motion:reduce){#utisci .u-c.rv{opacity:1;transform:none!important}}

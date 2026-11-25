@@ -44,4 +44,21 @@
     if(stable>=3){bind(s);return}
     if(++tries<200)setTimeout(w,120);
   })();
+
+  // v53: ulazna animacija (redom) + skidanje navodnika iz teksta (zlatni su iznad); radi i kad React ponovo iscrta karticu
+  (function(){
+    var n=0,ticks=0,io=null;
+    if('IntersectionObserver' in window&&!window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+      io=new IntersectionObserver(function(en){en.forEach(function(e){if(e.isIntersecting){e.target.style.setProperty('--d',(n++%4*0.15)+'s');e.target.classList.add('in');io.unobserve(e.target)}});n=0},{threshold:.15});
+    }
+    function scan(){
+      document.querySelectorAll('#utisci .u-c:not([data-rv])').forEach(function(c){
+        c.setAttribute('data-rv','1');
+        var q=c.querySelector('.u-q');if(q)q.textContent=q.textContent.replace(/^[\u201E\u201C"]\s*/,'').replace(/\s*[\u201C\u201D"]$/,'');
+        if(io){c.classList.add('rv');io.observe(c)}
+      });
+      if(++ticks<100)setTimeout(scan,300);
+    }
+    scan();
+  })();
 })();
