@@ -1,0 +1,163 @@
+#utisci{background:#F4EDE2 url("/assets/kamen/pozadina.jpg?v=1") center/cover no-repeat fixed;margin-top:clamp(64px,10vw,120px);padding:clamp(48px,6vw,88px) clamp(16px,4vw,56px) clamp(40px,5vw,72px);font-family:Montserrat,Inter,sans-serif;color:#1D1A17;position:relative}
+#utisci::before{content:"";position:absolute;inset:0;background:rgba(244,237,226,.3);pointer-events:none}
+#utisci>*{position:relative}
+#utisci .u-head{max-width:760px;margin:0 auto clamp(28px,4vw,48px);text-align:center;display:grid;gap:clamp(48px,6vw,88px);justify-items:center}
+#utisci .u-k{font:500 13px Inter,sans-serif;letter-spacing:.2em;text-transform:uppercase;color:#8A6A28}
+#utisci h2{margin:0;font:700 clamp(26px,3.4vw,46px)/1.08 Inter,sans-serif;text-transform:uppercase}
+#utisci h2 em{font:700 1.35em/.8 Corinthia,cursive;text-transform:none;font-style:normal;color:#8A6A28}
+#utisci .u-sub{margin:0;font:500 15px/1.5 Inter,sans-serif;color:#5C534A;max-width:560px}
+#utisci .u-row{max-width:1240px;margin:0 auto;display:flex;gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding:10px 2px 40px;-webkit-overflow-scrolling:touch}
+#utisci .u-row::-webkit-scrollbar{display:none}
+#utisci .u-c{position:relative;flex:0 0 calc((100% - 36px)/3);height:clamp(480px,46vw,600px);scroll-snap-align:start;border-radius:20px;overflow:hidden;background:#2a2622;outline:none;box-shadow:0 14px 22px -14px rgba(60,40,15,.5);transition:transform .5s cubic-bezier(.2,.7,.2,1),box-shadow .5s}
+#utisci .u-c img[alt="Marija"]{top:-150px!important;height:calc(100% + 150px)!important}
+#utisci .u-c img{position:absolute;left:0;top:-80px;width:100%;height:calc(100% + 80px);object-fit:cover;transition:filter .5s,transform 1.2s cubic-bezier(.2,.7,.2,1);filter:brightness(.8)}
+#utisci .u-c.on img{filter:none;transform:scale(1.03)}
+
+#utisci .u-c::after{content:"";position:absolute;left:0;right:0;bottom:0;height:66%;background:linear-gradient(180deg,rgba(18,12,7,0),rgba(18,12,7,.55) 40%,rgba(18,12,7,.92));pointer-events:none}
+#utisci .u-t{position:absolute;left:0;right:0;bottom:-10px;z-index:3;height:clamp(255px,20vw,270px);padding:0 clamp(22px,2.2vw,32px) 16px;display:grid;grid-auto-rows:min-content;align-content:start;justify-items:center;text-align:center;gap:8px;color:#FBF7F0}
+#utisci .u-t::before{content:"\201C";font:400 160px/.62 Corinthia,cursive;color:#E8C982;height:62px;display:block}
+#utisci .u-c:not(:has(.u-q)) .u-t::before{visibility:hidden}
+#utisci .u-q{margin:0 0 4px;font:500 clamp(15px,1.2vw,17px)/1.5 Inter,sans-serif}
+#utisci .u-n{font:700 clamp(40px,3.2vw,50px)/.9 Corinthia,cursive;color:#E8C982}
+#utisci .u-p{font:600 11px Inter,sans-serif;letter-spacing:.18em;text-transform:uppercase;color:#F3E9DA}
+#utisci .u-pr{font:500 12px Inter,sans-serif;color:#E8C982}
+#utisci .u-ig{justify-self:center;margin-top:4px;font:600 11px Inter,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#FBF7F0;border:1px solid rgba(232,201,130,.8);border-radius:999px;padding:9px 16px;text-decoration:none}
+#utisci .u-nav-old{display:flex;gap:12px;justify-content:center;margin-top:6px}
+#utisci .u-nav button{width:48px;height:48px;border-radius:50%;border:1px solid #C5A059;background:transparent;color:#8A6A28;font:400 22px/1 Inter,sans-serif;cursor:pointer;transition:background .3s,color .3s}
+#utisci .u-nav button:hover{background:#C5A059;color:#fff}
+@media (max-width:860px){
+  #utisci .u-row{margin:0 -16px;padding-inline:16px;scroll-padding-inline:16px;gap:12px}
+  #utisci .u-c{flex:0 0 82vw;height:500px}
+  #utisci .u-c img{filter:none;top:-120px;height:calc(100% + 120px)}
+  #utisci .u-c.on{transform:none}
+  #utisci .u-n{font-size:52px}
+  #utisci .u-t::before{font-size:170px;height:66px}
+}
+
+#utisci .u-t{justify-items:start;text-align:left}
+#utisci .u-t::before{font-size:150px;height:60px;margin-left:-2px}
+#utisci .u-q{font:500 clamp(15px,1.2vw,17px)/1.55 Montserrat,Inter,sans-serif;margin:0 0 8px;color:#fff}
+#utisci .u-by{font:700 15px/1.3 Montserrat,Inter,sans-serif;color:#fff}
+#utisci .u-by span{font-weight:600;color:#E8C982}
+
+#utisci .u-q{min-height:calc(1.55em*3)}
+@media (max-width:860px){#utisci .u-q{min-height:0}}
+@media (max-width:860px){#utisci,#mfoot{background-attachment:scroll}}
+
+#utisci .u-nav{position:absolute;right:max(6px,calc((100% - 1240px)/2 - 34px));top:50%;margin:0;display:block}
+#utisci .u-nav button:first-child{display:none}
+#utisci .u-nav button:last-child{width:34px;height:34px;border:0;background:transparent;color:#8A6A28;font:400 30px/1 Inter,sans-serif;opacity:.75;padding:0;border-radius:0}
+#utisci .u-nav button:last-child:hover{background:transparent;color:#8A6A28;opacity:1}
+@media (max-width:860px){#utisci .u-nav{display:none}}
+
+#utisci .u-c img[alt="Marija"]{filter:grayscale(.8) contrast(1.05)!important}
+#utisci .u-c img[alt="Svetlana"]{filter:grayscale(.6)!important}
+@media (max-width:860px){#utisci{margin-top:0;padding-top:28px}}
+
+/* v17 minimalistički: fotka gore, bela kartica sa tekstom ispod */
+#utisci .u-c{height:auto!important;background:#FBF8F3;border-radius:6px;box-shadow:none;display:flex;flex-direction:column;overflow:hidden;transform:none!important}
+#utisci .u-c::after{display:none!important}
+#utisci .u-c img,#utisci .u-c img[alt="Marija"]{position:static!important;width:100%!important;height:auto!important;aspect-ratio:1/1;object-fit:cover;filter:none;transform:none!important;top:auto!important;left:auto!important;display:block}
+#utisci .u-c.on img{transform:none!important}
+#utisci .u-c img[alt="Marija"]{filter:grayscale(.8) contrast(1.05)!important}
+#utisci .u-c img[alt="Svetlana"]{filter:grayscale(.6)!important}
+#utisci .u-t{position:static!important;height:auto!important;min-height:0;padding:22px 24px 26px;display:grid;gap:14px;align-content:start;justify-items:start;text-align:left;color:#1D1A17}
+#utisci .u-t::before{display:none!important}
+#utisci .u-q{min-height:calc(1.6em*3)!important;margin:0!important;font:400 15px/1.6 Montserrat,Inter,sans-serif!important;color:#3A332C!important}
+#utisci .u-by{font:600 11px/1.4 Montserrat,Inter,sans-serif!important;letter-spacing:.14em;text-transform:uppercase;color:#1D1A17!important}
+#utisci .u-by b{font-weight:700}
+#utisci .u-by span{font-weight:500;color:#8A6A28!important;letter-spacing:.1em}
+@media (max-width:860px){#utisci .u-c{flex:0 0 78vw;height:auto!important}#utisci .u-c img{top:auto!important;height:auto!important}#utisci .u-q{min-height:0!important}}
+
+/* v18 editorial / quiet luxury */
+#utisci .u-c{border-radius:0;background:#F7F2EA;box-shadow:none}
+#utisci .u-c img{aspect-ratio:4/5;filter:grayscale(.35)!important}
+#utisci .u-c img[alt="Marija"]{filter:grayscale(.8) contrast(1.05)!important}
+#utisci .u-c img[alt="Svetlana"]{filter:grayscale(.5)!important}
+#utisci .u-t{padding:28px 28px 32px;gap:18px;border-top:1px solid #C5A059;margin:0 0 0}
+#utisci .u-q{font:300 18px/1.7 Montserrat,Inter,sans-serif!important;letter-spacing:.01em;color:#2A2420!important;min-height:calc(1.7em*3)!important}
+#utisci .u-by{font:500 10px/1.5 Montserrat,Inter,sans-serif!important;letter-spacing:.26em;color:#2A2420!important}
+#utisci .u-by b{font-weight:700}
+#utisci .u-by span{letter-spacing:.2em;color:#8A6A28!important}
+#utisci .u-c img,#utisci .u-c img[alt="Marija"]{aspect-ratio:4/5!important}
+#utisci .u-t a.u-ig{font:500 12px/1 Montserrat,Inter,sans-serif;letter-spacing:.04em;text-transform:none;color:#8A6A28;border:0;padding:0;margin:-6px 0 0;text-decoration:none}
+#utisci .u-t a.u-ig:hover{text-decoration:underline}
+#utisci .u-t a.u-ig{justify-self:start!important}
+
+/* v23 crno-krem: tamne kartice, fotke crno-bele sa malo boje */
+#utisci .u-c{background:#141110}
+#utisci .u-c img,#utisci .u-c img[alt="Marija"],#utisci .u-c img[alt="Svetlana"]{filter:grayscale(.8) contrast(1.05)!important}
+#utisci .u-t{border-top:1px solid #C5A059}
+#utisci .u-q{color:#F4EDE2!important}
+#utisci .u-by{color:#F4EDE2!important}
+#utisci .u-by span{color:#E8C982!important}
+#utisci .u-t a.u-ig{color:#E8C982}
+
+/* v24 vraćeno na krem kartice (fotke ostaju crno-bele sa malo boje) */
+#utisci .u-c{background:#F7F2EA}
+#utisci .u-t{border-top:1px solid #C5A059}
+#utisci .u-q{color:#2A2420!important}
+#utisci .u-by{color:#2A2420!important}
+#utisci .u-by span{color:#8A6A28!important}
+#utisci .u-t a.u-ig{color:#8A6A28}
+
+/* v29 poravnanje: ime na ime, instagram na instagram; razmak ispod dugmeta */
+#utisci{margin-top:0;padding-top:clamp(56px,6vw,96px)}
+#utisci .u-t{flex:1 1 auto;display:flex!important;flex-direction:column;align-items:flex-start;gap:14px}
+#utisci .u-q{flex:1 1 auto;min-height:calc(1.6em*3)!important}
+#utisci .u-by,#utisci .u-t a.u-ig{flex:0 0 auto}
+#utisci .u-t a.u-ig{margin:-6px 0 0}
+#utisci{padding-top:clamp(20px,2.6vw,40px)}
+/* v32 naslov kao ostale sekcije */
+#utisci h2{font:700 clamp(22px,2.6vw,34px)/1.14 Montserrat,Inter,sans-serif!important;letter-spacing:.03em;color:#5A3E22!important;text-transform:uppercase}
+#utisci h2 em{font:400 1.5em/.8 'Great Vibes',cursive!important;letter-spacing:0;color:#8A6A28!important;text-transform:none}
+/* 25.11: telefon: opis sekcije 18px kao citati, potpisi i profili veci */
+@media (max-width:860px){#utisci .u-sub{font:400 18px/1.6 Montserrat,Inter,sans-serif;color:#2A2420}#utisci .u-by{font-size:12px!important}#utisci .u-t a.u-ig{font-size:15px}}
+/* 25.11: telefon: naslov jos nize od dugmeta Otkrij tvoj kamen */
+@media (max-width:860px){#utisci{padding-top:clamp(90px,26vw,130px)!important}}
+/* 25.11: jednaki razmaci na telefonu: naslov-tekst-slike 36px */
+@media (max-width:860px){#utisci .u-head{gap:36px!important;margin-bottom:36px!important}}
+@media (max-width:860px){#utisci{padding-top:20px!important}#utisci .u-head{margin-bottom:26px!important}}
+@media (max-width:860px){#utisci{padding-top:23px!important}#utisci .u-head{gap:46px!important;margin-bottom:45px!important}}
+/* 25.11: desktop: manje kartice (4 u redu) */
+@media (min-width:861px){#utisci .u-row{max-width:1320px}#utisci .u-c{flex:0 0 calc((100% - 54px)/4)!important}#utisci .u-q{font-size:16px!important;min-height:calc(1.6em*4)!important}}
+/* tople fotke: usklađeno sa butik herojem */
+#utisci .u-c img,#utisci .u-c img[alt="Marija"],#utisci .u-c img[alt="Svetlana"]{filter:grayscale(.45) sepia(.26) saturate(1.1) contrast(1) brightness(1.12)!important}
+/* 25.11: telefon: svetlija pozadina kartice gde je tekst */
+@media (max-width:860px){#utisci .u-c{background:#FCFAF6!important}}
+
+/* 25.11: ista leopard pozadina kao footer, bez fixed (lag na telefonu), meko stapanje u footer */
+#utisci{background:#F4EDE2 url("/assets/kamen/pozadina.jpg?v=1") center/cover no-repeat !important;position:relative;padding-bottom:clamp(70px,8vw,110px)!important}
+#utisci::before{background:rgba(244,237,226,.2)!important}
+#utisci::after{content:"";position:absolute;left:0;right:0;bottom:0;height:70px;background:linear-gradient(180deg,rgba(244,237,226,0),rgba(244,237,226,.9));pointer-events:none}
+@media (max-width:860px){
+  #utisci .u-c img{transition:none!important;transform:none!important;will-change:auto}
+  #utisci .u-c.on img{transform:none!important}
+  #utisci .u-row{-webkit-overflow-scrolling:touch}
+}
+@media (min-width:861px){#utisci .u-q{font-size:20px!important;min-height:calc(1.6em*5)!important}#utisci .u-sub{font:400 16px/1.6 Montserrat,Inter,sans-serif;color:#5C534A;max-width:640px}}
+
+/* v53 (proba): cela fotka + tamni prelaz + zlatni navodnici, tekst manji, animacija ulaska */
+#utisci .u-c{position:relative;display:block!important;background:#2a2622!important;border-radius:10px!important;box-shadow:0 14px 28px -16px rgba(60,40,15,.55)!important}
+#utisci .u-c img,#utisci .u-c img[alt="Marija"]{aspect-ratio:3/4!important;height:auto!important;width:100%!important}
+#utisci .u-c::after{display:block!important;content:"";position:absolute;left:0;right:0;top:0;bottom:0;height:auto!important;background:linear-gradient(180deg,rgba(24,16,9,0) 38%,rgba(24,16,9,.55) 62%,rgba(24,16,9,.9));pointer-events:none}
+#utisci .u-t{position:absolute!important;left:0;right:0;bottom:0;z-index:3;border-top:0!important;padding:0 20px 20px!important;gap:8px!important;display:flex!important;flex-direction:column;align-items:flex-start;text-align:left;height:auto!important}
+#utisci .u-t::before{display:block!important;content:"\201C";font:400 96px/.7 'Great Vibes',cursive;color:#E8C982;height:34px;margin:0 0 2px -2px;visibility:visible}
+#utisci .u-c:not(:has(.u-q)) .u-t::before{display:none!important}
+#utisci .u-q{flex:0 0 auto!important;min-height:0!important;margin:0!important;font:400 13.5px/1.55 Montserrat,Inter,sans-serif!important;color:#FBF7F0!important}
+#utisci .u-by{font:600 11.5px/1.4 Montserrat,Inter,sans-serif!important;letter-spacing:.04em!important;text-transform:none!important;color:#FBF7F0!important}
+#utisci .u-by span{font-weight:500;letter-spacing:.02em!important;color:#E8C982!important}
+#utisci .u-t a.u-ig{font-size:12px;margin:0!important;color:#E8C982!important}
+@media (min-width:861px){#utisci .u-q{font-size:13.5px!important;min-height:0!important}}
+@media (max-width:860px){#utisci .u-c{flex:0 0 78vw;}#utisci .u-q{font-size:14px!important}#utisci .u-by{font-size:12px!important}#utisci .u-t a.u-ig{font-size:13px}}
+/* animacija ulaska: dolazi odozdo, redom */
+#utisci .u-c.rv{opacity:0;transform:translateY(20px)!important}
+#utisci .u-c.rv.in{opacity:1;transform:none!important;transition:opacity .5s ease-out var(--d,0s),transform .5s ease-out var(--d,0s)}
+@media (prefers-reduced-motion:reduce){#utisci .u-c.rv{opacity:1;transform:none!important}}
+/* v54: sve u istoj ravni: navodnici, tekst, ime, profil na istoj visini na svim karticama */
+#utisci .u-t{height:188px!important;justify-content:flex-start!important;padding-bottom:0!important}
+#utisci .u-t::before{flex:0 0 34px;margin-bottom:6px!important}
+#utisci .u-q{flex:0 0 calc(1.55em*3)!important;min-height:calc(1.55em*3)!important}
+#utisci .u-by{margin-top:6px!important}
+@media (min-width:861px){#utisci .u-q{min-height:calc(1.55em*3)!important}}
+@media (max-width:860px){#utisci .u-t{height:192px!important}}
