@@ -183,3 +183,5 @@
 @container (min-width:1px){
   #utisci .u-c:has(img[alt="Marija"]) .u-t,#utisci .u-c:has(img[alt="Ivana"]) .u-t,#utisci .u-c:has(img[src*="milica.webp"]) .u-t{height:52cqw!important;padding-bottom:4cqw!important}
 }
+/* telefon: kartice u klizaču su uvek tu (bez ulazne animacije), da ništa ne iskače pri listanju */
+@media (max-width:860px){#utisci .u-c.rv,#utisci .u-c.rv.in{opacity:1!important;transform:none!important;transition:none!important}}

@@ -53,7 +53,7 @@
     }
     function scan(){
       document.querySelectorAll('#utisci .u-c:not([data-rv])').forEach(function(c){
-        c.setAttribute('data-rv','1');
+        c.setAttribute('data-rv','1');var im=c.querySelector('img');if(im){im.loading='eager';im.decoding='async'}
         var q=c.querySelector('.u-q');if(q)q.textContent=q.textContent.replace(/^[\u201E\u201C"]\s*/,'').replace(/\s*[\u201C\u201D"]$/,'');
         if(io){c.classList.add('rv');io.observe(c)}
       });
