@@ -1,3 +1,4 @@
+const MJ_CELIK_PG=/^\/celik\/?$/.test(location.pathname);
 ;// Home.jsx
 function Home({
   go
@@ -3637,10 +3638,10 @@ function Nakit({
   const isK = typeof cat === 'string' && cat.startsWith('kamen:');
   const kam = isK ? cat.slice(6) : null;
   const kw = isK ? kam.toLowerCase().replace(/crni /g, '').split(/\s+i\s+/).map(x => x.trim().slice(0, 5)) : [];
-  const [c, setC] = React.useState(isK ? null : cat || null);
+  const [c, setC] = React.useState(isK ? null : cat || (MJ_CELIK_PG ? 'Čelik' : null));
   const gridRef = React.useRef(null);
   React.useEffect(() => {
-    setC(isK ? null : cat || null);
+    setC(isK ? null : cat || (MJ_CELIK_PG ? 'Čelik' : null));
     if (cat) setTimeout(() => {
       const el = gridRef.current;
       if (el) window.scrollTo({
@@ -3734,7 +3735,7 @@ function Nakit({
       alignItems: 'baseline',
       gap: 24
     }
-  }, "Nakit"), React.createElement("div", {
+  }, MJ_CELIK_PG ? "Čelik" : "Nakit"), MJ_CELIK_PG ? null : React.createElement("div", {
     style: {
       display: 'grid',
       gridTemplateColumns: 'repeat(4,1fr)',
@@ -5344,7 +5345,7 @@ function NakitM({
   const isK = typeof cat === 'string' && cat.startsWith('kamen:');
   const kam = isK ? cat.slice(6) : null;
   const kw = isK ? kam.toLowerCase().replace(/crni /g, '').split(/\s+i\s+/).map(x => x.trim().slice(0, 5)) : [];
-  const [c, setC] = React.useState(isK ? null : cat || null);
+  const [c, setC] = React.useState(isK ? null : cat || (MJ_CELIK_PG ? 'Čelik' : null));
   const gridRef = React.useRef(null);
   const scroll = () => setTimeout(() => {
     const el = gridRef.current;
@@ -5354,7 +5355,7 @@ function NakitM({
     });
   }, 80);
   React.useEffect(() => {
-    setC(isK ? null : cat || null);
+    setC(isK ? null : cat || (MJ_CELIK_PG ? 'Čelik' : null));
     if (cat) scroll();
   }, [cat]);
   const list = c ? MJ_PRODUCTS.filter(p => p.cat.includes(c)) : isK ? MJ_PRODUCTS.filter(p => kw.some(k => (p.stone || '').toLowerCase().includes(k))) : [];
@@ -5386,7 +5387,7 @@ function NakitM({
       fontSize: 36,
       margin: '8px 0 24px'
     }
-  }, "Nakit"), React.createElement("div", {
+  }, MJ_CELIK_PG ? "Čelik" : "Nakit"), MJ_CELIK_PG ? null : React.createElement("div", {
     style: {
       display: 'grid',
       gridTemplateColumns: 'repeat(2,minmax(0,1fr))',
