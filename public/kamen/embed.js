@@ -21,7 +21,7 @@
     var nv=document.querySelector('[data-nav]');root.style.setProperty('--navh',(nv?Math.round(nv.getBoundingClientRect().height):0)+'px');var r=stage.getBoundingClientRect();W=r.width;H=r.height;
     var wide=W>=H*1.05,X={wide:wide};
     if(!wide){
-      X.bw=Math.min(W*0.92,H*0.58/RATIO);X.cx0=W/2;X.cy0=H*0.43;
+      X.bw=Math.min(W*0.92,H*0.58/RATIO);X.cx0=W/2;X.cy0=H*0.5;
       X.sw=Math.min(W*0.26,H*0.13/RATIO);X.top=H*0.035;
       X.cx1=W/2;X.cy1=X.top+X.sw*RATIO/2;
       X.zTop=H*0.70;X.zw=Math.min(W*0.88,520);X.zl=(W-X.zw)/2;

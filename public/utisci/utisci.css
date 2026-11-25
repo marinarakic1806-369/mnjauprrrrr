@@ -115,3 +115,6 @@
 @media (max-width:860px){#utisci .u-sub{font:400 18px/1.6 Montserrat,Inter,sans-serif;color:#2A2420}#utisci .u-by{font-size:12px!important}#utisci .u-t a.u-ig{font-size:15px}}
 /* 25.11: telefon: naslov jos nize od dugmeta Otkrij tvoj kamen */
 @media (max-width:860px){#utisci{padding-top:clamp(90px,26vw,130px)!important}}
+/* 25.11: jednaki razmaci na telefonu: naslov-tekst-slike 36px */
+@media (max-width:860px){#utisci .u-head{gap:36px!important;margin-bottom:36px!important}}
+@media (max-width:860px){#utisci{padding-top:20px!important}#utisci .u-head{margin-bottom:26px!important}}
