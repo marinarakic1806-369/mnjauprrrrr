@@ -52,3 +52,9 @@
 @media (max-width:860px){#kp .glassbtn{margin-top:30px}}
 /* 25.11 v3: veci i jednaki razmaci (cilj 64px izmedju teksta, dugmeta i sekcija) */
 @media (max-width:860px){#kp .beat p{margin-top:50px}}
+
+/* 25.11: gornji deo slova K se secio (background-clip:text + mali line-height) */
+#kp #word{padding:.2em .12em .14em;margin:-.2em -.12em -.14em}
+#kp #note span{padding:.2em .12em .14em;margin:-.2em -.12em -.14em}
+/* ista pozadina kao ostatak strane (jedan print) */
+html.mj-print #stage{background:none!important}
