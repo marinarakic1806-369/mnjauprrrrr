@@ -154,3 +154,10 @@
 #utisci .u-c.rv{opacity:0;transform:translateY(22px)!important}
 #utisci .u-c.rv.in{opacity:1;transform:none!important;transition:opacity .6s ease-out var(--d,0s),transform .6s ease-out var(--d,0s)}
 @media (prefers-reduced-motion:reduce){#utisci .u-c.rv{opacity:1;transform:none!important}}
+/* v54: sve u istoj ravni: navodnici, tekst, ime, profil na istoj visini na svim karticama */
+#utisci .u-t{height:188px!important;justify-content:flex-start!important;padding-bottom:0!important}
+#utisci .u-t::before{flex:0 0 34px;margin-bottom:6px!important}
+#utisci .u-q{flex:0 0 calc(1.55em*3)!important;min-height:calc(1.55em*3)!important}
+#utisci .u-by{margin-top:6px!important}
+@media (min-width:861px){#utisci .u-q{min-height:calc(1.55em*3)!important}}
+@media (max-width:860px){#utisci .u-t{height:192px!important}}
