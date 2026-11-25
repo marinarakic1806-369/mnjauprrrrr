@@ -34,7 +34,7 @@
 #mfoot .f-in{z-index:1}
 
 /* 25.11: cela strana iz jednog printa (leopard bez šava na html/body; sekcije providne) */
-html.mj-print,html.mj-print body{background:#F4EDE2 url("/assets/kamen/print.jpg") 0 0/1100px auto repeat!important}
+html.mj-print,html.mj-print body{background:#F4EDE2 url("/assets/kamen/print.jpg?v=2") 0 0/1100px auto repeat!important}
 html.mj-print #mfoot,html.mj-print #utisci,html.mj-print .on{background:transparent!important}
 html.mj-print #mfoot::before,html.mj-print #mfoot::after,html.mj-print #utisci::before,html.mj-print #utisci::after,html.mj-print .on .lp,html.mj-print .on::after{display:none!important}
 html.mj-print .mj-wide-clear{background:transparent!important}
