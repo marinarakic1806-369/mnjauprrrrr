@@ -24,3 +24,5 @@
 
 #mfoot .f-soc.l{visibility:hidden}
 @media (max-width:860px){#mfoot .f-soc.l{display:none}}
+/* 25.11: telefon: ikonice odvojene od koverte */
+@media (max-width:860px){#mfoot .f-soc.r{margin-top:30px}#mfoot .f-in{gap:28px}}
