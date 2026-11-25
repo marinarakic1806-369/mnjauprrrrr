@@ -161,3 +161,12 @@
 #utisci .u-by{margin-top:6px!important}
 @media (min-width:861px){#utisci .u-q{min-height:calc(1.55em*3)!important}}
 @media (max-width:860px){#utisci .u-t{height:192px!important}}
+/* v57: tekst raste/opada sa sirinom kartice (ne preklapa se ni na jednom ekranu) */
+#utisci .u-c{container-type:inline-size}
+@container (min-width:1px){
+  #utisci .u-t{height:66cqw!important;padding:0 6.8cqw 6.8cqw!important}
+  #utisci .u-t::before{font-size:33cqw!important;flex-basis:11.6cqw!important;height:11.6cqw!important}
+  #utisci .u-q{font-size:max(11.5px,4.5cqw)!important}
+  #utisci .u-by{font-size:max(10.5px,3.9cqw)!important}
+  #utisci .u-t a.u-ig{font-size:max(11px,4cqw)!important}
+}
