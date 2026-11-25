@@ -5,10 +5,26 @@ function go(){
   var old=document.querySelector('footer#kontakt');
   if(!old||document.getElementById('mfoot'))return false;
   old.removeAttribute('id');old.style.display='none';old.setAttribute('data-old-footer','1');
-  if(!document.getElementById('mfoot-css')){var l=document.createElement('link');l.id='mfoot-css';l.rel='stylesheet';l.href='/footer/footer.css?v=12';document.head.appendChild(l)}
+  if(!document.getElementById('mfoot-css')){var l=document.createElement('link');l.id='mfoot-css';l.rel='stylesheet';l.href='/footer/footer.css?v=13';document.head.appendChild(l)}
   var f=document.createElement('footer');f.id='mfoot';f.innerHTML='<span id="kontakt" style="position:absolute;top:0"></span>'+HTML;
   old.parentNode.insertBefore(f,old.nextSibling);return true;
 }
+
+document.documentElement.classList.add('mj-print');
+function clr(){
+  var R=document.getElementById('root')||document.body;
+  document.querySelectorAll('body *').forEach(function(e){
+    if(e.closest('#mfoot')||e.tagName==='VIDEO'||e.tagName==='IMG')return;
+    var r=e.getBoundingClientRect();if(r.width<innerWidth*.9||r.height<200)return;
+    var c=getComputedStyle(e),bi=c.backgroundImage,bc=c.backgroundColor;
+    var light=function(s){var m=s.match(/rgba?\(([^)]*)\)/g);if(!m)return false;return m.every(function(x){var n=x.match(/[\d.]+/g).map(Number);return n[0]>225&&n[1]>212&&n[2]>190&&(n.length<4||n[3]>0)})};
+    if(bc==='rgb(244, 237, 226)')e.style.setProperty('background-color','transparent','important');
+    if(e.classList.contains('mj-leopard'))e.style.setProperty('background-image','none','important');
+    else if(bi.indexOf('leopard')>-1&&e.className.indexOf('mj-leopard')<0&&!e.closest('footer'))e.style.setProperty('background-image','none','important');
+    else if(bi.indexOf('linear-gradient')===0&&light(bi))e.style.setProperty('background-image','none','important');
+  });
+}
+var ct=0;(function t(){clr();if(ct++<12)setTimeout(t,400)})();
 var tries=0;(function t(){if(go()||tries++>80)return;setTimeout(t,150)})();
 new MutationObserver(function(){var o=document.querySelector('footer#kontakt');if(o&&!document.getElementById('mfoot'))go()}).observe(document.documentElement,{childList:true,subtree:true});
 })();
