@@ -11,7 +11,7 @@
     for(var a=grid.parentElement;a&&a.id!=='root'&&a!==document.body;a=a.parentElement){if(bad(a))a.style.setProperty('overflow','clip','important');}
     foot(true);
     if(sec&&sec.previousElementSibling===grid)return;
-    if(!sec){sec=document.createElement('section');sec.id='li-koverta';sec.style.cssText='position:relative;width:100%;pointer-events:none;margin-top:'+(innerWidth<=860?'-150px':'0');}
+    if(!sec){sec=document.createElement('section');sec.id='li-koverta';sec.style.cssText='position:relative;width:100%;pointer-events:none;margin-top:'+(innerWidth<=860?'-95px':'0');}
     grid.parentNode.insertBefore(sec,grid.nextSibling);document.documentElement.classList.add('mj-li');
     if(!sec._w){sec._w=1;watch(sec);}
   }
