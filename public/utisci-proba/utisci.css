@@ -177,7 +177,7 @@
   #utisci .u-t::before{font-size:26cqw!important;flex-basis:9cqw!important;height:9cqw!important}
 }
 #utisci .u-c img[alt="Ivana"]{transform:scale(1.1)!important;transform-origin:50% 100%!important}
-#utisci .u-c img[alt="Željka"]{transform:scale(1.2)!important;transform-origin:50% 100%!important}
+#utisci .u-c img[alt="Željka"]{transform:scale(1.07)!important;transform-origin:50% 100%!important}
 #utisci .u-c img[src*="/mica"],#utisci .u-c img[src*="milica.webp"]{transform:scale(1.07)!important;transform-origin:50% 100%!important}
 /* v60: veće glave (Marija, Mica, Ivana): tekst još malo niže */
 @container (min-width:1px){
