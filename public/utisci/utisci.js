@@ -49,7 +49,7 @@
   (function(){
     var n=0,ticks=0,io=null;
     if('IntersectionObserver' in window&&!window.matchMedia('(prefers-reduced-motion: reduce)').matches){
-      io=new IntersectionObserver(function(en){en.forEach(function(e){if(e.isIntersecting){e.target.style.setProperty('--d',(n++%4*0.15)+'s');e.target.classList.add('in');io.unobserve(e.target)}});n=0},{threshold:.15});
+      io=new IntersectionObserver(function(en){en.forEach(function(e){if(e.isIntersecting){e.target.style.setProperty('--d',(n++*0.2)+'s');e.target.classList.add('in');io.unobserve(e.target)}});n=0},{threshold:.15});
     }
     function scan(){
       document.querySelectorAll('#utisci .u-c:not([data-rv])').forEach(function(c){

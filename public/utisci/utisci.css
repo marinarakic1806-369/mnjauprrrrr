@@ -151,8 +151,8 @@
 @media (min-width:861px){#utisci .u-q{font-size:13.5px!important;min-height:0!important}}
 @media (max-width:860px){#utisci .u-c{flex:0 0 78vw;}#utisci .u-q{font-size:14px!important}#utisci .u-by{font-size:12px!important}#utisci .u-t a.u-ig{font-size:13px}}
 /* animacija ulaska: dolazi odozdo, redom */
-#utisci .u-c.rv{opacity:0;transform:translateY(22px)!important}
-#utisci .u-c.rv.in{opacity:1;transform:none!important;transition:opacity .6s ease-out var(--d,0s),transform .6s ease-out var(--d,0s)}
+#utisci .u-c.rv{opacity:0;transform:translateY(20px)!important}
+#utisci .u-c.rv.in{opacity:1;transform:none!important;transition:opacity .5s ease-out var(--d,0s),transform .5s ease-out var(--d,0s)}
 @media (prefers-reduced-motion:reduce){#utisci .u-c.rv{opacity:1;transform:none!important}}
 /* v54: sve u istoj ravni: navodnici, tekst, ime, profil na istoj visini na svim karticama */
 #utisci .u-t{height:188px!important;justify-content:flex-start!important;padding-bottom:0!important}
