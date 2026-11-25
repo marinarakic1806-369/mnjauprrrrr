@@ -42,3 +42,7 @@ html.mj-print .mj-wide-clear{background:transparent!important}
 html.mj-li #mfoot .f-env{filter:none;width:min(420px,86vw)}
 html.mj-li #mfoot .f-env img.e{display:none}
 html.mj-li #mfoot .f-paper{position:static;height:auto;left:auto;right:auto;top:auto;padding:30px 0}
+/* isti razmaci svuda: utisci -> footer, sadrzaj -> footer */
+#utisci{padding-bottom:clamp(8px,1.2vw,16px)!important}
+#utisci .u-row{padding-bottom:16px!important}
+#mfoot{padding-top:clamp(0px,1.4vw,18px)!important}
