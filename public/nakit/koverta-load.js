@@ -13,7 +13,7 @@
     foot(true);
     if(sec&&sec.previousElementSibling===grid)return;
     if(!sec){sec=document.createElement('section');sec.id='li-koverta';sec.style.cssText='position:relative;width:100%;pointer-events:none;margin-top:'+(innerWidth<=860?'-95px':'0');}
-    grid.style.setProperty('display','none','important');
+    [].slice.call(grid.querySelectorAll('div')).forEach(function(d){var c=getComputedStyle(d);if(c.position==='absolute'&&(c.backdropFilter&&c.backdropFilter!=='none'||c.webkitBackdropFilter&&c.webkitBackdropFilter!=='none'))d.style.setProperty('display','none','important');});grid.style.setProperty('padding-bottom','0','important');
     grid.parentNode.insertBefore(sec,grid.nextSibling);
     var nx=sec.nextElementSibling;if(nx)nx.style.setProperty('display','none','important');document.documentElement.classList.add('mj-li');
     if(!sec._w){sec._w=1;watch(sec);}
@@ -24,7 +24,7 @@
       var r=sec.getBoundingClientRect();
       if(r.top<innerHeight+800&&r.bottom>-800){
         loading=true;clearInterval(t);removeEventListener('scroll',go);
-        var s=document.createElement('script');s.src='/nakit/koverta.js?v=26';
+        var s=document.createElement('script');s.src='/nakit/koverta.js?v=27';
         s.onload=function(){var host=document.createElement('div');sec.appendChild(host);window.MJKoverta.mount(host);};
         document.head.appendChild(s);
       }
