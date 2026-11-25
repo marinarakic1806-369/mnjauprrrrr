@@ -3861,7 +3861,98 @@ function Nakit({
       margin: 0,
       color: 'var(--ink-70)'
     }
-  }, "Ma\u010Dkica jo\u0161 sprema ovu kolekciju.")))));
+  }, "Ma\u010Dkica jo\u0161 sprema ovu kolekciju."))), React.createElement("section", {
+    id: "celik",
+    style: {
+      position: 'relative',
+      padding: '32px 8% 64px'
+    }
+  }, React.createElement("div", {
+    style: {
+      position: 'absolute',
+      inset: 0,
+      background: 'radial-gradient(ellipse 75% 70% at 40% 50%, rgba(244,237,226,.92) 0%, rgba(244,237,226,.6) 55%, rgba(244,237,226,0) 100%)',
+      pointerEvents: 'none'
+    }
+  }), React.createElement("div", {
+    style: {
+      position: 'relative'
+    }
+  }, React.createElement("div", {
+    style: {
+      display: 'flex',
+      justifyContent: 'flex-start'
+    }
+  }, React.createElement("div", null, React.createElement(Kicker, null, "Jak kao"), React.createElement("h2", {
+    style: {
+      ...MJ_H2,
+      margin: '6px 0 44px'
+    }
+  }, "Hirur\u0161ki \u010Delik"))), React.createElement("div", {
+    style: {
+      display: 'grid',
+      gridTemplateColumns: 'repeat(2,minmax(0,1fr))',
+      gap: 24
+    }
+  }, [['Apsolutna bezbednost za vašu kožu', 'Zbog svojih antialergijskih svojstava, ovaj materijal ne izaziva iritacije i potpuno je bezbedan za osetljivu kožu, pružajući vam maksimalnu udobnost tokom celog dana.'], ['Bezbrižno nošenje u svim uslovima', 'Visoka otpornost na vodu, rđu i oksidaciju znači da vaš omiljeni nakit neće ostavljati tamne ili zelene tragove na koži, niti gubiti svoj prvobitni sjaj pri kontaktu sa vlagom.'], ['Dugovečnost srebrnog sjaja', 'Ukoliko izaberete komad u njegovoj prirodnoj, srebrnoj nijansi, on za razliku od klasičnog srebra nikada neće potamneti niti promeniti boju, zadržavajući svoj prefinjeni izgled godinama.'], ['Prefinjena estetika pozlate', 'Komadi sa nanosom žutog ili roze zlata pružaju vrhunski luksuzan izgled. Važno je znati da trajnost ove pozlate (koja može trajati od nekoliko meseci do nekoliko godina) direktno zavisi od učestalosti nošenja i izloženosti vodi, što svakom komadu daje lični pečat vašeg stila života.']].map(([b, t], i) => React.createElement("div", {
+    key: b,
+    style: {
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'flex-start',
+      padding: '26px 28px',
+      background: 'rgba(255,255,255,.26)',
+      backdropFilter: 'blur(16px) saturate(1.25)',
+      WebkitBackdropFilter: 'blur(16px) saturate(1.25)',
+      border: '1px solid rgba(255,255,255,.65)',
+      boxShadow: '0 16px 36px rgba(0,0,0,.06)'
+    }
+  }, React.createElement("p", {
+    style: {
+      ...MJ_P,
+      margin: 0,
+      textWrap: 'pretty'
+    }
+  }, React.createElement("b", null, b, ":"), " ", t), i === 2 && React.createElement("div", {
+    style: {
+      marginTop: 'auto',
+      paddingTop: 32
+    }
+  }, React.createElement(window.MJCta, {
+    kind: "link",
+    onClick: () => go('kristali')
+  }, "Kristali"))))), React.createElement("p", {
+    style: {
+      ...MJ_P,
+      margin: '64px 0 0',
+      maxWidth: 760,
+      textWrap: 'pretty'
+    }
+  }, "Izuzetna izdr\u017Eljivost ovog materijala \u2013 koji je zbog svoje sterilnosti i otpornosti na\u0161ao primenu u medicini, vrhunskom kulinarstvu i industriji \u2013 \u010Dini ga idealnim za nakit koji zahteva minimalno anga\u017Eovanje oko odr\u017Eavanja."), React.createElement("h3", {
+    style: {
+      font: '700 15px/1.3 Inter,sans-serif',
+      letterSpacing: '.14em',
+      textTransform: 'uppercase',
+      margin: '40px 0 10px'
+    }
+  }, "Ritual i nega"), React.createElement("div", {
+    style: {
+      display: 'flex',
+      justifyContent: 'space-between',
+      alignItems: 'flex-end',
+      gap: 40
+    }
+  }, React.createElement("p", {
+    style: {
+      ...MJ_P,
+      margin: 0,
+      maxWidth: 760,
+      textWrap: 'pretty'
+    }
+  }, "Da biste svom komadu vratili refleksiju i visoki sjaj, dovoljno je da sprovedete jednostavan ritual nege. Operite nakit u blagom rastvoru sapunice i mlake vode, a zatim ga ne\u017Eno prebri\u0161ite i potpuno osu\u0161ite mekanom pamu\u010Dnom tkaninom."), React.createElement(window.MJCta, {
+    kind: "link",
+    onClick: () => go('blog')
+  }, "Blog"))))));
 }
 function Proizvod({
   go,
@@ -5504,7 +5595,7 @@ function NakitM({
       fontWeight: 700,
       fontSize: 42
     }
-  }, "Uskoro\u2026"))));
+  }, "Uskoro\u2026"))), React.createElement(MCelik, null));
 }
 function ProizvodM({
   go,

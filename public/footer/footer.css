@@ -38,7 +38,3 @@ html.mj-print,html.mj-print body{background:#F4EDE2 url("/assets/kamen/print.jpg
 html.mj-print #mfoot,html.mj-print #utisci,html.mj-print .on{background:transparent!important}
 html.mj-print #mfoot::before,html.mj-print #mfoot::after,html.mj-print #utisci::before,html.mj-print #utisci::after,html.mj-print .on .lp,html.mj-print .on::after{display:none!important}
 html.mj-print .mj-wide-clear{background:transparent!important}
-/* 25.11: na Nakit strani koverta je u animaciji, pa se u footeru ne ponavlja */
-html.mj-li #mfoot .f-env{filter:none;width:min(420px,86vw)}
-html.mj-li #mfoot .f-env img.e{display:none}
-html.mj-li #mfoot .f-paper{position:static;height:auto;left:auto;right:auto;top:auto;padding:30px 0}
