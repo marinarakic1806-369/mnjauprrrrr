@@ -1,0 +1,3 @@
+(function(){if(document.getElementById('lg-svg'))return;var s=document.createElement('div');s.id='lg-svg';s.setAttribute('aria-hidden','true');s.style.cssText='position:absolute;width:0;height:0;overflow:hidden';
+s.innerHTML='<svg width="0" height="0"><defs><filter id="lg-glass" x="0%" y="0%" width="100%" height="100%" color-interpolation-filters="sRGB"><feTurbulence type="fractalNoise" baseFrequency="0.05 0.05" numOctaves="1" seed="1" result="t"/><feGaussianBlur in="t" stdDeviation="2" result="b"/><feDisplacementMap in="SourceGraphic" in2="b" scale="36" xChannelSelector="R" yChannelSelector="B" result="d"/><feGaussianBlur in="d" stdDeviation="2.5"/></filter></defs></svg>';
+document.body.appendChild(s)})();
