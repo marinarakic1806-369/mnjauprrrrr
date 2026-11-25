@@ -121,3 +121,5 @@
 @media (max-width:860px){#utisci{padding-top:23px!important}#utisci .u-head{gap:46px!important;margin-bottom:45px!important}}
 /* 25.11: desktop: manje kartice (4 u redu) */
 @media (min-width:861px){#utisci .u-row{max-width:1320px}#utisci .u-c{flex:0 0 calc((100% - 54px)/4)!important}#utisci .u-q{font-size:16px!important;min-height:calc(1.6em*4)!important}}
+/* tople fotke: usklađeno sa butik herojem */
+#utisci .u-c img,#utisci .u-c img[alt="Marija"],#utisci .u-c img[alt="Svetlana"]{filter:grayscale(.55) sepia(.42) saturate(1.12) contrast(1.04) brightness(1.04)!important}
