@@ -14,7 +14,7 @@ document.documentElement.classList.add('mj-print');
 function clr(){
   var R=document.getElementById('root')||document.body;
   document.querySelectorAll('body *').forEach(function(e){
-    if(e.closest('#mfoot')||e.tagName==='VIDEO'||e.tagName==='IMG')return;
+    if(e.closest('#mfoot')||e.closest('#li-koverta')||e.tagName==='VIDEO'||e.tagName==='IMG')return;
     var r=e.getBoundingClientRect();if(r.width<Math.min(1000,innerWidth*.9)||r.height<60)return;
     var cs0=getComputedStyle(e);if(cs0.position==='fixed')return;
     var c=getComputedStyle(e),bi=c.backgroundImage,bc=c.backgroundColor;

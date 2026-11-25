@@ -14,13 +14,17 @@
     if(!sec._w){sec._w=1;watch(sec);}
   }
   function watch(sec){
-    var io=new IntersectionObserver(function(e){
-      if(e[0].isIntersecting&&!loading){loading=true;io.disconnect();
-        var s=document.createElement('script');s.src='/nakit/koverta.js?v=5';
+    function go(){
+      if(loading)return;
+      var r=sec.getBoundingClientRect();
+      if(r.top<innerHeight+800&&r.bottom>-800){
+        loading=true;clearInterval(t);removeEventListener('scroll',go);
+        var s=document.createElement('script');s.src='/nakit/koverta.js?v=6';
         s.onload=function(){var host=document.createElement('div');sec.appendChild(host);window.MJKoverta.mount(host);};
-        document.head.appendChild(s);}
-    },{rootMargin:'800px 0px'});
-    io.observe(sec);
+        document.head.appendChild(s);
+      }
+    }
+    var t=setInterval(go,700);addEventListener('scroll',go,{passive:true});go();
   }
   new MutationObserver(place).observe(document.documentElement,{childList:true,subtree:true});
   place();
