@@ -177,7 +177,7 @@ class Component extends DCLogic {
     const fmt = d => (+d.slice(8)) + '. ' + this.M[+d.slice(5, 7) - 1];
     const cur = L[act];
     return {
-      stari: [['upoznaj-me-kroz-moj-mesec','Upoznaj me kroz moj Mesec'],['mesec-u-natalnoj-karti','Mesec u natalnoj karti'],['kuce-u-natalu','Kuće u natalu'],['novembar-sezona-skorpije','Novembar: sezona Škorpije'],['we-are-made-of-star-stuff','We are made of star stuff'],['self-love-dnevnik','Da li vodiš dnevnik?'],['zaviri-medju-stranice','Zaviri među stranice']].map(([id, t]) => ({ t, href: 'https://mnjauprrrrr.com/blog/' + id + '/' })),
+      stari: [['mesec-u-natalnoj-karti','Mesec u natalnoj karti'],['kuce-u-natalu','Kuće u natalu'],['novembar-sezona-skorpije','Novembar: sezona Škorpije'],['we-are-made-of-star-stuff','We are made of star stuff'],['self-love-dnevnik','Da li vodiš dnevnik?'],['zaviri-medju-stranice','Zaviri među stranice']].map(([id, t]) => ({ t, href: 'https://mnjauprrrrr.com/blog/' + id + '/' })),
       narrow: st.narrow, wide: !st.narrow,
       cols: st.narrow ? 'minmax(0,1fr)' : 'minmax(0,1.15fr) minmax(0,.85fr)',
       countLabel: n + ' ' + pl,
@@ -188,7 +188,6 @@ class Component extends DCLogic {
       stalni: [
         { k: 'Magija kristala · Astro', t: 'Kamen za tvoj natal', href: 'https://mnjauprrrrr.com/blog/kamen-za-tvoj-natal/', img: '../assets/site/polu-3-kamena.jpg', fit: 'cover', w: '100%', bg: '#EFE5D6' },
         { k: 'Astrologija', t: 'Kuće u natalu', href: 'https://mnjauprrrrr.com/blog/kuce-u-natalu/', img: '../assets/site/astro-natal-zlatni.png', fit: 'contain', w: '70%', bg: '#58565A' },
-        { k: 'Astrologija · O nama', t: 'Upoznaj me kroz moj Mesec', href: 'https://mnjauprrrrr.com/blog/upoznaj-me-kroz-moj-mesec/', img: '../assets/site/selfie.jpg', fit: 'cover', w: '100%', bg: '#EFE5D6' }
       ]
     };
   }

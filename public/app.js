@@ -2105,7 +2105,7 @@ function Astro({
   }, "\u017Delim obe")))))));
 }
 const MJ_ARTICLE_CSS = '.mj-art h1{margin:14px 0 24px;font:700 56px/1.12 Inter,sans-serif;text-transform:uppercase;letter-spacing:.02em;color:#000}.mj-art h2{margin:44px 0 14px;font:700 28px/1.15 Inter,sans-serif;text-transform:uppercase;letter-spacing:.08em;color:#000}.mj-art h2:first-child{margin-top:0}.mj-art h3{margin:0 0 14px;font:700 28px/1.15 Inter,sans-serif;text-transform:uppercase;letter-spacing:.08em;color:#000}.mj-art h4{margin:18px 0 8px;font:600 12px Inter,sans-serif;letter-spacing:.16em;text-transform:uppercase}.mj-art p{margin:0 0 10px;font:500 14px/1.7 Inter,sans-serif;color:#000}.mj-art .bu{font-size:16px;margin-bottom:28px}.mj-art .kick{font:500 13px Inter;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-70)}.mj-art b{font-weight:700}.mj-art .zav{font-style:italic}.mj-art .stone{padding-top:64px}.mj-art .cta{display:inline-block;margin-top:46px;font:700 34px/1 Corinthia,cursive;color:#000;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:7px}.mj-art .chips{display:flex;flex-wrap:wrap;gap:8px 18px}.mj-art .chips a{font:600 12px Inter;letter-spacing:.14em;text-transform:uppercase;color:#000;text-decoration:none;border-bottom:1px solid rgba(0,0,0,.35);padding-bottom:2px}';
-const MJ_POSTS = [['post', null, 'Astrologija · O nama', 'Upoznaj me kroz moj Mesec'], ['post-x', 'kamen-za-tvoj-natal', 'Kristali · Astro', 'Kamen za tvoj natal'], ['post-x', 'kuce', 'Astrologija', 'Kuće u natalu'], ['post-x', 'novembar', 'Astro pismo', 'Novembar Sezona Škorpije'], ['post-x', 'mesec', 'Astrologija', 'Mesec u natalnoj karti'], ['post-eknjiga', null, 'Odlomak iz e-knjige', 'We are made of star stuff'], ['post-x', 'galerija', 'E-knjige', 'Zaviri među stranice'], ['post-x', 'dnevnik', 'Self-love', 'Da li vodiš dnevnik?']];
+const MJ_POSTS = [['post-x', 'kamen-za-tvoj-natal', 'Kristali · Astro', 'Kamen za tvoj natal'], ['post-x', 'kuce', 'Astrologija', 'Kuće u natalu'], ['post-x', 'novembar', 'Astro pismo', 'Novembar Sezona Škorpije'], ['post-x', 'mesec', 'Astrologija', 'Mesec u natalnoj karti'], ['post-eknjiga', null, 'Odlomak iz e-knjige', 'We are made of star stuff'], ['post-x', 'galerija', 'E-knjige', 'Zaviri među stranice'], ['post-x', 'dnevnik', 'Self-love', 'Da li vodiš dnevnik?']];
 window.MJ_POSTS = MJ_POSTS;
 function Blog({
   go
@@ -6772,8 +6772,8 @@ function ONamaNew({ go }) {
     React.createElement("div", { className: "lp mj-leopard" }),
     React.createElement("div", { className: "wash" }),
     React.createElement("div", { className: "in" },
-      React.createElement("div", { className: "kick" }, "Astrologija \u00B7 O nama"),
-      React.createElement("h1", null, "Upoznaj me", React.createElement("span", { className: "sc1" }, "kroz moj Mesec")),
+      React.createElement("div", { className: "kick" }, "Mnjauprrrrr"),
+      React.createElement("h1", null, "O meni"),
       React.createElement("div", { className: "rule" }),
       React.createElement("p",{className:"lead"},"S obzirom da mi je Sunce u znaku Blizanaca, može se slobodno reći „O nama“. Pričaću ti malo o sebi na moj način. Upoznaćeš me kroz moj Mesec."),
       React.createElement("h2",null,"Mesec u natalu"),
@@ -6791,12 +6791,7 @@ function ONamaNew({ go }) {
       React.createElement("p",{className:"p"},"Mesec hoće nežnost, zagrljaje, sevdalinke. On hoće da bude u Raku – tu mu je sedište."),
       React.createElement("p",{className:"script"},"E sad, taj moj zbunjeni Mesec ima za dispozitora Merkura u Raku."),
       React.createElement("p",{className:"quote"},"Jupiiiii, mučeniku svanulo – misli se u sebi: „Bar rečima neka me neko pomazi, izem ti ovu Devicu, samo mi zvoca, nikad zadovoljna.“"),
-      React.createElement("p",{className:"p"},"Tako vam je, ljudići: moja duša, moj Mesec, pomilovan po glavi od strane Merkura – zbog koga većina vas ne voli Blizance. Nemate pojma koliko su oni u stvari gotivni, iskreni drugari – kad su ti drugari."),
-      React.createElement("div", { className: "card" },
-        React.createElement("img", { className: "ph", src: MJ_A + "marina-malta.jpg", alt: "Marina" }),
-        React.createElement("div", { className: "tx" },
-          React.createElement("p", { className: "q" }, "\u201EPromena je jedina konstanta.\u201C"),
-          React.createElement("div", { className: "by" }, "\u2014 Marina, ", React.createElement("span", null, "Krug i Mnjauprrrrr"))))));
+      React.createElement("p",{className:"p"},"Tako vam je, ljudići: moja duša, moj Mesec, pomilovan po glavi od strane Merkura – zbog koga većina vas ne voli Blizance. Nemate pojma koliko su oni u stvari gotivni, iskreni drugari – kad su ti drugari.")));
 }
 
 function ONama(p){return ONamaNew(p)}
