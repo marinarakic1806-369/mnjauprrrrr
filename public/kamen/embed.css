@@ -31,13 +31,13 @@
 #kp .beat{position:absolute;left:0;top:0;z-index:6;text-align:center;will-change:transform,opacity}
 #kp .beat h2{margin:0;font-weight:700;text-transform:uppercase;letter-spacing:.03em;line-height:1.14;color:var(--ink);text-wrap:balance}
 #kp .beat p{margin:.8em 0 0;font-size:15px;line-height:1.5;color:rgba(90,62,34,.9);text-wrap:balance}
-#kp .glassbtn{position:relative;display:inline-block;margin:2px -50px -16px;padding:26px 50px;pointer-events:auto;touch-action:pan-y}
+#kp .glassbtn{position:relative;display:inline-block;margin:clamp(48px,6vw,88px) -50px -16px;padding:26px 50px;pointer-events:auto;touch-action:pan-y}
 #kp .glassbtn canvas{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;-webkit-mask-image:radial-gradient(ellipse 50% 50% at 50% 50%,#000 58%,transparent 100%);mask-image:radial-gradient(ellipse 50% 50% at 50% 50%,#000 58%,transparent 100%)}
 #kp .cta{position:relative;z-index:2;display:inline-flex;align-items:center;justify-content:center;padding:10px 34px 10px;border-radius:999px;text-decoration:none;color:#5A3E22;background:linear-gradient(180deg,rgba(255,255,255,.26),rgba(255,255,255,.04) 60%,rgba(255,255,255,.14));-webkit-backdrop-filter:blur(9px) saturate(1.9) brightness(1.06);backdrop-filter:blur(9px) saturate(1.9) brightness(1.06);border:1px solid rgba(255,255,255,.75);box-shadow:0 0 0 1px rgba(90,62,34,.24),inset 0 2px 2px rgba(255,255,255,.95),inset 0 -3px 5px rgba(255,255,255,.4),inset 0 0 16px rgba(255,255,255,.5),0 8px 20px rgba(90,60,15,.14);pointer-events:auto;transition:transform .25s,box-shadow .25s}
 #kp .cta:hover{transform:translateY(-1px) scale(1.03);box-shadow:0 0 0 1px rgba(90,62,34,.3),inset 0 2px 2px rgba(255,255,255,.95),inset 0 -3px 5px rgba(255,255,255,.45),inset 0 0 20px rgba(255,255,255,.6),0 12px 26px rgba(138,106,40,.24)}
 #kp .cta:focus-visible{outline:2px solid #8A6A28;outline-offset:4px}
 #kp .cta .lbl{display:block;text-align:center;padding:0 0 0 2px;font-family:'Great Vibes',cursive;font-weight:400;font-size:25px;line-height:1.1;white-space:nowrap;color:#5A3E22}
-@media (min-aspect-ratio:21/20){#kp .glassbtn{margin:14px -34px -18px;padding:22px 34px}#kp .cta{padding:6px 16px 7px}#kp .cta .lbl{font-size:22px}}
+@media (min-aspect-ratio:21/20){#kp .glassbtn{margin:clamp(48px,6vw,88px) -34px -18px;padding:22px 34px}#kp .cta{padding:6px 16px 7px}#kp .cta .lbl{font-size:22px}}
 @media (prefers-reduced-motion:reduce){#kp #hint i{animation:none}}
 #kp{font-family:Montserrat,ui-sans-serif,system-ui,sans-serif;color:var(--ink);-webkit-font-smoothing:antialiased;background:var(--sedef)}
 

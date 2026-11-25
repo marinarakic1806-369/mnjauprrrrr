@@ -1,7 +1,7 @@
 #mfoot{position:relative;background:#F4EDE2 url("/assets/kamen/pozadina.jpg?v=1") center/cover no-repeat fixed;padding:clamp(48px,6vw,88px) 16px 0;font-family:Montserrat,Inter,sans-serif;color:#1D1A17;overflow:hidden}
 #mfoot::before{content:"";position:absolute;inset:0;background:rgba(244,237,226,.3);pointer-events:none}
 #mfoot .f-in{position:relative;max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:clamp(16px,4vw,56px)}
-#mfoot .f-soc{display:grid;gap:16px;justify-items:center;align-content:center}
+#mfoot .f-soc{display:grid;gap:16px;justify-items:center;align-content:center;align-self:end;padding-bottom:clamp(8px,2vw,22px)}
 #mfoot .f-soc a{width:58px;height:58px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(180deg,#fffaf2,#efe3cf);border:1px solid rgba(197,160,89,.7);box-shadow:0 10px 24px -12px rgba(60,40,15,.5);color:#1D1A17;transition:transform .3s,background .3s,color .3s}
 #mfoot .f-soc a:hover{transform:translateY(-3px);background:#C5A059;color:#fff}
 #mfoot .f-soc svg{width:24px;height:24px;fill:currentColor}

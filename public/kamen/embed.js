@@ -64,7 +64,7 @@
     L.bx=L.ax;L.wxF=L.ax;L.wsF=0.6;L.compact=false;
     {
       // text always sits right under the bracelet; on a short screen the title moves to the left of the bracelet
-      var gap=H*(L.wide?0.08:0.045),lh=lb.offsetHeight,bh=L.vSolo*RV;
+      var gap=H*(L.wide?0.11:0.075),lh=lb.offsetHeight,bh=L.vSolo*RV;
       var room=H*0.97-lh-gap,bot=L.byF+bh/2;
       if(bot>room||L.short){
         var need=room-H*0.1;                       // height available for the bracelet
