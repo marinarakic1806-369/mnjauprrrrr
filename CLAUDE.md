@@ -138,3 +138,5 @@ Ispravljene krem e-knjige (8.11.): `/home/claude/build/Psihoskop-*-ispravljena.p
 - **Hero MOBILNI**: nepromenjen, kao pre (video čizme + traka). Jednom je pokvaren visinom iz JS-a, popravljeno.
 - **Dugme staklo** „Pogledaj nakit“ koristi stil `#kp .cta` (bez animacije).
 - Pravilo: Marina ne voli moje crteže ornamenata ni mašne; hoće prave starinske ramove, svetao tapet kao boiserie, staro zlato tamnije (ne drečavo), ramovi različitih veličina.
+
+**25.11 (uveče):** Astro i Zvezdani zapis su SKLONJENI sa sajta (meni, strane, linkovi, sitemap; `/astro/` i `/zvezdani-zapis/` preusmeravaju na `/celik/`). Kopija strana je u repou u `arhiva/astro` i `arhiva/zvezdani-zapis` i na Marininom Desktopu (MOJ_BIZNIS_). Vratiti samo ako ona kaže. U glavnom meniju je sada **Čelik** (`/celik/`): strana sa animiranom kovertom „Jak kao hirurški čelik“ (`public/nakit/koverta.js`, `koverta-load.js`), nakit bez kamenja (kategorija „Čelik“ u data.js). Nakit strana ima samo kartice + crnu kovertu u footeru. Story animacija koverte je poslata (video 1080x1920).

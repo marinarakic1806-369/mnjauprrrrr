@@ -434,7 +434,7 @@ Object.assign(__ds_scope, { MailBar });
 
 // components/navigation/SiteNav.jsx
 try { (() => {
-const NAV_LINKS = [['o-nama', 'O Nama'], ['nakit', 'Nakit'], ['astro', 'Astro'], ['blog', 'Blog'], ['kontakt', 'Kontakt'], ['kristali', 'Kristali']];
+const NAV_LINKS = [['o-nama', 'O Nama'], ['nakit', 'Nakit'], ['celik', 'Čelik'], ['blog', 'Blog'], ['kontakt', 'Kontakt'], ['kristali', 'Kristali']];
 function SiteNav({
   logoSrc,
   active,

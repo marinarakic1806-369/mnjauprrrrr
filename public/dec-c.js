@@ -161,8 +161,7 @@ Možeš večeras, možeš u novogodišnjoj noći. Najbolje kad si sama i mirna, 
 ## Šta posle
 Presavij papir tri puta i čuvaj ga godinu dana. Sledećeg decembra ga otvori. Iznenadićeš se.
 > Ne treba ti hrabrost da poželiš. Treba ti hrabrost da napišeš.
-Ako ne znaš koji ti je znak na kojoj kući, kalkulator na sajtu ti to pokazuje za minut. A ako želiš ceo tumač, tu je Zvezdani zapis.
-[Zvezdani zapis](zvezdani-zapis)
+Ako ne znaš koji ti je znak na kojoj kući, kalkulator na sajtu ti to pokazuje za minut.
 `},
 {id:'sunce-kvadrat-saturn',d:'2026-12-30',k:'Tranziti',t:'Šta ne nosiš u novu godinu',x:`
 Noćas, oko pola jedan, Sunce u Jarcu pravi kvadrat sa Saturnom u Ovnu. Pred sam kraj godine nebo ti postavlja pitanje koje ne voliš: šta od svega ovoga zaista nosiš dalje?
