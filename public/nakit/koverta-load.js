@@ -16,7 +16,7 @@
   function watch(sec){
     var io=new IntersectionObserver(function(e){
       if(e[0].isIntersecting&&!loading){loading=true;io.disconnect();
-        var s=document.createElement('script');s.src='/nakit/koverta.js?v=2';
+        var s=document.createElement('script');s.src='/nakit/koverta.js?v=5';
         s.onload=function(){var host=document.createElement('div');sec.appendChild(host);window.MJKoverta.mount(host);};
         document.head.appendChild(s);}
     },{rootMargin:'800px 0px'});
