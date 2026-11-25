@@ -119,3 +119,5 @@
 @media (max-width:860px){#utisci .u-head{gap:36px!important;margin-bottom:36px!important}}
 @media (max-width:860px){#utisci{padding-top:20px!important}#utisci .u-head{margin-bottom:26px!important}}
 @media (max-width:860px){#utisci{padding-top:23px!important}#utisci .u-head{gap:46px!important;margin-bottom:45px!important}}
+/* 25.11: desktop: manje kartice (4 u redu) */
+@media (min-width:861px){#utisci .u-row{max-width:1320px}#utisci .u-c{flex:0 0 calc((100% - 54px)/4)!important}#utisci .u-q{font-size:16px!important;min-height:calc(1.6em*4)!important}}
