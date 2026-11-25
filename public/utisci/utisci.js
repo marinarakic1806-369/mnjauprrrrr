@@ -23,6 +23,17 @@
       nav.children[1].addEventListener('click',function(){var end=row.scrollLeft+row.clientWidth>=row.scrollWidth-4;if(end)row.scrollTo({left:0,behavior:'smooth'});else step(1)});row.addEventListener('scroll',function(){var end=row.scrollLeft+row.clientWidth>=row.scrollWidth-4;nav.children[1].innerHTML=end?'&larr;':'&rarr;'},{passive:true});
     }
     on(cs[0]);
+    // telefon: sam se pomera zdesna ulevo (pauza dok je dodiruje)
+    var timer=null,paused=false,resume=0,vis=true;
+    var rm=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    function auto(){
+      if(innerWidth>860||paused||!vis||rm||Date.now()<resume)return;
+      var w=cs[0].getBoundingClientRect().width+12,end=row.scrollLeft+row.clientWidth>=row.scrollWidth-6;
+      if(end)row.scrollTo({left:0,behavior:'smooth'});else row.scrollBy({left:w,behavior:'smooth'});
+    }
+    ['touchstart','pointerdown','click'].forEach(function(e){row.addEventListener(e,function(){paused=true},{passive:true})});
+    if('IntersectionObserver' in window){new IntersectionObserver(function(en){vis=en[0].isIntersecting},{threshold:.4}).observe(row)}
+    timer=setInterval(auto,3600);
   }
   (function w(){
     var s=document.getElementById('utisci');

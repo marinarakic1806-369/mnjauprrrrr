@@ -26,3 +26,5 @@
 @media (max-width:860px){#mfoot .f-soc.l{display:none}}
 /* 25.11: telefon: ikonice odvojene od koverte */
 @media (max-width:860px){#mfoot .f-soc.r{margin-top:30px}#mfoot .f-in{gap:28px}}
+/* 25.11: telefon: footer = jedan ekran (samo koverta, ikonice i crna traka) */
+@media (max-width:860px){#mfoot{min-height:100svh;box-sizing:border-box;display:flex;flex-direction:column;padding-top:72px}#mfoot .f-in{flex:1 1 auto;align-content:center;align-items:center}#mfoot .f-copy{margin-top:0}}
