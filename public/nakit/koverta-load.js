@@ -19,7 +19,7 @@
       var r=sec.getBoundingClientRect();
       if(r.top<innerHeight+800&&r.bottom>-800){
         loading=true;clearInterval(t);removeEventListener('scroll',go);
-        var s=document.createElement('script');s.src='/nakit/koverta.js?v=18';
+        var s=document.createElement('script');s.src='/nakit/koverta.js?v=19';
         s.onload=function(){var host=document.createElement('div');sec.appendChild(host);window.MJKoverta.mount(host);};
         document.head.appendChild(s);
       }
