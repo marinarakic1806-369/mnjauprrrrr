@@ -44,3 +44,5 @@
 #kp:not(.kp-ready) #stage{visibility:hidden}
 
 #kp:not(.kp-ready){background:var(--sedef) url('/assets/kamen/pozadina.jpg?v=1') center top/100% 100svh repeat-y}
+/* 25.11: telefon: tekst uz animaciju isti kao u utiscima (18px) */
+@media (max-width:860px){#kp .beat p{font-size:18px;line-height:1.55}}

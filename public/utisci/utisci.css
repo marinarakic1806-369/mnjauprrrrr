@@ -111,3 +111,5 @@
 /* v32 naslov kao ostale sekcije */
 #utisci h2{font:700 clamp(22px,2.6vw,34px)/1.14 Montserrat,Inter,sans-serif!important;letter-spacing:.03em;color:#5A3E22!important;text-transform:uppercase}
 #utisci h2 em{font:400 1.5em/.8 'Great Vibes',cursive!important;letter-spacing:0;color:#8A6A28!important;text-transform:none}
+/* 25.11: telefon: opis sekcije 18px kao citati, potpisi i profili veci */
+@media (max-width:860px){#utisci .u-sub{font:400 18px/1.6 Montserrat,Inter,sans-serif;color:#2A2420}#utisci .u-by{font-size:12px!important}#utisci .u-t a.u-ig{font-size:15px}}
