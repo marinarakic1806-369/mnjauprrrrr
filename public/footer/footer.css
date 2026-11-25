@@ -1,5 +1,5 @@
-#mfoot{position:relative;background:#F4EDE2 url("/assets/site/leopard-besavno.png") center top/520px auto repeat;padding:clamp(48px,6vw,88px) 16px 0;font-family:Montserrat,Inter,sans-serif;color:#1D1A17;overflow:hidden}
-#mfoot::before{content:"";position:absolute;inset:0;background:rgba(244,237,226,.62);pointer-events:none}
+#mfoot{position:relative;background:#F4EDE2 url("/assets/kamen/pozadina.jpg?v=1") center/cover no-repeat;padding:clamp(48px,6vw,88px) 16px 0;font-family:Montserrat,Inter,sans-serif;color:#1D1A17;overflow:hidden}
+#mfoot::before{content:"";position:absolute;inset:0;background:rgba(244,237,226,.2);pointer-events:none}
 #mfoot .f-in{position:relative;max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:clamp(16px,4vw,56px)}
 #mfoot .f-soc{display:grid;gap:16px;justify-items:center;align-content:center;align-self:end;padding-bottom:clamp(8px,2vw,22px)}
 #mfoot .f-soc a{width:58px;height:58px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(180deg,#fffaf2,#efe3cf);border:1px solid rgba(197,160,89,.7);box-shadow:0 10px 24px -12px rgba(60,40,15,.5);color:#1D1A17;transition:transform .3s,background .3s,color .3s}
@@ -28,3 +28,7 @@
 @media (max-width:860px){#mfoot .f-soc.r{margin-top:30px}#mfoot .f-in{gap:28px}}
 /* 25.11: telefon: footer = jedan ekran (samo koverta, ikonice i crna traka) */
 @media (max-width:860px){#mfoot{min-height:100svh;box-sizing:border-box;display:flex;flex-direction:column;padding-top:72px}#mfoot .f-in{flex:1 1 auto;align-content:center;align-items:center}#mfoot .f-copy{margin-top:0}}
+
+/* 25.11: meko stapanje gornje ivice u krem (isto kao kraj utisaka) */
+#mfoot::after{content:"";position:absolute;left:0;right:0;top:0;height:70px;background:linear-gradient(0deg,rgba(244,237,226,0),rgba(244,237,226,.9));pointer-events:none;z-index:0}
+#mfoot .f-in{z-index:1}

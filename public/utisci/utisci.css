@@ -125,3 +125,13 @@
 #utisci .u-c img,#utisci .u-c img[alt="Marija"],#utisci .u-c img[alt="Svetlana"]{filter:grayscale(.45) sepia(.26) saturate(1.1) contrast(1) brightness(1.12)!important}
 /* 25.11: telefon: svetlija pozadina kartice gde je tekst */
 @media (max-width:860px){#utisci .u-c{background:#FCFAF6!important}}
+
+/* 25.11: ista leopard pozadina kao footer, bez fixed (lag na telefonu), meko stapanje u footer */
+#utisci{background:#F4EDE2 url("/assets/kamen/pozadina.jpg?v=1") center/cover no-repeat !important;position:relative;padding-bottom:clamp(70px,8vw,110px)!important}
+#utisci::before{background:rgba(244,237,226,.2)!important}
+#utisci::after{content:"";position:absolute;left:0;right:0;bottom:0;height:70px;background:linear-gradient(180deg,rgba(244,237,226,0),rgba(244,237,226,.9));pointer-events:none}
+@media (max-width:860px){
+  #utisci .u-c img{transition:none!important;transform:none!important;will-change:auto}
+  #utisci .u-c.on img{transform:none!important}
+  #utisci .u-row{-webkit-overflow-scrolling:touch}
+}
