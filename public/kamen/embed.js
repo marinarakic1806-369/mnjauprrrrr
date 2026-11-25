@@ -30,7 +30,7 @@
       X.vSolo=Math.min(W*0.82,H*0.40/RV);
       X.byA=H*0.44;X.byF=H*0.42;X.wyF=H*0.14;
     }else{
-      X.bw=Math.min(H*0.80/RATIO,W*0.5);X.cx0=W/2;X.cy0=H*0.5;
+      X.bw=Math.min(H*0.74/RATIO,W*0.5);X.cx0=W/2;X.cy0=H*0.54;
       X.sw=Math.min(W*0.24,H*0.34/RATIO);X.top=H*0.07;
       X.cx1=W*0.2;X.cy1=X.top+X.sw*RATIO/2;
       X.zw=Math.min(W*0.6,680);X.zl=(W-X.zw)/2;X.zTop=X.top+X.sw*RATIO+H*0.07;
