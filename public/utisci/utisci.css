@@ -118,3 +118,4 @@
 /* 25.11: jednaki razmaci na telefonu: naslov-tekst-slike 36px */
 @media (max-width:860px){#utisci .u-head{gap:36px!important;margin-bottom:36px!important}}
 @media (max-width:860px){#utisci{padding-top:20px!important}#utisci .u-head{margin-bottom:26px!important}}
+@media (max-width:860px){#utisci{padding-top:23px!important}#utisci .u-head{gap:46px!important;margin-bottom:45px!important}}
