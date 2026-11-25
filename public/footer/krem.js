@@ -5,7 +5,7 @@ function go(){
   var old=document.querySelector('footer#kontakt');
   if(!old||document.getElementById('mfoot'))return false;
   old.removeAttribute('id');old.style.display='none';old.setAttribute('data-old-footer','1');
-  if(!document.getElementById('mfoot-css')){var l=document.createElement('link');l.id='mfoot-css';l.rel='stylesheet';l.href='/footer/footer.css?v=19';document.head.appendChild(l)}
+  if(!document.getElementById('mfoot-css')){var l=document.createElement('link');l.id='mfoot-css';l.rel='stylesheet';l.href='/footer/footer.css?v=20';document.head.appendChild(l)}
   var f=document.createElement('footer');f.id='mfoot';f.innerHTML='<span id="kontakt" style="position:absolute;top:0"></span>'+HTML;
   old.parentNode.insertBefore(f,old.nextSibling);return true;
 }
