@@ -33,7 +33,7 @@
     }
     ['touchstart','pointerdown','click'].forEach(function(e){row.addEventListener(e,function(){paused=true},{passive:true})});
     if('IntersectionObserver' in window){new IntersectionObserver(function(en){vis=en[0].isIntersecting},{threshold:.4}).observe(row)}
-    timer=setInterval(auto,3600);
+    /* bez automatskog pomeranja: kartice se listaju samo prstom */
     // slike svih kartica se ucitavaju unapred (cim se sekcija priblizi), da slajd ne ceka
     function pre(){cs.forEach(function(c){var im=c.querySelector('img');if(im){im.loading='eager';im.decoding='async'}})}
     if('IntersectionObserver' in window){var io=new IntersectionObserver(function(en){if(en[0].isIntersecting){pre();io.disconnect()}},{rootMargin:'1800px 0px'});io.observe(s)}else pre();
@@ -43,5 +43,22 @@
     if(s&&s===last&&s.querySelector('.u-c')){stable++}else{stable=0;last=s}
     if(stable>=3){bind(s);return}
     if(++tries<200)setTimeout(w,120);
+  })();
+
+  // v53: ulazna animacija (redom) + skidanje navodnika iz teksta (zlatni su iznad); radi i kad React ponovo iscrta karticu
+  (function(){
+    var n=0,ticks=0,io=null;
+    if('IntersectionObserver' in window&&!window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+      io=new IntersectionObserver(function(en){en.forEach(function(e){if(e.isIntersecting){e.target.style.setProperty('--d',(n++*0.2)+'s');e.target.classList.add('in');io.unobserve(e.target)}});n=0},{threshold:.15});
+    }
+    function scan(){
+      document.querySelectorAll('#utisci .u-c:not([data-rv])').forEach(function(c){
+        c.setAttribute('data-rv','1');
+        var q=c.querySelector('.u-q');if(q)q.textContent=q.textContent.replace(/^[\u201E\u201C"]\s*/,'').replace(/\s*[\u201C\u201D"]$/,'');
+        if(io){c.classList.add('rv');io.observe(c)}
+      });
+      if(++ticks<100)setTimeout(scan,300);
+    }
+    scan();
   })();
 })();
