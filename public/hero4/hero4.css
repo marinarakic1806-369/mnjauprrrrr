@@ -23,10 +23,10 @@ header[data-hero] [data-sidepic],header[data-hero] [data-hcopy],header[data-hero
 /* tekst: sredina desnog zidnog panela */
 .gw-txt{position:absolute;left:832px;width:560px;top:164px;z-index:4;text-align:center;color:#3A2C20}
 .gw-txt h1{margin:0;font-weight:400}
-.gt-l1,.gt-l2{display:block;font:400 38px/56px 'Playfair Display',Georgia,serif;letter-spacing:.01em;text-transform:uppercase;white-space:nowrap}
-.gt-pen{font:400 61.4px/0 'Great Vibes',cursive;text-transform:none;letter-spacing:0;margin-left:.1em}
+.gt-l1,.gt-l2{display:block;font:400 49.4px/72.8px 'Playfair Display',Georgia,serif;letter-spacing:.01em;text-transform:uppercase;white-space:nowrap}
+.gt-pen{font:400 79.8px/0 'Great Vibes',cursive;text-transform:none;letter-spacing:0;margin-left:.1em}
 /* dugme: liquid glass, krem-zlatno, Hind Madurai */
-.gw-btn{position:relative;display:inline-block;margin:120px 0 0;padding:0;pointer-events:auto}
+.gw-btn{position:relative;display:inline-block;margin:86px 0 0;padding:0;pointer-events:auto}
 .gw-btn canvas{position:absolute;left:-160px;top:-150px;width:calc(100% + 320px);height:calc(100% + 260px);z-index:3;pointer-events:none;filter:blur(4.5px);-webkit-mask-image:linear-gradient(180deg,transparent 0,#000 14%,#000 100%);mask-image:linear-gradient(180deg,transparent 0,#000 14%,#000 100%)}
 .gw-btn .cta{position:relative;z-index:2;isolation:isolate;display:inline-flex;align-items:center;justify-content:center;box-sizing:border-box;width:142px;height:50.6px;padding:0;border:0;border-radius:999px;text-decoration:none;color:#6B4E1C;
  background:linear-gradient(180deg,rgba(255,248,232,.5),rgba(238,210,146,.16) 60%,rgba(255,243,214,.4));
