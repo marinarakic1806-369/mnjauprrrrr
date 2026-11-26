@@ -1,0 +1,39 @@
+/* Hero (desktop >=861px): butik zid sa ramom i videom. Playfair Display + Great Vibes + Hind Madurai. Stage 1440x960 (3:2), skalira se JS-om (--gs). */
+@font-face{font-family:'Playfair Display';font-style:normal;font-weight:400;font-display:swap;src:url('../fonts/playfair-display-latin-ext-400-normal.woff2') format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF}
+@font-face{font-family:'Playfair Display';font-style:normal;font-weight:400;font-display:swap;src:url('../fonts/playfair-display-latin-400-normal.woff2') format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Hind Madurai';font-style:normal;font-weight:500;font-display:swap;src:url('../fonts/hind-madurai-latin-ext-500-normal.woff2') format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF}
+@font-face{font-family:'Hind Madurai';font-style:normal;font-weight:500;font-display:swap;src:url('../fonts/hind-madurai-latin-500-normal.woff2') format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Great Vibes';font-style:normal;font-weight:400;font-display:swap;src:url('../fonts/great-vibes-latin-ext-400-normal.woff2') format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF}
+@font-face{font-family:'Great Vibes';font-style:normal;font-weight:400;font-display:swap;src:url('../fonts/great-vibes-latin-400-normal.woff2') format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+
+.gw{display:none}
+@media (min-width:861px){
+header[data-hero]{background:#E7DCCD!important}
+header[data-hero]::before{display:none!important}
+header[data-hero] [data-sidepic],header[data-hero] [data-hcopy],header[data-hero] [data-frame],header[data-hero] [data-cue]{display:none!important}
+.gw{display:block;position:absolute;left:0;right:0;top:72px;bottom:0;overflow:hidden;z-index:2;background:#E7DCCD}
+.gw-s{position:absolute;left:50%;top:0;width:1440px;height:960px;transform-origin:50% 0;transform:translateX(-50%) scale(var(--gs,1))}
+.gw-bg{position:absolute;left:0;top:0;width:1440px;height:960px;display:block;user-select:none;pointer-events:none}
+/* video u ramu: tacno preko crnog polja (pozicije su procenti slike 3504x2336) */
+.gw-vid{position:absolute;left:30.394%;top:6.849%;width:16.067%;height:34.503%;overflow:hidden;z-index:3;background:#17130f}
+.gw-vid video{display:block;width:100%;height:100%;object-fit:cover;object-position:50% 50%}
+.gw-vid::after{content:"";position:absolute;inset:0;pointer-events:none;box-shadow:inset 0 0 14px 2px rgba(30,20,8,.5),inset 0 7px 12px -5px rgba(0,0,0,.55)}
+/* tekst: sredina desnog zidnog panela */
+.gw-txt{position:absolute;left:832px;width:560px;top:164px;z-index:4;text-align:center;color:#3A2C20}
+.gw-txt h1{margin:0;font-weight:400}
+.gt-l1,.gt-l2{display:block;font:400 38px/56px 'Playfair Display',Georgia,serif;letter-spacing:.01em;text-transform:uppercase;white-space:nowrap}
+.gt-pen{font:400 61.4px/0 'Great Vibes',cursive;text-transform:none;letter-spacing:0;margin-left:.1em}
+/* dugme: liquid glass, krem-zlatno, Hind Madurai */
+.gw-btn{position:relative;display:inline-block;margin:-8px -40px -26px;padding:26px 40px;pointer-events:auto}
+.gw-btn canvas{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;-webkit-mask-image:radial-gradient(ellipse 50% 50% at 50% 50%,#000 58%,transparent 100%);mask-image:radial-gradient(ellipse 50% 50% at 50% 50%,#000 58%,transparent 100%)}
+.gw-btn .cta{position:relative;z-index:2;isolation:isolate;display:inline-flex;align-items:center;justify-content:center;padding:13px 42px 14px;border:0;border-radius:999px;text-decoration:none;color:#6B4E1C;
+ background:linear-gradient(180deg,rgba(255,248,232,.5),rgba(238,210,146,.16) 60%,rgba(255,243,214,.4));
+ box-shadow:0 0 6px rgba(120,86,30,.05),0 2px 8px rgba(120,86,30,.16),inset 3px 3px .5px -3px rgba(138,106,40,.9),inset -3px -3px .5px -3px rgba(255,255,255,.9),inset 1px 1px 1px -.5px rgba(138,106,40,.6),inset -1px -1px 1px -.5px rgba(255,255,255,.8),inset 0 0 6px 6px rgba(255,240,200,.35),inset 0 0 2px 2px rgba(255,255,255,.3),0 0 14px rgba(232,201,130,.3);
+ transition:transform .3s,box-shadow .3s;cursor:pointer}
+.gw-btn .cta::before{content:"";position:absolute;inset:0;z-index:-1;border-radius:inherit;overflow:hidden;
+ -webkit-backdrop-filter:blur(9px) saturate(1.9) brightness(1.06);backdrop-filter:blur(9px) saturate(1.9) brightness(1.06);
+ -webkit-backdrop-filter:url(#container-glass);backdrop-filter:url(#container-glass)}
+.gw-btn .cta:hover{transform:scale(1.05)}
+.gw-btn .lbl{display:block;font:500 22px/1.1 'Hind Madurai',sans-serif;letter-spacing:.03em;white-space:nowrap;color:#6B4E1C}
+@media (prefers-reduced-motion:reduce){.gw-btn .cta:hover{transform:none}}
+}

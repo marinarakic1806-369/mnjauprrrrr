@@ -4,7 +4,7 @@
 <body>
 <x-dc>
 <helmet>
-<link rel="stylesheet" href="tokens/fonts.css?v=4">
+<link rel="stylesheet" href="tokens/fonts.css?v=4"><link rel="stylesheet" href="/hero4/hero4.css?v=1"><link rel="preload" as="image" href="/hero4/hero-bg.webp?v=1" media="(min-width:861px)">
 <link rel="stylesheet" href="tokens/colors.css">
 <link rel="stylesheet" href="tokens/typography.css">
 <link rel="stylesheet" href="tokens/spacing.css">
@@ -110,141 +110,6 @@
 .hw-u path{vector-effect:non-scaling-stroke;stroke:url(#hwg);stroke-width:4;stroke-dasharray:700;stroke-dashoffset:700}
 }
 </style>
-<style id="gwCss">
-.gw{display:none}
-@media (min-width:861px){
-header[data-hero]{background:#DDD3C7!important}
-header[data-hero]::before{display:none!important}
-[data-sidepic],[data-hcopy],[data-frame],[data-cue]{display:none!important}
-.gw{display:block;position:absolute;left:0;right:0;top:72px;bottom:0;overflow:hidden;z-index:2;background:linear-gradient(#D9CFC2,#E2D9CD)}
-.gw-s{position:absolute;left:50%;top:0;width:1440px;height:860px;transform-origin:50% 0;transform:translateX(-50%) scale(var(--gs,1))}
-.pn{position:absolute;top:44px;width:470px;height:618px;background:#E9E2D6;
- box-shadow:inset 0 0 0 10px #ECE6DB,inset 0 0 0 11px rgba(110,90,60,.38),inset 0 0 0 22px #E1D8CB,inset 0 0 0 23px rgba(255,255,255,.75),0 0 0 3px rgba(255,255,255,.55),0 2px 6px 3px rgba(80,60,30,.18)}
-.gw-rail{position:absolute;left:-1200px;right:-1200px;top:14px;height:14px;background:linear-gradient(#FFF4CC,#D9B45F 35%,#8A6A28 70%,#E8C982);box-shadow:0 6px 10px rgba(60,40,10,.3);z-index:2}
-.gw-pan{position:absolute;left:-1200px;right:-1200px;top:672px;bottom:-900px;background:#CFC4B5;border-top:10px solid #EEE8DD;box-shadow:inset 0 3px 0 rgba(120,100,70,.35),0 -3px 8px rgba(80,60,30,.2)}
-.gf{position:absolute;top:28px;transform-origin:50% 0;animation:gwSway 7s ease-in-out infinite alternate;z-index:3}
-.gf:nth-child(even){animation-duration:9s;animation-delay:-3s}
-.gf .wire{height:var(--w);margin:0 auto;width:calc(100% - 70px);position:relative;margin-bottom:-14px;z-index:1}
-.gf .wire::before{content:"";position:absolute;left:50%;top:-6px;width:11px;height:11px;margin-left:-5px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#FFF4CC,#B98F3D 60%,#6B4F1A);z-index:2}
-.gf .wire svg{display:block;width:100%;height:100%;overflow:visible}
-.fr{position:relative;border-style:solid;border-width:46px 45px 46px 44px;border-image:url(/assets/site/frame-rect.png) 84 82 84 80/46px 45px 46px 44px round;background:#F4EEE2;background-clip:padding-box;filter:drop-shadow(0 24px 22px rgba(60,40,10,.4))}
-.fr .mat{padding:0;background:#F4EEE2}
-.fr img,.fr video{display:block;width:100%;height:100%;object-fit:cover}
-.ov{position:relative;filter:drop-shadow(0 22px 20px rgba(60,40,10,.4))}
-.ov .ph{position:absolute;left:15.6%;right:15.6%;top:18%;bottom:14.6%;border-radius:50%;overflow:hidden;background:#F4EEE2}
-.ov .ph img{display:block;width:100%;height:100%;object-fit:cover}
-.ov i{position:absolute;inset:0;background:url(/assets/site/frame-oval.png) center/100% 100% no-repeat;z-index:2}
-.gw-bow{position:absolute;top:-2px;width:260px;z-index:5;filter:drop-shadow(0 8px 8px rgba(0,0,0,.4))}
-.gw-txt{position:absolute;left:0;right:0;top:690px;text-align:center}
-.gw-txt h1{margin:0;font:400 54px/1 'Great Vibes',cursive;color:#7A5A1E}
-.gw-txt h1 b{font:700 14px/1 Montserrat,sans-serif;letter-spacing:.34em;text-transform:uppercase;color:#4A321A;display:block;margin-bottom:6px}
-.gw-txt a{display:inline-block;margin-top:12px;font:600 12px Montserrat,sans-serif;letter-spacing:.24em;text-transform:uppercase;color:#4A321A;text-decoration:none;padding:11px 28px;border:1px solid #8A6A28;background:rgba(255,250,240,.55)}
-@media (min-width:861px){.gw{background:linear-gradient(#EEE9E0,#E8E2D8)!important}.pn{background:#F1EDE6!important;box-shadow:inset 0 0 0 10px #F3EFE9,inset 0 0 0 11px rgba(150,135,110,.3),inset 0 0 0 22px #ECE7DE,inset 0 0 0 23px rgba(255,255,255,.95),0 0 0 3px rgba(255,255,255,.75),0 2px 6px 2px rgba(120,100,70,.18)!important}.pc{position:absolute;width:112px;height:112px;filter:drop-shadow(1px 2px 2px rgba(110,90,60,.35));pointer-events:none}.pc0{left:30px;top:30px}.pc1{right:30px;top:30px;transform:scaleX(-1)}.pc2{left:30px;bottom:30px;transform:scaleY(-1)}.pc3{right:30px;bottom:30px;transform:scale(-1,-1)}.gw-pan{background:#E4DCCF!important;border-top-color:#F6F2EB!important}}
-@media (min-width:861px){
-.gw{background:linear-gradient(#F1EEE8,#ECE8E0)!important}
-.pn{width:400px!important;background:#F2EFE9!important}
-.pn.st{width:46px!important}
-.pn.st .pc{display:none}
-.pn.wp{top:690px!important;height:130px!important;box-shadow:inset 0 0 0 7px #F3F0EA,inset 0 0 0 8px rgba(150,135,110,.3),inset 0 0 0 16px #EDE9E1,inset 0 0 0 17px rgba(255,255,255,.95),0 0 0 3px rgba(255,255,255,.75),0 2px 5px 1px rgba(120,100,70,.16)!important}
-.pn.wp .pc{display:none}
-.gw-pan{background:#EEEAE2!important;border-top:10px solid #F7F4EE!important;top:672px!important}
-.fr{border-width:var(--b)!important;border-image:var(--img) 84 82 84 80/var(--b) round!important}
-.ov i{background:var(--img) center/100% 100% no-repeat!important}
-.gf .wire::before{background:radial-gradient(circle at 35% 30%,#E8D6A0,#9C7A34 60%,#5A4214)!important}
-.gw-rail{background:linear-gradient(#EAD9A8,#B8964A 40%,#7A5C22 75%,#C9A95A)!important}
-}
-@media (min-width:861px){.gw-s{height:900px!important}.pn{height:760px!important}.gw-pan{top:830px!important}.gw-txt{top:858px!important}.gw-txt h1{font-size:60px!important}.gw-txt .cta{margin-top:8px}.gw-txt .cta{position:relative;z-index:2;display:inline-flex;align-items:center;justify-content:center;padding:10px 34px 10px;border-radius:999px;text-decoration:none;color:#5A3E22;background:linear-gradient(180deg,rgba(255,255,255,.26),rgba(255,255,255,.04) 60%,rgba(255,255,255,.14));-webkit-backdrop-filter:blur(9px) saturate(1.9) brightness(1.06);backdrop-filter:blur(9px) saturate(1.9) brightness(1.06);border:1px solid rgba(255,255,255,.75);box-shadow:0 0 0 1px rgba(90,62,34,.24),inset 0 2px 2px rgba(255,255,255,.95),inset 0 -3px 5px rgba(255,255,255,.4),inset 0 0 16px rgba(255,255,255,.5),0 8px 20px rgba(90,60,15,.14);pointer-events:auto;transition:transform .25s,box-shadow .25s}.gw-txt .cta:hover{transform:translateY(-1px) scale(1.03);box-shadow:0 0 0 1px rgba(90,62,34,.3),inset 0 2px 2px rgba(255,255,255,.95),inset 0 -3px 5px rgba(255,255,255,.45),inset 0 0 20px rgba(255,255,255,.6),0 12px 26px rgba(138,106,40,.24)}.gw-txt .cta .lbl{display:block;text-align:center;padding:0 0 0 2px;font-family:'Great Vibes',cursive;font-weight:400;font-size:25px;line-height:1.1;white-space:nowrap;color:#5A3E22}}
-@media (min-width:861px){.gw-txt a.cta{border:0;letter-spacing:0;text-transform:none;padding:10px 34px;background-color:transparent}}
-@media (min-width:861px){
-.gw-rail{height:13px!important;top:16px!important;background:linear-gradient(#FFFFFF,#F6F3EE 45%,#E6E0D5 80%,#D6CDBE)!important;box-shadow:0 1px 0 rgba(255,255,255,.9) inset,0 4px 6px rgba(90,70,40,.28),0 11px 0 -6px #F4F1EB,0 12px 3px -6px rgba(90,70,40,.3)!important}
-.gw-rail::after{content:"";position:absolute;left:0;right:0;top:15px;height:4px;background:linear-gradient(#FBF9F5,#E9E3D8);box-shadow:0 2px 3px rgba(90,70,40,.25)}
-.gw{background:linear-gradient(115deg,rgba(255,255,255,.55) 0,rgba(255,255,255,0) 38%),linear-gradient(#F0EDE7,#ECE8E1)!important}
-.pn{background:#F3F0EB!important}
-}
-@media (min-width:861px){.gw-txt{left:1050px!important;right:auto!important;width:360px;top:330px!important}.gw-txt h1{font-size:60px!important}.gw-txt h1 b{font-size:15px!important}.gw-txt .cta{margin-top:18px}.pn{height:790px!important}.gw-pan{top:850px!important}}
-@keyframes gwSway{from{transform:rotate(-.7deg)}to{transform:rotate(.7deg)}}
-@media (prefers-reduced-motion:reduce){.gf{animation:none}}
-}
-</style>
-<style id="gwCss2">@media (min-width:861px){
-.gf{animation:none!important}.gf .wire{display:none!important}
-.gf:nth-child(n){animation:none!important}
-.fr{filter:drop-shadow(0 18px 18px rgba(60,40,10,.38))!important}
-.gw-pan{top:800px!important;background:linear-gradient(#F2EFE8 0,#F2EFE8 58px,#E6DFD2 59px,#D9D0C0 100%)!important;border-top:10px solid #FAF7F1!important;box-shadow:inset 0 3px 0 rgba(255,255,255,.9),0 -4px 10px rgba(90,70,40,.18)!important}
-.pn{height:740px!important}
-.gw-txt{left:1120px!important;width:310px!important;top:250px!important}
-.gw-txt h1{font-size:54px!important}
-.gw-cd{position:absolute;left:1190px;top:462px;width:210px;height:auto;z-index:4;filter:drop-shadow(0 10px 12px rgba(60,40,10,.35))}
-.gw-cd .fl{transform-origin:center;animation:gwFl 2.4s ease-in-out infinite alternate}
-@keyframes gwFl{from{opacity:.85;transform:scale(1)}to{opacity:1;transform:scale(1.07,1.12)}}
-@media (prefers-reduced-motion:reduce){.gw-cd .fl{animation:none}}
-}</style>
-<style id="gwCss3">@media (min-width:861px){
-.gw-txt{left:740px!important;width:620px!important;top:210px!important;text-align:center}
-.gw-txt h1{display:grid;justify-items:center;gap:0}
-.gw-txt h1 b{font-size:22px!important;letter-spacing:.38em!important;margin-bottom:10px!important}
-.gt-l2{font:400 96px/1 'Great Vibes',cursive;color:#5A3E22}
-.gt-pen{display:inline-block;font:400 150px/1.05 'Great Vibes',cursive;padding:0 .18em .12em .06em;margin-top:-10px;background-image:linear-gradient(100deg,#7d5c1f 0%,#b98f3d 28%,#efd48b 50%,#c5a059 66%,#8a6a28 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent;-webkit-text-stroke:.6px #A57F2E;clip-path:inset(-20% 100% -20% 0);animation:gtPen 7s cubic-bezier(.45,.05,.3,1) .6s infinite}
-@keyframes gtPen{0%{clip-path:inset(-20% 100% -20% 0)}28%,86%{clip-path:inset(-20% -5% -20% 0)}96%,100%{clip-path:inset(-20% -5% -20% 100%)}}
-.gw-txt .cta{margin-top:30px!important;padding:14px 48px!important}
-.gw-txt .cta .lbl{font-size:34px!important}
-@media (prefers-reduced-motion:reduce){.gt-pen{animation:none;clip-path:none}}
-}</style>
-<style id="gwCss4">@media (min-width:861px){
-.gw-txt{left:660px!important;width:740px!important;top:250px!important}
-.gw-txt h1{gap:4px}
-.gt-l1{font:700 38px/1.14 Montserrat,Inter,sans-serif;letter-spacing:.03em;text-transform:uppercase;color:#5A3E22;white-space:nowrap}
-.gt-pen{font:400 84px/1.05 'Great Vibes',cursive!important;margin-top:4px!important;background:none!important;-webkit-background-clip:border-box!important;background-clip:border-box!important;-webkit-text-fill-color:#8A6A28!important;color:#8A6A28!important;-webkit-text-stroke:0!important}
-.gw-txt .glassbtn{position:relative;display:inline-block;margin:26px -34px -18px;padding:22px 34px;pointer-events:auto}
-.gw-txt .glassbtn canvas{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;-webkit-mask-image:radial-gradient(ellipse 50% 50% at 50% 50%,#000 58%,transparent 100%);mask-image:radial-gradient(ellipse 50% 50% at 50% 50%,#000 58%,transparent 100%)}
-.gw-txt .cta{margin-top:0!important;padding:6px 16px 7px!important;border:1px solid rgba(255,255,255,.75)!important}
-.gw-txt .cta .lbl{font-size:22px!important}
-}</style>
-<style id="gwCss5">@media (min-width:861px){
-.gw-txt{left:590px!important;width:820px!important;top:260px!important}
-.gt-l1{font-size:calc(34px*1.18/var(--gs,1))!important}
-.gt-pen{font-size:calc(96px*1.1/var(--gs,1))!important}
-.gw-txt .glassbtn{margin:calc(0px/var(--gs,1)) calc(-34px/var(--gs,1)) calc(-18px/var(--gs,1))!important;padding:calc(22px/var(--gs,1)) calc(34px/var(--gs,1))!important}
-.gw-txt .cta{padding:calc(6px/var(--gs,1)) calc(16px/var(--gs,1)) calc(7px/var(--gs,1))!important}
-.gw-txt .cta .lbl{font-size:calc(22px/var(--gs,1))!important}
-}</style>
-<style id="gwCss6">@media (min-width:861px){
-.gt-pen{font-size:calc(104px*1.1/var(--gs,1))!important;transform:rotate(-5deg);transform-origin:50% 60%;margin-top:calc(8px/var(--gs,1))!important;white-space:nowrap}
-.gt-l1{font-size:calc(34px*1.35/var(--gs,1))!important}
-}</style>
-<style id="gwCss7">@media (min-width:861px){
-.gw-pan{display:none!important}
-.pn{height:812px!important}
-.gw-rail-b{top:871px!important;transform:scaleY(-1);z-index:2}
-.gw-txt{top:288px!important}
-}</style>
-<style id="gwCss8">@media (min-width:861px){
-.gw{background:#CDBBA2!important}
-.gw-s{height:857px!important}
-.gw-bg{position:absolute;left:0;top:0;width:1440px;height:857px;display:block;user-select:none;pointer-events:none}
-.gw-vid{position:absolute;left:387px;top:63px;width:316px;height:361px;overflow:hidden;z-index:3;box-shadow:inset 0 0 22px rgba(0,0,0,.45)}
-.gw-vid video{width:100%;height:100%;object-fit:cover;object-position:50% 12%;display:block}
-.gw-vid::after{content:"";position:absolute;inset:0;box-shadow:inset 0 0 14px 2px rgba(40,25,10,.5);pointer-events:none}
-.gw-txt{left:800px!important;width:600px!important;top:230px!important}
-}</style>
-<style id="gwCss9">@media (min-width:861px){
-.gw-txt{left:880px!important;width:490px!important;top:225px!important}
-.gw-bg{filter:brightness(1.06) saturate(.94)}
-.gw-s::after{content:"";position:absolute;left:820px;top:0;width:620px;height:857px;background:linear-gradient(90deg,rgba(255,248,236,0),rgba(255,248,236,.34) 12%,rgba(255,248,236,.34));pointer-events:none;z-index:1}
-.gw-txt{z-index:4}
-.gt-l1{font-size:31px!important;letter-spacing:.02em!important}
-.gt-pen{font-size:128px!important;margin-top:-4px!important;transform:rotate(-5deg)!important;padding:0 .12em .1em!important}
-.gw-txt .glassbtn{margin-top:calc(18px/var(--gs,1))!important}
-.gw-txt .cta{background:linear-gradient(180deg,rgba(255,250,240,.82),rgba(250,240,222,.55) 60%,rgba(255,250,240,.7))!important}
-}</style>
-
-
-
-
-
-
-
-
 <header data-screen-label="Hero" data-hero="1" style="position:relative;height:100svh;min-height:560px;overflow:hidden;background:#1B1815;color:#F3E9DA">
   
   <div data-sidepic="left" style="position:absolute;top:0;bottom:0;left:0;background:rgb(226,217,210);width:100%;overflow:hidden"><div data-sideimg="1" style="position:absolute;inset:0;will-change:transform"><video data-mob="1" data-hv2="1" src="assets/site/hero-v3s.mp4" poster="assets/site/hero-v3.jpg" autoplay="" muted="" loop="" playsinline="" webkit-playsinline="" preload="auto" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"></video><div data-dsk="1" style="width:100%;height:100%"><picture><source media="(max-width:860px)" srcset="assets/site/turmalin-set.jpg"><img data-heroimg="1" src="assets/site/turmalin-hero-ploca-2-v2.jpg" alt="Turmalin set" style="display:block;width:114%;margin-left:-14%;height:100%;object-fit:cover;object-position:center 75%"></picture></div></div></div>
@@ -252,17 +117,7 @@ header[data-hero]::before{display:none!important}
   
   <div data-frame="1" style="position:absolute;z-index:4;inset:clamp(12px,1.4vw,20px);top:calc(72px + clamp(12px,1.4vw,20px));border:1px solid rgba(197,160,89,.7);pointer-events:none"></div>
 
-  <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><symbol id="pcorner" viewBox="0 0 120 120"><g fill="#F7F4EE" stroke="#D3CABB" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"><path d="M5 5H78C94 5 101 17 95 28C89 37 75 36 73 27C72 20 79 18 83 21" fill="none" stroke="#F7F4EE" stroke-width="7"/><path d="M5 5V78C5 94 17 101 28 95C37 89 36 75 27 73C20 72 18 79 21 83" fill="none" stroke="#F7F4EE" stroke-width="7"/><path d="M16 16C48 18 64 40 58 70C42 62 22 48 16 16Z"/><path d="M16 16C18 48 40 64 70 58C62 42 48 22 16 16Z"/><path d="M24 24C42 28 54 42 55 60" fill="none" stroke="#DDD5C8" stroke-width="1.5"/><path d="M24 24C28 42 42 54 60 55" fill="none" stroke="#DDD5C8" stroke-width="1.5"/><path d="M30 20C50 22 62 36 62 50M20 30C22 50 36 62 50 62" fill="none" stroke="#E4DDD0" stroke-width="1.2"/><circle cx="22" cy="22" r="10"/><circle cx="22" cy="22" r="5" fill="#E8E1D5"/><circle cx="22" cy="22" r="1.8" fill="#F7F4EE"/><path d="M100 8C110 8 116 13 115 20C114 26 107 27 104 23" fill="none" stroke="#F7F4EE" stroke-width="5"/><path d="M8 100C8 110 13 116 20 115C26 114 27 107 23 104" fill="none" stroke="#F7F4EE" stroke-width="5"/><path d="M70 12C74 18 74 24 70 28M12 70C18 74 24 74 28 70" fill="none" stroke="#E4DDD0" stroke-width="1.4"/><circle cx="106" cy="30" r="2.4"/><circle cx="30" cy="106" r="2.4"/></g></symbol></defs></svg><div class="gw" aria-label="Nakit koji govori i kada Ti ćutiš"><div class="gw-s"><img class="gw-bg" src="/assets/site/hero-butik.webp?v=2" alt="" width="1440" height="857" fetchpriority="high"><div class="gw-vid"><video id="gwv" data-hv2="1" src="/assets/site/hero-v3s.mp4" poster="/assets/site/hero-v3.jpg" autoplay muted loop playsinline preload="auto"></video></div><div class="gw-txt"><h1><span class="gt-l1">Nakit koji govori i&nbsp;kada</span><span class="gt-pen">Ti ćutiš</span></h1><div class="glassbtn" id="gb2"><canvas id="gc2" aria-hidden="true"></canvas><a class="cta" href="/nakit/"><span class="lbl">Pogledaj nakit</span></a></div></div></div></div><script>(function(){function f(){var h=document.querySelector('[data-hero]'),s=document.querySelector('.gw-s');if(!s||!h||!h.clientWidth)return;if(window.innerWidth<=860){h.style.removeProperty('height');return}var W=h.clientWidth,hh=Math.max(520,Math.min((window.innerHeight-72)*1.18,857*W/1440)),k=Math.max(W/1440,hh/857);s.style.setProperty('--gs',k);s.style.top='0px';h.style.setProperty('height',(72+hh)+'px','important')}f();addEventListener('resize',f);function p(){f();if(window.innerWidth<=860)return;document.querySelectorAll('#gwv').forEach(function(v){v.muted=true;v.defaultMuted=true;v.setAttribute('muted','');v.setAttribute('playsinline','');if(v.paused){var r=v.play();if(r&&r.catch)r.catch(function(){})}})}p();setInterval(p,1000);['click','touchstart','scroll','mousemove','keydown'].forEach(function(e){addEventListener(e,p,{passive:true})});document.addEventListener('visibilitychange',p)})();</script><script>(function(){var gb,gc,gx,W=0,H=0,t=0,last=0,gp=null,ptr=null,ptrT=0,raf=0;
-function size(){var w=gb.offsetWidth,h=gb.offsetHeight,d=Math.min(2,devicePixelRatio||1);if(w===W&&h===H)return;W=w;H=h;gc.width=Math.round(w*d);gc.height=Math.round(h*d);gx.setTransform(d,0,0,d,0,0)}
-function tick(now){raf=requestAnimationFrame(tick);if(innerWidth<=860)return;gb=document.getElementById('gb2');gc=document.getElementById('gc2');if(!gb||!gc)return;if(!gx||gx.canvas!==gc){gx=gc.getContext('2d');W=H=0;gp=null;gb.addEventListener('pointermove',function(e){var r=gb.getBoundingClientRect();ptr={x:e.clientX-r.left,y:e.clientY-r.top};ptrT=performance.now()})}
-var dt=Math.min(50,now-last);last=now;size();
-gx.globalCompositeOperation='destination-out';gx.fillStyle='rgba(0,0,0,'+Math.min(1,0.045*dt/16.7).toFixed(3)+')';gx.fillRect(0,0,W,H);
-var tx,ty;if(ptr&&now-ptrT<1500){tx=ptr.x;ty=ptr.y}else{t+=dt/1000;tx=W/2+W*0.42*Math.sin(t*2.3)+W*0.08*Math.sin(t*5.1+1);ty=H/2+H*0.40*Math.sin(t*3.1+.6)+H*0.08*Math.sin(t*6.7)}
-if(!gp)gp={x:tx,y:ty};var nx=gp.x+(tx-gp.x)*0.3,ny=gp.y+(ty-gp.y)*0.3;
-if(Math.hypot(nx-gp.x,ny-gp.y)>0.25){var k=(Math.sin(t*1.3)+1)/2,c='rgba('+Math.round(196+40*k)+','+Math.round(166+54*k)+','+Math.round(104+66*k)+',.36)';
-gx.globalCompositeOperation='source-over';gx.lineCap='round';gx.lineJoin='round';gx.beginPath();gx.moveTo(gp.x,gp.y);gx.lineTo(nx,ny);gx.shadowColor='rgba(232,208,150,.35)';gx.shadowBlur=14;gx.strokeStyle=c;gx.lineWidth=16;gx.stroke();gx.shadowBlur=0;gx.strokeStyle='rgba(255,246,222,.22)';gx.lineWidth=4;gx.stroke()}
-gp.x=nx;gp.y=ny}
-if(!(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches))raf=requestAnimationFrame(tick)})();</script>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><symbol id="pcorner" viewBox="0 0 120 120"><g fill="#F7F4EE" stroke="#D3CABB" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"><path d="M5 5H78C94 5 101 17 95 28C89 37 75 36 73 27C72 20 79 18 83 21" fill="none" stroke="#F7F4EE" stroke-width="7"/><path d="M5 5V78C5 94 17 101 28 95C37 89 36 75 27 73C20 72 18 79 21 83" fill="none" stroke="#F7F4EE" stroke-width="7"/><path d="M16 16C48 18 64 40 58 70C42 62 22 48 16 16Z"/><path d="M16 16C18 48 40 64 70 58C62 42 48 22 16 16Z"/><path d="M24 24C42 28 54 42 55 60" fill="none" stroke="#DDD5C8" stroke-width="1.5"/><path d="M24 24C28 42 42 54 60 55" fill="none" stroke="#DDD5C8" stroke-width="1.5"/><path d="M30 20C50 22 62 36 62 50M20 30C22 50 36 62 50 62" fill="none" stroke="#E4DDD0" stroke-width="1.2"/><circle cx="22" cy="22" r="10"/><circle cx="22" cy="22" r="5" fill="#E8E1D5"/><circle cx="22" cy="22" r="1.8" fill="#F7F4EE"/><path d="M100 8C110 8 116 13 115 20C114 26 107 27 104 23" fill="none" stroke="#F7F4EE" stroke-width="5"/><path d="M8 100C8 110 13 116 20 115C26 114 27 107 23 104" fill="none" stroke="#F7F4EE" stroke-width="5"/><path d="M70 12C74 18 74 24 70 28M12 70C18 74 24 74 28 70" fill="none" stroke="#E4DDD0" stroke-width="1.4"/><circle cx="106" cy="30" r="2.4"/><circle cx="30" cy="106" r="2.4"/></g></symbol></defs></svg><div class="gw" aria-label="Nakit koji govori i kada ti ćutiš"><svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs><filter id="container-glass" x="0%" y="0%" width="100%" height="100%" color-interpolation-filters="sRGB"><feTurbulence type="fractalNoise" baseFrequency="0.05 0.05" numOctaves="1" seed="1" result="turbulence"/><feGaussianBlur in="turbulence" stdDeviation="2" result="blurredNoise"/><feDisplacementMap in="SourceGraphic" in2="blurredNoise" scale="70" xChannelSelector="R" yChannelSelector="B" result="displaced"/><feGaussianBlur in="displaced" stdDeviation="4" result="finalBlur"/><feComposite in="finalBlur" in2="finalBlur" operator="over"/></filter></defs></svg><div class="gw-s"><img class="gw-bg" src="/hero4/hero-bg.webp?v=1" alt="" width="1440" height="960" fetchpriority="high"><div class="gw-vid"><video id="gwv" data-hv2="1" src="/hero4/hero-frame.mp4?v=1" poster="/hero4/hero-poster.webp?v=1" autoplay muted loop playsinline preload="auto"></video></div><div class="gw-txt"><h1><span class="gt-l1">Nakit koji govori</span><span class="gt-l2">i kada <span class="gt-pen">ti ćutiš</span></span></h1><div class="gw-btn" id="gb2"><canvas id="gc2" aria-hidden="true"></canvas><a class="cta" href="/nakit/"><span class="lbl">Pogledaj nakit</span></a></div></div></div></div><script src="/hero4/hero4.js?v=1" defer></script>
 <div data-hcopy="1" style="position:absolute;z-index:3;right:clamp(22px,4vw,64px);top:calc(72px + clamp(30px,5vh,60px));justify-items:start;text-align:left;width:fit-content;max-width:min(520px,40vw);display:grid;gap:10px;will-change:transform,opacity">
     <h1 class="hw"><span class="hw-l hw-l1"><span class="hw-t">Nakit koji</span></span><span class="hw-l hw-l2"><span class="hw-t">govori i kada</span></span><span class="hw-s"><span class="hw-pen">Ti ćutiš</span><svg class="hw-u" viewBox="0 0 460 44" preserveAspectRatio="none" aria-hidden="true"><defs><linearGradient id="hwg" x1="0" x2="1"><stop offset="0" stop-color="#8A6A28"/><stop offset=".5" stop-color="#E8C982"/><stop offset="1" stop-color="#B98F3D"/></linearGradient></defs><path d="M6 32 C 80 8, 170 46, 250 26 S 380 6, 420 24 C 442 34, 456 20, 444 14 C 432 9, 426 26, 440 34"/></svg></span></h1>
   </div>
