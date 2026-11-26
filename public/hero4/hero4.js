@@ -64,7 +64,7 @@
         if(!f.ok){f.px=f.x;f.py=f.y;f.ok=true}
         gx.globalCompositeOperation='source-over';gx.lineCap='round';gx.lineJoin='round';
         gx.beginPath();gx.moveTo(f.px,f.py);gx.lineTo(f.x,f.y);
-        gx.strokeStyle='rgba(222,196,138,'+al[i]+')';gx.lineWidth=wid[i];gx.stroke();
+        gx.strokeStyle='rgba(226,206,160,'+al[i]+')';gx.lineWidth=wid[i];gx.stroke();
         if(i===0){gx.strokeStyle='rgba(252,244,224,.45)';gx.lineWidth=10;gx.stroke()}
       }
       var hx=F[0].x-L,hy=F[0].y-T,nowIn=hx>bw*0.05&&hx<bw*0.95&&hy>bh*0.1&&hy<bh*0.9;
