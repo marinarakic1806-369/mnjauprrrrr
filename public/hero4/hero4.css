@@ -39,6 +39,6 @@ header[data-hero] [data-sidepic],header[data-hero] [data-hcopy],header[data-hero
  -webkit-backdrop-filter:url(#container-glass);backdrop-filter:url(#container-glass)}
 .gw-btn .cta:hover{transform:scale(1.05)}
 .gw-btn .cta.flash{filter:brightness(1.05);box-shadow:0 0 16px 3px rgba(255,251,244,.6),0 2px 8px rgba(120,86,30,.14),inset 0 0 12px 8px rgba(255,250,240,.5)}
-.gw-btn .lbl{display:block;font:700 calc(12.5px/var(--gs,1))/1.1 'Playfair Display',Georgia,serif;letter-spacing:.12em;text-indent:.12em;text-transform:uppercase;text-align:center;white-space:nowrap;color:#5E431A}
+.gw-btn .lbl{display:block;font:400 calc(11px/var(--gs,1))/1.1 'Playfair Display',Georgia,serif;letter-spacing:.12em;text-indent:.12em;text-transform:uppercase;text-align:center;white-space:nowrap;color:#7A5A2C}
 @media (prefers-reduced-motion:reduce){.gw-btn .cta:hover{transform:none}}
 }
