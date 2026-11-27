@@ -19,7 +19,7 @@ header[data-hero] [data-sidepic],header[data-hero] [data-hcopy],header[data-hero
 .gw-s{position:absolute;left:50%;top:0;width:1440px;height:960px;transform-origin:50% 0;transform:translateX(-50%) scale(var(--gs,1))}
 .gw-bg{position:absolute;left:0;top:0;width:1440px;height:960px;display:block;user-select:none;pointer-events:none}
 /* video u ramu: tacno preko crnog polja (pozicije su procenti slike 3504x2336) */
-.gw-vid{position:absolute;left:30.394%;top:6.849%;width:16.067%;height:34.503%;overflow:hidden;z-index:3;background:#17130f}
+.gw-vid{position:absolute;left:30.394%;top:6.849%;width:16.4%;height:34.503%;overflow:hidden;z-index:3;background:#17130f}
 .gw-vid video{display:block;width:100%;height:100%;object-fit:cover;object-position:50% 50%}
 .gw-vid::after{content:"";position:absolute;inset:0;pointer-events:none;box-shadow:inset 0 0 14px 2px rgba(30,20,8,.5),inset 0 7px 12px -5px rgba(0,0,0,.55)}
 /* tekst: sredina desnog zidnog panela */
