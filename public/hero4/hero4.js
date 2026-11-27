@@ -29,7 +29,7 @@
   var gb,gc,gx,cta,W=0,H=0,bw=0,bh=0,start=0,last=0,ptr=null,ptrT=0,F=null,inside=false,flashT=0,lastFl=0;
   /* putanja u jedinicama sirine (w) i visine (h) dugmeta, od centra */
   var WP=[[1.25,-2.6],[0.95,-1.7],[0.6,-0.95],[0.2,-0.3],[-0.3,0.4],[-0.8,0.85],[-1.05,0.05],[-0.75,-0.85],[-0.2,-0.5],[0.1,0.05],[0.6,0.8],[1.05,0.1],[0.75,-0.85],[0.15,-0.55],[-0.2,0.0],[-0.6,0.6],[-0.9,0.1],[-0.6,-0.7],[-0.1,-0.3],[0.3,0.2],[0.8,0.9],[1.1,0.3]];
-  var DUR=13, PAUSE=1.6;
+  var DUR=7, PAUSE=1.2;
   function cr(p0,p1,p2,p3,u){var u2=u*u,u3=u2*u;return .5*((2*p1)+(-p0+p2)*u+(2*p0-5*p1+4*p2-p3)*u2+(-p0+3*p1-3*p2+p3)*u3)}
   function at(s){                         /* s u [0,1) */
     var n=WP.length-1,f=Math.max(0,Math.min(.9999,s))*n,i=Math.floor(f),u=f-i;
