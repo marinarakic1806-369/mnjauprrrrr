@@ -1,3 +1,7 @@
+@font-face{font-family:'Instrument Serif';font-style:normal;font-weight:400;font-display:swap;src:url('../fonts/instrument-serif-latin-ext-400-normal.woff2') format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+1E00-1E9F}
+@font-face{font-family:'Instrument Serif';font-style:normal;font-weight:400;font-display:swap;src:url('../fonts/instrument-serif-latin-400-normal.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+20AC}
+@font-face{font-family:'WindSong';font-style:normal;font-weight:400;font-display:swap;src:url('../fonts/windsong-latin-ext-400-normal.woff2') format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+1E00-1E9F}
+@font-face{font-family:'WindSong';font-style:normal;font-weight:400;font-display:swap;src:url('../fonts/windsong-latin-400-normal.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+20AC}
 /* Hero (desktop >=861px): butik zid sa ramom i videom. Playfair Display + Great Vibes + Hind Madurai. Stage 1440x960 (3:2), skalira se JS-om (--gs). */
 @font-face{font-family:'Playfair Display';font-style:normal;font-weight:400;font-display:swap;src:url('../fonts/playfair-display-latin-ext-400-normal.woff2') format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF}
 @font-face{font-family:'Playfair Display';font-style:normal;font-weight:400;font-display:swap;src:url('../fonts/playfair-display-latin-400-normal.woff2') format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
@@ -25,8 +29,8 @@ header[data-hero] [data-sidepic],header[data-hero] [data-hcopy],header[data-hero
 /* tekst: sredina desnog zidnog panela */
 .gw-txt{position:absolute;left:832px;width:560px;top:164px;z-index:4;text-align:center;color:#3A2C20}
 .gw-txt h1{margin:0;font-weight:400}
-.gt-l1,.gt-l2{display:block;font:400 44.5px/65.5px 'Playfair Display',Georgia,serif;letter-spacing:.01em;text-transform:uppercase;white-space:nowrap}
-.gt-pen{font:400 71.8px/0 'Great Vibes',cursive;text-transform:none;letter-spacing:0;margin-left:.1em}
+.gt-l1,.gt-l2{display:block;font:400 52px/65.5px 'Instrument Serif',Georgia,serif;letter-spacing:.01em;text-transform:uppercase;white-space:nowrap}
+.gt-pen{font:400 62px/0 'WindSong',cursive;text-transform:none;letter-spacing:0;margin-left:.3em}
 /* dugme: liquid glass, krem-zlatno, Hind Madurai */
 .gw-btn{position:relative;display:inline-block;margin:101px 0 0;padding:0;pointer-events:auto}
 .gw-btn canvas{position:absolute;left:-160px;top:-150px;width:calc(100% + 320px);height:calc(100% + 260px);z-index:3;pointer-events:none;filter:blur(4.5px);-webkit-mask-image:linear-gradient(180deg,transparent 0,#000 14%,#000 100%);mask-image:linear-gradient(180deg,transparent 0,#000 14%,#000 100%)}
@@ -37,6 +41,6 @@ header[data-hero] [data-sidepic],header[data-hero] [data-hcopy],header[data-hero
 .gw-btn .cta::before{content:none}
 .gw-btn .cta:hover{transform:scale(1.05)}
 .gw-btn .cta.flash{filter:brightness(1.05);box-shadow:0 0 16px 3px rgba(255,251,244,.6),0 2px 8px rgba(120,86,30,.14),inset 0 0 12px 8px rgba(255,250,240,.5)}
-.gw-btn .lbl{display:block;font:400 calc(11px/var(--gs,1))/1.1 'Playfair Display',Georgia,serif;letter-spacing:.12em;text-indent:.12em;text-transform:uppercase;text-align:center;white-space:nowrap;color:#7A5A2C;position:relative;top:1.5px}
+.gw-btn .lbl{display:block;font:400 calc(11px/var(--gs,1))/1.1 'Instrument Serif',Georgia,serif;letter-spacing:.12em;text-indent:.12em;text-transform:uppercase;text-align:center;white-space:nowrap;color:#7A5A2C;position:relative;top:1.5px}
 @media (prefers-reduced-motion:reduce){.gw-btn .cta:hover{transform:none}}
 }
