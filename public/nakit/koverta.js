@@ -4342,7 +4342,7 @@ void main() {
 .li-envelope-imprint{visibility:visible!important;font-size:15px!important;letter-spacing:.14em!important;white-space:nowrap}
 .li-opening .li-stage:after{display:none}
 .li-opening{background:transparent!important}
-.li-stage-heading>span{font-family:"Great Vibes",cursive;font-size:30px;letter-spacing:0;color:#8A6A28}
+.li-stage-heading>span{font-family:"WindSong",cursive;font-size:30px;letter-spacing:0;color:#8A6A28}
 .li-envelope-paper{background:linear-gradient(120deg,#ead9bd,#dcc8a4 100%)!important}
 .li-flap-front{background:linear-gradient(160deg,#f3e7d0 1%,#ecdcc0 46%,#e4d1b0 100%)!important}
 .li-left{background:linear-gradient(100deg,#eadbc0,#d8c4a0)!important}
