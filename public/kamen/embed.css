@@ -17,8 +17,7 @@
 #kp #env img{display:block;width:100%;height:auto;user-select:none;-webkit-user-drag:none}
 #kp #note{position:absolute;left:20%;top:15.5%;width:59%;height:32%;display:flex;flex-direction:column;justify-content:center;align-items:center;pointer-events:none}
 #kp .gold{font-family:'WindSong',cursive;font-weight:400;white-space:nowrap;text-align:center;
-  background-image:linear-gradient(100deg,#7d5c1f 0%,#b98f3d 24%,#efd48b 46%,#c5a059 60%,#8a6a28 80%,#c9a352 100%);
-  background-size:260% 100%;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent}
+  color:#1D1A17;-webkit-text-fill-color:#1D1A17}
 #kp #note span{display:block;line-height:1}
 #kp #cam{position:absolute;inset:0;will-change:transform}
 #kp #word{position:absolute;left:0;top:0;line-height:.98;will-change:transform,opacity,filter}
