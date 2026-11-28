@@ -41,10 +41,15 @@ header[data-hero] [data-sidepic],header[data-hero] [data-hcopy],header[data-hero
 .gw-btn .cta::before{content:none}
 .gw-btn .cta:hover{transform:scale(1.05)}
 .gw-btn .cta.flash{filter:brightness(1.05);box-shadow:0 0 16px 3px rgba(255,251,244,.6),0 2px 8px rgba(120,86,30,.14),inset 0 0 12px 8px rgba(255,250,240,.5)}
-.gw-btn .lbl{display:block;font:400 calc(14px/var(--gs,1))/1.1 'Instrument Serif',Georgia,serif;letter-spacing:.12em;text-indent:.12em;text-transform:uppercase;text-align:center;white-space:nowrap;color:#7A5A2C;position:relative;top:1.5px}
+.gw-btn .lbl{display:block;font:400 calc(14px/var(--gs,1))/1.1 'Instrument Serif',Georgia,serif;letter-spacing:.12em;text-indent:.12em;text-transform:uppercase;text-align:center;white-space:nowrap;color:#2A1D10;position:relative;top:1.5px}
 @media (prefers-reduced-motion:reduce){.gw-btn .cta:hover{transform:none}}
 }
 
 /* naslovi sajta: Instrument Serif */
 h1,h2,h3{font-family:'Instrument Serif',Georgia,serif!important;font-weight:400!important;letter-spacing:.01em}
 h2{font-size:46px!important}
+@media (min-width:861px){
+nav[data-nav]{grid-template-columns:1fr auto auto!important;gap:34px!important}
+nav[data-nav]>a:first-child{font-size:30px!important}
+nav[data-nav]>a:first-child img{width:42px!important;height:42px!important}
+}
